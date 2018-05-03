@@ -1,0 +1,5 @@
+@each $family, $data in $font-family-files {
+  @each $variant, $variant-data in $data {
+    @include font-def($family, $variant, map-get($variant-data, 'weight'), map-get($variant-data, 'style'), map-get($variant-data, 'stretch'));
+  }
+}

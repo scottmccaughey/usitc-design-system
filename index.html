@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>USITC Design System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="dist/css/styles.css">
+    <link rel="stylesheet" href="dist/css/styleguide.css">
+  </head>
+  <body>
+    <app-root>
+      <main class="constrained">
+        <article class="padded">
+          <h1>Style Guide</h1>
+
+          <section>
+            <h2>Homepage Title</h2>
+            <div class="header-overall full-width">dataweb.usitc.gov</div>
+            <div class="header-tagline full-width">repository of trade, tariff and product data</div>
+          </section>
+
+          <section>
+            <h2>Grid System</h2>
+            <p>Our grid has 12 columns and includes five tiers of predefined classes for building complex responsive layouts. Customize the size of your columns on extra small, small, medium, large, or extra large devices however you see fit.</p>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th class="text-center">
+                    Extra small<br>
+                    <small>≥400px</small>
+                  </th>
+                  <th class="text-center">
+                    Small<br>
+                    <small>≥600px</small>
+                  </th>
+                  <th class="text-center">
+                    Medium<br>
+                    <small>≥800px</small>
+                  </th>
+                  <th class="text-center">
+                    Large<br>
+                    <small>≥1200px</small>
+                  </th>
+                  <th class="text-center">
+                    Extra large<br>
+                    <small>≥1600px</small>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="text-left" scope="row">Class prefix</th>
+                  <td class="text-center"><code>.g-xs-</code></td>
+                  <td class="text-center"><code>.g-sm-</code></td>
+                  <td class="text-center"><code>.g-md-</code></td>
+                  <td class="text-center"><code>.g-lg-</code></td>
+                  <td class="text-center"><code>.g-xl-</code></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <section>
+            <h3>Basic Usage</h3>
+            <p>Add a <code class="language-markup">class="grid"</code> to an element that wraps around your grid cells. Any direct children of that element will be a grid cell. You can add classes to these grid cells to control their width at different screen widths. See the examples below to get a basic understanding of the code required.</p>
+          </section>
+
+          <section>
+            <h3>Simple Two-Column Layout</h3>
+            <p>Collapses to a single column when the screen width is less than the <strong>medium</strong> breakpoint (800px).</p>
+            <div class="grid sg-example">
+              <div class="g-m-6">.g-m-6</div>
+              <div class="g-m-6">.g-m-6</div>
+            </div>
+            <!-- <prism-block [code]="grid1" [language]="'markup'"></prism-block> -->
+          </section>
+
+          <section>
+            <h3>Simple Three-Column Layout</h3>
+            <p>Collapses to a single column when the screen width is less than the <strong>small</strong> breakpoint (600px).</p>
+            <div class="grid sg-example">
+              <div class="g-s-4">.g-s-4</div>
+              <div class="g-s-4">.g-s-4</div>
+              <div class="g-s-4">.g-s-4</div>
+            </div>
+            <!-- <prism-block [code]="grid2" [language]="'markup'"></prism-block> -->
+          </section>
+
+          <section>
+            <h3>Simple Four-Column Layout</h3>
+            <p>Collapses to two columns when the screen width is less than the <strong>small</strong> breakpoint (600px), and to a single column when the screen width is less than the <strong>medium</strong> breakpoint (800px).</p>
+            <div class="grid sg-example">
+              <div class="g-s-6 g-m-3">.g-s-6 .g-m-3</div>
+              <div class="g-s-6 g-m-3">.g-s-6 .g-m-3</div>
+              <div class="g-s-6 g-m-3">.g-s-6 .g-m-3</div>
+              <div class="g-s-6 g-m-3">.g-s-6 .g-m-3</div>
+            </div>
+            <!-- <prism-block [code]="grid3" [language]="'markup'"></prism-block> -->
+          </section>
+
+          <section>
+            <h3>Complex Multi-Row Layout</h3>
+            <p>Our grid system doesn’t limit you to a single row. Your content can flow onto multiple rows at different screen widths.</p>
+            <p class="tip"><strong>Tip:</strong> Test your grid at different screen widths to ensure that things collapse as you expect. If a grid cell won’t fit on a row, it will simply drop down to the next row.</p>
+            <div class="grid sg-example">
+              <div class="g-m-8 g-l-6">.g-m-8 .g-l-6</div>
+              <div class="g-m-4 g-l-4">.g-m-4 .g-l-4</div>
+              <div class="g-m-6 g-l-2">.g-m-6 .g-l-2</div>
+              <div class="g-m-6 g-l-4">.g-m-6 .g-l-4</div>
+              <div class="g-m-6 g-l-4">.g-m-6 .g-l-4</div>
+              <div class="g-m-6 g-l-4">.g-m-6 .g-l-4</div>
+            </div>
+            <!-- <prism-block [code]="grid4" [language]="'markup'"></prism-block> -->
+          </section>
+
+          <section>
+            <h3>Gutters</h3>
+            <p>You can add gutters to your grid using <code class="language-markup">class="grid-gap"</code>. You can also use <code class="language-markup">class="grid-gap-col"</code> for only horizontal gutters and <code class="language-markup">class="grid-gap-row"</code> for only vertical gutters.</p>
+            <div class="sg-example grid grid-gap">
+              <div class="g-s-4">.g-s-4</div>
+              <div class="g-s-4">.g-s-4</div>
+              <div class="g-s-4">.g-s-4</div>
+              <div class="g-s-4">.g-s-4</div>
+              <div class="g-s-4">.g-s-4</div>
+              <div class="g-s-4">.g-s-4</div>
+            </div>
+            <div class="sg-example grid grid-gap-col">
+              <div class="g-s-4">.g-s-4</div>
+              <div class="g-s-4">.g-s-4</div>
+              <div class="g-s-4">.g-s-4</div>
+              <div class="g-s-4">.g-s-4</div>
+              <div class="g-s-4">.g-s-4</div>
+              <div class="g-s-4">.g-s-4</div>
+            </div>
+            <div class="sg-example grid grid-gap-row">
+              <div class="g-s-4">.g-s-4</div>
+              <div class="g-s-4">.g-s-4</div>
+              <div class="g-s-4">.g-s-4</div>
+              <div class="g-s-4">.g-s-4</div>
+              <div class="g-s-4">.g-s-4</div>
+              <div class="g-s-4">.g-s-4</div>
+            </div>
+            <!-- <prism-block [code]="grid5" [language]="'markup'"></prism-block> -->
+          </section>
+        </article>
+      </main>
+    </app-root>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+/*
+  Link Underline mixin
+
+  link-underline($color)
+*/
+
+@mixin link-underline($color) {
+  background-image: linear-gradient(to top,
+    $color 0,
+    $color 100%);
+  background-position: 0 1.15em;
+  background-repeat: repeat-x;
+}

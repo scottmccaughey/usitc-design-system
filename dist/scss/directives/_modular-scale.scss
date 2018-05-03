@@ -1,0 +1,9 @@
+/*
+  Modular Scale Typography function
+
+  ms($factor)
+*/
+
+@function ms($factor: 0) {
+  @return pow($font-size-scale-ratio, $factor) * 1rem;
+}

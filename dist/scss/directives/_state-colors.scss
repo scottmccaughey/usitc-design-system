@@ -1,0 +1,41 @@
+/*
+  State Colors mixins
+
+  state-error()
+  state-info()
+  state-neutral()
+  state-success()
+  state-warning()
+
+  Include these to use standard state colors (border-color, background-color, color) on an element.
+*/
+
+@mixin state-error {
+  border-color: $color-error-border;
+  background-color: $color-error-background;
+  color: $color-error-text;
+}
+
+@mixin state-info {
+  border-color: $color-info-border;
+  background-color: $color-info-background;
+  color: $color-info-text;
+}
+
+@mixin state-neutral {
+  border-color: $color-neutral-border;
+  background-color: $color-neutral-background;
+  color: $color-neutral-text;
+}
+
+@mixin state-success {
+  border-color: $color-success-border;
+  background-color: $color-success-background;
+  color: $color-success-text;
+}
+
+@mixin state-warning {
+  border-color: $color-warning-border;
+  background-color: $color-warning-background;
+  color: $color-warning-text;
+}

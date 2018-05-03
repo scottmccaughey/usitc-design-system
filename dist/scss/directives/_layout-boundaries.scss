@@ -1,0 +1,14 @@
+/*
+  Make Layout Boundaries mixin
+
+  make-layout-boundaries($color, $background)
+*/
+
+@mixin make-layout-boundaries($color, $background) {
+  @for $i from 0 through 7 {
+      .boundaries > div:nth-child(n+#{$i}) {
+      background-color: darken( $background, $i*2% );
+      color:$color;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+grid:
+  columns: 12;
+  gap:
+    col: $space-m;
+    row: $space-m;
+  item-sizes:
+  - full: 12
+  - three-quarters: 9
+  - two-thirds: 8
+  - half: 6
+  - third: 4
+  - quarter: 3
+  - sixth: 2
+  - twelfth: 1

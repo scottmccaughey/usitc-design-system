@@ -1,0 +1,1172 @@
+/**
+ * modified version of eric meyer's reset 2.0
+ * http://meyerweb.com/eric/tools/css/reset/
+ */
+/**
+ * basic reset
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, main,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/**
+ * HTML5 display-role reset for older browsers
+ */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section,
+main, summary {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/**
+ * modified version of normalize.css 3.0.2
+ * http://necolas.github.io/normalize.css/
+ */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+/**
+ * HTML5 display definitions
+ * =============================================================================
+ */
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/**
+ * Links
+ * =============================================================================
+ */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/**
+ * Text-level semantics
+ * =============================================================================
+ */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * 1. Address styling not present in Safari and Chrome.
+ * 2. Set previously resetted italic font-style
+ */
+dfn,
+i, em {
+  font-style: italic; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/**
+ * Embedded content
+ * =============================================================================
+ */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/**
+ * Grouping content
+ * =============================================================================
+ */
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace; }
+
+/**
+ * Forms
+ * =============================================================================
+ */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: none; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/**
+ * responsive viewport
+ */
+@viewport {
+  width: device-width; }
+
+/**
+ * inherit box model
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+/**
+ * iOS "clickable elements" fix for role="button"
+ *
+ * Fixes "clickability" issue (and more generally, the firing of events such as focus as well)
+ * for traditionally non-focusable elements with role="button"
+ * see https://developer.mozilla.org/en-US/docs/Web/Events/click#Safari_Mobile
+ */
+[role="button"] {
+  cursor: pointer; }
+
+/**
+ * Avoid 300ms click delay on touch devices that support the `touch-action` CSS property.
+ *
+ * In particular, unlike most other browsers, IE11+Edge on Windows 10 on touch devices and IE Mobile 10-11
+ * DON'T remove the click delay when `<meta name="viewport" content="width=device-width">` is present.
+ * However, they DO support removing the click delay via `touch-action: manipulation`.
+ * See:
+ * - http://v4-alpha.getbootstrap.com/content/reboot/#click-delay-optimization-for-touch
+ * - http://caniuse.com/#feat=css-touch-action
+ * - http://patrickhlauke.github.io/touch/tests/results/#suppressing-300ms-delay
+ */
+a,
+area,
+button,
+[role="button"],
+input,
+label,
+select,
+summary,
+textarea {
+  touch-action: manipulation; }
+
+/**
+ * Always hide an element with the `hidden` HTML attribute (from PureCSS).
+ */
+[hidden] {
+  display: none !important; }
+
+/*
+  Breakpoints mixin
+
+  @include breakpoint($point)
+
+  The breakpoint() function takes a single required parameter. You must pass in the breakpoint
+  name or a number ($point). If a breakpoint name is passed, the $breakpoints list as
+  defined in _settings.scss (@section 3) is used for a mininum-width. If a number is passed,
+  that number of pixels is used as a minimum-width.
+
+  Ithis will cause any styles between the {} brackets to be applied only to
+  screen sizes wider than the breakpoint passed:
+
+  @include breakpoint(m) {
+    font-size: 18px;
+  }
+
+  ...will set the font-size to '18px' on any screen larger than the medium breakpoint size.
+
+  @include breakpoint(1024) {
+    font-weight: bold;
+  }
+
+  ...will set the font-weight to 'bold' on any screen larger than 1024 pixels wide.
+*/
+/*
+  String Replacement function
+
+  str-replace($string, $search, $replace)
+
+  The str-replace() function takes three parameters, the first two of which are required. You
+  must pass the text to be modified ($string) and the text you want to replace ($search). The
+  third (optional) parameter is the text you want to insert in place of the $search text
+  ($replace). If the $replace parameter is not passed, the $search text will simply be
+  removed. For example:
+
+  .selector {
+    $string: 'The answer to life, the universe and everything is blah.';
+    content: str-replace($string, 'blah', '42');
+  }
+
+  ...will compile to the following CSS...
+
+  .selector {
+    content: 'The answer to life, the universe and everything is 42.';
+  }
+
+  This function is used in the Font Face Declaration mixin defined and documented in
+  _directives.scss (@section 6).
+*/
+/*
+  Font Face Declaration mixin
+
+  fontdef($family, $type, $weight, $style, $stretch)
+
+  Uses the $font-families list as defined in _settings.scss (@section 5a).
+
+  The fontdef() mixin takes five parameters, the first two of which are required. You must pass
+  the font family name ($family) and font variant name ($variant) to generate a @font-face
+  definition.
+
+  You can also pass an optional $weight [normal | 100 | 200 | ... | 800 | 900], $style
+  [normal | italic], and $stretch [normal | ultra-condensed | extra-condensed | condensed |
+  semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded]. The optional
+  variables will all default to 'normal' if they are not passed. The $stretch variable is
+  currently not used in our design system, but is available for potential future use.
+
+  For example:
+
+  @include font-def(Fira Sans Condensed, semibolditalic, 600, italic, normal);
+
+  ...will compile to the following CSS...
+
+  @font-face {
+    font-family: 'Fira Sans Condensed';
+    src: url('../fonts/firasanscondensed-semibolditalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-stretch: normal;
+  }
+
+  This function is used to generate @font-face declarations in _fonts.scss.
+*/
+/*
+  State Colors mixins
+
+  state-error()
+  state-info()
+  state-neutral()
+  state-success()
+  state-warning()
+
+  Include these to use standard state colors (border-color, background-color, color) on an element.
+*/
+/*
+  Power function
+
+  pow($number, $exponent)
+*/
+/*
+  Modular Scale Typography function
+
+  ms($factor)
+*/
+/*
+  Max-Width mixin
+
+  constrained($max-width)
+*/
+/*
+  Grid Builder mixin
+
+  build-grid()
+*/
+/*
+  Link Underline mixin
+
+  link-underline($color)
+*/
+/*
+  Make Layout Boundaries mixin
+
+  make-layout-boundaries($color, $background)
+*/
+/*
+  Make Spinners mixin
+
+  make-spinners($colors)
+*/
+@font-face {
+  font-family: "Merriweather";
+  src: url("../fonts/merriweather-light.woff2") format("woff2"), url("../fonts/merriweather-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal; }
+
+@font-face {
+  font-family: "Merriweather";
+  src: url("../fonts/merriweather-lightitalic.woff2") format("woff2"), url("../fonts/merriweather-lightitalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-stretch: normal; }
+
+@font-face {
+  font-family: "Merriweather";
+  src: url("../fonts/merriweather-bold.woff2") format("woff2"), url("../fonts/merriweather-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal; }
+
+@font-face {
+  font-family: "Merriweather";
+  src: url("../fonts/merriweather-bolditalic.woff2") format("woff2"), url("../fonts/merriweather-bolditalic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+  font-stretch: normal; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat-light.woff2") format("woff2"), url("../fonts/montserrat-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat-lightitalic.woff2") format("woff2"), url("../fonts/montserrat-lightitalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-stretch: normal; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat-bold.woff2") format("woff2"), url("../fonts/montserrat-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat-bolditalic.woff2") format("woff2"), url("../fonts/montserrat-bolditalic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+  font-stretch: normal; }
+
+button,
+.button {
+  display: inline-block;
+  padding: 0.5em;
+  border: 1px solid #414042;
+  border-radius: 0;
+  background-color: #ffffff;
+  color: #3a3a3b;
+  line-height: 1;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out; }
+  button:active, button:focus, button:hover,
+  .button:active,
+  .button:focus,
+  .button:hover {
+    background-color: #0d7e97;
+    color: #ffffff; }
+  button.button-centered,
+  .button.button-centered {
+    display: block;
+    margin: 1rem auto; }
+  button.button-s,
+  .button.button-s {
+    font-size: 0.83333rem; }
+  button.button-close,
+  .button.button-close {
+    padding: 0.25rem;
+    border: 0;
+    color: #ffffff; }
+  button.button-ghost,
+  .button.button-ghost {
+    background-color: transparent;
+    color: inherit; }
+    button.button-ghost:active, button.button-ghost:focus, button.button-ghost:hover,
+    .button.button-ghost:active,
+    .button.button-ghost:focus,
+    .button.button-ghost:hover {
+      background-color: #0d7e97;
+      color: #ffffff; }
+  button.button-primary,
+  .button.button-primary {
+    border-color: transparent;
+    background-color: #004353;
+    color: #ffffff; }
+    button.button-primary:active, button.button-primary:focus, button.button-primary:hover,
+    .button.button-primary:active,
+    .button.button-primary:focus,
+    .button.button-primary:hover {
+      background-color: #0d7e97;
+      color: #ffffff; }
+  button.button-transparent,
+  .button.button-transparent {
+    border-color: transparent;
+    background-color: transparent;
+    color: inherit; }
+
+.button-close {
+  position: relative;
+  top: -0.5rem;
+  right: -0.5rem;
+  min-width: 1.25em;
+  background-color: transparent;
+  font-size: 1.44rem; }
+
+input,
+select {
+  border: 1px solid #e6e7e8;
+  height: 3rem;
+  padding: 0.5rem; }
+
+label {
+  cursor: pointer; }
+
+.asterisk {
+  text-align: center; }
+  .asterisk span {
+    position: relative;
+    top: -0.125em;
+    font-size: 0.83333rem;
+    font-style: italic; }
+
+html {
+  font-size: 20px;
+  height: 100vh; }
+
+body {
+  background-color: #ffffff;
+  color: #3a3a3b;
+  font-family: Merriweather, Georgia, Times, "Times New Roman", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 0.83333rem;
+  font-weight: 300;
+  line-height: 1.5;
+  min-height: 100vh;
+  position: relative; }
+
+::selection {
+  background-color: #0d7e97;
+  color: #ffffff;
+  text-shadow: 0; }
+
+::-moz-selection {
+  background-color: #0d7e97;
+  color: #ffffff;
+  text-shadow: 0; }
+
+a {
+  background-image: linear-gradient(to top, #0d7e97 0, #0d7e97 100%);
+  background-position: 0 1.15em;
+  background-repeat: repeat-x;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out; }
+  .on-dark a {
+    background-image: linear-gradient(to top, #ffffff 0, #ffffff 100%);
+    background-position: 0 1.15em;
+    background-repeat: repeat-x; }
+  .on-light a {
+    background-image: linear-gradient(to top, #0d7e97 0, #0d7e97 100%);
+    background-position: 0 1.15em;
+    background-repeat: repeat-x; }
+  a:active, a:focus, a:hover {
+    color: #004353; }
+    .on-dark a:active, .on-dark a:focus, .on-dark a:hover {
+      color: #ffffff; }
+    .on-light a:active, .on-light a:focus, .on-light a:hover {
+      color: #004353; }
+
+article section + section {
+  margin-top: 2rem; }
+
+main {
+  min-height: 100vh; }
+
+p,
+li {
+  max-width: 40em; }
+  p.full-width,
+  li.full-width {
+    max-width: 100%; }
+
+p {
+  margin-bottom: 1rem; }
+  p:last-child {
+    margin-bottom: 0; }
+
+svg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0; }
+
+table {
+  margin-bottom: 1rem; }
+  table:last-child {
+    margin-bottom: 0; }
+  table td,
+  table th {
+    padding: 0.5rem !important; }
+  table th {
+    font-weight: 700; }
+
+ul {
+  margin-bottom: 1rem;
+  padding-left: 1.75rem; }
+  ul:only-child,
+  ul:last-child li:last-child {
+    margin-bottom: 0; }
+  ul li {
+    margin: 0 0 0.5rem;
+    list-style: square; }
+  ul.clean {
+    padding: 0; }
+    ul.clean li {
+      list-style: none;
+      margin: 0; }
+
+.constrained {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+  width: 100%; }
+
+.loading {
+  background-image: url("/assets/images/svg/loader.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 1rem;
+  min-height: 64px;
+  text-indent: -9999rem; }
+
+.on-dark {
+  background-color: #004353;
+  color: #ffffff; }
+  .on-dark.on-dark-alt {
+    background-color: #0d7e97; }
+
+.read-more {
+  max-height: 99rem;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out; }
+  .read-more.read-more-hidden {
+    max-height: 0; }
+
+.svg-wrapper {
+  position: relative; }
+
+.tags {
+  display: inline-block;
+  position: relative;
+  top: -1px;
+  margin-bottom: -4px;
+  padding: 0.125rem 0.25rem;
+  border: 1px solid #e6e7e8;
+  border-radius: 0;
+  font-size: 0.83333rem;
+  font-weight: 300;
+  line-height: 1; }
+
+.text-center {
+  display: block;
+  text-align: center; }
+
+.text-left {
+  display: block;
+  text-align: left; }
+
+.text-right {
+  display: block;
+  text-align: right; }
+
+.text-s {
+  font-size: 0.83333rem; }
+
+.video-wrapper {
+  margin: 0 auto;
+  max-width: 30rem; }
+  .video-wrapper > div {
+    height: 0;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    position: relative; }
+    .video-wrapper > div > object {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%; }
+
+.visually-hidden {
+  height: 1px;
+  left: -9999rem;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px; }
+
+.grid {
+  display: grid;
+  grid-template-rows: auto; }
+  .grid > * {
+    grid-area: span 1/span 12; }
+
+.grid-gap {
+  grid-gap: 1rem 1rem; }
+
+.grid-gap-col {
+  grid-column-gap: 1rem; }
+
+.grid-gap-row {
+  grid-row-gap: 1rem; }
+
+@media (min-width: 400px) {
+  .grid {
+    grid-template-columns: repeat(12, 1fr); }
+    .grid .g-xs-1 {
+      grid-area: span 1/span 1; }
+    .grid .g-xs-2 {
+      grid-area: span 1/span 2; }
+    .grid .g-xs-3 {
+      grid-area: span 1/span 3; }
+    .grid .g-xs-4 {
+      grid-area: span 1/span 4; }
+    .grid .g-xs-5 {
+      grid-area: span 1/span 5; }
+    .grid .g-xs-6 {
+      grid-area: span 1/span 6; }
+    .grid .g-xs-7 {
+      grid-area: span 1/span 7; }
+    .grid .g-xs-8 {
+      grid-area: span 1/span 8; }
+    .grid .g-xs-9 {
+      grid-area: span 1/span 9; }
+    .grid .g-xs-10 {
+      grid-area: span 1/span 10; }
+    .grid .g-xs-11 {
+      grid-area: span 1/span 11; }
+    .grid .g-xs-12 {
+      grid-area: span 1/span 12; } }
+
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(12, 1fr); }
+    .grid .g-s-1 {
+      grid-area: span 1/span 1; }
+    .grid .g-s-2 {
+      grid-area: span 1/span 2; }
+    .grid .g-s-3 {
+      grid-area: span 1/span 3; }
+    .grid .g-s-4 {
+      grid-area: span 1/span 4; }
+    .grid .g-s-5 {
+      grid-area: span 1/span 5; }
+    .grid .g-s-6 {
+      grid-area: span 1/span 6; }
+    .grid .g-s-7 {
+      grid-area: span 1/span 7; }
+    .grid .g-s-8 {
+      grid-area: span 1/span 8; }
+    .grid .g-s-9 {
+      grid-area: span 1/span 9; }
+    .grid .g-s-10 {
+      grid-area: span 1/span 10; }
+    .grid .g-s-11 {
+      grid-area: span 1/span 11; }
+    .grid .g-s-12 {
+      grid-area: span 1/span 12; } }
+
+@media (min-width: 800px) {
+  .grid {
+    grid-template-columns: repeat(12, 1fr); }
+    .grid .g-m-1 {
+      grid-area: span 1/span 1; }
+    .grid .g-m-2 {
+      grid-area: span 1/span 2; }
+    .grid .g-m-3 {
+      grid-area: span 1/span 3; }
+    .grid .g-m-4 {
+      grid-area: span 1/span 4; }
+    .grid .g-m-5 {
+      grid-area: span 1/span 5; }
+    .grid .g-m-6 {
+      grid-area: span 1/span 6; }
+    .grid .g-m-7 {
+      grid-area: span 1/span 7; }
+    .grid .g-m-8 {
+      grid-area: span 1/span 8; }
+    .grid .g-m-9 {
+      grid-area: span 1/span 9; }
+    .grid .g-m-10 {
+      grid-area: span 1/span 10; }
+    .grid .g-m-11 {
+      grid-area: span 1/span 11; }
+    .grid .g-m-12 {
+      grid-area: span 1/span 12; } }
+
+@media (min-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(12, 1fr); }
+    .grid .g-l-1 {
+      grid-area: span 1/span 1; }
+    .grid .g-l-2 {
+      grid-area: span 1/span 2; }
+    .grid .g-l-3 {
+      grid-area: span 1/span 3; }
+    .grid .g-l-4 {
+      grid-area: span 1/span 4; }
+    .grid .g-l-5 {
+      grid-area: span 1/span 5; }
+    .grid .g-l-6 {
+      grid-area: span 1/span 6; }
+    .grid .g-l-7 {
+      grid-area: span 1/span 7; }
+    .grid .g-l-8 {
+      grid-area: span 1/span 8; }
+    .grid .g-l-9 {
+      grid-area: span 1/span 9; }
+    .grid .g-l-10 {
+      grid-area: span 1/span 10; }
+    .grid .g-l-11 {
+      grid-area: span 1/span 11; }
+    .grid .g-l-12 {
+      grid-area: span 1/span 12; } }
+
+@media (min-width: 1600px) {
+  .grid {
+    grid-template-columns: repeat(12, 1fr); }
+    .grid .g-xl-1 {
+      grid-area: span 1/span 1; }
+    .grid .g-xl-2 {
+      grid-area: span 1/span 2; }
+    .grid .g-xl-3 {
+      grid-area: span 1/span 3; }
+    .grid .g-xl-4 {
+      grid-area: span 1/span 4; }
+    .grid .g-xl-5 {
+      grid-area: span 1/span 5; }
+    .grid .g-xl-6 {
+      grid-area: span 1/span 6; }
+    .grid .g-xl-7 {
+      grid-area: span 1/span 7; }
+    .grid .g-xl-8 {
+      grid-area: span 1/span 8; }
+    .grid .g-xl-9 {
+      grid-area: span 1/span 9; }
+    .grid .g-xl-10 {
+      grid-area: span 1/span 10; }
+    .grid .g-xl-11 {
+      grid-area: span 1/span 11; }
+    .grid .g-xl-12 {
+      grid-area: span 1/span 12; } }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #3a3a3b;
+  font-family: Montserrat, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 300;
+  line-height: 1.25;
+  margin: 2rem 0 1rem; }
+  h1:first-child,
+  h1 + h1,
+  h1 + h2,
+  h1 + h3,
+  h1 + h4,
+  h1 + h5,
+  h1 + h6,
+  h2:first-child,
+  h2 + h1,
+  h2 + h2,
+  h2 + h3,
+  h2 + h4,
+  h2 + h5,
+  h2 + h6,
+  h3:first-child,
+  h3 + h1,
+  h3 + h2,
+  h3 + h3,
+  h3 + h4,
+  h3 + h5,
+  h3 + h6,
+  h4:first-child,
+  h4 + h1,
+  h4 + h2,
+  h4 + h3,
+  h4 + h4,
+  h4 + h5,
+  h4 + h6,
+  h5:first-child,
+  h5 + h1,
+  h5 + h2,
+  h5 + h3,
+  h5 + h4,
+  h5 + h5,
+  h5 + h6,
+  h6:first-child,
+  h6 + h1,
+  h6 + h2,
+  h6 + h3,
+  h6 + h4,
+  h6 + h5,
+  h6 + h6 {
+    margin-top: 0; }
+  .on-dark h1, .on-dark
+  h2, .on-dark
+  h3, .on-dark
+  h4, .on-dark
+  h5, .on-dark
+  h6 {
+    color: #ffffff; }
+  .on-light h1, .on-light
+  h2, .on-light
+  h3, .on-light
+  h4, .on-light
+  h5, .on-light
+  h6 {
+    color: #3a3a3b; }
+
+h1,
+.h1 {
+  font-size: 1.728rem; }
+
+h2,
+.h2 {
+  font-size: 1.44rem; }
+
+h3,
+.h3 {
+  font-size: 1.2rem; }
+
+h4,
+.h4 {
+  font-size: 1rem; }
+
+h5,
+.h5 {
+  font-size: 1rem; }
+
+h6,
+.h6 {
+  font-size: 1rem; }
+
+.header-overall {
+  color: #414042;
+  font-family: Montserrat, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 5.15978rem;
+  text-align: center; }
+
+.header-tagline {
+  color: #414042;
+  font-family: Montserrat, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 0.69444rem;
+  font-weight: 300;
+  letter-spacing: .5rem;
+  text-align: center;
+  text-transform: uppercase; }
+
+.padded {
+  padding: 1rem; }
+
+.padded-left-right {
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+.padded-top-bottom {
+  padding-bottom: 1rem;
+  padding-top: 1rem; }
+
+.padded-top {
+  padding-top: 1rem; }
+
+.padded-right {
+  padding-right: 1rem; }
+
+.padded-bottom {
+  padding-bottom: 1rem; }
+
+.padded-left {
+  padding-left: 1rem; }
+
+.table {
+  width: 100%; }
+  .table tbody th {
+    vertical-align: middle;
+    white-space: nowrap; }
+  .table thead {
+    vertical-align: bottom; }
+  .table th,
+  .table td {
+    padding: 0.25rem; }
+    .table th:first-child,
+    .table td:first-child {
+      padding-left: 0; }
+    .table th:last-child,
+    .table td:last-child {
+      padding-right: 0; }
+    .table th.text-center, .table th.text-left, .table th.text-right,
+    .table td.text-center,
+    .table td.text-left,
+    .table td.text-right {
+      display: table-cell; }
+
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #e6e7e8; }
+
+.table-striped tbody tr:nth-child(odd) th,
+.table-striped tbody tr:nth-child(odd) td {
+  background-color: #e6e7e8; }
+
+.table-responsive th,
+.table-responsive td {
+  display: block;
+  padding: 0.25rem 0.5rem !important;
+  word-break: break-word; }
+
+.table-responsive th {
+  border-bottom-width: 0;
+  margin-top: 0.5rem; }
+
+@media (min-width: 600px) {
+  .table-responsive th,
+  .table-responsive td {
+    display: table-cell; }
+    .table-responsive th:first-child,
+    .table-responsive td:first-child {
+      padding-left: 0; }
+    .table-responsive th:last-child,
+    .table-responsive td:last-child {
+      padding-right: 0; }
+  .table-responsive th {
+    border-bottom-width: 1px; } }

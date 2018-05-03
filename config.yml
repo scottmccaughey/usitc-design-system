@@ -1,0 +1,15 @@
+path:
+  tokens:   tokens/**/*.yml
+  assets:   assets
+  dist:     dist
+  html:     index.html
+  json:
+    tokens: dist/json
+  scss:
+    tokens: dist/scss/tokens
+    src:    dist/scss/**/*.scss
+    dest:   dist/css
+
+formats:
+          - json
+          - scss

@@ -1,0 +1,12 @@
+/*
+  Max-Width mixin
+
+  constrained($max-width)
+*/
+
+@mixin constrained($max-width: $content-max-width) {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $max-width;
+  width: 100%;
+}

@@ -1,0 +1,21 @@
+/*
+  Grid Builder mixin
+
+  build-grid()
+*/
+
+@mixin build-grid() {
+  @each $breakpoint-name, $breakpoint-width in $breakpoints {
+    .grid {
+      @include breakpoint(#{$breakpoint-name}) {
+        grid-template-columns: repeat($grid-columns, 1fr);
+
+        @for $i from 1 through $grid-columns {
+          .g-#{$breakpoint-name}-#{$i} {
+            grid-area: span 1 / span $i;
+          }
+        }
+      }
+    }
+  }
+}

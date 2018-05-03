@@ -1,0 +1,42 @@
+/*
+  Breakpoints mixin
+
+  @include breakpoint($point)
+
+  The breakpoint() function takes a single required parameter. You must pass in the breakpoint
+  name or a number ($point). If a breakpoint name is passed, the $breakpoints list as
+  defined in _settings.scss (@section 3) is used for a mininum-width. If a number is passed,
+  that number of pixels is used as a minimum-width.
+
+  Ithis will cause any styles between the {} brackets to be applied only to
+  screen sizes wider than the breakpoint passed:
+
+  @include breakpoint(m) {
+    font-size: 18px;
+  }
+
+  ...will set the font-size to '18px' on any screen larger than the medium breakpoint size.
+
+  @include breakpoint(1024) {
+    font-weight: bold;
+  }
+
+  ...will set the font-weight to 'bold' on any screen larger than 1024 pixels wide.
+*/
+
+@mixin breakpoint($point) {
+  @if type-of($point) == number {
+    @media (min-width: inspect($point) + 'px') {
+      @content;
+    }
+  }
+  @if type-of($point) != number {
+    @each $name, $width in $breakpoints {
+      @if $name == $point {
+        @media (min-width: $width) {
+          @content;
+        }
+      }
+    }
+  }
+}

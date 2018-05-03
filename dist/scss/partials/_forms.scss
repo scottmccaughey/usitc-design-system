@@ -1,0 +1,21 @@
+input,
+select {
+  border: $border-base;
+  height: $line-height-form;
+  padding: $space-s;
+}
+
+label {
+  cursor: pointer;
+}
+
+.asterisk {
+  text-align: center;
+
+  span {
+    position: relative;
+    top: -0.125em;
+    font-size: $font-size-s;
+    font-style: italic;
+  }
+}

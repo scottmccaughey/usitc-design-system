@@ -1,0 +1,5 @@
+border:
+  base:             1px solid $color-gray-light
+  radius:
+    base:           0
+    circle:         100%

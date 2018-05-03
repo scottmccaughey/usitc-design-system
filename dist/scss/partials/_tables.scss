@@ -1,0 +1,80 @@
+.table {
+  width: 100%;
+
+  tbody th {
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+
+  thead {
+    vertical-align: bottom;
+  }
+
+  th,
+  td {
+    padding: $space-xs;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    &.text-center,
+    &.text-left,
+    &.text-right {
+      display: table-cell;
+    }
+  }
+}
+
+.table-bordered {
+  th,
+  td {
+    border: $border-base;
+  }
+}
+
+.table-striped {
+  tbody tr:nth-child(odd) {
+    th,
+    td {
+      background-color: $color-gray-light;
+    }
+  }
+}
+
+.table-responsive {
+  th,
+  td {
+    display: block;
+    padding: $space-xs $space-s !important;
+    word-break: break-word;
+  }
+
+  th {
+    border-bottom-width: 0;
+    margin-top: $space-s;
+  }
+
+  @include breakpoint(s) {
+    th,
+    td {
+      display: table-cell;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+    th {
+      border-bottom-width: 1px;
+    }
+  }
+}

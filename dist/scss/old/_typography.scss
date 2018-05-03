@@ -1,0 +1,66 @@
+// Font Variables
+$montserrat-san-serif: 'Montserrat', san-serif;
+$merriweather-serif: 'Merriweather', serif;
+
+$headings-font-family : $merriweather-serif;
+
+p {
+  font-family: $merriweather-serif;
+  font-weight: 100;
+}
+
+$font-size-bigboy : 77px;
+
+.home-h1 {
+  font-size: $font-size-bigboy;
+  line-height: $font-size-bigboy *1.5;
+  font-weight: 300;
+}
+
+
+h1,h2,h3,h4,h5 {
+  font-family: $montserrat-san-serif;
+  font-weight: 300;
+}
+
+.form-group > label {
+  font-family: $montserrat-san-serif;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-size: 1.25em;
+  font-weight: 500;
+}
+
+.step {
+  font-family: $montserrat-san-serif;
+  font-weight: 200;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  display: inline-block;
+  background-color: #999999;
+  padding: .25em;
+  margin-right: .5em;
+  color: #f0f0f0;
+}
+
+
+
+
+
+
+.h1-lg-serif {
+  font-family: $montserrat-san-serif;
+  font-size: 5.875em;
+  letter-spacing: .05em;
+  font-weight: 200;
+  color:#7c7d7f;
+}
+
+.p-tagline {
+  margin: 0;
+  font-family: $montserrat-san-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: .5em;
+  color:#7c7d7f;
+}

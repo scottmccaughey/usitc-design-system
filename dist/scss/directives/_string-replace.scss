@@ -1,0 +1,33 @@
+/*
+  String Replacement function
+
+  str-replace($string, $search, $replace)
+
+  The str-replace() function takes three parameters, the first two of which are required. You
+  must pass the text to be modified ($string) and the text you want to replace ($search). The
+  third (optional) parameter is the text you want to insert in place of the $search text
+  ($replace). If the $replace parameter is not passed, the $search text will simply be
+  removed. For example:
+
+  .selector {
+    $string: 'The answer to life, the universe and everything is blah.';
+    content: str-replace($string, 'blah', '42');
+  }
+
+  ...will compile to the following CSS...
+
+  .selector {
+    content: 'The answer to life, the universe and everything is 42.';
+  }
+
+  This function is used in the Font Face Declaration mixin defined and documented in
+  _directives.scss (@section 6).
+*/
+
+@function str-replace($string, $search, $replace: '') {
+  $index: str-index($string, $search);
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+  @return $string;
+}

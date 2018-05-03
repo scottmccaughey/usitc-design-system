@@ -1,0 +1,263 @@
+// VARIABLES
+
+// COLORS
+$core-blue : #47484d;
+$boundaries-colors: #f8f8f7;
+
+
+// FONTS
+$font-family-sans-serif: "Montserrat", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1399px
+) !default;
+// @include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+// @include _assert-starts-at-zero($grid-breakpoints);
+
+
+// GRID
+$root-size: 20px;
+$base-size: 1rem;
+
+$space-xxs: $base-size / 8;
+$space-xs: $base-size / 4;
+$space-s: $base-size / 2;
+$space-m: $base-size;
+$space-l: $base-size * 2;
+$space-xl: $base-size * 4;
+$space-xxl: $base-size * 8;
+
+
+$breakpoints: (
+  xs: 400px,
+  s: 600px,
+  m: 800px,
+  l: 1200px,
+  xl: 1600px
+);
+
+$content-max-width: 100%;
+
+$grid-columns: 12;
+$grid-gap-col: $space-m;
+$grid-gap-row: $space-m;
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1440px
+) !default;
+// @include _assert-ascending($container-max-widths, "$container-max-widths");
+
+$reduction:1;
+
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 1.875),
+  6: ($spacer * 2),
+  7: ($spacer * 3),
+  10: 1px
+) !default;
+
+//
+// Color system
+//
+
+$white:  #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:  #000 !default;
+
+$grays: (
+  100: $gray-100,
+  200: $gray-200,
+  300: $gray-300,
+  400: $gray-400,
+  500: $gray-500,
+  600: $gray-600,
+  700: $gray-700,
+  800: $gray-800,
+  900: $gray-900
+) !default;
+
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+$colors: (
+  blue: $blue,
+  indigo: $indigo,
+  purple: $purple,
+  pink: $pink,
+  red: $red,
+  orange: $orange,
+  yellow: $yellow,
+  green: $green,
+  teal: $teal,
+  cyan: $cyan,
+  white: $white,
+  gray: $gray-600,
+  gray-dark: $gray-800
+) !default;
+
+$color-dark: #003e4d;
+$color-mid: #999999;
+$color-modo:#d0d0d0;
+$color-light: #f3f3f4;
+$color-cta-primary: #710f14;
+$color-cta-secondary: #cb8f2b;
+
+$theme-colors: (
+  primary: $blue,
+  secondary: $gray-600,
+  success: $green,
+  info: $cyan,
+  warning: $yellow,
+  danger: $red,
+  light: $gray-100,
+  dark: $gray-800,
+  noir:$color-dark,
+  midi:$color-mid,
+  blanc:darken($color-light,2),
+  prim:$color-cta-primary,
+  seco:$color-cta-secondary,
+  modo:$color-modo,
+  g1:$gray-100,
+  g2:$gray-200
+
+) !default;
+
+
+//fonts
+
+
+.section-hero {
+  font-size: 5.875em;
+  font-weight: 100;
+}
+.section-head {
+  font-size: 1.875em;
+  font-weight: 100;
+}
+
+.section-subhead {
+  font-size: .75em;
+  font-weight: 100;
+}
+
+.logo_container { height: 100px;}
+
+.linklist{
+  list-style-position: outside;
+  list-style:none;
+  padding-left:0;
+  text-transform: uppercase;
+
+  li {
+    padding: 5px 0px 5px 10px;
+    margin: 0px;
+    border-bottom: 1px solid #d0d0d0;
+    font-size: 1.125em;
+  }
+
+  li:last-child {
+    border-bottom: none;
+  }
+
+}
+
+.sqrbtn-box {
+  margin: 2.0625em 0 1.0625em 0;
+}
+
+.sqrbtn {
+  font-weight: 100;
+  display: inline-block;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: "proxima-nova";
+  color: $color-light;
+  font-size: .93em;
+  letter-spacing:.22em;
+  padding: 22px 25px 22px 25px;
+  border: solid $color-light 2px;
+  text-decoration: none;
+
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &.prim {
+    &:hover {
+      background: $color-cta-primary;
+      color: $color-light;
+    }
+  }
+
+  &.seco {
+    &:hover {
+      background: $color-cta-secondary;
+      color: $color-light;
+    }
+  }
+
+}
+
+.search-wrapper{
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.header {
+    grid-column: 1 / -1;
+}
+
+.hero {
+    grid-column: 1 / -1;
+}
+
+.duo { grid-column:  span 3 }
+
+.trio { grid-column: span 2}
+
+.footer {
+    grid-column: 1 / -1;
+}

@@ -1,0 +1,97 @@
+
+$color-primary: #31CC89;
+$color-dark: #141D49;
+$color-grey: #CCCCCC;
+$component-font-size: 40px; // changing this will scale everything in the form up/down
+
+.c-form {
+  color: $color-dark;
+  font-family: 'Roboto', arial;
+  font-size: $component-font-size;
+  margin: 2.5em auto;
+}
+
+.c-form__fieldset {
+  border: none;
+  padding: 0;
+
+  & + & {
+    margin-top: 2.5em;
+  }
+}
+
+.c-form__legend {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.c-form__group {
+  margin-top: 0.5em;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+// visually hide the native checkbox and radio input
+.c-form__checkbox,
+.c-form__radio {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+// find the label that follows the checked checkbox / radio button in the DOM and show the tick icon
+.c-form__checkbox:checked + .c-form__label .c-form__checkbox-tick,
+.c-form__radio:checked + .c-form__label .c-form__radio-tick {
+  stroke-dashoffset: 0;
+}
+
+// find the label thats follows the focused checkbox / radio button in the DOM and change the circle border color
+.c-form__checkbox:focus + .c-form__label .c-form__checkbox-square,
+.c-form__radio:focus + .c-form__label .c-form__radio-circle {
+  stroke: $color-primary;
+}
+
+.c-form__label {
+  cursor: pointer;
+  display: block;
+  font-size: 1em;
+}
+
+.c-form__label-text {
+  margin-left: 0.25em;
+  opacity: 0.75;
+  vertical-align: middle;
+}
+
+.c-form__checkbox-icon,
+.c-form__radio-icon {
+  height: 2em;
+  width: 2em;
+  vertical-align: middle;
+}
+
+.c-form__checkbox-square,
+.c-form__radio-circle {
+  fill: none;
+  stroke: $color-grey;
+  stroke-width: 1.5;
+  transition: stroke 0.3s ease-in;
+}
+
+.c-form__checkbox-tick,
+.c-form__radio-tick {
+  fill: none;
+  stroke: $color-dark;
+  stroke-dasharray: 11; /* this is the length of the line */
+	stroke-dashoffset: 11; /* this is the length of the line */
+  stroke-width: 1.5;
+  transition: stroke-dashoffset 0.3s ease-in;
+}
