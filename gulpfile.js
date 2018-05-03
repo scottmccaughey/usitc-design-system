@@ -32,7 +32,9 @@ gulp.task(
     return gulp
       .src(config.path.scss.src)
       .pipe(plumber())
-      .pipe(sassToCss())
+      .pipe(sassToCss({
+        includePaths: ['node_modules']
+      }))
       .pipe(gulp.dest(config.path.scss.dest))
       .pipe(browserSync.stream());
   }
