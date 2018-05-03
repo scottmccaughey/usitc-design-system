@@ -1,0 +1,129 @@
+/*
+  Breakpoints mixin
+
+  @include breakpoint($point)
+
+  The breakpoint() function takes a single required parameter. You must pass in the breakpoint
+  name or a number ($point). If a breakpoint name is passed, the $breakpoints list as
+  defined in _settings.scss (@section 3) is used for a mininum-width. If a number is passed,
+  that number of pixels is used as a minimum-width.
+
+  Ithis will cause any styles between the {} brackets to be applied only to
+  screen sizes wider than the breakpoint passed:
+
+  @include breakpoint(m) {
+    font-size: 18px;
+  }
+
+  ...will set the font-size to '18px' on any screen larger than the medium breakpoint size.
+
+  @include breakpoint(1024) {
+    font-weight: bold;
+  }
+
+  ...will set the font-weight to 'bold' on any screen larger than 1024 pixels wide.
+*/
+/*
+  String Replacement function
+
+  str-replace($string, $search, $replace)
+
+  The str-replace() function takes three parameters, the first two of which are required. You
+  must pass the text to be modified ($string) and the text you want to replace ($search). The
+  third (optional) parameter is the text you want to insert in place of the $search text
+  ($replace). If the $replace parameter is not passed, the $search text will simply be
+  removed. For example:
+
+  .selector {
+    $string: 'The answer to life, the universe and everything is blah.';
+    content: str-replace($string, 'blah', '42');
+  }
+
+  ...will compile to the following CSS...
+
+  .selector {
+    content: 'The answer to life, the universe and everything is 42.';
+  }
+
+  This function is used in the Font Face Declaration mixin defined and documented in
+  _directives.scss (@section 6).
+*/
+/*
+  Font Face Declaration mixin
+
+  fontdef($family, $type, $weight, $style, $stretch)
+
+  Uses the $font-families list as defined in _settings.scss (@section 5a).
+
+  The fontdef() mixin takes five parameters, the first two of which are required. You must pass
+  the font family name ($family) and font variant name ($variant) to generate a @font-face
+  definition.
+
+  You can also pass an optional $weight [normal | 100 | 200 | ... | 800 | 900], $style
+  [normal | italic], and $stretch [normal | ultra-condensed | extra-condensed | condensed |
+  semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded]. The optional
+  variables will all default to 'normal' if they are not passed. The $stretch variable is
+  currently not used in our design system, but is available for potential future use.
+
+  For example:
+
+  @include font-def(Fira Sans Condensed, semibolditalic, 600, italic, normal);
+
+  ...will compile to the following CSS...
+
+  @font-face {
+    font-family: 'Fira Sans Condensed';
+    src: url('../fonts/firasanscondensed-semibolditalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-stretch: normal;
+  }
+
+  This function is used to generate @font-face declarations in _fonts.scss.
+*/
+/*
+  State Colors mixins
+
+  state-error()
+  state-info()
+  state-neutral()
+  state-success()
+  state-warning()
+
+  Include these to use standard state colors (border-color, background-color, color) on an element.
+*/
+/*
+  Power function
+
+  pow($number, $exponent)
+*/
+/*
+  Modular Scale Typography function
+
+  ms($factor)
+*/
+/*
+  Max-Width mixin
+
+  constrained($max-width)
+*/
+/*
+  Grid Builder mixin
+
+  build-grid()
+*/
+/*
+  Link Underline mixin
+
+  link-underline($color)
+*/
+/*
+  Make Layout Boundaries mixin
+
+  make-layout-boundaries($color, $background)
+*/
+/*
+  Make Spinners mixin
+
+  make-spinners($colors)
+*/
