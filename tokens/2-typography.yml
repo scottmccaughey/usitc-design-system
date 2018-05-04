@@ -1,5 +1,5 @@
 font:
-  path:             "''"
+  path:             "'~usitc-design-system/dist/fonts'"
 
   family:
     files--map:

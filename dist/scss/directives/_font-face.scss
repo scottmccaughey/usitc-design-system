@@ -35,8 +35,8 @@
 @mixin font-def($family, $variant, $weight: normal, $style: normal, $stretch: normal) {
   @font-face {
     font-family: '#{$family}';
-    src: url('#{str-replace(to-lower-case(inspect($family)), " ")}-#{$variant}.woff2') format('woff2'),
-         url('#{str-replace(to-lower-case(inspect($family)), " ")}-#{$variant}.woff') format('woff');
+    src: url('#{$font-path}/#{str-replace(to-lower-case(inspect($family)), " ")}-#{$variant}.woff2') format('woff2'),
+         url('#{$font-path}/#{str-replace(to-lower-case(inspect($family)), " ")}-#{$variant}.woff') format('woff');
     font-weight: #{$weight};
     font-style: #{$style};
     font-stretch: #{$stretch};
