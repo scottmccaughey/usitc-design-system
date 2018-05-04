@@ -520,56 +520,56 @@ textarea {
 */
 @font-face {
   font-family: "Merriweather";
-  src: url("../fonts/merriweather-light.woff2") format("woff2"), url("../fonts/merriweather-light.woff") format("woff");
+  src: url("merriweather-light.woff2") format("woff2"), url("merriweather-light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-stretch: normal; }
 
 @font-face {
   font-family: "Merriweather";
-  src: url("../fonts/merriweather-lightitalic.woff2") format("woff2"), url("../fonts/merriweather-lightitalic.woff") format("woff");
+  src: url("merriweather-lightitalic.woff2") format("woff2"), url("merriweather-lightitalic.woff") format("woff");
   font-weight: 300;
   font-style: italic;
   font-stretch: normal; }
 
 @font-face {
   font-family: "Merriweather";
-  src: url("../fonts/merriweather-bold.woff2") format("woff2"), url("../fonts/merriweather-bold.woff") format("woff");
+  src: url("merriweather-bold.woff2") format("woff2"), url("merriweather-bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-stretch: normal; }
 
 @font-face {
   font-family: "Merriweather";
-  src: url("../fonts/merriweather-bolditalic.woff2") format("woff2"), url("../fonts/merriweather-bolditalic.woff") format("woff");
+  src: url("merriweather-bolditalic.woff2") format("woff2"), url("merriweather-bolditalic.woff") format("woff");
   font-weight: 700;
   font-style: italic;
   font-stretch: normal; }
 
 @font-face {
   font-family: "Montserrat";
-  src: url("../fonts/montserrat-light.woff2") format("woff2"), url("../fonts/montserrat-light.woff") format("woff");
+  src: url("montserrat-light.woff2") format("woff2"), url("montserrat-light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-stretch: normal; }
 
 @font-face {
   font-family: "Montserrat";
-  src: url("../fonts/montserrat-lightitalic.woff2") format("woff2"), url("../fonts/montserrat-lightitalic.woff") format("woff");
+  src: url("montserrat-lightitalic.woff2") format("woff2"), url("montserrat-lightitalic.woff") format("woff");
   font-weight: 300;
   font-style: italic;
   font-stretch: normal; }
 
 @font-face {
   font-family: "Montserrat";
-  src: url("../fonts/montserrat-bold.woff2") format("woff2"), url("../fonts/montserrat-bold.woff") format("woff");
+  src: url("montserrat-bold.woff2") format("woff2"), url("montserrat-bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-stretch: normal; }
 
 @font-face {
   font-family: "Montserrat";
-  src: url("../fonts/montserrat-bolditalic.woff2") format("woff2"), url("../fonts/montserrat-bolditalic.woff") format("woff");
+  src: url("montserrat-bolditalic.woff2") format("woff2"), url("montserrat-bolditalic.woff") format("woff");
   font-weight: 700;
   font-style: italic;
   font-stretch: normal; }

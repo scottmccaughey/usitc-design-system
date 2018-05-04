@@ -33,7 +33,10 @@ gulp.task(
       .src(config.path.scss.src)
       .pipe(plumber())
       .pipe(sassToCss({
-        includePaths: ['node_modules']
+        includePaths: [
+          'node_modules',
+          'dist/fonts'
+        ]
       }))
       .pipe(gulp.dest(config.path.scss.dest))
       .pipe(browserSync.stream());
