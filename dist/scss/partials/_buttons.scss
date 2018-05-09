@@ -32,6 +32,10 @@ button,
     color: $color-theme-dark-text;
   }
 
+  &.button-borderless {
+    border-color: transparent;
+  }
+
   &.button-ghost {
     background-color: transparent;
     color: inherit;
