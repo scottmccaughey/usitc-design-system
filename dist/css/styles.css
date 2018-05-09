@@ -742,17 +742,14 @@ ul {
       list-style: none;
       margin: 0; }
 
-.constrained {
-  border-left: 1px solid #e6e7e8;
-  border-right: 1px solid #e6e7e8;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1600px;
-  width: 100%; }
-  @media (min-width: 1600px) {
-    .constrained {
-      border-left-width: 0;
-      border-right-width: 0; } }
+@media (min-width: 1600px) {
+  .constrained {
+    border-left: 1px solid #e6e7e8;
+    border-right: 1px solid #e6e7e8;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
+    width: 100%; } }
 
 .disclaimer p {
   color: #818386;
