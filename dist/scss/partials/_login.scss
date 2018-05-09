@@ -26,11 +26,68 @@
 }
 
 .login-form {
+  background-color: $color-gray-light;
+  display: grid;
+  grid-column-gap: $space-m;
+  grid-row-gap: $space-m;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
   margin-bottom: $space-l;
   margin-left: auto;
   margin-right: auto;
   max-width: 400px;
   width: 100%;
+
+  @include breakpoint(m) {
+    grid-template-columns: 5rem repeat(3, 1fr);
+    max-width: 100%;
+  }
+
+  @include breakpoint(l) {
+    max-width: 1200px;
+  }
+
+  &.login-error {
+    > div {
+      @include breakpoint(m) {
+        padding: 0 0 $space-m;
+      }
+
+      &:last-child {
+        @include breakpoint(m) {
+          padding: 0 $space-m $space-m 0;
+        }
+      }
+    }
+
+    .login-icon-wrapper {
+      @include breakpoint(m) {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        justify-self: stretch;
+      }
+    }
+  }
+
+  > div {
+    padding: 0 $space-m;
+
+    @include breakpoint(m) {
+      padding: $space-m 0;
+    }
+
+    &:last-child {
+      @include breakpoint(m) {
+        padding: $space-m $space-m $space-m 0;
+      }
+    }
+
+    &.panel {
+      @include breakpoint(m) {
+        padding: $space-m;
+      }
+    }
+  }
 
   button,
   input {
@@ -41,9 +98,44 @@
   button {
     font-size: $font-size-m;
     height: $line-height-form;
+    margin-bottom: $space-m;
+    text-transform: uppercase;
+
+    @include breakpoint(m) {
+      margin: 0;
+    }
   }
 
   input {
     margin-bottom: $space-m;
+  }
+
+  .login-icon {
+    display: block;
+
+    @include breakpoint(m) {
+      height: 3rem;
+      width: 3rem;
+    }
+  }
+
+  .login-icon-wrapper {
+    align-items: center;
+    background-color: $color-gray;
+    color: $color-white;
+    display: grid;
+    justify-items: center;
+    padding: $space-m;
+  }
+
+  .panel {
+    margin: 0 $space-m;
+    padding: $space-m;
+
+    @include breakpoint(m) {
+      grid-column-start: 2;
+      grid-column-end: 5;
+      margin: $space-m $space-m 0 0;
+    }
   }
 }
