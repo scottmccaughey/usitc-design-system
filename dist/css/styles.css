@@ -642,32 +642,6 @@ textarea {
 
   make-layout-boundaries($color, $background)
 */
-/*
-                         888
-                         888
-                         888
-  88888b.d88b.   8888b.  888  888  .d88b.
-  888 "888 "88b     "88b 888 .88P d8P  Y8b
-  888  888  888 .d888888 888888K  88888888 888888
-  888  888  888 888  888 888 "88b Y8b.
-  888  888  888 "Y888888 888  888  "Y8888
-
-                    d8b
-                    Y8P
-
-  .d8888b  88888b.  888 88888b.  88888b.   .d88b.  888d888 .d8888b
-  88K      888 "88b 888 888 "88b 888 "88b d8P  Y8b 888P"   88K
-  "Y8888b. 888  888 888 888  888 888  888 88888888 888     "Y8888b.
-       X88 888 d88P 888 888  888 888  888 Y8b.     888          X88
-   88888P' 88888P"  888 888  888 888  888  "Y8888  888      88888P'
-           888
-           888
-           888
-
-  Make Spinners mixin
-
-  make-spinners($colors)
-*/
 @font-face {
   font-family: "Merriweather";
   src: url("~usitc-design-system/dist/fonts/merriweather-light.woff2") format("woff2"), url("~usitc-design-system/dist/fonts/merriweather-light.woff") format("woff");
@@ -1355,12 +1329,32 @@ h6,
   to {
     transform: rotate(359deg); } }
 
-.sp-circle {
+.spinner {
+  height: 4rem;
+  margin: 1rem auto;
+  width: 4rem; }
+
+.spinner-circle {
+  animation: spCircRot .6s infinite linear;
   border: 4px rgba(13, 126, 151, 0.25) solid;
-  border-top: 4px rgba(13, 126, 151, 0.7) solid;
-  border-radius: 50%;
-  -webkit-animation: spCircRot .6s infinite linear;
-  animation: spCircRot .6s infinite linear; }
+  border-top-color: rgba(13, 126, 151, 0.75);
+  border-radius: 100%; }
+  .on-dark .spinner-circle {
+    border-color: rgba(255, 255, 255, 0.25);
+    border-top-color: rgba(255, 255, 255, 0.75); }
+
+.spinner-s {
+  height: 2rem;
+  width: 2rem; }
+
+.spinner-wrapper {
+  color: #0d7e97;
+  font-size: 0.69444rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center; }
+  .on-dark .spinner-wrapper {
+    color: #ffffff; }
 
 .table {
   width: 100%; }
