@@ -778,7 +778,7 @@ ul {
 .site-content {
   display: flex;
   flex-direction: column; }
-  .site-content > *:last-child() {
+  .site-content > *:nth-child(2) {
     flex: 1; }
 
 .site-layout {
