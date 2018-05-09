@@ -712,9 +712,6 @@ app-root {
 article section + section {
   margin-top: 2rem; }
 
-main {
-  min-height: 100vh; }
-
 p {
   margin-bottom: 1rem; }
   p:last-child {
