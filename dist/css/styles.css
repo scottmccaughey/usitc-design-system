@@ -701,7 +701,7 @@ textarea {
 button,
 .button {
   background-color: #ffffff;
-  border: 1px solid #414042;
+  border: 1px solid #818386;
   border-radius: 0;
   color: #3a3a3b;
   display: inline-block;
@@ -896,6 +896,13 @@ ul {
   .on-dark.on-dark-alt {
     background-color: #0d7e97; }
 
+.panel {
+  background-color: #e6e7e8;
+  border: 1px solid #e6e7e8;
+  border-color: #818386;
+  margin-bottom: 1rem;
+  padding: 1rem; }
+
 .read-more {
   max-height: 99rem;
   overflow: hidden;
@@ -917,6 +924,12 @@ ul {
   display: grid;
   grid-template-rows: min-content auto min-content;
   min-height: 100vh; }
+
+.state-error {
+  background-color: rgba(190, 42, 38, 0.1);
+  border-color: #be2a26;
+  color: #981d20;
+  font-weight: 700; }
 
 .svg-wrapper {
   position: relative; }
@@ -1240,6 +1253,32 @@ h6,
     .header-tagline {
       font-size: 0.69444rem;
       letter-spacing: .4rem; } }
+
+.site-login {
+  display: flex;
+  flex-direction: column; }
+  .site-login > main {
+    flex: 1;
+    padding: 1rem; }
+  .site-login h2 {
+    color: #0d7e97;
+    font-weight: 700; }
+
+.login-form {
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+  width: 100%; }
+  .login-form button,
+  .login-form input {
+    display: block;
+    width: 100%; }
+  .login-form button {
+    font-size: 1rem;
+    height: 3rem; }
+  .login-form input {
+    margin-bottom: 1rem; }
 
 .site-footer {
   background-color: #004353;

@@ -1,0 +1,49 @@
+// 888                   d8b
+// 888                   Y8P
+// 888
+// 888  .d88b.   .d88b.  888 88888b.
+// 888 d88""88b d88P"88b 888 888 "88b
+// 888 888  888 888  888 888 888  888
+// 888 Y88..88P Y88b 888 888 888  888
+// 888  "Y88P"   "Y88888 888 888  888
+//                   888
+//              Y8b d88P
+//               "Y88P"
+
+.site-login {
+  display: flex;
+  flex-direction: column;
+
+  > main {
+    flex: 1;
+    padding: $space-m;
+  }
+
+  h2 {
+    color: $color-blue;
+    font-weight: $font-weight-bold;
+  }
+}
+
+.login-form {
+  margin-bottom: $space-l;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+  width: 100%;
+
+  button,
+  input {
+    display: block;
+    width: 100%;
+  }
+
+  button {
+    font-size: $font-size-m;
+    height: $line-height-form;
+  }
+
+  input {
+    margin-bottom: $space-m;
+  }
+}

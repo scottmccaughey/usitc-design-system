@@ -171,6 +171,14 @@ ul {
   }
 }
 
+.panel {
+  background-color: $color-theme-base-background-alt;
+  border: $border-base;
+  border-color: $color-gray;
+  margin-bottom: $space-m;
+  padding: $space-m;
+}
+
 .read-more {
   max-height: $transition-max;
   overflow: hidden;
@@ -200,6 +208,13 @@ ul {
   display: grid;
   grid-template-rows: min-content auto min-content;
   min-height: 100vh;
+}
+
+.state-error {
+  background-color: rgba($color-red, 0.1);
+  border-color: $color-red;
+  color: $color-red-dark;
+  font-weight: $font-weight-bold;
 }
 
 .svg-wrapper {
