@@ -619,13 +619,13 @@ button,
   button.button-primary,
   .button.button-primary {
     border-color: transparent;
-    background-color: #004353;
+    background-color: #0d7e97;
     color: #ffffff; }
     button.button-primary:active, button.button-primary:focus, button.button-primary:hover,
     .button.button-primary:active,
     .button.button-primary:focus,
     .button.button-primary:hover {
-      background-color: #0d7e97;
+      background-color: #004353;
       color: #ffffff; }
   button.button-transparent,
   .button.button-transparent {
