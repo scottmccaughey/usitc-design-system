@@ -11,4 +11,9 @@
   margin-right: auto;
   max-width: $max-width;
   width: 100%;
+
+  @include breakpoint(xl) {
+    border-left-width: 0;
+    border-right-width: 0;
+  }
 }
