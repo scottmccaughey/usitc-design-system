@@ -1,0 +1,9 @@
+#site-footer {
+  background-color: $color-theme-dark-background;
+  color: $color-theme-dark-text;
+
+  > section {
+    padding: $space-l;
+    text-align: center;
+  }
+}
