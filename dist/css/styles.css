@@ -1317,8 +1317,6 @@ h6,
     @media (min-width: 800px) {
       .login-form button {
         margin: 0; } }
-  .login-form input {
-    margin-bottom: 1rem; }
   .login-form .login-icon {
     display: block; }
     @media (min-width: 800px) {
