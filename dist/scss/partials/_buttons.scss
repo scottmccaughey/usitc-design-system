@@ -1,12 +1,13 @@
 button,
 .button {
-  display: inline-block;
-  padding: 0.5em;
+  background-color: $color-theme-base-background;
   border: 1px solid $color-theme-base-border;
   border-radius: $border-radius-base;
-  background-color: $color-theme-base-background;
   color: $color-theme-base-text;
+  display: inline-block;
+  font-family: $font-family-sans;
   line-height: $line-height-button;
+  padding: 0.5em;
   text-decoration: none;
   transition: $transition-base;
 
@@ -52,6 +53,7 @@ button,
     border-color: transparent;
     background-color: $color-theme-dark-hover-background;
     color: $color-theme-dark-text;
+    font-weight: $font-weight-bold;
 
     &:active,
     &:focus,
