@@ -62,7 +62,7 @@ font:
     xxl:            'ms(3)'
     xxxl:           'ms(4)'
     xxxxl:          'ms(5)'
-    xxxxxl:         'ms(9)'
+    xxxxxl:         'ms(8)'
     h1:             $font-size-xxl
     h2:             $font-size-xl
     h3:             $font-size-l

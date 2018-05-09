@@ -62,16 +62,25 @@ h6,
 .header-overall {
   color: $color-gray-dark;
   font-family: $font-family-sans;
-  font-size: $font-size-xxxxxl;
+  font-size: 10vw;
   text-align: center;
+
+  @include breakpoint(m) {
+    font-size: $font-size-xxxxxl;
+  }
 }
 
 .header-tagline {
   color: $color-gray-dark;
   font-family: $font-family-sans;
-  font-size: $font-size-xs;
+  font-size: $font-size-xxs;
   font-weight: 300;
-  letter-spacing: .5rem;
+  letter-spacing: .25rem;
   text-align: center;
   text-transform: uppercase;
+
+  @include breakpoint(m) {
+    font-size: $font-size-xs;
+    letter-spacing: .4rem;
+  }
 }

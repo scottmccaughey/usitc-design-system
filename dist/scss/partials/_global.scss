@@ -73,14 +73,17 @@ main {
   min-height: 100vh;
 }
 
-p,
-li {
-  max-width: 40em;
-
-  &.full-width {
-    max-width: 100%;
-  }
-}
+// TODO: Do we need a maximum line-length? Are there enough large blocks of text
+//       to make this worth having?
+//
+// p,
+// li {
+//   max-width: 40em;
+//
+//   &.full-width {
+//     max-width: 100%;
+//   }
+// }
 
 p {
   margin-bottom: $space-m;
@@ -133,6 +136,13 @@ ul {
 
 .constrained {
   @include constrained;
+}
+
+.disclaimer {
+  p {
+    color: $color-gray;
+    font-size: $font-size-xxs;
+  }
 }
 
 .loading {
