@@ -173,7 +173,7 @@ ul {
   display: flex;
   flex-direction: column;
 
-  > * {
+  > *:last-child() {
     flex: 1;
   }
 }
