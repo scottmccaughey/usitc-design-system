@@ -603,6 +603,9 @@ button,
     padding: 0.25rem;
     border: 0;
     color: #ffffff; }
+  button.button-borderless,
+  .button.button-borderless {
+    border-color: transparent; }
   button.button-ghost,
   .button.button-ghost {
     background-color: transparent;
@@ -702,18 +705,15 @@ a {
     .on-light a:active, .on-light a:focus, .on-light a:hover {
       color: #004353; }
 
+app-layout,
+app-root {
+  min-height: 100vh; }
+
 article section + section {
   margin-top: 2rem; }
 
 main {
   min-height: 100vh; }
-
-p,
-li {
-  max-width: 40em; }
-  p.full-width,
-  li.full-width {
-    max-width: 100%; }
 
 p {
   margin-bottom: 1rem; }
@@ -746,10 +746,16 @@ ul {
       margin: 0; }
 
 .constrained {
+  border-left: 1px solid #e6e7e8;
+  border-right: 1px solid #e6e7e8;
   margin-left: auto;
   margin-right: auto;
   max-width: 1600px;
   width: 100%; }
+
+.disclaimer p {
+  color: #818386;
+  font-size: 0.5787rem; }
 
 .loading {
   background-image: url("/assets/images/svg/loader.svg");
@@ -771,6 +777,11 @@ ul {
   transition: max-height 0.3s ease-in-out; }
   .read-more.read-more-hidden {
     max-height: 0; }
+
+.site-layout {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  min-height: 100vh; }
 
 .svg-wrapper {
   position: relative; }
@@ -1076,17 +1087,83 @@ h6,
 .header-overall {
   color: #414042;
   font-family: Montserrat, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 5.15978rem;
+  font-size: 10vw;
   text-align: center; }
+  @media (min-width: 800px) {
+    .header-overall {
+      font-size: 4.29982rem; } }
 
 .header-tagline {
   color: #414042;
   font-family: Montserrat, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 0.69444rem;
+  font-size: 0.5787rem;
   font-weight: 300;
-  letter-spacing: .5rem;
+  letter-spacing: .25rem;
   text-align: center;
   text-transform: uppercase; }
+  @media (min-width: 800px) {
+    .header-tagline {
+      font-size: 0.69444rem;
+      letter-spacing: .4rem; } }
+
+.site-footer {
+  background-color: #004353;
+  color: #ffffff; }
+  .site-footer > section {
+    padding: 2rem;
+    text-align: center; }
+
+.site-header {
+  color: #818386; }
+  .site-header > nav > ul {
+    display: grid;
+    grid-template-columns: min-content 1fr min-content min-content;
+    grid-template-rows: min-content;
+    padding: 0; }
+    .site-header > nav > ul li {
+      border-right: 1px solid #e6e7e8;
+      display: block;
+      height: 68px;
+      list-style: none;
+      margin: 0;
+      max-width: 100%; }
+      .site-header > nav > ul li:last-child {
+        border-right-width: 0; }
+      .site-header > nav > ul li.site-name {
+        border-right-width: 0;
+        line-height: 68px;
+        width: auto; }
+        .site-header > nav > ul li.site-name a {
+          background-image: none;
+          color: #818386;
+          display: inline-block;
+          font-family: Montserrat, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+          font-size: 0.69444rem;
+          font-weight: 700;
+          height: 68px;
+          letter-spacing: 0.125rem;
+          line-height: 48px;
+          padding: 10px; }
+          .site-header > nav > ul li.site-name a:active, .site-header > nav > ul li.site-name a:focus, .site-header > nav > ul li.site-name a:hover {
+            background-color: #0d7e97;
+            color: #ffffff; }
+  .site-header button,
+  .site-header .button {
+    border-width: 0;
+    height: 68px;
+    padding: 10px;
+    width: 68px; }
+    .site-header button:active svg, .site-header button:focus svg, .site-header button:hover svg,
+    .site-header .button:active svg,
+    .site-header .button:focus svg,
+    .site-header .button:hover svg {
+      stroke: #ffffff; }
+  .site-header svg,
+  .site-header .header-icon {
+    height: 48px;
+    width: 48px; }
+  .site-header svg {
+    stroke: #818386; }
 
 .padded {
   padding: 1rem; }
