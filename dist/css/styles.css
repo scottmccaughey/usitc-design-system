@@ -749,6 +749,10 @@ ul {
   margin-right: auto;
   max-width: 1600px;
   width: 100%; }
+  @media (min-width: 1600px) {
+    .constrained {
+      border-left-width: 0;
+      border-right-width: 0; } }
 
 .disclaimer p {
   color: #818386;
