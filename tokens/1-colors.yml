@@ -33,6 +33,7 @@ color:
       link:                   '$color-blue'
       hover-background:       '$color-white'
       hover-text:             '$color-blue-dark'
+      spinner:                '$color-blue'
     dark:
       background:             '$color-blue-dark'
       background-alt:         '$color-blue'
@@ -41,6 +42,7 @@ color:
       link:                   '$color-white'
       hover-background:       '$color-blue'
       hover-text:             '$color-white'
+      spinner:                '$color-white'
 
   state:
     error:

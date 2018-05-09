@@ -1,0 +1,16 @@
+@keyframes spCircRot {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.sp-circle {
+  border: 4px rgba($color-theme-base-spinner, 0.25) solid;
+  border-top: 4px rgba($color-theme-base-spinner, .70) solid;
+  border-radius: 50%;
+  -webkit-animation: spCircRot .6s infinite linear;
+  animation: spCircRot .6s infinite linear;
+}

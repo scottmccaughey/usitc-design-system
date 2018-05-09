@@ -1349,6 +1349,19 @@ h6,
 .padded-left {
   padding-left: 1rem; }
 
+@keyframes spCircRot {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+
+.sp-circle {
+  border: 4px rgba(13, 126, 151, 0.25) solid;
+  border-top: 4px rgba(13, 126, 151, 0.7) solid;
+  border-radius: 50%;
+  -webkit-animation: spCircRot .6s infinite linear;
+  animation: spCircRot .6s infinite linear; }
+
 .table {
   width: 100%; }
   .table tbody th {
