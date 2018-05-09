@@ -169,6 +169,15 @@ ul {
   }
 }
 
+.site-content {
+  display: flex;
+  flex-direction: column;
+
+  > * {
+    flex: 1;
+  }
+}
+
 .site-layout {
   display: grid;
   grid-template-rows: min-content auto min-content;

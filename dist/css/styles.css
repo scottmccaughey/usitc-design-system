@@ -775,6 +775,12 @@ ul {
   .read-more.read-more-hidden {
     max-height: 0; }
 
+.site-content {
+  display: flex;
+  flex-direction: column; }
+  .site-content > * {
+    flex: 1; }
+
 .site-layout {
   display: grid;
   grid-template-rows: min-content auto min-content;
