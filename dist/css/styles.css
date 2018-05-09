@@ -1293,7 +1293,8 @@ h6,
     .login-form.login-error .login-icon-wrapper {
       grid-row-start: 1;
       grid-row-end: 3;
-      justify-self: stretch; } }
+      justify-self: stretch;
+      padding: 0; } }
   .login-form > div {
     padding: 0 1rem; }
     @media (min-width: 800px) {
