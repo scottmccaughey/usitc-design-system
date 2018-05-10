@@ -31,4 +31,12 @@
   grid-row-gap: $grid-gap-row;
 }
 
+.grid-self-justify-end {
+  justify-self: end;
+}
+
+.grid-self-justify-start {
+  justify-self: start;
+}
+
 @include build-grid();

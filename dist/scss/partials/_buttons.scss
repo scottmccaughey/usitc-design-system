@@ -32,6 +32,10 @@ button,
     margin: 1rem auto;
   }
 
+  &.button-l {
+    font-size: $font-size-l;
+  }
+
   &.button-s {
     font-size: $font-size-s;
   }
