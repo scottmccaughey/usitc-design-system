@@ -75,6 +75,7 @@ h6,
   color: $color-gray-dark;
   font-family: $font-family-sans;
   font-size: 10vw;
+  margin-bottom: 0;
   text-align: center;
 
   @include breakpoint(m) {

@@ -1236,6 +1236,7 @@ h6,
   color: #414042;
   font-family: Montserrat, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 10vw;
+  margin-bottom: 0;
   text-align: center; }
   @media (min-width: 800px) {
     .header-overall {
@@ -1271,9 +1272,7 @@ h6,
   grid-row-gap: 1rem;
   grid-template-columns: 100%;
   grid-template-rows: auto;
-  margin-bottom: 2rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 2rem auto;
   max-width: 400px;
   width: 100%; }
   @media (min-width: 800px) {
