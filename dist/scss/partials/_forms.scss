@@ -311,8 +311,9 @@ label {
     }
 
     &.select-icon-left {
-      padding-left: $space-xl;
       background-color: transparent;
+      border: $border-base;
+      padding-left: $space-xl;
     }
   }
 
@@ -399,9 +400,5 @@ label {
         width: $space-l;
       }
     }
-  }
-
-  select {
-    border: $border-base;
   }
 }
