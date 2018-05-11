@@ -280,7 +280,7 @@ label {
 
   select {
     appearance: none;
-    background-color: transparent;
+    background-color: $color-white;
     border-radius: $border-radius-base;
     border: 1px solid $color-gray;
     color: $color-black;
@@ -399,5 +399,9 @@ label {
         width: $space-l;
       }
     }
+  }
+
+  select {
+    border: $border-base;
   }
 }

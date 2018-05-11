@@ -1128,7 +1128,7 @@ label {
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
-    background-color: transparent;
+    background-color: #ffffff;
     border-radius: 0;
     border: 1px solid #818386;
     color: #3a3a3b;
@@ -1217,6 +1217,8 @@ label {
         top: 0.375rem; }
         .select-read-more i svg {
           width: 2rem; } }
+  .select-read-more select {
+    border: 1px solid #e6e7e8; }
 
 html {
   font-size: 20px;
