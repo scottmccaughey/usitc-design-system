@@ -1,19 +1,20 @@
-var gulp        = require('gulp-help')(require('gulp'), { hideDepsMessage: true }),
-    plumber     = require('gulp-plumber'),
-    sequence    = require('gulp-sequence')
-    browserSync = require('browser-sync').create(),
-    add         = require('gulp-add'),
-    clone       = require('gulp-clone').sink(),
-    rename      = require('gulp-rename'),
-    copy        = require('gulp-copy'),
-    clean       = require('gulp-clean'),
-    yamlToJson  = require('gulp-yaml'),
-    jsonToSass  = require('./json-to-sass'),
-    sassToCss   = require('gulp-sass'),
-    yRequire    = require('require-yml'),
-    config      = yRequire('config.yml'),
-    mixer       = require('./mixer'),
-    convert     = [];
+var gulp          = require('gulp-help')(require('gulp'), { hideDepsMessage: true }),
+    plumber       = require('gulp-plumber'),
+    sequence      = require('gulp-sequence')
+    browserSync   = require('browser-sync').create(),
+    add           = require('gulp-add'),
+    autoprefixer  = require('gulp-autoprefixer'),
+    clone         = require('gulp-clone').sink(),
+    rename        = require('gulp-rename'),
+    copy          = require('gulp-copy'),
+    clean         = require('gulp-clean'),
+    yamlToJson    = require('gulp-yaml'),
+    jsonToSass    = require('./json-to-sass'),
+    sassToCss     = require('gulp-sass'),
+    yRequire      = require('require-yml'),
+    config        = yRequire('config.yml'),
+    mixer         = require('./mixer'),
+    convert       = [];
 
 config.formats.forEach(function(format) {
   convert.push('convert:' + format);
@@ -37,6 +38,9 @@ gulp.task(
           'node_modules',
           'dist/fonts'
         ]
+      }))
+      .pipe(autoprefixer({
+        browsers: ['last 2 versions']
       }))
       .pipe(gulp.dest(config.path.scss.dest))
       .pipe(browserSync.stream());

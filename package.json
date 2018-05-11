@@ -24,6 +24,7 @@
     "chalk": "^2.4.1",
     "gulp": "^3.9.1",
     "gulp-add": "0.0.2",
+    "gulp-autoprefixer": "^5.0.0",
     "gulp-clean": "^0.4.0",
     "gulp-clone": "^2.0.1",
     "gulp-copy": "^1.1.0",
