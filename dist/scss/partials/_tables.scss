@@ -68,6 +68,7 @@
   td {
     display: block;
     padding: $space-xs $space-s !important;
+    text-align: left;
     word-break: break-word;
   }
 
@@ -97,5 +98,84 @@
     th {
       border-bottom-width: 1px;
     }
+  }
+}
+
+.table-searches.table-responsive {
+  thead th {
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+
+  tbody {
+    tr {
+      &:nth-child(odd) td {
+        background-color: $color-blue;
+      }
+
+      &.sample-row td {
+        background-color: $color-orange-light;
+        color: $color-black;
+
+        &:last-child {
+          border-bottom: 1px solid rgba($color-black, 0.25);
+        }
+
+        @include breakpoint(s) {
+          border-bottom: 1px solid rgba($color-black, 0.25);
+          border-color: rgba($color-black, 0.25);
+        }
+
+        span {
+          background-color: $color-orange;
+          color: $color-white;
+          display: inline-block;
+          font-weight: $font-weight-bold;
+          margin-right: $space-s;
+          padding: $space-xs;
+
+          @include breakpoint(s) {
+            line-height: ($space-m + $space-xs);
+            margin: (-$space-xs) $space-m (-$space-xs) (-$space-m);
+            padding: $space-s $space-m;
+          }
+        }
+      }
+    }
+  }
+
+  th,
+  td {
+    padding: $space-xs $space-m !important;
+
+    &:first-child {
+      padding-top: $space-m !important;
+
+      @include breakpoint(s) {
+        padding-top: $space-xs !important;
+      }
+    }
+
+    &:last-child {
+      padding-bottom: $space-m !important;
+
+      @include breakpoint(s) {
+        white-space: nowrap;
+        padding-bottom: $space-xs !important;
+      }
+    }
+
+    @include breakpoint(s) {
+      border-right: 1px solid rgba($color-white, 0.25);
+
+      &:last-child {
+        border-right-width: 0;
+      }
+    }
+  }
+
+  button {
+    display: block;
+    width: 100%;
   }
 }

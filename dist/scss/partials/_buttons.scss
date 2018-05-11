@@ -27,9 +27,15 @@ button,
     color: $color-theme-dark-text;
   }
 
-  &.button-centered {
-    display: block;
-    margin: 1rem auto;
+  &[disabled] {
+    background-color: $color-gray;
+    opacity: 0.5;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: $color-gray;
+    }
   }
 
   &.button-l {
@@ -40,14 +46,31 @@ button,
     font-size: $font-size-s;
   }
 
+  &.button-borderless {
+    border-color: transparent;
+  }
+
+  &.button-centered {
+    display: block;
+    margin: 1rem auto;
+  }
+
+  &.button-cancel {
+    background-color: $color-red;
+    border-width: 0;
+    color: $color-white;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: $color-red-dark;
+    }
+  }
+
   &.button-close {
     padding: $space-xs;
     border: 0;
     color: $color-theme-dark-text;
-  }
-
-  &.button-borderless {
-    border-color: transparent;
   }
 
   &.button-ghost {
@@ -62,6 +85,114 @@ button,
     }
   }
 
+  &.button-icon {
+    position: relative;
+
+    > i {
+      margin-top: -12px;
+      position: absolute;
+      top: 50%;
+    }
+  }
+
+  &.button-icon-left {
+    padding-left: 2em;
+
+    &.button-l {
+      padding-left: 1.75em;
+    }
+
+    > i {
+      left: $space-s;
+    }
+  }
+
+  &.button-icon-right {
+    padding-right: 2em;
+
+    &.button-l {
+      padding-right: 1.75em;
+    }
+
+    > i {
+      right: $space-s;
+    }
+  }
+
+  &.button-new-request {
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    font-size: $font-size-m;
+    margin: 1rem auto;
+    max-width: 100%;
+    padding: 0;
+
+    @include breakpoint(m) {
+      font-size: $font-size-xxxl;
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+      > div {
+        background-color: $color-blue;
+
+        &.button-icon {
+          background-color: $color-white;
+        }
+      }
+    }
+
+    > div {
+      background-color: $color-green;
+      color: $color-white;
+      padding: $space-m;
+
+      @include breakpoint(m) {
+        padding: $space-m $space-l;
+      }
+
+      &.button-icon {
+        background-color: $color-white;
+        color: $color-gray;
+        display: flex;
+        flex-direction: column;
+        padding: $space-s;
+        width: $space-l;
+
+        @include breakpoint(m) {
+          padding: $space-m;
+          width: $space-xl;
+        }
+
+        > * {
+          display: flex;
+          flex: 1;
+          flex-direction: column;
+          height: $space-m;
+          width: $space-m;
+
+          @include breakpoint(m) {
+            width: $space-l;
+          }
+        }
+      }
+    }
+
+    svg {
+      display: block;
+      flex: 1;
+      height: $space-m;
+      width: $space-m;
+
+      @include breakpoint(m) {
+        height: $space-l;
+        width: $space-l;
+      }
+    }
+  }
+
   &.button-primary {
     border-color: transparent;
     background-color: $color-theme-dark-hover-background;
@@ -73,6 +204,18 @@ button,
     &:hover {
       background-color: $color-theme-dark-background;
       color: $color-theme-dark-text;
+    }
+  }
+
+  &.button-success {
+    background-color: $color-green;
+    border-color: $color-white;
+    color: $color-white;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: $color-blue;
     }
   }
 

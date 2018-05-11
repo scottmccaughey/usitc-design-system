@@ -68,6 +68,14 @@ a {
   }
 }
 
+.alt {
+  background-color: $color-theme-base-background-alt;
+}
+
+.alt-off {
+  background-color: $color-theme-base-background;
+}
+
 app-layout,
 app-root {
   min-height: 100vh;
@@ -223,6 +231,13 @@ ul {
   border-color: $color-red;
   color: $color-red-dark;
   font-weight: $font-weight-bold;
+}
+
+.step {
+  font-size: $font-size-xl;
+  font-weight: $font-weight-bold;
+  margin-right: $space-m;
+  text-transform: uppercase;
 }
 
 .svg-wrapper {

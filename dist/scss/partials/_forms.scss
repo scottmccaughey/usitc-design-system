@@ -13,6 +13,10 @@ select {
   font-family: $font-family-sans;
   height: $line-height-form;
   padding: $space-s;
+
+  .on-dark & {
+    color: $color-black;
+  }
 }
 
 label {
@@ -27,5 +31,136 @@ label {
     top: -0.125em;
     font-size: $font-size-s;
     font-style: italic;
+  }
+}
+
+.form-groups {
+  margin-bottom: $space-m;
+
+  > * {
+    > .form-group {
+      padding: $space-m;
+    }
+
+    + * > .form-group {
+      padding-top: 0;
+    }
+  }
+}
+
+.form-group {
+  label {
+    display: block;
+    font-family: $font-family-sans;
+    font-weight: $font-weight-bold;
+    margin-bottom: $space-s;
+    text-transform: uppercase;
+  }
+}
+
+.input-icon {
+  position: relative;
+  width: 100%;
+
+  > i {
+    background-color: $color-gray-light;
+    color: $color-black;
+    height: 60px;
+    position: absolute;
+    width: 60px;
+
+    > * {
+      margin-top: -12px;
+      position: absolute;
+      top: 50%;
+    }
+  }
+
+  &.input-icon-left {
+    > i > * {
+      left: 50%;
+      margin-left: -12px;
+    }
+  }
+
+  &.input-icon-right {
+    > i > * {
+      right: 50%;
+      margin-right: -12px;
+    }
+  }
+
+  input {
+    margin-left: 60px;
+    width: calc(100% - 60px);
+  }
+}
+
+.select-read-more {
+  font-family: $font-family-sans;
+
+  a {
+    background-image: none;
+    display: inline-block;
+    padding: $space-xs $space-s $space-xs $space-l;
+    position: relative;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: $color-blue;
+      color: $color-white;
+
+      em,
+      i {
+        color: $color-white;
+      }
+    }
+
+    @include breakpoint(l) {
+      padding-left: ($space-l + $space-s);
+    }
+  }
+
+  em {
+    color: $color-blue;
+    font-style: normal;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+
+    @include breakpoint(l) {
+      display: block;
+    }
+  }
+
+  hr {
+    display: none;
+
+    @include breakpoint(l) {
+      border: none;
+      border-top: 1px dashed $color-blue;
+      display: inline-block;
+      height: 1px;
+      margin: 29px 0 30px;
+      float: left;
+      width: $space-xl;
+    }
+  }
+
+  i {
+    color: $color-blue;
+    left: $space-xs;
+    margin-right: $space-xs;
+    position: absolute;
+    top: $space-xs;
+
+    @include breakpoint(l) {
+      left: 0;
+      top: ($space-xs + $space-xxs);
+
+      svg {
+        width: $space-l;
+      }
+    }
   }
 }
