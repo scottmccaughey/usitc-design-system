@@ -1355,7 +1355,7 @@ h6,
         margin: 1rem 1rem 0 0; } }
 
 .site-footer {
-  background-color: #004353;
+  background-color: #0d7e97;
   color: #ffffff; }
   .site-footer > section {
     padding: 2rem;
@@ -1506,6 +1506,8 @@ h6,
     white-space: nowrap; }
   .table thead {
     vertical-align: bottom; }
+  .table th {
+    text-align: left; }
   .table th,
   .table td {
     padding: 0.25rem; }
@@ -1529,6 +1531,9 @@ h6,
 .table-striped tbody tr:nth-child(odd) td {
   background-color: #e6e7e8; }
 
+.table-responsive thead {
+  display: none; }
+
 .table-responsive th,
 .table-responsive td {
   display: block;
@@ -1540,6 +1545,8 @@ h6,
   margin-top: 0.5rem; }
 
 @media (min-width: 600px) {
+  .table-responsive thead {
+    display: table-header-group; }
   .table-responsive th,
   .table-responsive td {
     display: table-cell; }

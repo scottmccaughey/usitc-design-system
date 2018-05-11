@@ -19,6 +19,10 @@
     vertical-align: bottom;
   }
 
+  th {
+    text-align: left;
+  }
+
   th,
   td {
     padding: $space-xs;
@@ -56,6 +60,10 @@
 }
 
 .table-responsive {
+  thead {
+    display: none;
+  }
+
   th,
   td {
     display: block;
@@ -69,6 +77,10 @@
   }
 
   @include breakpoint(s) {
+    thead {
+      display: table-header-group;
+    }
+
     th,
     td {
       display: table-cell;
