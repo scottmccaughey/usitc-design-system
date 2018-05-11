@@ -65,14 +65,6 @@ label {
     &:focus ~ .control-indicator {
       box-shadow: 0 0 0 .075rem #fff,0 0 0 .2rem #0074d9;
     }
-    &:checked ~ .control-indicator {
-      background-color: #0074d9;
-      color: #fff;
-    }
-    &:active ~ .control-indicator {
-      background-color: #84c6ff;
-      color: #fff;
-    }
   }
 }
 
@@ -81,12 +73,11 @@ label {
 }
 
 .control-indicator {
-  background-color: #eee;
+  background-color: transparent;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 50% 50%;
   border: 1px solid $color-white;
-  color: #eee;
   display: block;
   font-size: 65%;
   height: 1rem;
