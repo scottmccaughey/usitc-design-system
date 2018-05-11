@@ -92,9 +92,10 @@ label {
   height: 1rem;
   left: 0;
   line-height: 1rem;
+  margin-top: -11px;
   position: absolute;
   text-align: center;
-  top: .25rem;
+  top: 50%;
   user-select: none;
   width: 1rem;
 }
@@ -335,6 +336,11 @@ label {
 
     &::-ms-expand {
       display: none;
+    }
+
+    &.select-icon-left {
+      padding-left: 4rem;
+      background-color: transparent;
     }
   }
 

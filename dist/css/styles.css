@@ -957,9 +957,10 @@ label {
   height: 1rem;
   left: 0;
   line-height: 1rem;
+  margin-top: -11px;
   position: absolute;
   text-align: center;
-  top: .25rem;
+  top: 50%;
   user-select: none;
   width: 1rem; }
 
@@ -1128,6 +1129,9 @@ label {
       text-shadow: 0 0 0 #000; }
     .select select::-ms-expand {
       display: none; }
+    .select select.select-icon-left {
+      padding-left: 4rem;
+      background-color: transparent; }
   .select:after {
     border-bottom: .35rem solid transparent;
     border-left: .35rem solid transparent;
