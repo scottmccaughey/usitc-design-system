@@ -23,12 +23,22 @@ label {
 }
 
 .checkbox {
-  input:checked ~ .control-indicator {
-    background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiNmY2I3MWI7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5BcnRib2FyZCAxPC90aXRsZT48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xNi4xMSwyYS43Mi43MiwwLDAsMC0uNDEuMkw3LDExLjIzLDQuMzQsOC40M2EuNy43LDAsMCwwLS45NSwwTC44OSwxMWEuNjguNjgsMCwwLDAsMCwuOTJsMy4xNiwzLjMsMi40NiwyLjU2YS43MS43MSwwLDAsMCwxLDBsMi4wNi0yLjE1LjQzLS40NSw5LjE1LTkuNTRhLjY4LjY4LDAsMCwwLDAtLjkyTDE2LjY1LDIuMmEuNjguNjgsMCwwLDAtLjU0LS4yWiIvPjwvc3ZnPg==);
+  input:checked ~ .control-indicator::before {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+PHBhdGggZmlsbD0iI2ZkYjcxYyIgZD0iTTE2LjU4IDEuMzlhLjY4LjY4IDAgMCAwLS40NC4yMUw2LjggMTEuMzJsLTIuODktM2EuNzYuNzYgMCAwIDAtMSAwTC4xOSAxMS4xMWEuNzUuNzUgMCAwIDAgMCAxbDMuNDEgMy41NCAyLjY0IDIuNzZhLjc2Ljc2IDAgMCAwIDEgMGwyLjI1LTIuMzEuNDctLjQ5IDkuODUtMTAuMjdhLjc1Ljc1IDAgMCAwIDAtMUwxNy4xNiAxLjZhLjc0Ljc0IDAgMCAwLS41OC0uMjF6Ii8+PC9zdmc+');
+    background-position: $form-control-checkbox-position;
+    background-size: $form-control-checkbox-size;
   }
 
   .control-indicator {
-    border-radius: $border-radius-base;
+    border-radius: $border-radius-circle;
+
+    &::before {
+      height: $space-xl;
+      left: $form-control-checkbox-left;
+      margin-top: (-$space-m);
+      top: $form-control-checkbox-top;
+      width: $space-xl;
+    }
   }
 }
 
@@ -37,7 +47,7 @@ label {
   cursor: pointer;
   display: inline-block;
   line-height: $line-height-form;
-  padding-left: ($space-m + $space-s);
+  padding-left: $space-xl;
   position: relative;
 
   .on-dark & {
@@ -57,23 +67,33 @@ label {
 
 .control-indicator {
   background-color: transparent;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: $form-control-indicator-size;
-  border: 1px solid $color-gray;
+  border: 2px solid $color-black;
+  border-radius: $border-radius-circle;
   display: block;
-  height: $space-m;
+  height: $line-height-form;
   left: 0;
-  line-height: $space-m;
-  margin-top: $form-control-indicator-top;
+  margin-top: 0;
   position: absolute;
-  text-align: center;
-  top: 50%;
+  top: 0;
   user-select: none;
-  width: $space-m;
+  width: $line-height-form;
 
   .on-dark & {
     border-color: $color-white;
+  }
+
+  &::before {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: $line-height-form;
+    border-radius: $border-radius-base;
+    border-width: 0;
+    content: '';
+    height: $line-height-form;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: $line-height-form;
   }
 }
 
@@ -107,8 +127,9 @@ label {
 .file {
   cursor: pointer;
   display: inline-block;
-  height: ($space-m + $space-xs);
+  height: $line-height-form;
   position: relative;
+  width: 100%;
 
   input {
     filter: alpha(opacity=0);
@@ -127,10 +148,10 @@ label {
   border: 1px solid $color-gray;
   border-radius: $border-radius-base;
   color: $color-black;
-  height: $form-control-height;
+  height: $line-height-form;
   left: 0;
-  line-height: $line-height-base;
-  padding: $space-s $space-m;
+  line-height: $line-height-form;
+  padding: 0 $space-m;
   position: absolute;
   right: 0;
   top: 0;
@@ -148,9 +169,9 @@ label {
     color: $color-black;
     content: "Browse";
     display: block;
-    height: $form-control-height;
-    line-height: $line-height-base;
-    padding: $space-s $space-m;
+    height: $line-height-form;
+    line-height: $line-height-form;
+    padding: 0 $space-m;
     position: absolute;
     right: -1px;
     top: -1px;
@@ -215,6 +236,7 @@ label {
 
   input {
     margin-left: $line-height-form;
+    padding: $space-s $space-m;
     width: calc(100% - #{$line-height-form});
   }
 }
@@ -222,6 +244,7 @@ label {
 .progress {
   display: inline-block;
   height: $space-m;
+  width: 100%;
 
   &[value] {
     appearance: none;
@@ -247,12 +270,16 @@ label {
 }
 
 .radio {
-  input:checked ~ .control-indicator {
-    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgOCA4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA4IDgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTQsMUMyLjMsMSwxLDIuMywxLDRzMS4zLDMsMywzczMtMS4zLDMtM1M1LjcsMSw0LDF6Ii8+DQo8L3N2Zz4NCg==);
+  input:checked ~ .control-indicator::before {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+PGNpcmNsZSBmaWxsPSIjZmRiNzFjIiBjeD0iMTAiIGN5PSIxMCIgcj0iMTAiLz48L3N2Zz4=');
+    background-position: $form-control-radio-position;
+    background-size: $form-control-radio-size;
   }
+}
 
-  .control-indicator {
-    border-radius: 50%;
+.search-settings {
+  select {
+    background-color: rgba($color-white, 0.75);
   }
 }
 
@@ -260,6 +287,7 @@ label {
   color: $color-black;
   display: inline-block;
   position: relative;
+  width: 100%;
 
   i {
     background-color: $color-gray-light;

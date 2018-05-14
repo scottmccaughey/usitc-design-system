@@ -10,9 +10,14 @@
 form:
   control:
     height:           2.5rem
-    indicator:
-      size:           18px
-      top:            -12px
+    checkbox:
+      left:           -2px
+      position:       5px 2px
+      size:           74px
+      top:            -2px
+    radio:
+      position:       5px 5px
+      size:           46px
   read-more:
     hr:
       margin:         29px 0 30px
