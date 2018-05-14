@@ -1332,8 +1332,6 @@ ul {
 
 @media (min-width: 1200px) {
   .constrained {
-    border-left: 1px solid #e6e7e8;
-    border-right: 1px solid #e6e7e8;
     margin-left: auto;
     margin-right: auto;
     max-width: 1200px;
@@ -1975,7 +1973,32 @@ h6,
     height: 48px;
     width: 48px; }
   .site-header svg {
-    stroke: #818386; }
+    stroke: #414042; }
+
+.margin {
+  padding: 1rem; }
+  .margin + .margin {
+    padding-top: 0; }
+
+.margin-left-right {
+  margin-left: 1rem;
+  margin-right: 1rem; }
+
+.margin-top-bottom {
+  margin-bottom: 1rem;
+  margin-top: 1rem; }
+
+.margin-top {
+  margin-top: 1rem; }
+
+.margin-right {
+  margin-right: 1rem; }
+
+.margin-bottom {
+  margin-bottom: 1rem; }
+
+.margin-left {
+  margin-left: 1rem; }
 
 .margin-none {
   margin: 0; }

@@ -10,6 +10,41 @@
 //          888                                     Y8b d88P
 //          888                                      "Y88P"
 
+
+.margin {
+  padding: $space-m;
+
+  + .margin {
+    padding-top: 0;
+  }
+}
+
+.margin-left-right {
+  margin-left: $space-m;
+  margin-right: $space-m;
+}
+
+.margin-top-bottom {
+  margin-bottom: $space-m;
+  margin-top: $space-m;
+}
+
+.margin-top {
+  margin-top: $space-m;
+}
+
+.margin-right {
+  margin-right: $space-m;
+}
+
+.margin-bottom {
+  margin-bottom: $space-m;
+}
+
+.margin-left {
+  margin-left: $space-m;
+}
+
 .margin-none {
   margin: 0;
 }
