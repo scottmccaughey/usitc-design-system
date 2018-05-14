@@ -277,17 +277,17 @@ label {
   }
 }
 
-.search-settings {
-  select {
-    background-color: rgba($color-white, 0.75);
-  }
-}
-
 .select {
   color: $color-black;
   display: inline-block;
   position: relative;
   width: 100%;
+
+  &.search-settings {
+    select {
+      background-color: rgba($color-white, 0.75);
+    }
+  }
 
   i {
     background-color: $color-gray-light;

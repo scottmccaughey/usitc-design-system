@@ -1124,14 +1124,13 @@ label {
   background-position: 5px 5px;
   background-size: 46px; }
 
-.search-settings select {
-  background-color: rgba(255, 255, 255, 0.75); }
-
 .select {
   color: #3a3a3b;
   display: inline-block;
   position: relative;
   width: 100%; }
+  .select.search-settings select {
+    background-color: rgba(255, 255, 255, 0.75); }
   .select i {
     background-color: #e6e7e8;
     display: inline-block;
