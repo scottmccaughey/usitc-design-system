@@ -14,7 +14,7 @@
 */
 
 @mixin constrained($max-width: $content-max-width) {
-  @include breakpoint(xl) {
+  @include breakpoint(l) {
     border-left: $border-base;
     border-right: $border-base;
     margin-left: auto;
