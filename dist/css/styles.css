@@ -936,17 +936,16 @@ label {
 
 .checkbox input:checked ~ .control-indicator::before {
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+PHBhdGggZmlsbD0iI2ZkYjcxYyIgZD0iTTE2LjU4IDEuMzlhLjY4LjY4IDAgMCAwLS40NC4yMUw2LjggMTEuMzJsLTIuODktM2EuNzYuNzYgMCAwIDAtMSAwTC4xOSAxMS4xMWEuNzUuNzUgMCAwIDAgMCAxbDMuNDEgMy41NCAyLjY0IDIuNzZhLjc2Ljc2IDAgMCAwIDEgMGwyLjI1LTIuMzEuNDctLjQ5IDkuODUtMTAuMjdhLjc1Ljc1IDAgMCAwIDAtMUwxNy4xNiAxLjZhLjc0Ljc0IDAgMCAwLS41OC0uMjF6Ii8+PC9zdmc+");
-  background-position: 5px 2px;
-  background-size: 74px; }
+  background-position: 6px 8px; }
 
-.checkbox .control-indicator {
-  border-radius: 100%; }
-  .checkbox .control-indicator::before {
-    height: 4rem;
-    left: -2px;
-    margin-top: -1rem;
-    top: -2px;
-    width: 4rem; }
+.checkbox.bustout input:checked ~ .control-indicator::before {
+  background-position: 5px 2px;
+  background-size: 74px;
+  height: 80px;
+  left: -2px;
+  margin-top: -20px;
+  top: -2px;
+  width: 80px; }
 
 .control {
   color: #3a3a3b;
@@ -985,14 +984,13 @@ label {
   .control-indicator::before {
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 3rem;
+    background-size: 46px;
     border-radius: 0;
-    border-width: 0;
     content: '';
     height: 3rem;
-    left: 0;
+    left: -2px;
     position: absolute;
-    top: 0;
+    top: -2px;
     width: 3rem; }
 
 .controls-stacked {
@@ -1120,9 +1118,7 @@ label {
     border-top-right-radius: 0; }
 
 .radio input:checked ~ .control-indicator::before {
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+PGNpcmNsZSBmaWxsPSIjZmRiNzFjIiBjeD0iMTAiIGN5PSIxMCIgcj0iMTAiLz48L3N2Zz4=");
-  background-position: 5px 5px;
-  background-size: 46px; }
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+PGNpcmNsZSBmaWxsPSIjZmRiNzFjIiBjeD0iMTAiIGN5PSIxMCIgcj0iMTAiLz48L3N2Zz4="); }
 
 .select {
   color: #3a3a3b;

@@ -26,18 +26,17 @@ label {
   input:checked ~ .control-indicator::before {
     background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+PHBhdGggZmlsbD0iI2ZkYjcxYyIgZD0iTTE2LjU4IDEuMzlhLjY4LjY4IDAgMCAwLS40NC4yMUw2LjggMTEuMzJsLTIuODktM2EuNzYuNzYgMCAwIDAtMSAwTC4xOSAxMS4xMWEuNzUuNzUgMCAwIDAgMCAxbDMuNDEgMy41NCAyLjY0IDIuNzZhLjc2Ljc2IDAgMCAwIDEgMGwyLjI1LTIuMzEuNDctLjQ5IDkuODUtMTAuMjdhLjc1Ljc1IDAgMCAwIDAtMUwxNy4xNiAxLjZhLjc0Ljc0IDAgMCAwLS41OC0uMjF6Ii8+PC9zdmc+');
     background-position: $form-control-checkbox-position;
-    background-size: $form-control-checkbox-size;
   }
 
-  .control-indicator {
-    border-radius: $border-radius-circle;
-
-    &::before {
-      height: $space-xl;
-      left: $form-control-checkbox-left;
-      margin-top: (-$space-m);
-      top: $form-control-checkbox-top;
-      width: $space-xl;
+  &.bustout {
+    input:checked ~ .control-indicator::before {
+      background-position: $form-control-checkbox-bustout-position;
+      background-size: $form-control-checkbox-bustout-size-inner;
+      height: $form-control-checkbox-bustout-size;
+      left: $form-control-checkbox-bustout-left;
+      margin-top: $form-control-checkbox-bustout-margin-top;
+      top: $form-control-checkbox-bustout-top;
+      width: $form-control-checkbox-bustout-size;
     }
   }
 }
@@ -85,14 +84,13 @@ label {
   &::before {
     background-position: center;
     background-repeat: no-repeat;
-    background-size: $line-height-form;
+    background-size: $form-control-default-size-inner;
     border-radius: $border-radius-base;
-    border-width: 0;
     content: '';
     height: $line-height-form;
-    left: 0;
+    left: $form-control-default-left;
     position: absolute;
-    top: 0;
+    top: $form-control-default-top;
     width: $line-height-form;
   }
 }
@@ -272,8 +270,6 @@ label {
 .radio {
   input:checked ~ .control-indicator::before {
     background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+PGNpcmNsZSBmaWxsPSIjZmRiNzFjIiBjeD0iMTAiIGN5PSIxMCIgcj0iMTAiLz48L3N2Zz4=');
-    background-position: $form-control-radio-position;
-    background-size: $form-control-radio-size;
   }
 }
 
