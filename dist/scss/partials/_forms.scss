@@ -36,7 +36,7 @@ label {
   color: $color-black;
   cursor: pointer;
   display: inline-block;
-  line-height: $space-l;
+  line-height: $line-height-form;
   padding-left: ($space-m + $space-s);
   position: relative;
 
@@ -215,7 +215,7 @@ label {
 
   input {
     margin-left: $line-height-form;
-    width: calc(100% - $line-height-form);
+    width: calc(100% - #{$line-height-form});
   }
 }
 
