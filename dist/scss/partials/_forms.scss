@@ -10,7 +10,6 @@
 input,
 select {
   border: $border-base;
-  font-family: $font-family-sans;
   height: $line-height-form;
   padding: $space-s;
 
@@ -176,7 +175,6 @@ label {
 .form-group {
   label {
     display: block;
-    font-family: $font-family-sans;
     font-weight: $font-weight-bold;
     margin-bottom: $space-s;
     text-transform: uppercase;
@@ -335,9 +333,7 @@ label {
 }
 
 .select-read-more {
-  font-family: $font-family-sans;
-
-  a {
+   a {
     background-image: none;
     display: inline-block;
     padding: $space-xs $space-s $space-xs $space-l;
