@@ -1908,11 +1908,15 @@ h6,
         .pagination > *.select {
           -ms-flex-preferred-size: 0;
               flex-basis: 0; } }
+      .pagination > *.select::after {
+        right: 0.5rem; }
       .pagination > *.select select {
         background-color: transparent;
         border-width: 0;
         color: #ffffff;
-        height: 44px; }
+        font-size: 0.69444rem;
+        height: 44px;
+        padding: 0.5rem 1.5rem 0.5rem 0.5rem; }
       .pagination > *.select:after {
         border-top-color: #ffffff; }
 
