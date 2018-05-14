@@ -42,16 +42,11 @@ label {
 }
 
 .control {
-  color: $color-black;
   cursor: pointer;
   display: inline-block;
   line-height: $line-height-form;
-  padding-left: $space-xl;
+  padding-left: 50px;
   position: relative;
-
-  .on-dark & {
-    color: $color-white;
-  }
 
   input {
     opacity: 0;
@@ -69,13 +64,13 @@ label {
   border: 2px solid $color-black;
   border-radius: $border-radius-circle;
   display: block;
-  height: $line-height-form;
+  height: $form-control-default-size;
   left: 0;
   margin-top: 0;
   position: absolute;
-  top: 0;
+  top: $space-s;
   user-select: none;
-  width: $line-height-form;
+  width: $form-control-default-size;
 
   .on-dark & {
     border-color: $color-white;
@@ -87,11 +82,11 @@ label {
     background-size: $form-control-default-size-inner;
     border-radius: $border-radius-base;
     content: '';
-    height: $line-height-form;
+    height: $form-control-default-size;
     left: $form-control-default-left;
     position: absolute;
     top: $form-control-default-top;
-    width: $line-height-form;
+    width: $form-control-default-size;
   }
 }
 
