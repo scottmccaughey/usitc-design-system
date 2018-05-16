@@ -16,13 +16,16 @@ color:
   gray-light:                 '#e6e7e8'
   blue:                       '#0d7e97'
   blue-dark:                  '#004353'
+  blue-light:                 '#c9e3e8'
   red:                        '#be2a26'
   red-dark:                   '#981d20'
+  red-light:                  '#be2a26'
   green:                      '#308453'
+  green-dark:                 '#308453'
   green-light:                '#e8f3e5'
   orange:                     '#fdb71c'
+  orange-dark:                '#cb8f2b'
   orange-light:               '#fae0af'
-  yellow-dark:                '#cb8f2b'
 
   theme:
     base:
