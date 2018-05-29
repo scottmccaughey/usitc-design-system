@@ -14,6 +14,7 @@ button,
   border-radius: $border-radius-base;
   color: $color-theme-base-text;
   display: inline-block;
+  font-weight: $font-weight-bold;
   line-height: $line-height-button;
   padding: 0.5em;
   text-decoration: none;
@@ -33,8 +34,14 @@ button,
     &:active,
     &:focus,
     &:hover {
-      background-color: $color-gray;
+      background-color: inherit !important;
+      color: inherit !important;
     }
+  }
+
+  + button,
+  + .button {
+    margin-left: $space-s;
   }
 
   &.button-l {
@@ -56,7 +63,7 @@ button,
 
   &.button-cancel {
     background-color: $color-red;
-    border-width: 0;
+    border-color: transparent;
     color: $color-white;
 
     &:active,
@@ -85,9 +92,12 @@ button,
   }
 
   &.button-icon {
+    padding: 1.125em;
     position: relative;
 
     > i {
+      left: 50%;
+      margin-left: -12px;
       margin-top: -12px;
       position: absolute;
       top: 50%;
@@ -95,26 +105,43 @@ button,
   }
 
   &.button-icon-left {
-    padding-left: 2em;
+    padding: 0.5em 0.5em 0.5em 2.25em;
 
     &.button-l {
       padding-left: 1.75em;
     }
 
     > i {
-      left: $space-s;
+      left: 0.25em;
+      margin-left: 0;
     }
   }
 
   &.button-icon-right {
-    padding-right: 2em;
+    padding: 0.5em 2.25em 0.5em 0.5em;
 
     &.button-l {
       padding-right: 1.75em;
     }
 
     > i {
-      right: $space-s;
+      left: auto;
+      margin-left: 0;
+      right: 0.25em;
+    }
+  }
+
+  &.button-invisible {
+    background-color: transparent;
+    border-width: 0;
+    color: inherit;
+    padding: 0;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: $color-theme-dark-hover-background;
+      color: $color-theme-dark-text;
     }
   }
 
@@ -196,7 +223,6 @@ button,
     border-color: transparent;
     background-color: $color-theme-dark-hover-background;
     color: $color-theme-dark-text;
-    font-weight: $font-weight-bold;
 
     &:active,
     &:focus,
@@ -204,6 +230,13 @@ button,
       background-color: $color-theme-dark-background;
       color: $color-theme-dark-text;
     }
+  }
+
+  &.button-round {
+    border-radius: $border-radius-circle;
+    height: $space-l;
+    line-height: $space-l;
+    width: $space-l;
   }
 
   &.button-success {
