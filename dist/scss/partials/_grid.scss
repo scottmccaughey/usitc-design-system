@@ -17,6 +17,10 @@
   > * {
     grid-area: span 1 / span $grid-columns;
   }
+
+  > .padded + .padded {
+    padding: $space-m;
+  }
 }
 
 .grid-gap {

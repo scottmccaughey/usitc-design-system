@@ -1,0 +1,14 @@
+//   .d88b.  888d888 888d888 .d88b.  888d888 .d8888b
+//  d8P  Y8b 888P"   888P"  d88""88b 888P"   88K
+//  88888888 888     888    888  888 888     "Y8888b.
+//  Y8b.     888     888    Y88..88P 888          X88
+//   "Y8888  888     888     "Y88P"  888      88888P'
+
+.error-messages-list {
+  padding: 0 $space-m;
+
+  li:only-child {
+    list-style: none;
+    text-align: center;
+  }
+}

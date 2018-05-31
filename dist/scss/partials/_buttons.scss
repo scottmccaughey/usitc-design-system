@@ -24,8 +24,8 @@ button,
   &:active,
   &:focus,
   &:hover {
-    background-color: $color-theme-dark-hover-background;
-    color: $color-theme-dark-text;
+    background-color: $color-theme-base-hover-background;
+    color: $color-theme-base-hover-text;
   }
 
   &[disabled] {
@@ -227,7 +227,7 @@ button,
 
   &.button-primary {
     border-color: transparent;
-    background-color: $color-theme-dark-hover-background;
+    background-color: $color-theme-dark-background-alt;
     color: $color-theme-dark-text;
 
     &:active,
