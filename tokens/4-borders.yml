@@ -8,7 +8,8 @@
 # 88888P"   "Y88P"  888     "Y88888  "Y8888  888      88888P'
 
 border:
-  base:             1px solid $color-gray-light
+  base:             1px solid $color-gray
+  focus:            0 0 0 $space-xxs $color-blue
   radius:
     base:           0
     circle:         100%

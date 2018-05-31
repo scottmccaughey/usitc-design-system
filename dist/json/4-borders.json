@@ -1,1 +1,1 @@
-{"border":{"base":"1px solid $color-gray-light","radius":{"base":0,"circle":"100%"}}}
+{"border":{"base":"1px solid $color-gray","focus":"0 0 0 $space-xxs $color-blue","radius":{"base":0,"circle":"100%"}}}

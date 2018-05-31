@@ -21,7 +21,7 @@ color:
   red-dark:                   '#981d20'
   red-light:                  '#be2a26'
   green:                      '#308453'
-  green-dark:                 '#308453'
+  green-dark:                 '#266942'
   green-light:                '#e8f3e5'
   orange:                     '#fdb71c'
   orange-dark:                '#cb8f2b'
@@ -34,8 +34,8 @@ color:
       border:                 '$color-gray'
       text:                   '$color-black'
       link:                   '$color-blue'
-      hover-background:       '$color-white'
-      hover-text:             '$color-blue-dark'
+      hover-background:       '$color-blue'
+      hover-text:             '$color-white'
       spinner:                '$color-blue'
     dark:
       background:             '$color-blue-dark'
@@ -43,8 +43,8 @@ color:
       border:                 '$color-blue-dark'
       text:                   '$color-white'
       link:                   '$color-white'
-      hover-background:       '$color-blue'
-      hover-text:             '$color-white'
+      hover-background:       '$color-white'
+      hover-text:             '$color-blue'
       spinner:                '$color-white'
 
   state:

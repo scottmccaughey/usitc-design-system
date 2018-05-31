@@ -23,6 +23,7 @@ body {
   font-weight: $font-weight-normal;
   line-height: $line-height-base;
   min-height: 100vh;
+  overflow-x: hidden;
   position: relative;
 }
 
@@ -36,6 +37,11 @@ body {
   background-color: $color-state-highlight-background;
   color: $color-state-highlight-text;
   text-shadow: 0;
+}
+
+:focus {
+  box-shadow: $border-focus;
+  outline: 0;
 }
 
 a {
@@ -56,24 +62,19 @@ a {
   &:active,
   &:focus,
   &:hover {
+    background-color: $color-theme-base-hover-background;
     color: $color-theme-base-hover-text;
 
     .on-dark & {
+      background-color: $color-theme-dark-hover-background;
       color: $color-theme-dark-hover-text;
     }
 
     .on-light & {
+      background-color: $color-theme-base-hover-background;
       color: $color-theme-base-hover-text;
     }
   }
-}
-
-.alt {
-  background-color: $color-theme-base-background-alt;
-}
-
-.alt-off {
-  background-color: $color-theme-base-background;
 }
 
 app-layout,
@@ -88,18 +89,6 @@ article {
     }
   }
 }
-
-// TODO: Do we need a maximum line-length? Are there enough large blocks of text
-//       to make this worth having?
-//
-// p,
-// li {
-//   max-width: 40em;
-//
-//   &.full-width {
-//     max-width: 100%;
-//   }
-// }
 
 p {
   margin-bottom: $space-m;
@@ -148,6 +137,46 @@ ul {
       margin: 0;
     }
   }
+}
+
+.alt {
+  background-color: $color-theme-base-background-alt;
+}
+
+.alt-off {
+  background-color: $color-theme-base-background;
+}
+
+.alt-blue {
+  background-color: $color-blue-light;
+}
+
+.alt-green {
+  background-color: $color-green-light;
+}
+
+.bold {
+  font-weight: $font-weight-bold;
+}
+
+.bordered {
+  border: $border-base;
+}
+
+.bordered-bottom {
+  border-bottom: $border-base;
+}
+
+.bordered-left {
+  border-left: $border-base;
+}
+
+.bordered-right {
+  border-right: $border-base;
+}
+
+.bordered-top {
+  border-top: $border-base;
 }
 
 .constrained {

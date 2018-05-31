@@ -22,14 +22,61 @@ label {
   cursor: pointer;
 }
 
+select {
+  &[multiple] {
+    height: $space-xxl;
+    padding: 0;
+    width: 100%;
+
+    &:focus {
+      background-color: inherit;
+      color: inherit;
+
+      option:checked {
+        box-shadow: $border-focus inset;
+      }
+    }
+
+    option {
+      padding: $space-xs $space-m;
+    }
+  }
+
+  .select &.select-icon-left {
+    background-color: $color-white;
+    border: $border-base;
+    padding-left: $space-xl;
+  }
+
+  .select & {
+    background-color: $color-white;
+    border: $border-base;
+  }
+}
+
+simple-select .select-child-field {
+  margin-top: 0;
+
+  @include breakpoint(l) {
+    margin-top: (-$space-m);
+  }
+}
+
 .checkbox {
-  input:checked ~ .control-indicator::before {
-    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+PHBhdGggZmlsbD0iI2ZkYjcxYyIgZD0iTTE2LjU4IDEuMzlhLjY4LjY4IDAgMCAwLS40NC4yMUw2LjggMTEuMzJsLTIuODktM2EuNzYuNzYgMCAwIDAtMSAwTC4xOSAxMS4xMWEuNzUuNzUgMCAwIDAgMCAxbDMuNDEgMy41NCAyLjY0IDIuNzZhLjc2Ljc2IDAgMCAwIDEgMGwyLjI1LTIuMzEuNDctLjQ5IDkuODUtMTAuMjdhLjc1Ljc1IDAgMCAwIDAtMUwxNy4xNiAxLjZhLjc0Ljc0IDAgMCAwLS41OC0uMjF6Ii8+PC9zdmc+');
+  input ~ .control-indicator::before {
     background-position: $form-control-checkbox-position;
   }
 
+  input:checked ~ .control-indicator::before {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+PHBhdGggZmlsbD0iI2ZkYjcxYyIgZD0iTTE2LjU4IDEuMzlhLjY4LjY4IDAgMCAwLS40NC4yMUw2LjggMTEuMzJsLTIuODktM2EuNzYuNzYgMCAwIDAtMSAwTC4xOSAxMS4xMWEuNzUuNzUgMCAwIDAgMCAxbDMuNDEgMy41NCAyLjY0IDIuNzZhLjc2Ljc2IDAgMCAwIDEgMGwyLjI1LTIuMzEuNDctLjQ5IDkuODUtMTAuMjdhLjc1Ljc1IDAgMCAwIDAtMUwxNy4xNiAxLjZhLjc0Ljc0IDAgMCAwLS41OC0uMjF6Ii8+PC9zdmc+');
+  }
+
+  input:not(:checked) ~ .control-indicator::before {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+PHBhdGggZmlsbD0iI2U2ZTdlOCIgZD0iTTE2LjU4IDEuMzlhLjY4LjY4IDAgMCAwLS40NC4yMUw2LjggMTEuMzJsLTIuODktM2EuNzYuNzYgMCAwIDAtMSAwTC4xOSAxMS4xMWEuNzUuNzUgMCAwIDAgMCAxbDMuNDEgMy41NCAyLjY0IDIuNzZhLjc2Ljc2IDAgMCAwIDEgMGwyLjI1LTIuMzEuNDctLjQ5IDkuODUtMTAuMjdhLjc1Ljc1IDAgMCAwIDAtMUwxNy4xNiAxLjZhLjc0Ljc0IDAgMCAwLS41OC0uMjF6Ii8+PC9zdmc+');
+  }
+
   &.bustout {
-    input:checked ~ .control-indicator::before {
+    input ~ .control-indicator::before {
       background-position: $form-control-checkbox-bustout-position;
       background-size: $form-control-checkbox-bustout-size-inner;
       height: $form-control-checkbox-bustout-size;
@@ -42,33 +89,36 @@ label {
 }
 
 .control {
+  align-items: center;
   cursor: pointer;
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
   line-height: $line-height-form;
-  padding-left: 50px;
+  height: 100%;
+  padding: 0;
   position: relative;
+  width: 100%;
 
   input {
     opacity: 0;
-    position: absolute;
     z-index: -1;
 
     &:focus ~ .control-indicator {
-      box-shadow: 0 0 0 $space-xxs $color-blue;
+      box-shadow: $border-focus;
     }
   }
 }
 
 .control-indicator {
-  background-color: transparent;
+  background-color: $color-white;
   border: 2px solid $color-black;
   border-radius: $border-radius-circle;
   display: block;
+  flex-shrink: 0;
   height: $form-control-default-size;
   left: 0;
-  margin-top: 0;
-  position: absolute;
-  top: $space-s;
+  position: relative;
+  top: 0;
   user-select: none;
   width: $form-control-default-size;
 
@@ -90,17 +140,52 @@ label {
   }
 }
 
-.controls-stacked {
-  margin: $space-m 0;
+.control-label {
+  line-height: $line-height-header;
+  padding-left: $space-s;
+}
 
-  .control,
-  .progress {
-    display: block;
+.controls-boxed {
+  border: 1px solid $color-gray;
+  max-height: 400px;
+  overflow-y: scroll;
+
+  label {
+    font-weight: $font-weight-normal;
+    line-height: 1;
+    margin: 0 !important;
+    text-transform: none;
+
+    &:nth-child(even) {
+      background-color: $color-gray-light;
+    }
+  }
+}
+
+.controls-boxed-header {
+  color: $color-blue;
+  cursor: pointer;
+  font-size: $font-size-l;
+  font-weight: $font-weight-bold;
+  margin: 0;
+  padding: $space-s;
+
+  &:nth-child(even) {
+    background-color: $color-gray-light;
   }
 
-  .control + .control,
-  .progress + .progress {
-    margin-top: $space-s;
+  &:active,
+  &:focus,
+  &:hover,
+  &.current {
+    background-color: $color-blue;
+    color: $color-white;
+  }
+
+  &.current {
+    position: sticky;
+    top: 0;
+    z-index: 2;
   }
 }
 
@@ -132,13 +217,13 @@ label {
   }
 
   input:focus ~ .file-custom {
-    box-shadow: 0 0 0 $space-xxs $color-blue;
+    box-shadow: $border-focus;
   }
 }
 
 .file-custom {
   background-color: $color-white;
-  border: 1px solid $color-gray;
+  border: $border-base;
   border-radius: $border-radius-base;
   color: $color-black;
   height: $line-height-form;
@@ -157,7 +242,7 @@ label {
 
   &:before {
     background-color: $color-gray-light;
-    border: 1px solid $color-gray;
+    border: $border-base;
     border-radius: $border-radius-base;
     color: $color-black;
     content: "Browse";
@@ -169,6 +254,36 @@ label {
     right: -1px;
     top: -1px;
     z-index: 6;
+  }
+}
+
+.form-control-inline {
+  align-items: center;
+  display: flex;
+
+  input {
+    min-width: $space-s;
+  }
+
+  label {
+    margin: 0 $space-s 0 0;
+    white-space: nowrap;
+  }
+}
+
+.form-group {
+  &.alt-off + .form-group.alt-off {
+    margin-top: $space-m;
+    padding-top: $space-m;
+  }
+
+  label.control {
+    display: flex;
+  }
+
+  .control-label {
+    font-weight: $font-weight-normal;
+    text-transform: none;
   }
 }
 
@@ -191,6 +306,29 @@ label {
     display: block;
     font-weight: $font-weight-bold;
     margin-bottom: $space-s;
+    text-transform: uppercase;
+  }
+}
+
+.form-settings {
+  background-color: $color-blue-dark;
+  padding: $space-s;
+
+  label {
+    margin-bottom: (-$space-s);
+  }
+}
+
+.form-settings-header,
+.form-settings-header:first-child {
+  .on-dark & {
+    background-color: $color-white;
+    color: $color-gray-dark;
+    display: inline-block;
+    font-size: $font-size-s;
+    font-weight: $font-weight-bold;
+    margin: (-$space-xs) $space-xs $space-s (-$space-xs);
+    padding: $space-xs $space-s;
     text-transform: uppercase;
   }
 }
@@ -234,6 +372,13 @@ label {
   }
 }
 
+.label-parent {
+  color: $color-blue;
+  font-size: $font-size-s;
+  font-weight: $font-weight-bold;
+  margin-top: 0;
+}
+
 .progress {
   display: inline-block;
   height: $space-m;
@@ -263,14 +408,22 @@ label {
 }
 
 .radio {
+  input ~ .control-indicator::before {
+    background-position: $form-control-checkbox-position;
+  }
+
   input:checked ~ .control-indicator::before {
-    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+PGNpcmNsZSBmaWxsPSIjZmRiNzFjIiBjeD0iMTAiIGN5PSIxMCIgcj0iMTAiLz48L3N2Zz4=');
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+PHBhdGggZmlsbD0iI2ZkYjcxYyIgZD0iTTE2LjU4IDEuMzlhLjY4LjY4IDAgMCAwLS40NC4yMUw2LjggMTEuMzJsLTIuODktM2EuNzYuNzYgMCAwIDAtMSAwTC4xOSAxMS4xMWEuNzUuNzUgMCAwIDAgMCAxbDMuNDEgMy41NCAyLjY0IDIuNzZhLjc2Ljc2IDAgMCAwIDEgMGwyLjI1LTIuMzEuNDctLjQ5IDkuODUtMTAuMjdhLjc1Ljc1IDAgMCAwIDAtMUwxNy4xNiAxLjZhLjc0Ljc0IDAgMCAwLS41OC0uMjF6Ii8+PC9zdmc+');
+  }
+
+  input:not(:checked) ~ .control-indicator::before {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+PHBhdGggZmlsbD0iI2U2ZTdlOCIgZD0iTTE2LjU4IDEuMzlhLjY4LjY4IDAgMCAwLS40NC4yMUw2LjggMTEuMzJsLTIuODktM2EuNzYuNzYgMCAwIDAtMSAwTC4xOSAxMS4xMWEuNzUuNzUgMCAwIDAgMCAxbDMuNDEgMy41NCAyLjY0IDIuNzZhLjc2Ljc2IDAgMCAwIDEgMGwyLjI1LTIuMzEuNDctLjQ5IDkuODUtMTAuMjdhLjc1Ljc1IDAgMCAwIDAtMUwxNy4xNiAxLjZhLjc0Ljc0IDAgMCAwLS41OC0uMjF6Ii8+PC9zdmc+');
   }
 }
 
 .select {
   color: $color-black;
-  display: inline-block;
+  display: flex;
   position: relative;
   width: 100%;
 
@@ -280,26 +433,29 @@ label {
     }
   }
 
+  &.select-multiple::after {
+    display: none;
+  }
+
   i {
+    align-items: center;
     background-color: $color-gray-light;
-    display: inline-block;
+    border: $border-base;
+    border-right-width: 0;
+    display: flex;
+    flex-direction: row;
     height: $line-height-form;
+    justify-content: center;
     position: absolute;
     width: $line-height-form;
     z-index: 1;
-
-    > * {
-      left: ($icon-size * 0.75);
-      position: relative;
-      top: ($icon-size * 0.75);
-    }
   }
 
   select {
     appearance: none;
     background-color: $color-white;
     border-radius: $border-radius-base;
-    border: 1px solid $color-gray;
+    border: $border-base;
     color: $color-black;
     cursor: pointer;
     display: inline-block;
@@ -309,13 +465,17 @@ label {
     padding: $space-s ($space-l + $space-s) $space-s $space-m;
     width: 100%;
 
+    &[multiple].select-icon-left {
+      padding-left: 3rem;
+    }
+
     &:active {
       background-color: $color-blue;
       color: $color-white;
     }
 
     &:focus {
-      box-shadow: 0 0 0 $space-xxs $color-blue;
+      box-shadow: $border-focus;
     }
 
     &:focus:-moz-focusring {
@@ -351,32 +511,56 @@ label {
   }
 }
 
+.select-child-arrow.g-l-1 {
+  display: none;
+  grid-row-start: 1;
+  grid-row-end: 99;
+  justify-content: flex-end;
+
+  @include breakpoint(l) {
+    display: flex;
+  }
+
+  b {
+    border-bottom: 1px solid $color-gray;
+    border-left: 1px solid $color-gray;
+    display: block;
+    height: 50%;
+    width: 50%;
+  }
+}
+
+.select-child-header {
+  margin-top: $space-m;
+}
+
 .select-read-more {
-   a {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+
+  a {
     background-image: none;
     display: inline-block;
     padding: $space-xs $space-s $space-xs $space-l;
     position: relative;
 
+    @include breakpoint(l) {
+      padding: 0 $space-s 0 $space-l;
+    }
+
     &:active,
     &:focus,
     &:hover {
-      background-color: $color-blue;
-      color: $color-white;
-
       em,
       i {
-        color: $color-white;
+        color: $color-theme-base-hover-text;
       }
-    }
-
-    @include breakpoint(l) {
-      padding-left: ($space-l + $space-s);
     }
   }
 
   em {
-    color: $color-blue;
+    color: $color-theme-base-link;
     font-style: normal;
     font-weight: $font-weight-bold;
     text-transform: uppercase;
@@ -393,8 +577,9 @@ label {
       border: none;
       border-top: 1px dashed $color-blue;
       display: inline-block;
+      flex-shrink: 0;
       height: 1px;
-      margin: $form-read-more-hr-margin;
+      margin: 0;
       float: left;
       width: $space-xl;
     }
@@ -402,18 +587,84 @@ label {
 
   i {
     color: $color-blue;
+    height: 100%;
     left: $space-xs;
     margin-right: $space-xs;
     position: absolute;
-    top: $space-xs;
+    top: 0;
+
+    > * {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      height: 100%;
+      width: 100%;
+    }
 
     @include breakpoint(l) {
       left: 0;
       top: ($space-xs + $space-xxs);
 
       svg {
+        height: $space-l;
         width: $space-l;
       }
+    }
+  }
+}
+
+.toggle-switch {
+  align-items: center;
+  border: 1px solid $color-gray;
+  border-radius: $space-s;
+  display: flex;
+  width: 100%;
+
+  input {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    max-width: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+
+    &:focus ~ label {
+      box-shadow: 0 0 0 $space-xxs $color-blue;
+    }
+
+    &:checked + label {
+      background-color: $color-blue;
+      color: $color-white;
+    }
+  }
+
+  label {
+    background-color: $color-blue-light;
+    border-right: 1px solid $color-gray;
+    flex-grow: 1;
+    font-weight: $font-weight-normal;
+    margin-bottom: 0;
+    padding: $space-s $space-m;
+    text-align: center;
+    text-transform: none;
+
+    &:first-of-type {
+      border-bottom-left-radius: $space-s;
+      border-top-left-radius: $space-s;
+    }
+
+    &:last-of-type {
+      border-bottom-right-radius: $space-s;
+      border-right-width: 0;
+      border-top-right-radius: $space-s;
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: $color-blue;
+      color: $color-white;
     }
   }
 }

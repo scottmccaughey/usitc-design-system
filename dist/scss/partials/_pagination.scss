@@ -56,7 +56,19 @@
       }
     }
 
-    &.active,
+    &.active {
+      background-color: $color-blue;
+      color: $color-white;
+      cursor: default;
+
+      &:active,
+      &:focus,
+      &:hover {
+        background-color: $color-blue;
+        color: $color-white;
+      }
+    }
+
     &.disabled {
       color: $color-blue;
       cursor: default;

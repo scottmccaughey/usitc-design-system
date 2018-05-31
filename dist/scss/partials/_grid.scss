@@ -31,6 +31,10 @@
   grid-row-gap: $grid-gap-row;
 }
 
+.grid-self-align-center {
+  align-self: center;
+}
+
 .grid-self-justify-end {
   justify-self: end;
 }

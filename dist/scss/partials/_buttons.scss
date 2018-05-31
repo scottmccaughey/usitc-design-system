@@ -17,6 +17,7 @@ button,
   font-weight: $font-weight-bold;
   line-height: $line-height-button;
   padding: 0.5em;
+  position: relative;
   text-decoration: none;
   transition: $transition-base;
 
@@ -28,14 +29,13 @@ button,
   }
 
   &[disabled] {
-    background-color: $color-gray;
-    opacity: 0.5;
+    opacity: 0.25;
 
     &:active,
     &:focus,
     &:hover {
-      background-color: inherit !important;
-      color: inherit !important;
+      background-color: inherit;
+      color: inherit;
     }
   }
 
@@ -74,9 +74,15 @@ button,
   }
 
   &.button-close {
-    padding: $space-xs;
+    background-color: transparent;
     border: 0;
     color: $color-theme-dark-text;
+    font-size: $font-size-xl;
+    min-width: 1.25em;
+    padding: $space-xs;
+    position: relative;
+    right: (-$space-s);
+    top: (-$space-s);
   }
 
   &.button-ghost {
@@ -229,6 +235,10 @@ button,
     &:hover {
       background-color: $color-theme-dark-background;
       color: $color-theme-dark-text;
+
+      .on-dark & {
+        border-color: $color-white;
+      }
     }
   }
 
@@ -247,7 +257,7 @@ button,
     &:active,
     &:focus,
     &:hover {
-      background-color: $color-blue;
+      background-color: $color-green-dark;
     }
   }
 
@@ -256,13 +266,18 @@ button,
     background-color: transparent;
     color: inherit;
   }
-}
 
-.button-close {
-  position: relative;
-  top: (-$space-s);
-  right: (-$space-s);
-  min-width: 1.25em;
-  background-color: transparent;
-  font-size: $font-size-xl;
+  .spinner-wrapper {
+    height: $space-l;
+    left: 0;
+    margin-top: (-$space-m);
+    position: absolute;
+    top: calc(50% - $space-s);
+    width: 100%;
+
+    .spinner {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+  }
 }
