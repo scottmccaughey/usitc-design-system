@@ -507,24 +507,24 @@ simple-select .select-child-field {
     top: 50%;
     width: 0;
   }
-}
 
-.select-child-arrow.g-l-1 {
-  display: none;
-  grid-row-start: 1;
-  grid-row-end: 99;
-  justify-content: flex-end;
+  .select-child-arrow.g-l-1 {
+    display: none;
+    grid-row-start: 1;
+    grid-row-end: 99;
+    justify-content: flex-end;
 
-  @include breakpoint(l) {
-    display: flex;
-  }
+    @include breakpoint(l) {
+      display: flex;
+    }
 
-  b {
-    border-bottom: 1px solid $color-gray;
-    border-left: 1px solid $color-gray;
-    display: block;
-    height: 50%;
-    width: 50%;
+    b {
+      border-bottom: 1px solid $color-gray;
+      border-left: 1px solid $color-gray;
+      display: block;
+      height: 50%;
+      width: 50%;
+    }
   }
 }
 

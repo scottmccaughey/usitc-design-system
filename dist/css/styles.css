@@ -1372,25 +1372,24 @@ simple-select .select-child-field {
     right: 1rem;
     top: 50%;
     width: 0; }
-
-.select-child-arrow.g-l-1 {
-  display: none;
-  grid-row-start: 1;
-  grid-row-end: 99;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end; }
-  @media (min-width: 1200px) {
-    .select-child-arrow.g-l-1 {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; } }
-  .select-child-arrow.g-l-1 b {
-    border-bottom: 1px solid #818386;
-    border-left: 1px solid #818386;
-    display: block;
-    height: 50%;
-    width: 50%; }
+  .select .select-child-arrow.g-l-1 {
+    display: none;
+    grid-row-start: 1;
+    grid-row-end: 99;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    @media (min-width: 1200px) {
+      .select .select-child-arrow.g-l-1 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; } }
+    .select .select-child-arrow.g-l-1 b {
+      border-bottom: 1px solid #818386;
+      border-left: 1px solid #818386;
+      display: block;
+      height: 50%;
+      width: 50%; }
 
 .select-child-header {
   margin-top: 1rem; }
