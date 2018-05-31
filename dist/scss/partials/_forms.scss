@@ -42,15 +42,13 @@ select {
     }
   }
 
-  .select &.select-icon-left {
-    background-color: $color-white;
-    border: $border-base;
-    padding-left: $space-xl;
-  }
-
   .select & {
     background-color: $color-white;
     border: $border-base;
+
+    &[multiple] {
+      padding: 0;
+    }
   }
 }
 
@@ -488,7 +486,7 @@ simple-select .select-child-field {
     }
 
     &.select-icon-left {
-      background-color: transparent;
+      background-color: $color-white;
       border: $border-base;
       padding-left: $space-xl;
     }

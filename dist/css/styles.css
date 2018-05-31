@@ -992,14 +992,11 @@ select[multiple] {
   select[multiple] option {
     padding: 0.25rem 1rem; }
 
-.select select.select-icon-left {
-  background-color: #ffffff;
-  border: 1px solid #818386;
-  padding-left: 4rem; }
-
 .select select {
   background-color: #ffffff;
   border: 1px solid #818386; }
+  .select select[multiple] {
+    padding: 0; }
 
 simple-select .select-child-field {
   margin-top: 0; }
@@ -1347,7 +1344,7 @@ simple-select .select-child-field {
     .select select::-ms-expand {
       display: none; }
     .select select.select-icon-left {
-      background-color: transparent;
+      background-color: #ffffff;
       border: 1px solid #818386;
       padding-left: 4rem; }
   .select:after {
@@ -2231,6 +2228,8 @@ h6,
         font-size: 0.69444rem;
         height: 44px;
         padding: 0.5rem 1.5rem 0.5rem 0.5rem; }
+        .pagination > *.select select:focus {
+          color: #ffffff; }
       .pagination > *.select:after {
         border-top-color: #ffffff; }
 

@@ -101,6 +101,10 @@
         font-size: $font-size-xs;
         height: 44px;
         padding: $space-s ($space-m + $space-s) $space-s $space-s;
+
+        &:focus {
+          color: $color-white;
+        }
       }
 
       &:after {
