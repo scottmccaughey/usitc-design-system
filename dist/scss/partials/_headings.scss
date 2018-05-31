@@ -94,3 +94,9 @@ h6,
     letter-spacing: .4rem;
   }
 }
+
+.subhead {
+  font-size: $font-size-xs;
+  margin-top: (-$space-s);
+  text-transform: uppercase;
+}

@@ -12,3 +12,9 @@
     text-align: center;
   }
 }
+
+.state-error {
+  background-color: $color-state-error-background;
+  border: 1px solid $color-state-error-border;
+  color: $color-state-error-link;
+}

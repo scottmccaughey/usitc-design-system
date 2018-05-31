@@ -1,0 +1,61 @@
+// 888             888
+// 888             888
+// 888             888
+// 888888  8888b.  88888b.  .d8888b
+// 888        "88b 888 "88b 88K
+// 888    .d888888 888  888 "Y8888b.
+// Y88b.  888  888 888 d88P      X88
+//  "Y888 "Y888888 88888P"   88888P'
+
+.nav-tabs {
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  position: relative;
+
+  li {
+    align-items: center;
+    background-color: $color-gray-light;
+    cursor: pointer;
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;
+    margin-right: $space-xxs;
+    min-width: $font-size-base * 12;
+    padding: $space-s $space-m;
+    text-align: center;
+
+    &:first-child {
+      background-color: $color-green;
+      color: $color-white;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: $color-blue-dark;
+      color: $color-white;
+    }
+
+    &.active {
+      background-color: $color-blue-dark;
+      color: $color-white;
+
+      &:first-child {
+        background-color: $color-blue-light;
+        color: $color-black;
+      }
+    }
+
+    > * {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
