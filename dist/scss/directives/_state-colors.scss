@@ -19,25 +19,25 @@
 */
 
 @mixin state-error {
-  border-color: $color-state-error-border;
   background-color: $color-state-error-background;
+  border: 1px solid $color-state-error-border;
   color: $color-state-error-text;
 }
 
 @mixin state-info {
-  border-color: $color-state-info-border;
   background-color: $color-state-info-background;
+  border: 1px solid $color-state-info-border;
   color: $color-state-info-text;
 }
 
 @mixin state-success {
-  border-color: $color-state-success-border;
   background-color: $color-state-success-background;
+  border: 1px solid $color-state-success-border;
   color: $color-state-success-text;
 }
 
 @mixin state-warning {
-  border-color: $color-state-warning-border;
   background-color: $color-state-warning-background;
+  border: 1px solid $color-state-warning-border;
   color: $color-state-warning-text;
 }
