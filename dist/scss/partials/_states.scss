@@ -7,6 +7,15 @@
 //      X88 Y88b.  888  888 Y88b. Y8b.          X88
 //  88888P'  "Y888 "Y888888  "Y888 "Y8888   88888P'
 
+.panel {
+  &.state-error,
+  &.state-info,
+  &.state-success,
+  &.state-warning {
+    font-weight: $font-weight-bold;
+  }
+}
+
 .state-error {
   @include state-error;
 }

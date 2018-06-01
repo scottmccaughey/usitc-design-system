@@ -2126,13 +2126,13 @@ h6,
     .login-form {
       max-width: 1200px; } }
   @media (min-width: 800px) {
-    .login-form.login-error > div, .login-form.login-message > div {
+    .login-form.login-error > div, .login-form.login-message > div, .login-form.login-success > div, .login-form.login-warning > div {
       padding: 0 0 1rem; } }
   @media (min-width: 800px) {
-    .login-form.login-error > div:last-child, .login-form.login-message > div:last-child {
+    .login-form.login-error > div:last-child, .login-form.login-message > div:last-child, .login-form.login-success > div:last-child, .login-form.login-warning > div:last-child {
       padding: 0 1rem 1rem 0; } }
   @media (min-width: 800px) {
-    .login-form.login-error .login-icon-wrapper, .login-form.login-message .login-icon-wrapper {
+    .login-form.login-error .login-icon-wrapper, .login-form.login-message .login-icon-wrapper, .login-form.login-success .login-icon-wrapper, .login-form.login-warning .login-icon-wrapper {
       grid-row-start: 1;
       grid-row-end: 3;
       justify-self: stretch;
@@ -2183,6 +2183,15 @@ h6,
         grid-column-start: 2;
         grid-column-end: 5;
         margin: 1rem 1rem 0 0; } }
+
+.login-form-password label {
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-weight: 700;
+  text-align: center; }
+  @media (min-width: 800px) {
+    .login-form-password label {
+      text-align: right; } }
 
 @media (min-width: 800px) {
   .login-icon .feather {
@@ -2715,9 +2724,12 @@ h6,
   .on-dark .spinner-wrapper {
     color: #ffffff; }
 
+.panel.state-error, .panel.state-info, .panel.state-success, .panel.state-warning {
+  font-weight: 700; }
+
 .state-error {
   border-color: #981d20;
-  background-color: #be2a26;
+  background-color: #f0b9b8;
   color: #be2a26; }
 
 .state-info {

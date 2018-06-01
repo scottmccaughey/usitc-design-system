@@ -86,7 +86,9 @@
   }
 
   &.login-error,
-  &.login-message {
+  &.login-message,
+  &.login-success,
+  &.login-warning {
     > div {
       @include breakpoint(m) {
         padding: 0 0 $space-m;
@@ -172,6 +174,18 @@
       grid-column-start: 2;
       grid-column-end: 5;
       margin: $space-m $space-m 0 0;
+    }
+  }
+}
+
+.login-form-password {
+  label {
+    align-self: center;
+    font-weight: $font-weight-bold;
+    text-align: center;
+
+    @include breakpoint(m) {
+      text-align: right;
     }
   }
 }
