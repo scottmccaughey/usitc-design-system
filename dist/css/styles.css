@@ -1046,6 +1046,7 @@ simple-select .select-child-field {
   width: 100%; }
   .control input {
     opacity: 0;
+    width: auto;
     z-index: -1; }
     .control input:focus ~ .control-indicator {
       -webkit-box-shadow: 0 0 0 0.125rem #0d7e97;
@@ -1292,6 +1293,16 @@ simple-select .select-child-field {
 
 .radio input:not(:checked) ~ .control-indicator::before {
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+PHBhdGggZmlsbD0iI2U2ZTdlOCIgZD0iTTE2LjU4IDEuMzlhLjY4LjY4IDAgMCAwLS40NC4yMUw2LjggMTEuMzJsLTIuODktM2EuNzYuNzYgMCAwIDAtMSAwTC4xOSAxMS4xMWEuNzUuNzUgMCAwIDAgMCAxbDMuNDEgMy41NCAyLjY0IDIuNzZhLjc2Ljc2IDAgMCAwIDEgMGwyLjI1LTIuMzEuNDctLjQ5IDkuODUtMTAuMjdhLjc1Ljc1IDAgMCAwIDAtMUwxNy4xNiAxLjZhLjc0Ljc0IDAgMCAwLS41OC0uMjF6Ii8+PC9zdmc+"); }
+
+.read-more-content {
+  background-color: #c9e3e8;
+  padding: 1rem; }
+  .read-more-content h4 {
+    font-weight: 700; }
+  .on-dark .read-more-content {
+    color: #3a3a3b; }
+    .on-dark .read-more-content h4 {
+      color: #3a3a3b; }
 
 .select {
   color: #3a3a3b;
