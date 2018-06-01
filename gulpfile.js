@@ -6,6 +6,7 @@ var gulp          = require('gulp-help')(require('gulp'), { hideDepsMessage: tru
     autoprefixer  = require('gulp-autoprefixer'),
     clone         = require('gulp-clone').sink(),
     rename        = require('gulp-rename'),
+    replace       = require('gulp-replace'),
     copy          = require('gulp-copy'),
     clean         = require('gulp-clean'),
     yamlToJson    = require('gulp-yaml'),
@@ -41,6 +42,11 @@ gulp.task(
       }))
       .pipe(autoprefixer({
         browsers: ['last 2 versions']
+      }))
+      .pipe(gulp.dest(config.path.scss.dest))
+      .pipe(replace('~usitc-design-system/dist/fonts', '../fonts'))
+      .pipe(rename(function(path) {
+        path.basename = path.basename + '-dev';
       }))
       .pipe(gulp.dest(config.path.scss.dest))
       .pipe(browserSync.stream());

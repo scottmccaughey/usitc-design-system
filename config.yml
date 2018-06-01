@@ -2,6 +2,7 @@ path:
   tokens:   tokens/**/*.yml
   assets:   assets
   dist:     dist
+  fonts:    ../fonts
   html:     index.html
   json:
     tokens: dist/json
