@@ -1,0 +1,9 @@
+{
+  "title":          "USITC Design System",
+  "source":         "dist/scss/",
+  "destination":    "styleguide/",
+  "builder":        "node_modules/michelangelo/kss_styleguide/custom-template/",
+  "css":          [
+                    "dist/css/styles-dev.css"
+                  ]
+}
