@@ -1189,6 +1189,9 @@ simple-select .select-child-field {
   margin-top: 1rem;
   padding-top: 1rem; }
 
+.form-group input {
+  width: 100%; }
+
 .form-group label.control {
   display: -webkit-box;
   display: -ms-flexbox;
