@@ -7,6 +7,15 @@
 // 888 d88P Y88b 888 Y88b.  Y88b. Y88..88P 888  888      X88
 // 88888P"   "Y88888  "Y888  "Y888 "Y88P"  888  888  88888P'
 
+// Button
+//
+// The default button.
+//
+// Markup:
+// <button>Click Me</button>
+// <a class="button">Click Me</a>
+//
+// Styleguide Components.Buttons.bold
 button,
 .button {
   background-color: $color-theme-base-background;

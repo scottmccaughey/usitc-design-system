@@ -2099,6 +2099,10 @@ h6,
     .login-bottom h1 {
       font-size: 1rem; } }
 
+.login-bottom li {
+  font-size: 0.69444rem;
+  list-style: none; }
+
 .login-bottom p {
   font-size: 0.69444rem; }
 
@@ -2107,6 +2111,10 @@ h6,
   margin: 0 auto 1rem;
   max-width: 150px;
   width: 80%; }
+
+.login-bottom ul {
+  margin-bottom: 0;
+  padding-left: 0; }
 
 .login-error input {
   border-color: #981d20; }

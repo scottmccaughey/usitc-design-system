@@ -49,6 +49,11 @@
     }
   }
 
+  li {
+    font-size: $font-size-xs;
+    list-style: none;
+  }
+
   p {
     font-size: $font-size-xs;
   }
@@ -58,6 +63,11 @@
     margin: 0 auto $space-m;
     max-width: 150px;
     width: 80%;
+  }
+
+  ul {
+    margin-bottom: 0;
+    padding-left: 0;
   }
 }
 
