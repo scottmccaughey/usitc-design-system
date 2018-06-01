@@ -507,109 +507,106 @@ simple-select .select-child-field {
     top: 50%;
     width: 0;
   }
-
-  .select-child-arrow.g-l-1 {
-    display: none;
-    grid-row-start: 1;
-    grid-row-end: 99;
-    justify-content: flex-end;
-
-    @include breakpoint(l) {
-      display: flex;
-    }
-
-    b {
-      border-bottom: 1px solid $color-gray;
-      border-left: 1px solid $color-gray;
-      display: block;
-      height: 50%;
-      width: 50%;
-    }
-  }
 }
+
+// .select-child-arrow.g-l-1 {
+//   display: none;
+//   grid-row-start: 1;
+//   grid-row-end: 99;
+//   justify-content: flex-end;
+
+//   @include breakpoint(l) {
+//     display: flex;
+//   }
+
+//   b {
+//     border-bottom: 1px solid $color-gray;
+//     border-left: 1px solid $color-gray;
+//     display: block;
+//     height: 50%;
+//     width: 50%;
+//   }
+// }
 
 .select-child-header {
   margin-top: $space-m;
 }
 
-.select-read-more {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
+// .select-read-more {
+//   align-items: center;
+//   display: flex;
+//   flex-direction: row;
 
-  a {
-    background-image: none;
-    display: inline-block;
-    padding: $space-xs $space-s $space-xs $space-l;
-    position: relative;
+//   a {
+//     background-image: none;
+//     display: inline-block;
+//     padding: $space-xs $space-s $space-xs $space-l;
+//     position: relative;
 
-    @include breakpoint(l) {
-      padding: 0 $space-s 0 $space-l;
-    }
+//     @include breakpoint(l) {
+//       padding: 0 $space-s 0 $space-l;
+//     }
 
-    &:active,
-    &:focus,
-    &:hover {
-      em,
-      i {
-        color: $color-theme-base-hover-text;
-      }
-    }
-  }
+//     &:active,
+//     &:focus,
+//     &:hover {
+//       em,
+//       i {
+//         color: $color-theme-base-hover-text;
+//       }
+//     }
+//   }
 
-  em {
-    color: $color-theme-base-link;
-    font-style: normal;
-    font-weight: $font-weight-bold;
-    text-transform: uppercase;
+//   em {
+//     color: $color-theme-base-link;
+//     font-style: normal;
+//     font-weight: $font-weight-bold;
+//     text-transform: uppercase;
 
-    @include breakpoint(l) {
-      display: block;
-    }
-  }
+//     @include breakpoint(l) {
+//       display: block;
+//     }
+//   }
 
-  hr {
-    display: none;
+//   hr {
+//     display: none;
 
-    @include breakpoint(l) {
-      border: none;
-      border-top: 1px dashed $color-blue;
-      display: inline-block;
-      flex-shrink: 0;
-      height: 1px;
-      margin: 0;
-      float: left;
-      width: $space-xl;
-    }
-  }
+//     @include breakpoint(l) {
+//       border: none;
+//       border-top: 1px dashed $color-blue;
+//       display: inline-block;
+//       flex-shrink: 0;
+//       height: 1px;
+//       margin: 0;
+//       float: left;
+//       width: $space-xl;
+//     }
+//   }
 
-  i {
-    color: $color-blue;
-    height: 100%;
-    left: $space-xs;
-    margin-right: $space-xs;
-    position: absolute;
-    top: 0;
+//   i {
+//     color: $color-blue;
+//     height: 100%;
+//     left: $space-xs;
+//     margin-right: $space-xs;
 
-    > * {
-      align-items: center;
-      display: flex;
-      flex-direction: row;
-      height: 100%;
-      width: 100%;
-    }
+//     > * {
+//       align-items: center;
+//       display: flex;
+//       flex-direction: row;
+//       height: 100%;
+//       width: 100%;
+//     }
 
-    @include breakpoint(l) {
-      left: 0;
-      top: ($space-xs + $space-xxs);
+//     @include breakpoint(l) {
+//       top: ($space-xs + $space-xxs);
 
-      svg {
-        height: $space-l;
-        width: $space-l;
-      }
-    }
-  }
-}
+//       svg {
+//         height: $space-l;
+//         width: $space-l;
+//       }
+//     }
+//   }
+// }
 
 .toggle-switch {
   align-items: center;
