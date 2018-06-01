@@ -277,6 +277,10 @@ simple-select .select-child-field {
 
   input {
     width: 100%;
+
+    + app-field-error-display > .state-error {
+      border-top-width: 0;
+    }
   }
 
   label.control {

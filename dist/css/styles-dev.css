@@ -1191,6 +1191,8 @@ simple-select .select-child-field {
 
 .form-group input {
   width: 100%; }
+  .form-group input + app-field-error-display > .state-error {
+    border-top-width: 0; }
 
 .form-group label.control {
   display: -webkit-box;
