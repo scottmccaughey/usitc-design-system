@@ -511,12 +511,12 @@ simple-select .select-child-field {
 
 .select-child-arrow.g-l-1 {
   display: none;
-  grid-row-start: 1;
-  grid-row-end: 99;
-  justify-content: flex-end;
 
   @include breakpoint(l) {
     display: flex;
+    grid-row-start: 1;
+    grid-row-end: 99;
+    justify-content: flex-end;
   }
 
   b {
