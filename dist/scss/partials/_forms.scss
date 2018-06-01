@@ -99,6 +99,7 @@ simple-select .select-child-field {
 
   input {
     opacity: 0;
+    width: auto;
     z-index: -1;
 
     &:focus ~ .control-indicator {
@@ -424,6 +425,23 @@ simple-select .select-child-field {
 
   input:not(:checked) ~ .control-indicator::before {
     background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+PHBhdGggZmlsbD0iI2U2ZTdlOCIgZD0iTTE2LjU4IDEuMzlhLjY4LjY4IDAgMCAwLS40NC4yMUw2LjggMTEuMzJsLTIuODktM2EuNzYuNzYgMCAwIDAtMSAwTC4xOSAxMS4xMWEuNzUuNzUgMCAwIDAgMCAxbDMuNDEgMy41NCAyLjY0IDIuNzZhLjc2Ljc2IDAgMCAwIDEgMGwyLjI1LTIuMzEuNDctLjQ5IDkuODUtMTAuMjdhLjc1Ljc1IDAgMCAwIDAtMUwxNy4xNiAxLjZhLjc0Ljc0IDAgMCAwLS41OC0uMjF6Ii8+PC9zdmc+');
+  }
+}
+
+.read-more-content {
+  background-color: $color-blue-light;
+  padding: $space-m;
+
+  h4 {
+    font-weight: $font-weight-bold;
+  }
+
+  .on-dark & {
+    color: $color-theme-base-text;
+
+    h4 {
+      color: $color-theme-base-text;
+    }
   }
 }
 
