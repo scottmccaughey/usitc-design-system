@@ -144,7 +144,7 @@ simple-select .select-child-field {
 }
 
 .controls-boxed {
-  border: 1px solid $color-gray;
+  border: $border-base;;
   max-height: 400px;
   overflow-y: scroll;
 
@@ -522,8 +522,8 @@ simple-select .select-child-field {
   }
 
   b {
-    border-bottom: 1px solid $color-gray;
-    border-left: 1px solid $color-gray;
+    border-bottom: $border-base;;
+    border-left: $border-base;;
     display: block;
     height: 50%;
     width: 50%;
@@ -608,7 +608,7 @@ simple-select .select-child-field {
 
 .toggle-switch {
   align-items: center;
-  border: 1px solid $color-gray;
+  border: $border-base;;
   border-radius: $space-s;
   display: flex;
   width: 100%;
@@ -634,7 +634,7 @@ simple-select .select-child-field {
 
   label {
     background-color: $color-blue-light;
-    border-right: 1px solid $color-gray;
+    border-right: $border-base;;
     flex-grow: 1;
     font-weight: $font-weight-normal;
     margin-bottom: 0;
