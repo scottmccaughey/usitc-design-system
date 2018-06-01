@@ -532,81 +532,77 @@ simple-select .select-child-field {
   margin-top: $space-m;
 }
 
-// .select-read-more {
-//   align-items: center;
-//   display: flex;
-//   flex-direction: row;
+.select-read-more {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin-top: $space-s;
 
-//   a {
-//     background-image: none;
-//     display: inline-block;
-//     padding: $space-xs $space-s $space-xs $space-l;
-//     position: relative;
+  @include breakpoint(l) {
+    margin-top: 0;
+  }
 
-//     @include breakpoint(l) {
-//       padding: 0 $space-s 0 $space-l;
-//     }
+  a {
+    align-items: center;
+    background-image: none;
+    display: flex;
 
-//     &:active,
-//     &:focus,
-//     &:hover {
-//       em,
-//       i {
-//         color: $color-theme-base-hover-text;
-//       }
-//     }
-//   }
+    &:active,
+    &:focus,
+    &:hover {
+      em,
+      i {
+        color: $color-theme-base-hover-text;
+      }
+    }
+  }
 
-//   em {
-//     color: $color-theme-base-link;
-//     font-style: normal;
-//     font-weight: $font-weight-bold;
-//     text-transform: uppercase;
+  em {
+    color: $color-theme-base-link;
+    font-style: normal;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
 
-//     @include breakpoint(l) {
-//       display: block;
-//     }
-//   }
+    @include breakpoint(l) {
+      display: block;
+    }
+  }
 
-//   hr {
-//     display: none;
+  hr {
+    display: none;
 
-//     @include breakpoint(l) {
-//       border: none;
-//       border-top: 1px dashed $color-blue;
-//       display: inline-block;
-//       flex-shrink: 0;
-//       height: 1px;
-//       margin: 0;
-//       float: left;
-//       width: $space-xl;
-//     }
-//   }
+    @include breakpoint(l) {
+      border: none;
+      border-top: 1px dashed $color-blue;
+      display: inline-block;
+      flex-shrink: 0;
+      height: 1px;
+      margin: 0;
+      width: $space-xl;
+    }
+  }
 
-//   i {
-//     color: $color-blue;
-//     height: 100%;
-//     left: $space-xs;
-//     margin-right: $space-xs;
+  i {
+    color: $color-blue;
+    height: 100%;
+    margin-right: $space-s;
 
-//     > * {
-//       align-items: center;
-//       display: flex;
-//       flex-direction: row;
-//       height: 100%;
-//       width: 100%;
-//     }
+    > * {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      height: 100%;
+      width: 100%;
+    }
 
-//     @include breakpoint(l) {
-//       top: ($space-xs + $space-xxs);
-
-//       svg {
-//         height: $space-l;
-//         width: $space-l;
-//       }
-//     }
-//   }
-// }
+    @include breakpoint(l) {
+      svg {
+        height: $space-l;
+        width: $space-l;
+      }
+    }
+  }
+}
 
 .toggle-switch {
   align-items: center;

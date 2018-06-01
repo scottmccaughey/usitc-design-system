@@ -1376,6 +1376,76 @@ simple-select .select-child-field {
 .select-child-header {
   margin-top: 1rem; }
 
+.select-read-more {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 0.5rem; }
+  @media (min-width: 1200px) {
+    .select-read-more {
+      margin-top: 0; } }
+  .select-read-more a {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-image: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .select-read-more a:active em,
+    .select-read-more a:active i, .select-read-more a:focus em,
+    .select-read-more a:focus i, .select-read-more a:hover em,
+    .select-read-more a:hover i {
+      color: #ffffff; }
+  .select-read-more em {
+    color: #0d7e97;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase; }
+    @media (min-width: 1200px) {
+      .select-read-more em {
+        display: block; } }
+  .select-read-more hr {
+    display: none; }
+    @media (min-width: 1200px) {
+      .select-read-more hr {
+        border: none;
+        border-top: 1px dashed #0d7e97;
+        display: inline-block;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+        height: 1px;
+        margin: 0;
+        width: 4rem; } }
+  .select-read-more i {
+    color: #0d7e97;
+    height: 100%;
+    margin-right: 0.5rem; }
+    .select-read-more i > * {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      height: 100%;
+      width: 100%; }
+    @media (min-width: 1200px) {
+      .select-read-more i svg {
+        height: 2rem;
+        width: 2rem; } }
+
 .toggle-switch {
   -webkit-box-align: center;
       -ms-flex-align: center;
