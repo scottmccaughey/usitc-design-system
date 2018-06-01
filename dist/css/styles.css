@@ -2728,27 +2728,28 @@ h6,
     color: #ffffff; }
 
 .panel.state-error, .panel.state-info, .panel.state-success, .panel.state-warning {
+  border: 1px solid #818386;
   font-weight: 700; }
 
 .state-error {
   border-color: #981d20;
   background-color: #f0b9b8;
-  color: #be2a26; }
+  color: #981d20; }
 
 .state-info {
   border-color: #004353;
   background-color: #c9e3e8;
-  color: #0d7e97; }
+  color: #004353; }
 
 .state-success {
   border-color: #266942;
   background-color: #e8f3e5;
-  color: #308453; }
+  color: #266942; }
 
 .state-warning {
   border-color: #cb8f2b;
   background-color: #fae0af;
-  color: #fdb71c; }
+  color: #cb8f2b; }
 
 .table {
   width: 100%; }
