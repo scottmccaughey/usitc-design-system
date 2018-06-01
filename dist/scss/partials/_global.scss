@@ -255,13 +255,6 @@ ul {
   min-height: 100vh;
 }
 
-.state-error {
-  background-color: rgba($color-red, 0.1);
-  border-color: $color-red;
-  color: $color-red-dark;
-  font-weight: $font-weight-bold;
-}
-
 .step {
   font-size: $font-size-xl;
   font-weight: $font-weight-bold;

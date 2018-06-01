@@ -85,7 +85,8 @@
     max-width: 1200px;
   }
 
-  &.login-error {
+  &.login-error,
+  &.login-message {
     > div {
       @include breakpoint(m) {
         padding: 0 0 $space-m;

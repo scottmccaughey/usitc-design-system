@@ -12,7 +12,6 @@
 
   state-error()
   state-info()
-  state-neutral()
   state-success()
   state-warning()
 
@@ -20,31 +19,25 @@
 */
 
 @mixin state-error {
-  border-color: $color-error-border;
-  background-color: $color-error-background;
-  color: $color-error-text;
+  border-color: $color-state-error-border;
+  background-color: $color-state-error-background;
+  color: $color-state-error-text;
 }
 
 @mixin state-info {
-  border-color: $color-info-border;
-  background-color: $color-info-background;
-  color: $color-info-text;
-}
-
-@mixin state-neutral {
-  border-color: $color-neutral-border;
-  background-color: $color-neutral-background;
-  color: $color-neutral-text;
+  border-color: $color-state-info-border;
+  background-color: $color-state-info-background;
+  color: $color-state-info-text;
 }
 
 @mixin state-success {
-  border-color: $color-success-border;
-  background-color: $color-success-background;
-  color: $color-success-text;
+  border-color: $color-state-success-border;
+  background-color: $color-state-success-background;
+  color: $color-state-success-text;
 }
 
 @mixin state-warning {
-  border-color: $color-warning-border;
-  background-color: $color-warning-background;
-  color: $color-warning-text;
+  border-color: $color-state-warning-border;
+  background-color: $color-state-warning-background;
+  color: $color-state-warning-text;
 }

@@ -538,7 +538,6 @@ textarea {
 
   state-error()
   state-info()
-  state-neutral()
   state-success()
   state-warning()
 
@@ -972,11 +971,6 @@ button,
   .error-messages-list li:only-child {
     list-style: none;
     text-align: center; }
-
-.state-error {
-  background-color: #ffffff;
-  border: 1px solid #981d20;
-  color: #be2a26; }
 
 input,
 select {
@@ -1719,12 +1713,6 @@ ul {
   grid-template-rows: min-content auto min-content;
   min-height: 100vh; }
 
-.state-error {
-  background-color: rgba(190, 42, 38, 0.1);
-  border-color: #be2a26;
-  color: #981d20;
-  font-weight: 700; }
-
 .step {
   font-size: 1.44rem;
   font-weight: 700;
@@ -2138,13 +2126,13 @@ h6,
     .login-form {
       max-width: 1200px; } }
   @media (min-width: 800px) {
-    .login-form.login-error > div {
+    .login-form.login-error > div, .login-form.login-message > div {
       padding: 0 0 1rem; } }
   @media (min-width: 800px) {
-    .login-form.login-error > div:last-child {
+    .login-form.login-error > div:last-child, .login-form.login-message > div:last-child {
       padding: 0 1rem 1rem 0; } }
   @media (min-width: 800px) {
-    .login-form.login-error .login-icon-wrapper {
+    .login-form.login-error .login-icon-wrapper, .login-form.login-message .login-icon-wrapper {
       grid-row-start: 1;
       grid-row-end: 3;
       justify-self: stretch;
@@ -2726,6 +2714,26 @@ h6,
   text-align: center; }
   .on-dark .spinner-wrapper {
     color: #ffffff; }
+
+.state-error {
+  border-color: #981d20;
+  background-color: #be2a26;
+  color: #be2a26; }
+
+.state-info {
+  border-color: #004353;
+  background-color: #c9e3e8;
+  color: #0d7e97; }
+
+.state-success {
+  border-color: #266942;
+  background-color: #e8f3e5;
+  color: #308453; }
+
+.state-warning {
+  border-color: #cb8f2b;
+  background-color: #fae0af;
+  color: #fdb71c; }
 
 .table {
   width: 100%; }
