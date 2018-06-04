@@ -1190,6 +1190,9 @@ simple-select .select-child-field {
   margin-top: 1rem;
   padding-top: 1rem; }
 
+.form-group.control input {
+  width: auto; }
+
 .form-group input {
   width: 100%; }
   .form-group input + app-field-error-display > .state-error {

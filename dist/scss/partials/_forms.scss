@@ -276,6 +276,10 @@ simple-select .select-child-field {
     padding-top: $space-m;
   }
 
+  &.control input {
+    width: auto;
+  }
+
   input {
     width: 100%;
 
