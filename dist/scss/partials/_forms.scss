@@ -493,6 +493,12 @@ simple-select .select-child-field {
       padding-left: 3rem;
     }
 
+    &:focus {
+      option:checked {
+        background: $color-blue linear-gradient(0deg, $color-blue 0%, $color-blue 100%);
+      }
+    }
+
     &:focus:-moz-focusring {
       color: transparent;
       text-shadow: 0 0 0 $color-black;
@@ -509,8 +515,7 @@ simple-select .select-child-field {
     }
 
     option:checked {
-      background: $color-blue linear-gradient(0deg, $color-blue 0%, $color-blue 100%);
-      color: $color-white;
+      background: $color-blue-light linear-gradient(0deg, $color-blue-light 0%, $color-blue-light 100%);
     }
   }
 
