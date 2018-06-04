@@ -988,12 +988,6 @@ select[multiple] {
   height: 8rem;
   padding: 0;
   width: 100%; }
-  select[multiple]:focus {
-    background-color: inherit;
-    color: inherit; }
-    select[multiple]:focus option:checked {
-      -webkit-box-shadow: 0 0 0 0.125rem #0d7e97 inset;
-              box-shadow: 0 0 0 0.125rem #0d7e97 inset; }
   select[multiple] option {
     padding: 0.25rem 1rem; }
 
@@ -1356,12 +1350,6 @@ simple-select .select-child-field {
     width: 100%; }
     .select select[multiple].select-icon-left {
       padding-left: 3rem; }
-    .select select:active {
-      background-color: #0d7e97;
-      color: #ffffff; }
-    .select select:focus {
-      -webkit-box-shadow: 0 0 0 0.125rem #0d7e97;
-              box-shadow: 0 0 0 0.125rem #0d7e97; }
     .select select:focus:-moz-focusring {
       color: transparent;
       text-shadow: 0 0 0 #3a3a3b; }
@@ -1371,6 +1359,10 @@ simple-select .select-child-field {
       background-color: #ffffff;
       border: 1px solid #818386;
       padding-left: 4rem; }
+    .select select option:checked {
+      background: #0d7e97 -webkit-gradient(linear, left bottom, left top, from(#0d7e97), to(#0d7e97));
+      background: #0d7e97 linear-gradient(0deg, #0d7e97 0%, #0d7e97 100%);
+      color: #ffffff; }
   .select:after {
     border-bottom: 0.25rem solid transparent;
     border-left: 0.25rem solid transparent;

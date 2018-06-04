@@ -29,11 +29,7 @@ select {
     width: 100%;
 
     &:focus {
-      background-color: inherit;
-      color: inherit;
-
       option:checked {
-        box-shadow: $border-focus inset;
       }
     }
 
@@ -497,15 +493,6 @@ simple-select .select-child-field {
       padding-left: 3rem;
     }
 
-    &:active {
-      background-color: $color-blue;
-      color: $color-white;
-    }
-
-    &:focus {
-      box-shadow: $border-focus;
-    }
-
     &:focus:-moz-focusring {
       color: transparent;
       text-shadow: 0 0 0 $color-black;
@@ -519,6 +506,11 @@ simple-select .select-child-field {
       background-color: $color-white;
       border: $border-base;
       padding-left: $space-xl;
+    }
+
+    option:checked {
+      background: $color-blue linear-gradient(0deg, $color-blue 0%, $color-blue 100%);
+      color: $color-white;
     }
   }
 
