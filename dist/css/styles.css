@@ -1190,7 +1190,7 @@ simple-select .select-child-field {
   margin-top: 1rem;
   padding-top: 1rem; }
 
-.form-group.control input {
+.form-group .control input {
   width: auto; }
 
 .form-group input {
