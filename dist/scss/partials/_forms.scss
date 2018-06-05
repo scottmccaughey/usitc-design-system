@@ -28,11 +28,6 @@ select {
     padding: 0;
     width: 100%;
 
-    &:focus {
-      option:checked {
-      }
-    }
-
     option {
       padding: $space-xs $space-m;
     }
@@ -141,7 +136,7 @@ simple-select .select-child-field {
 }
 
 .controls-boxed {
-  border: $border-base;;
+  border: $border-base;
   max-height: 400px;
   overflow-y: scroll;
 
@@ -340,6 +335,18 @@ simple-select .select-child-field {
   }
 }
 
+.hide-child-design {
+  .on-dark .form-settings-header,
+  .on-dark .form-settings-header:first-child,
+  .select-child-arrow b {
+    display: none;
+  }
+
+  .select-child-header {
+    margin-top: 0;
+  }
+}
+
 .input-icon {
   position: relative;
   width: 100%;
@@ -384,6 +391,14 @@ simple-select .select-child-field {
   font-size: $font-size-s;
   font-weight: $font-weight-bold;
   margin-top: 0;
+
+  &:not(:first-child) {
+    margin-top: $space-m;
+  }
+
+  .form-group &label {
+    text-transform: none;
+  }
 }
 
 .progress {

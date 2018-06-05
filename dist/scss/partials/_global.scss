@@ -179,6 +179,44 @@ ul {
   border-top: $border-base;
 }
 
+.box-header {
+  background-color: $color-blue;
+  color: $color-white;
+  font-size: $font-size-s;
+  font-weight: $font-weight-bold;
+  margin-bottom: 0;
+  padding: $space-s;
+
+  + .boxed {
+    border-color: $color-blue;
+  }
+}
+
+.boxed {
+  border: $border-base;
+  height: 400px;
+  overflow-y: scroll;
+  padding: 0;
+
+  &.boxed-250 {
+    height: 250px;
+  }
+
+  &.boxed-350 {
+    height: 350px;
+  }
+
+  > li {
+    list-style: none;
+    margin-bottom: 0;
+    padding: $space-s;
+
+    &:nth-child(even) {
+      background-color: $color-gray-light;
+    }
+  }
+}
+
 .constrained {
   @include constrained;
 }

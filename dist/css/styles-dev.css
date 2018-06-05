@@ -1231,6 +1231,14 @@ simple-select .select-child-field {
   padding: 0.25rem 0.5rem;
   text-transform: uppercase; }
 
+.hide-child-design .on-dark .form-settings-header,
+.hide-child-design .on-dark .form-settings-header:first-child,
+.hide-child-design .select-child-arrow b {
+  display: none; }
+
+.hide-child-design .select-child-header {
+  margin-top: 0; }
+
 .input-icon {
   position: relative;
   width: 100%; }
@@ -1260,6 +1268,10 @@ simple-select .select-child-field {
   font-size: 0.83333rem;
   font-weight: 700;
   margin-top: 0; }
+  .label-parent:not(:first-child) {
+    margin-top: 1rem; }
+  .form-group .label-parentlabel {
+    text-transform: none; }
 
 .progress {
   display: inline-block;
@@ -1649,6 +1661,32 @@ ul {
 
 .bordered-top {
   border-top: 1px solid #818386; }
+
+.box-header {
+  background-color: #0d7e97;
+  color: #ffffff;
+  font-size: 0.83333rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  padding: 0.5rem; }
+  .box-header + .boxed {
+    border-color: #0d7e97; }
+
+.boxed {
+  border: 1px solid #818386;
+  height: 400px;
+  overflow-y: scroll;
+  padding: 0; }
+  .boxed.boxed-250 {
+    height: 250px; }
+  .boxed.boxed-350 {
+    height: 350px; }
+  .boxed > li {
+    list-style: none;
+    margin-bottom: 0;
+    padding: 0.5rem; }
+    .boxed > li:nth-child(even) {
+      background-color: #e6e7e8; }
 
 @media (min-width: 1200px) {
   .constrained {
@@ -2367,6 +2405,21 @@ h6,
     bottom: 0.25rem;
     height: 0.5rem; }
 
+.attached-to-bottom {
+  margin-top: 1rem;
+  position: relative; }
+  .attached-to-bottom:before {
+    border-color: #0d7e97;
+    border-left: 1px solid #818386;
+    content: '';
+    height: 1rem;
+    left: 50%;
+    position: absolute;
+    top: -1rem; }
+  .attached-to-bottom input {
+    border-color: #0d7e97;
+    height: 2.5rem; }
+
 .search-column-order {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -2572,8 +2625,8 @@ h6,
   color: #414042; }
   .site-header > nav > ul {
     display: grid;
-    grid-template-columns: -webkit-min-content 1fr -webkit-min-content -webkit-min-content;
-    grid-template-columns: min-content 1fr min-content min-content;
+    grid-template-columns: 1fr -webkit-min-content -webkit-min-content;
+    grid-template-columns: 1fr min-content min-content;
     grid-template-rows: -webkit-min-content;
     grid-template-rows: min-content;
     padding: 0; }
