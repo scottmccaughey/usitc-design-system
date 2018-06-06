@@ -335,18 +335,6 @@ simple-select .select-child-field {
   }
 }
 
-.hide-child-design {
-  .on-dark .form-settings-header,
-  .on-dark .form-settings-header:first-child,
-  .select-child-arrow b {
-    display: none;
-  }
-
-  .select-child-header {
-    margin-top: 0;
-  }
-}
-
 .input-icon {
   position: relative;
   width: 100%;
@@ -564,16 +552,24 @@ simple-select .select-child-field {
   }
 
   b {
-    border-bottom: $border-base;;
-    border-left: $border-base;;
+    border-bottom: $border-base;
+    border-left: $border-base;
     display: block;
     height: 50%;
     width: 50%;
+
+    .hide-child-design & {
+      display: none;
+    }
   }
 }
 
 .select-child-header {
   margin-top: $space-m;
+
+  .hide-child-design & {
+    margin-top: 0;
+  }
 }
 
 .select-read-more {
@@ -650,7 +646,7 @@ simple-select .select-child-field {
 
 .toggle-switch {
   align-items: center;
-  border: $border-base;;
+  border: $border-base;
   border-radius: $space-s;
   display: flex;
   width: 100%;
@@ -676,7 +672,7 @@ simple-select .select-child-field {
 
   label {
     background-color: $color-blue-light;
-    border-right: $border-base;;
+    border-right: $border-base;
     flex-grow: 1;
     font-weight: $font-weight-normal;
     margin-bottom: 0;

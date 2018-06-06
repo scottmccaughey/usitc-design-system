@@ -11,10 +11,10 @@
 #  "Y88P"
 
 grid:
-  columns: 12;
+  columns: 12
   gap:
-    col: $space-m;
-    row: $space-m;
+    col: $space-m
+    row: $space-m
   item-sizes:
   - full: 12
   - three-quarters: 9

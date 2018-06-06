@@ -1231,14 +1231,6 @@ simple-select .select-child-field {
   padding: 0.25rem 0.5rem;
   text-transform: uppercase; }
 
-.hide-child-design .on-dark .form-settings-header,
-.hide-child-design .on-dark .form-settings-header:first-child,
-.hide-child-design .select-child-arrow b {
-  display: none; }
-
-.hide-child-design .select-child-header {
-  margin-top: 0; }
-
 .input-icon {
   position: relative;
   width: 100%; }
@@ -1410,9 +1402,13 @@ simple-select .select-child-field {
     display: block;
     height: 50%;
     width: 50%; }
+    .hide-child-design .select-child-arrow.g-l-1 b {
+      display: none; }
 
 .select-child-header {
   margin-top: 1rem; }
+  .hide-child-design .select-child-header {
+    margin-top: 0; }
 
 .select-read-more {
   -webkit-box-align: center;
