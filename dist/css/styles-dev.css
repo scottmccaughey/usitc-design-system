@@ -985,9 +985,11 @@ label {
   cursor: pointer; }
 
 select[multiple] {
-  min-height: 8rem;
+  height: 8rem;
   padding: 0;
   width: 100%; }
+  select[multiple].boxed {
+    height: 400px; }
   select[multiple] option {
     padding: 0.25rem 1rem; }
 

@@ -24,9 +24,13 @@ label {
 
 select {
   &[multiple] {
-    min-height: $space-xxl;
+    height: $space-xxl;
     padding: 0;
     width: 100%;
+
+    &.boxed {
+      height: 400px;
+    }
 
     option {
       padding: $space-xs $space-m;
