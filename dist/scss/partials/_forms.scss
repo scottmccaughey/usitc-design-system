@@ -384,7 +384,7 @@ simple-select .select-child-field {
     margin-top: $space-m;
   }
 
-  .form-group &label {
+  @at-root .form-group label#{&} {
     text-transform: none;
   }
 }
@@ -460,8 +460,18 @@ simple-select .select-child-field {
     }
   }
 
-  &.select-multiple::after {
-    display: none;
+  &.select-multiple {
+    &::after {
+      display: none;
+    }
+
+    option[disabled] {
+      background-color: $color-blue-dark;
+      color: $color-white;
+      cursor: default;
+      font-weight: $font-weight-bold;
+      padding: $space-s $space-m;
+    }
   }
 
   i {
