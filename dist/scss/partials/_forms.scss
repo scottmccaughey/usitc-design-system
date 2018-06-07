@@ -24,7 +24,7 @@ label {
 
 select {
   &[multiple] {
-    height: $space-xxl;
+    min-height: $space-xxl;
     padding: 0;
     width: 100%;
 
