@@ -98,4 +98,18 @@
       border-bottom-width: 1px;
     }
   }
+
+  &.table-searches {
+    th.table-spinner:last-child {
+      padding: 0 !important;
+    }
+  }
+}
+
+.table-results-all {
+  border-bottom: $border-base;
+
+  + .table-results-all {
+    margin-top: $space-l;
+  }
 }

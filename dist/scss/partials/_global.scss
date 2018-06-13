@@ -266,6 +266,14 @@ ul {
   }
 }
 
+.boxed-wrapper-single {
+  margin-top: 38px;
+}
+
+.boxed-wrapper-double {
+  margin-top: 72px;
+}
+
 .buttons-right {
   align-items: center;
   display: flex;
@@ -289,7 +297,7 @@ ul {
 
 .disclaimer {
   p {
-    color: $color-gray;
+    color: $color-gray-dark;
     font-size: $font-size-xxxs;
   }
 }
@@ -313,11 +321,32 @@ ul {
 }
 
 .panel {
-  background-color: $color-theme-base-background-alt;
-  border: $border-base;
-  border-color: $color-gray;
+  background-color: $color-blue-lighter;
   margin-bottom: $space-m;
   padding: $space-m;
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+
+  ul {
+    padding: 0 $space-m;
+
+    li:only-child {
+      list-style: none;
+      text-align: center;
+    }
+  }
+}
+
+.panel-header,
+.panel-header:first-child {
+  background-color: $color-blue;
+  color: $color-white;
+  font-size: $font-size-m;
+  margin: (-$space-m) (-$space-m) $space-m;
+  padding: $space-s $space-m;
+  text-align: center;
 }
 
 .pull-left {

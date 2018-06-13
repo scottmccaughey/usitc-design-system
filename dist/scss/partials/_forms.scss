@@ -263,6 +263,10 @@ simple-select .select-child-field {
     margin: 0 $space-s 0 0;
     white-space: nowrap;
   }
+
+  .toggle-switch label {
+    margin-right: 0;
+  }
 }
 
 .form-group {
@@ -283,8 +287,15 @@ simple-select .select-child-field {
     }
   }
 
-  label.control {
-    display: flex;
+  label {
+    &.control {
+      display: flex;
+    }
+
+    &.label-parent {
+      line-height: $line-height-header;
+      margin-bottom: $space-m;
+    }
   }
 
   .control-label {
@@ -664,6 +675,10 @@ simple-select .select-child-field {
   border-radius: $space-s;
   display: flex;
   width: 100%;
+
+  .on-dark & {
+    color: $color-black;
+  }
 
   input {
     border: 0;

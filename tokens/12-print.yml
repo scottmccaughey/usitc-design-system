@@ -1,0 +1,21 @@
+#                  d8b          888
+#                  Y8P          888
+#                               888
+# 88888b.  888d888 888 88888b.  888888
+# 888 "88b 888P"   888 888 "88b 888
+# 888  888 888     888 888  888 888
+# 888 d88P 888     888 888  888 Y88b.
+# 88888P"  888     888 888  888  "Y888
+# 888
+# 888
+# 888
+
+print:
+  color:
+    base: $color-black
+    background: $color-white
+  font:
+    size: 12pt
+    size-results: 5.5pt
+  page:
+    margin: 1cm
