@@ -107,9 +107,11 @@
 }
 
 .table-results-all {
-  border-bottom: $border-base;
-
   + .table-results-all {
     margin-top: $space-l;
+  }
+
+  table {
+    border-bottom: $border-base;
   }
 }

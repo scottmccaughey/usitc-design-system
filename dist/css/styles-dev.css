@@ -1560,7 +1560,6 @@ body {
   font-weight: 300;
   line-height: 1.5;
   min-height: 100vh;
-  overflow-x: hidden;
   position: relative; }
 
 ::-moz-selection {
@@ -3096,10 +3095,11 @@ h6,
 .table-responsive.table-searches th.table-spinner:last-child {
   padding: 0 !important; }
 
-.table-results-all {
+.table-results-all + .table-results-all {
+  margin-top: 2rem; }
+
+.table-results-all table {
   border-bottom: 1px solid #818386; }
-  .table-results-all + .table-results-all {
-    margin-top: 2rem; }
 
 .nav-tabs {
   -webkit-box-align: stretch;
