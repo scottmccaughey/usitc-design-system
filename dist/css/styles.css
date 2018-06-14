@@ -1614,6 +1614,14 @@ app-root {
 article section + section {
   margin-top: 2rem; }
 
+dl dt {
+  font-weight: 700; }
+
+dl dd {
+  margin-bottom: 0.5rem; }
+  dl dd:last-child {
+    margin-bottom: 0; }
+
 p {
   margin-bottom: 1rem; }
   p:last-child {
@@ -1818,6 +1826,12 @@ ul {
   transition: max-height 0.3s ease-in-out; }
   .read-more.read-more-hidden {
     max-height: 0; }
+
+.read-more-content p:last-of-type {
+  margin-bottom: 0; }
+
+.read-more-content dt:first-child {
+  margin-top: 1rem; }
 
 .site-content {
   display: -webkit-box;
@@ -2968,8 +2982,13 @@ h6,
   font-weight: 700;
   margin-bottom: 0;
   text-align: center; }
+  .spinner-wrapper p:last-child {
+    margin-bottom: 1rem; }
   .on-dark .spinner-wrapper {
     color: #ffffff; }
+
+.table-spinner {
+  background-color: rgba(255, 255, 255, 0.1); }
 
 .panel.state-error, .panel.state-info, .panel.state-success, .panel.state-warning {
   font-weight: 700; }

@@ -90,6 +90,20 @@ article {
   }
 }
 
+dl {
+  dt {
+    font-weight: $font-weight-bold;
+  }
+
+  dd {
+    margin-bottom: $space-s;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
 p {
   margin-bottom: $space-m;
 
@@ -364,6 +378,16 @@ ul {
 
   &.read-more-hidden {
     max-height: 0;
+  }
+}
+
+.read-more-content {
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+
+  dt:first-child {
+    margin-top: $space-m;
   }
 }
 
