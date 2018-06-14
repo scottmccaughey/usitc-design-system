@@ -251,6 +251,10 @@ button,
     }
   }
 
+  &.button-primary-alt {
+    background-color: $color-theme-dark-background;
+  }
+
   &.button-round {
     border-radius: $border-radius-circle;
     height: $space-l;

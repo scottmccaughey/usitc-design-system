@@ -932,6 +932,9 @@ button,
       .button.button-primary:focus, .on-dark
       .button.button-primary:hover {
         border-color: #ffffff; }
+  button.button-primary-alt,
+  .button.button-primary-alt {
+    background-color: #004353; }
   button.button-round,
   .button.button-round {
     border-radius: 100%;
@@ -1780,6 +1783,9 @@ ul {
 .disclaimer p {
   color: #414042;
   font-size: 0.48225rem; }
+
+.font-weight-normal {
+  font-weight: 300; }
 
 .loading {
   background-image: url("/assets/images/svg/loader.svg");
@@ -2645,6 +2651,8 @@ h6,
 
 .site-search {
   max-width: calc(100vw - 15px); }
+  .site-search h2:only-child {
+    margin-bottom: 0; }
 
 @media (min-width: 800px) {
   .table-results h3 {
@@ -2662,6 +2670,8 @@ h6,
   @media (min-width: 800px) {
     .table-results thead th {
       font-size: 1.2em; } }
+  .table-results thead th.text-left {
+    text-align: left; }
 
 .table-results tbody td {
   white-space: nowrap; }

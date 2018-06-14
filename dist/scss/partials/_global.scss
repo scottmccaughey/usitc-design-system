@@ -316,6 +316,10 @@ ul {
   }
 }
 
+.font-weight-normal {
+  font-weight: $font-weight-normal;
+}
+
 .loading {
   background-image: url('/assets/images/svg/loader.svg');
   background-repeat: no-repeat;
