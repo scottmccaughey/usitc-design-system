@@ -258,6 +258,10 @@ button,
     width: $space-l;
   }
 
+  &.button-spinner {
+    min-height: $space-l;
+  }
+
   &.button-success {
     background-color: $color-green;
     border-color: $color-white;

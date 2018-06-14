@@ -938,6 +938,9 @@ button,
     height: 2rem;
     line-height: 2rem;
     width: 2rem; }
+  button.button-spinner,
+  .button.button-spinner {
+    min-height: 2rem; }
   button.button-success,
   .button.button-success {
     background-color: #308453;
@@ -2643,6 +2646,10 @@ h6,
 .site-search {
   max-width: calc(100vw - 15px); }
 
+@media (min-width: 800px) {
+  .table-results h3 {
+    font-size: 1.2em; } }
+
 .table-results thead tr:first-child th,
 .table-results thead tr:first-child td,
 .table-results tbody tr:last-child th,
@@ -2654,10 +2661,7 @@ h6,
   text-align: center; }
   @media (min-width: 800px) {
     .table-results thead th {
-      font-size: 1.2rem; } }
-  @media (min-width: 1200px) {
-    .table-results thead th {
-      font-size: 1.44rem; } }
+      font-size: 1.2em; } }
 
 .table-results tbody td {
   white-space: nowrap; }
@@ -2688,6 +2692,12 @@ h6,
 .table-results .total th,
 .table-results .total td {
   background-color: #e6e7e8; }
+
+.table-results-font-s {
+  font-size: 0.5787rem; }
+
+.table-results-font-l {
+  font-size: 1.2rem; }
 
 .table-results-wrapper {
   max-width: calc(100vw - 15px); }
