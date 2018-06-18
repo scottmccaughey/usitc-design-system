@@ -154,6 +154,10 @@ ul {
 
 .alt {
   background-color: $color-theme-base-background-alt;
+
+  + .alt > .padded {
+    padding-top: 0;
+  }
 }
 
 .alt-off {
