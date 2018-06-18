@@ -7,6 +7,22 @@
 // Y88b.  888  888 888 d88P      X88
 //  "Y888 "Y888888 88888P"   88888P'
 
+
+.nav-tabs {
+  li {
+
+    > * {
+      align-items: center;
+      display: flex;
+
+      i {
+        margin-right: $space-s;
+      }
+    }
+  }
+}
+
+
 .nav-tabs {
   align-items: stretch;
   display: flex;
@@ -23,7 +39,7 @@
     list-style: none;
     margin-bottom: 0;
     margin-right: $space-xxs;
-    min-width: $font-size-base * 12;
+    min-width: $font-size-base * 16;
     padding: $space-s $space-m;
     text-align: center;
 
@@ -54,8 +70,14 @@
     }
 
     > * {
+      align-items: center;
+      display: flex;
       margin-left: auto;
       margin-right: auto;
+
+      i {
+        margin-right: $space-s;
+      }
     }
   }
 }
