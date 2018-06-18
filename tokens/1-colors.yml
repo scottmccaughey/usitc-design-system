@@ -21,12 +21,15 @@ color:
   red:                        '#be2a26'
   red-dark:                   '#981d20'
   red-light:                  '#f0b9b8'
+  red-lighter:                '#f7dbdb'
   green:                      '#308453'
   green-dark:                 '#266942'
   green-light:                '#e8f3e5'
+  green-lighter:              '#edf5eb'
   orange:                     '#fdb71c'
-  orange-dark:                '#cb8f2b'
+  orange-dark:                '#835c1b'
   orange-light:               '#fae0af'
+  orange-lighter:             '#f3e3c8'
 
   theme:
     base:
@@ -50,28 +53,28 @@ color:
 
   state:
     error:
-      background:             '$color-red-light'
+      background:             '$color-red-lighter'
       border:                 '$color-red-dark'
       text:                   '$color-red-dark'
       link:                   '$color-black'
       hover-background:       '$color-white'
       hover-text:             '$color-red-dark'
     info:
-      background:             '$color-blue-light'
+      background:             '$color-blue-lighter'
       border:                 '$color-blue-dark'
       text:                   '$color-blue-dark'
       link:                   '$color-black'
       hover-background:       '$color-white'
       hover-text:             '$color-blue-dark'
     success:
-      background:             '$color-green-light'
+      background:             '$color-green-lighter'
       border:                 '$color-green-dark'
       text:                   '$color-green-dark'
       link:                   '$color-black'
       hover-background:       '$color-white'
       hover-text:             '$color-green-dark'
     warning:
-      background:             '$color-orange-light'
+      background:             '$color-orange-lighter'
       border:                 '$color-orange-dark'
       text:                   '$color-orange-dark'
       link:                   '$color-black'

@@ -254,7 +254,7 @@ code {
   font-size: 0.83333rem !important; }
 
 pre[class*="language-"] {
-  background-color: #c9e3e8 !important;
+  background-color: #e4f1f3 !important;
   border: 1px solid #818386;
   margin: 0 !important;
   padding: 0.5rem 1rem !important; }
@@ -294,4 +294,4 @@ pre[class*="language-"] {
   .sg-example > *:nth-child(4),
   .sg-example > *:nth-child(8),
   .sg-example > *:nth-child(12) {
-    background-color: #cb8f2b; }
+    background-color: #835c1b; }

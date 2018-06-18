@@ -14,6 +14,21 @@
           <h1>Style Guide</h1>
 
           <section>
+            <div class="panel state-error">
+              This is an error panel.
+            </div>
+            <div class="panel state-info">
+              This is an info panel.
+            </div>
+            <div class="panel state-success">
+              This is a success panel.
+            </div>
+            <div class="panel state-warning">
+              This is a warning panel.
+            </div>
+          </section>
+
+          <section>
             <label class="control checkbox">
               <input type="checkbox">
               <span class="control-indicator"></span>
@@ -52,7 +67,7 @@
 
           <section>
             <div _ngcontent-c12="" class="select select-multiple g-l-8" ng-reflect-klass="select select-multiple" ng-reflect-ng-class="g-l-8">
-              <select _ngcontent-c12="" multiple="" ng-reflect-ng-class="" ng-reflect-name="dataToReport" id="dataToReport" class="ng-valid ng-touched ng-dirty">
+              <select _ngcontent-c12="" multiple="" ng-reflect-ng-class="" ng-reflect-name="dataToReport" id="dataToReport" class="ng-valid ng-touched ng-dirty" title="Sample Multi-Select Box">
                 <option _ngcontent-c12="" value="0: 'CONS_CUSTOMS_VALUE'" ng-reflect-value="CONS_CUSTOMS_VALUE" class="ng-star-inserted">Customs Value</option><option _ngcontent-c12="" value="1: 'CONS_FIR_UNIT_QUANT'" ng-reflect-value="CONS_FIR_UNIT_QUANT" class="ng-star-inserted">First Unit of Quantity</option><option _ngcontent-c12="" value="2: 'CONS_SEC_UNIT_QUANT'" ng-reflect-value="CONS_SEC_UNIT_QUANT" class="ng-star-inserted">Second Unit of Quantity</option><option _ngcontent-c12="" value="3: 'CONS_COST_INS_FREIGHT+CONS_CALC_DUTY'" ng-reflect-value="CONS_COST_INS_FREIGHT+CONS_CAL" class="ng-star-inserted">Landed Duty-Paid Value</option><option _ngcontent-c12="" value="4: 'CONS_CUSTOMS_VALUE_SUB_DUTY'" ng-reflect-value="CONS_CUSTOMS_VALUE_SUB_DUTY" class="ng-star-inserted">Dutiable Value</option><option _ngcontent-c12="" value="5: 'CONS_CALC_DUTY'" ng-reflect-value="CONS_CALC_DUTY" class="ng-star-inserted">Calculated Duties</option><option _ngcontent-c12="" value="6: 'CONS_CHARGES_INS_FREIGHT'" ng-reflect-value="CONS_CHARGES_INS_FREIGHT" class="ng-star-inserted">Import Charges</option><option _ngcontent-c12="" value="7: 'CONS_COST_INS_FREIGHT'" ng-reflect-value="CONS_COST_INS_FREIGHT" class="ng-star-inserted">CIF Import Value</option><option _ngcontent-c12="" value="8: '#CONS_CUSTOMS_VALUE$CONS_FIR_UNIT_QUANT'" ng-reflect-value="#CONS_CUSTOMS_VALUE$CONS_FIR_U" class="ng-star-inserted">(Customs Value)/(First Unit of Quantity)</option><option _ngcontent-c12="" value="9: '#CONS_COST_INS_FREIGHT+CONS_CALC_DUTY$CONS_FIR" ng-reflect-value="#CONS_COST_INS_FREIGHT+CONS_CA" class="ng-star-inserted">(Landed Duty-Paid Value)/(First Unit of Quantity)</option>
               </select>
             </div>
@@ -92,24 +107,24 @@
             <table class="table table-bordered">
               <thead>
                 <tr>
-                  <th></th>
-                  <th class="text-center">
+                  <th scope="col"></th>
+                  <th scope="col" class="text-center">
                     Extra small<br>
                     <small>≥400px</small>
                   </th>
-                  <th class="text-center">
+                  <th scope="col" class="text-center">
                     Small<br>
                     <small>≥600px</small>
                   </th>
-                  <th class="text-center">
+                  <th scope="col" class="text-center">
                     Medium<br>
                     <small>≥800px</small>
                   </th>
-                  <th class="text-center">
+                  <th scope="col" class="text-center">
                     Large<br>
                     <small>≥1200px</small>
                   </th>
-                  <th class="text-center">
+                  <th scope="col" class="text-center">
                     Extra large<br>
                     <small>≥1600px</small>
                   </th>

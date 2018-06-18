@@ -3013,24 +3013,24 @@ h6,
   font-weight: 700; }
 
 .state-error {
-  background-color: #f0b9b8;
+  background-color: #f7dbdb;
   border: 1px solid #981d20;
   color: #981d20; }
 
 .state-info {
-  background-color: #c9e3e8;
+  background-color: #e4f1f3;
   border: 1px solid #004353;
   color: #004353; }
 
 .state-success {
-  background-color: #e8f3e5;
+  background-color: #edf5eb;
   border: 1px solid #266942;
   color: #266942; }
 
 .state-warning {
-  background-color: #fae0af;
-  border: 1px solid #cb8f2b;
-  color: #cb8f2b; }
+  background-color: #f3e3c8;
+  border: 1px solid #835c1b;
+  color: #835c1b; }
 
 .table {
   width: 100%; }
