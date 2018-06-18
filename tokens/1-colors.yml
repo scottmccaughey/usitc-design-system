@@ -11,21 +11,26 @@ color:
 
   white:                      '#ffffff'
   black:                      '#3a3a3b'
+
   gray:                       '#818386'
   gray-dark:                  '#414042'
   gray-light:                 '#e6e7e8'
+
   blue:                       '#0d7e97'
   blue-dark:                  '#004353'
   blue-light:                 '#c9e3e8'
   blue-lighter:               '#e4f1f3'
+
   red:                        '#be2a26'
   red-dark:                   '#981d20'
   red-light:                  '#f0b9b8'
   red-lighter:                '#f7dbdb'
+
   green:                      '#308453'
   green-dark:                 '#266942'
   green-light:                '#e8f3e5'
   green-lighter:              '#edf5eb'
+
   orange:                     '#fdb71c'
   orange-dark:                '#835c1b'
   orange-light:               '#fae0af'

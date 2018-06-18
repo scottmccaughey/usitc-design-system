@@ -3157,6 +3157,7 @@ h6,
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin-bottom: 0;
   padding: 0;
   position: relative; }
   .nav-tabs li {
