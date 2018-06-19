@@ -2851,7 +2851,16 @@ h6,
   .table-searches.table-responsive tbody tr.sample-row td:first-child {
     padding: 0 !important; }
     .table-searches.table-responsive tbody tr.sample-row td:first-child > div {
-      padding: 0.25rem 1rem; }
+      -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .table-searches.table-responsive tbody tr.sample-row td:first-child > div > div {
+        -ms-flex-item-align: center;
+            align-self: center;
+        padding: 0.25rem 1rem; }
     .table-searches.table-responsive tbody tr.sample-row td:first-child em {
       -webkit-box-align: center;
           -ms-flex-align: center;
