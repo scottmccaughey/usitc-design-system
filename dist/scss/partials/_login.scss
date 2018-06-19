@@ -78,8 +78,6 @@
 .login-form {
   background-color: $color-gray-light;
   display: grid;
-  grid-column-gap: $space-m;
-  grid-row-gap: $space-m;
   grid-template-columns: 100%;
   grid-template-rows: auto;
   margin: $space-l auto;
@@ -87,6 +85,7 @@
   width: 100%;
 
   @include breakpoint(m) {
+    grid-gap: $grid-gap-row $grid-gap-col;
     grid-template-columns: 5rem repeat(3, 1fr);
     max-width: 100%;
   }
@@ -150,7 +149,7 @@
   button {
     font-size: $font-size-m;
     height: $line-height-form;
-    margin-bottom: $space-m;
+    margin: $space-m 0;
     text-transform: uppercase;
 
     @include breakpoint(m) {
@@ -177,7 +176,7 @@
   }
 
   .panel {
-    margin: 0 $space-m;
+    margin: $space-m $space-m 0;
     padding: $space-m;
 
     @include breakpoint(m) {
@@ -185,18 +184,26 @@
       grid-column-end: 5;
       margin: $space-m $space-m 0 0;
     }
+
+    @include breakpoint(m) {
+      margin-top: $space-l;
+    }
   }
 }
 
 .login-form-password {
-  label {
-    align-self: center;
-    font-weight: $font-weight-bold;
+  h2 {
+    line-height: $line-height-base;
+    margin: $space-m 0 0;
     text-align: center;
 
     @include breakpoint(m) {
       text-align: right;
     }
+  }
+
+  label {
+    align-self: center;
   }
 }
 

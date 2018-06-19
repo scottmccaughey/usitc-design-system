@@ -27,6 +27,12 @@
   }
 }
 
+.search-actions > .grid {
+  @include breakpoint(l) {
+    grid-gap: $grid-gap-row $grid-gap-col;
+  }
+}
+
 .search-actions-desc {
   font-size: $font-size-xs;
 }

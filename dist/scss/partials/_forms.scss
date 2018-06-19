@@ -252,14 +252,18 @@ simple-select .select-child-field {
 }
 
 .floating-label-group {
-  margin-top: $space-s;
+  margin: $space-s 0;
   padding-top: $space-m;
   position: relative;
 
+  .login-form & {
+    @include breakpoint(m) {
+      margin: 0;
+    }
+  }
+
   input {
-    background-color: transparent;
     border-color: $color-gray;
-    height: $space-l;
     position: relative;
     width: 100%;
     z-index: 2;
@@ -268,17 +272,25 @@ simple-select .select-child-field {
       opacity: 1;
       top: 0;
     }
+
+    .search-actions & {
+      background-color: transparent;
+      height: $space-l;
+    }
   }
 
   label {
-    color: $color-gray;
     font-size: $font-size-xs;
-    left: $space-s;
+    left: 0;
     opacity: 0;
     position: absolute;
     top: 50%;
     transition: $transition-base;
     z-index: 1;
+
+    + app-field-error-display > .state-error {
+      border-top-width: 0;
+    }
   }
 }
 
