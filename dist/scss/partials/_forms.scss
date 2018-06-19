@@ -251,6 +251,37 @@ simple-select .select-child-field {
   }
 }
 
+.floating-label-group {
+  margin-top: $space-s;
+  padding-top: $space-m;
+  position: relative;
+
+  input {
+    background-color: transparent;
+    border-color: $color-gray;
+    height: $space-l;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+
+    &:not(:placeholder-shown) + label {
+      opacity: 1;
+      top: 0;
+    }
+  }
+
+  label {
+    color: $color-gray;
+    font-size: $font-size-xs;
+    left: $space-s;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transition: $transition-base;
+    z-index: 1;
+  }
+}
+
 .form-control-inline {
   align-items: center;
   display: flex;

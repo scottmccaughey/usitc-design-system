@@ -27,6 +27,20 @@
   }
 }
 
+.search-actions-desc {
+  font-size: $font-size-xs;
+}
+
+.search-actions-name {
+  font-size: $font-size-l;
+  font-weight: $font-weight-bold;
+
+  &:placeholder-shown {
+    font-size: $font-size-xs;
+    font-weight: $font-weight-normal;
+  }
+}
+
 .search-column-order {
   align-items: center;
   display: flex;
@@ -43,20 +57,6 @@
 
 .search-column-order-wrapper {
   border: $border-base;
-}
-
-.search-name {
-  border-color: transparent;
-  font-size: $font-size-h2;
-  font-weight: $font-weight-bold;
-  margin-left: (-$space-s);
-  width: 100%;
-
-  &:active,
-  &:focus,
-  &:hover {
-    border: $border-base;
-  }
 }
 
 .search-options {
