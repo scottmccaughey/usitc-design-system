@@ -241,13 +241,7 @@
               padding: 0 !important;
 
               > div {
-                align-items: stretch;
-                display: flex;
-
-                div {
-                  align-self: center;
-                  padding: $space-xs $space-m;
-                }
+                padding: $space-xs $space-m;
               }
 
               em {
@@ -308,5 +302,13 @@
   button {
     display: block;
     width: 100%;
+  }
+
+  .query-desc {
+    font-size: $font-size-xs;
+  }
+
+  .query-name {
+    font-size: $font-size-m;
   }
 }

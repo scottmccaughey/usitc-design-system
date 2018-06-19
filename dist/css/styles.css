@@ -2851,16 +2851,7 @@ h6,
   .table-searches.table-responsive tbody tr.sample-row td:first-child {
     padding: 0 !important; }
     .table-searches.table-responsive tbody tr.sample-row td:first-child > div {
-      -webkit-box-align: stretch;
-          -ms-flex-align: stretch;
-              align-items: stretch;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
-      .table-searches.table-responsive tbody tr.sample-row td:first-child > div div {
-        -ms-flex-item-align: center;
-            align-self: center;
-        padding: 0.25rem 1rem; }
+      padding: 0.25rem 1rem; }
     .table-searches.table-responsive tbody tr.sample-row td:first-child em {
       -webkit-box-align: center;
           -ms-flex-align: center;
@@ -2909,6 +2900,12 @@ h6,
 .table-searches.table-responsive button {
   display: block;
   width: 100%; }
+
+.table-searches.table-responsive .query-desc {
+  font-size: 0.69444rem; }
+
+.table-searches.table-responsive .query-name {
+  font-size: 1rem; }
 
 .site-footer {
   background-color: #0d7e97;
