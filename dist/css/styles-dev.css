@@ -2424,9 +2424,6 @@ h6,
     height: 3rem;
     margin: 1rem 0;
     text-transform: uppercase; }
-    @media (min-width: 800px) {
-      .login-form button {
-        margin: 0; } }
   .login-form .login-icon {
     display: block; }
     @media (min-width: 800px) {

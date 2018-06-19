@@ -151,10 +151,6 @@
     height: $line-height-form;
     margin: $space-m 0;
     text-transform: uppercase;
-
-    @include breakpoint(m) {
-      margin: 0;
-    }
   }
 
   .login-icon {
