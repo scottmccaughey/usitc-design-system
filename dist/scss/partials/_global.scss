@@ -26,11 +26,6 @@ body {
   position: relative;
 }
 
-::placeholder {
-  color: $color-gray-light;
-  opacity: 1;
-}
-
 ::selection {
   background-color: $color-state-highlight-background;
   color: $color-state-highlight-text;
@@ -46,6 +41,11 @@ body {
 :focus {
   box-shadow: $border-focus;
   outline: 0;
+}
+
+::placeholder {
+  color: $color-gray-light;
+  opacity: 1;
 }
 
 a {

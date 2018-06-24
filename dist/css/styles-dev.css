@@ -1685,22 +1685,6 @@ body {
   min-height: 100vh;
   position: relative; }
 
-::-webkit-input-placeholder {
-  color: #b3b1b4;
-  opacity: 1; }
-
-:-ms-input-placeholder {
-  color: #b3b1b4;
-  opacity: 1; }
-
-::-ms-input-placeholder {
-  color: #b3b1b4;
-  opacity: 1; }
-
-::placeholder {
-  color: #b3b1b4;
-  opacity: 1; }
-
 ::-moz-selection {
   background-color: #0d7e97;
   color: #ffffff;
@@ -1720,6 +1704,22 @@ body {
   -webkit-box-shadow: 0 0 0 0.125rem #0d7e97;
           box-shadow: 0 0 0 0.125rem #0d7e97;
   outline: 0; }
+
+::-webkit-input-placeholder {
+  color: #b3b1b4;
+  opacity: 1; }
+
+:-ms-input-placeholder {
+  color: #b3b1b4;
+  opacity: 1; }
+
+::-ms-input-placeholder {
+  color: #b3b1b4;
+  opacity: 1; }
+
+::placeholder {
+  color: #b3b1b4;
+  opacity: 1; }
 
 a {
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #0d7e97), to(#0d7e97));
