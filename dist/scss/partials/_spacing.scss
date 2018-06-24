@@ -69,6 +69,46 @@
   margin-top: 0 !important;
 }
 
+.margin-half {
+  margin: $space-s;
+}
+
+.margin-bottom-half {
+  margin-bottom: $space-s;
+}
+
+.margin-left-half {
+  margin-left: $space-s;
+}
+
+.margin-right-half {
+  margin-right: $space-s;
+}
+
+.margin-top-half {
+  margin-top: $space-s;
+}
+
+.margin-double {
+  margin: $space-l;
+}
+
+.margin-bottom-double {
+  margin-bottom: $space-l;
+}
+
+.margin-left-double {
+  margin-left: $space-l;
+}
+
+.margin-right-double {
+  margin-right: $space-l;
+}
+
+.margin-top-double {
+  margin-top: $space-l;
+}
+
 .padding-none {
   padding: 0 !important;
 }
@@ -94,6 +134,10 @@
 
   + .padded {
     padding-top: 0;
+
+    &.padded-top {
+      padding-top: $space-m;
+    }
   }
 }
 

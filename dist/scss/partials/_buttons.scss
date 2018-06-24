@@ -58,7 +58,7 @@ button,
   }
 
   &.button-s {
-    font-size: $font-size-s;
+    font-size: $font-size-xs;
   }
 
   &.button-borderless {
@@ -89,9 +89,9 @@ button,
     font-size: $font-size-xl;
     min-width: 1.25em;
     padding: $space-xs;
-    position: relative;
-    right: (-$space-s);
-    top: (-$space-s);
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 
   &.button-ghost {

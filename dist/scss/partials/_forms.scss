@@ -151,6 +151,31 @@ simple-select .select-child-field {
     text-transform: none;
 
     &:nth-child(even) {
+      background-color: $color-gray-lighter;
+    }
+  }
+}
+
+.controls-boxed-grid {
+  align-items: stretch;
+  display: grid;
+
+  &.controls-boxed-grid-3 {
+    grid-template-columns: auto;
+
+    @include breakpoint(m) {
+      grid-template-columns: min-content auto min-content;
+    }
+  }
+
+  > * {
+    align-items: center;
+    display: grid;
+    padding: $space-s;
+
+    &:nth-child(6n+4),
+    &:nth-child(6n+5),
+    &:nth-child(6n+6) {
       background-color: $color-gray-light;
     }
   }
@@ -165,7 +190,7 @@ simple-select .select-child-field {
   padding: $space-s;
 
   &:nth-child(even) {
-    background-color: $color-gray-light;
+    background-color: $color-gray-lighter;
   }
 
   &:active,
@@ -235,7 +260,7 @@ simple-select .select-child-field {
   }
 
   &:before {
-    background-color: $color-gray-light;
+    background-color: $color-gray-lighter;
     border: $border-base;
     border-radius: $border-radius-base;
     color: $color-black;
@@ -295,8 +320,12 @@ simple-select .select-child-field {
 }
 
 .form-control-inline {
-  align-items: center;
-  display: flex;
+  display: block;
+
+  @include breakpoint(s) {
+    align-items: center;
+    display: flex;
+  }
 
   input {
     min-width: $space-s;
@@ -394,41 +423,115 @@ simple-select .select-child-field {
 }
 
 .input-icon {
+  border: $border-base;
   position: relative;
   width: 100%;
 
+  &.state-error,
+  &.state-error > i {
+    @include state-error;
+  }
+
+  &.state-info,
+  &.state-info > i {
+    @include state-info;
+  }
+
+  &.state-success,
+  &.state-success > i {
+    @include state-success;
+  }
+
+  &.state-warning,
+  &.state-warning > i {
+    @include state-warning;
+  }
+
+  &.state-error,
+  &.state-info,
+  &.state-success,
+  &.state-warning {
+    > i {
+      border-bottom-width: 0;
+      border-left-width: 0;
+      border-top-width: 0;
+    }
+  }
+
   > i {
-    background-color: $color-gray-light;
+    background-color: $color-gray-lighter;
     color: $color-black;
     height: $line-height-form;
+    left: 0;
     position: absolute;
+    top: 0;
     width: $line-height-form;
 
     > * {
+      left: 50%;
+      margin-left: (-$icon-size / 2);
       margin-top: (-$icon-size / 2);
       position: absolute;
       top: 50%;
     }
   }
 
-  &.input-icon-left {
-    > i > * {
-      left: 50%;
-      margin-left: (-$icon-size / 2);
-    }
-  }
-
   &.input-icon-right {
-    > i > * {
-      right: 50%;
-      margin-right: -(-$icon-size / 2);
+    &.state-error,
+    &.state-info,
+    &.state-success,
+    &.state-warning {
+      > i {
+        border-left-width: 1px;
+        border-right-width: 0;
+      }
+    }
+
+    > i {
+      left: auto;
+      right: 0;
+
+      > * {
+        right: 50%;
+        margin-right: -(-$icon-size / 2);
+      }
+    }
+
+    input {
+      margin-left: 0;
+      margin-right: $line-height-form;
+      padding: $space-s $space-xl $space-s $space-m;
     }
   }
 
   input {
+    border-width: 0;
+    color: $color-black;
     margin-left: $line-height-form;
-    padding: $space-s $space-m;
-    width: calc(100% - #{$line-height-form});
+    padding: $space-s $space-m $space-s $space-xl;
+    width: 100%;
+  }
+
+  + app-field-error-display {
+    > .state-error,
+    > .state-info,
+    > .state-success,
+    > .state-warning {
+      border-top-width: 0 !important;
+    }
+  }
+}
+
+.input-with-button {
+  border: $border-base;
+  display: flex;
+
+  input {
+    border-width: 0;
+  }
+
+  button {
+    white-space: nowrap;
   }
 }
 
@@ -447,6 +550,15 @@ simple-select .select-child-field {
   }
 }
 
+.label-plain {
+  font-size: $font-size-s;
+
+  @at-root .form-group label#{&} {
+    font-weight: $font-weight-normal;
+    text-transform: none;
+  }
+}
+
 .progress {
   display: inline-block;
   height: $space-m;
@@ -458,7 +570,7 @@ simple-select .select-child-field {
     color: $color-blue;
 
     &::-webkit-progress-bar {
-      background-color: $color-gray-light;
+      background-color: $color-gray-lighter;
       border-radius: $border-radius-base;
     }
 
@@ -534,7 +646,7 @@ simple-select .select-child-field {
 
   i {
     align-items: center;
-    background-color: $color-gray-light;
+    background-color: $color-gray-lighter;
     border: $border-base;
     border-right-width: 0;
     display: flex;
@@ -604,6 +716,18 @@ simple-select .select-child-field {
     right: $space-m;
     top: 50%;
     width: 0;
+  }
+}
+
+.select-alt {
+  display: flex;
+
+  label {
+    background-color: $color-gray-dark;
+    color: $color-white;
+    line-height: $line-height-form;
+    padding: 0 $space-m;
+    text-transform: uppercase;
   }
 }
 
