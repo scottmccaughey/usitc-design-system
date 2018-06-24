@@ -40,7 +40,7 @@ color:
   theme:
     base:
       background:             '$color-white'
-      background-alt:         '$color-gray-light'
+      background-alt:         '$color-gray-lighter'
       border:                 '$color-gray'
       text:                   '$color-black'
       link:                   '$color-blue'

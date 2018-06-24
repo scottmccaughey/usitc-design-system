@@ -1118,7 +1118,7 @@ simple-select .select-child-field {
     display: grid;
     padding: 0.5rem; }
     .controls-boxed-grid > *:nth-child(6n+4), .controls-boxed-grid > *:nth-child(6n+5), .controls-boxed-grid > *:nth-child(6n+6) {
-      background-color: #b3b1b4; }
+      background-color: #e6e7e8; }
 
 .controls-boxed-header {
   color: #0d7e97;
@@ -1797,7 +1797,7 @@ ul {
       margin: 0; }
 
 .alt {
-  background-color: #b3b1b4; }
+  background-color: #e6e7e8; }
   .alt + .alt > .padded {
     padding-top: 0; }
 
