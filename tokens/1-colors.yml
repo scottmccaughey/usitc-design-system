@@ -16,6 +16,7 @@ color:
   gray-dark:                  '#414042'
   gray-light:                 '#b3b1b4'
   gray-lighter:               '#e6e7e8'
+  gray-lightest:              '#f9f9f9'
 
   blue:                       '#0d7e97'
   blue-dark:                  '#004353'
