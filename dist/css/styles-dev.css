@@ -2409,16 +2409,26 @@ h6,
 .h6 {
   font-size: 1rem; }
 
+.header-caps {
+  color: #0d7e97;
+  font-size: 1rem;
+  font-weight: 900;
+  text-transform: uppercase; }
+  @media (min-width: 1200px) {
+    .header-caps {
+      font-size: 2rem; } }
+
 .header-overall {
   color: #414042;
   font-size: 9vw;
   margin-bottom: 0; }
   @media (min-width: 800px) {
     .header-overall {
-      font-size: 4.29982rem; } }
+      font-size: 4.29982rem;
+      letter-spacing: -.15rem; } }
   .header-overall em {
     font-style: normal;
-    font-weight: 900; }
+    font-weight: 700; }
 
 .header-tagline {
   color: #414042;
@@ -2432,6 +2442,10 @@ h6,
       letter-spacing: .4rem; } }
 
 .subhead {
+  line-height: 1.5;
+  margin-top: -0.5rem; }
+
+.subhead-table {
   font-size: 0.69444rem;
   margin-top: -0.5rem;
   text-transform: uppercase; }
@@ -2641,21 +2655,37 @@ h6,
         border-right-width: 0; }
       .site-header > nav > ul li.site-name {
         border-right-width: 0;
-        line-height: 68px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        text-transform: uppercase;
         width: auto; }
         .site-header > nav > ul li.site-name a {
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
           background-image: none;
           color: #414042;
-          display: inline-block;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
           font-size: 0.69444rem;
           font-weight: 700;
-          height: 68px;
           letter-spacing: 0.125rem;
-          line-height: 48px;
+          line-height: 1.25;
           padding: 10px; }
           .site-header > nav > ul li.site-name a:active, .site-header > nav > ul li.site-name a:focus, .site-header > nav > ul li.site-name a:hover {
             background-color: #0d7e97;
             color: #ffffff; }
+        .site-header > nav > ul li.site-name em {
+          font-style: normal; }
+          .site-header > nav > ul li.site-name em:after {
+            content: '\A';
+            white-space: pre; }
+            @media (min-width: 600px) {
+              .site-header > nav > ul li.site-name em:after {
+                content: '';
+                white-space: normal; } }
   .site-header button,
   .site-header .button {
     border-width: 0;

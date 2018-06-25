@@ -30,18 +30,19 @@
 
       &.site-name {
         border-right-width: 0;
-        line-height: 68px;
+        display: flex;
+        text-transform: uppercase;
         width: auto;
 
         a {
+          align-items: center;
           background-image: none;
           color: $color-gray-dark;
-          display: inline-block;
+          display: flex;
           font-size: $font-size-xs;
           font-weight: $font-weight-bold;
-          height: 68px;
           letter-spacing: $space-xxs;
-          line-height: 48px;
+          line-height: $line-height-header;
           padding: 10px;
 
           &:active,
@@ -49,6 +50,20 @@
           &:hover {
             background-color: $color-blue;
             color: $color-white;
+          }
+        }
+
+        em {
+          font-style: normal;
+
+          &:after {
+            content: '\A';
+            white-space: pre;
+
+            @include breakpoint(s) {
+              content: '';
+              white-space: normal;
+            }
           }
         }
       }
