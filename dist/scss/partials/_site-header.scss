@@ -12,17 +12,29 @@
 
   > nav > ul {
     display: grid;
-    grid-template-columns: 1fr repeat(9, min-content);
-    grid-template-rows: min-content;
+    grid-template-columns: repeat($content-header-links, auto);
     padding: 0;
 
+    @include breakpoint(m) {
+      grid-template-columns: 1fr repeat($content-header-links, auto);
+    }
+
     li {
-      border-right: $border-base;
-      display: block;
-      height: 68px;
+      border-bottom: 1px solid $color-gray-light;
+      border-right: 1px solid $color-gray-light;
+      display: flex;
+      font-size: $font-size-xs;
       list-style: none;
       margin: 0;
       max-width: 100%;
+
+      @include breakpoint(s) {
+        font-size: $font-size-s;
+      }
+
+      @include breakpoint(m) {
+        border-bottom-width: 0;
+      }
 
       &:last-child {
         border-right-width: 0;
@@ -30,69 +42,38 @@
 
       &.site-name {
         border-right-width: 0;
-        display: flex;
+        font-size: $font-size-xs;
+        font-weight: $font-weight-bold;
+        grid-column: 1 / span $content-header-links;
+        letter-spacing: $space-xxs;
         text-transform: uppercase;
-        width: auto;
 
-        a {
-          align-items: center;
-          background-image: none;
-          color: $color-gray-dark;
-          display: flex;
-          font-size: $font-size-xs;
-          font-weight: $font-weight-bold;
-          letter-spacing: $space-xxs;
-          line-height: $line-height-header;
-          padding: 10px;
+        @include breakpoint(m) {
+          grid-column: 1 / span 1;
+        }
+      }
 
-          &:active,
-          &:focus,
-          &:hover {
-            background-color: $color-blue;
-            color: $color-white;
-          }
+      a {
+        align-items: center;
+        background-image: none;
+        color: $color-gray-dark;
+        line-height: $line-height-header;
+        padding: $space-s;
+        text-align: center;
+        width: 100%;
+
+        @include breakpoint(m) {
+          padding: $space-s $space-m;
+          width: auto;
         }
 
-        em {
-          font-style: normal;
-
-          &:after {
-            content: '\A';
-            white-space: pre;
-
-            @include breakpoint(s) {
-              content: '';
-              white-space: normal;
-            }
-          }
+        &:active,
+        &:focus,
+        &:hover {
+          background-color: $color-blue;
+          color: $color-white;
         }
       }
     }
-  }
-
-  button,
-  .button {
-    border-width: 0;
-    height: 68px;
-    padding: 10px;
-    width: 68px;
-
-    &:active,
-    &:focus,
-    &:hover {
-      svg {
-        stroke: $color-white;
-      }
-    }
-  }
-
-  svg,
-  .header-icon {
-    height: 48px;
-    width: 48px;
-  }
-
-  svg {
-    stroke: $color-blue-dark;
   }
 }

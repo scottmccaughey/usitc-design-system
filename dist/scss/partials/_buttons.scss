@@ -253,6 +253,13 @@ button,
 
   &.button-primary-alt {
     background-color: $color-theme-dark-background;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: $color-theme-dark-background-alt;
+      color: $color-theme-dark-text;
+    }
   }
 
   &.button-round {

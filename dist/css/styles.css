@@ -921,6 +921,12 @@ button,
   button.button-primary-alt,
   .button.button-primary-alt {
     background-color: #004353; }
+    button.button-primary-alt:active, button.button-primary-alt:focus, button.button-primary-alt:hover,
+    .button.button-primary-alt:active,
+    .button.button-primary-alt:focus,
+    .button.button-primary-alt:hover {
+      background-color: #0d7e97;
+      color: #ffffff; }
   button.button-round,
   .button.button-round {
     border-radius: 100%;
@@ -1164,7 +1170,7 @@ simple-select .select-child-field {
       -ms-user-select: none;
           user-select: none;
   z-index: 5; }
-  .file-custom:after {
+  .file-custom::after {
     content: "Choose file..."; }
   .file-custom:before {
     background-color: #e6e7e8;
@@ -1487,7 +1493,7 @@ simple-select .select-child-field {
     .select select option:checked {
       background: #c9e3e8 -webkit-gradient(linear, left bottom, left top, from(#c9e3e8), to(#c9e3e8));
       background: #c9e3e8 linear-gradient(0deg, #c9e3e8 0%, #c9e3e8 100%); }
-  .select:after {
+  .select::after {
     border-bottom: 0.25rem solid transparent;
     border-left: 0.25rem solid transparent;
     border-right: 0.25rem solid transparent;
@@ -2639,70 +2645,56 @@ h6,
   color: #414042; }
   .site-header > nav > ul {
     display: grid;
-    grid-template-columns: 1fr repeat(9, -webkit-min-content);
-    grid-template-columns: 1fr repeat(9, min-content);
-    grid-template-rows: -webkit-min-content;
-    grid-template-rows: min-content;
+    grid-template-columns: repeat(4, auto);
     padding: 0; }
+    @media (min-width: 800px) {
+      .site-header > nav > ul {
+        grid-template-columns: 1fr repeat(4, auto); } }
     .site-header > nav > ul li {
-      border-right: 1px solid #818386;
-      display: block;
-      height: 68px;
+      border-bottom: 1px solid #b3b1b4;
+      border-right: 1px solid #b3b1b4;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      font-size: 0.69444rem;
       list-style: none;
       margin: 0;
       max-width: 100%; }
+      @media (min-width: 600px) {
+        .site-header > nav > ul li {
+          font-size: 0.83333rem; } }
+      @media (min-width: 800px) {
+        .site-header > nav > ul li {
+          border-bottom-width: 0; } }
       .site-header > nav > ul li:last-child {
         border-right-width: 0; }
       .site-header > nav > ul li.site-name {
         border-right-width: 0;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        text-transform: uppercase;
-        width: auto; }
-        .site-header > nav > ul li.site-name a {
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center;
-          background-image: none;
-          color: #414042;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          font-size: 0.69444rem;
-          font-weight: 700;
-          letter-spacing: 0.125rem;
-          line-height: 1.25;
-          padding: 10px; }
-          .site-header > nav > ul li.site-name a:active, .site-header > nav > ul li.site-name a:focus, .site-header > nav > ul li.site-name a:hover {
-            background-color: #0d7e97;
-            color: #ffffff; }
-        .site-header > nav > ul li.site-name em {
-          font-style: normal; }
-          .site-header > nav > ul li.site-name em:after {
-            content: '\A';
-            white-space: pre; }
-            @media (min-width: 600px) {
-              .site-header > nav > ul li.site-name em:after {
-                content: '';
-                white-space: normal; } }
-  .site-header button,
-  .site-header .button {
-    border-width: 0;
-    height: 68px;
-    padding: 10px;
-    width: 68px; }
-    .site-header button:active svg, .site-header button:focus svg, .site-header button:hover svg,
-    .site-header .button:active svg,
-    .site-header .button:focus svg,
-    .site-header .button:hover svg {
-      stroke: #ffffff; }
-  .site-header svg,
-  .site-header .header-icon {
-    height: 48px;
-    width: 48px; }
-  .site-header svg {
-    stroke: #004353; }
+        font-size: 0.69444rem;
+        font-weight: 700;
+        grid-column: 1/span 4;
+        letter-spacing: 0.125rem;
+        text-transform: uppercase; }
+        @media (min-width: 800px) {
+          .site-header > nav > ul li.site-name {
+            grid-column: 1 / span 1; } }
+      .site-header > nav > ul li a {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        background-image: none;
+        color: #414042;
+        line-height: 1.25;
+        padding: 0.5rem;
+        text-align: center;
+        width: 100%; }
+        @media (min-width: 800px) {
+          .site-header > nav > ul li a {
+            padding: 0.5rem 1rem;
+            width: auto; } }
+        .site-header > nav > ul li a:active, .site-header > nav > ul li a:focus, .site-header > nav > ul li a:hover {
+          background-color: #0d7e97;
+          color: #ffffff; }
 
 @media (min-width: 800px) {
   .disclaimer {

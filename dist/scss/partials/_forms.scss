@@ -255,7 +255,7 @@ simple-select .select-child-field {
   user-select: none;
   z-index: 5;
 
-  &:after {
+  &::after {
     content: "Choose file...";
   }
 
@@ -702,7 +702,7 @@ simple-select .select-child-field {
     }
   }
 
-  &:after {
+  &::after {
     border-bottom: $space-xs solid transparent;
     border-left: $space-xs solid transparent;
     border-right: $space-xs solid transparent;
