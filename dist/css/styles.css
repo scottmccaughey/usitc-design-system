@@ -2467,15 +2467,18 @@ h6,
 
 .header-overall {
   color: #414042;
-  font-size: 9vw;
+  font-size: 6.5vw;
   margin-bottom: 0; }
-  @media (min-width: 800px) {
+  @media (min-width: 1200px) {
     .header-overall {
       font-size: 4.29982rem;
       letter-spacing: -.15rem; } }
   .header-overall em {
     font-style: normal;
     font-weight: 700; }
+    .header-overall em i {
+      color: #be2a26;
+      font-style: normal; }
 
 .header-tagline {
   color: #414042;
