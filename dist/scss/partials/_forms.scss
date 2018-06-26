@@ -504,7 +504,6 @@ simple-select .select-child-field {
 
     input {
       margin-left: 0;
-      margin-right: $line-height-form;
       padding: $space-s $space-xl $space-s $space-m;
     }
   }
@@ -512,7 +511,6 @@ simple-select .select-child-field {
   input {
     border-width: 0;
     color: $color-black;
-    margin-left: $line-height-form;
     padding: $space-s $space-m $space-s $space-xl;
     width: 100%;
   }
