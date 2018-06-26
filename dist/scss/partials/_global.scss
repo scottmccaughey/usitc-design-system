@@ -342,7 +342,7 @@ ul {
 .disclaimer {
   p {
     color: $color-gray-dark;
-    font-size: $font-size-xxxs;
+    font-size: $font-size-xxs;
   }
 }
 
@@ -357,6 +357,10 @@ ul {
   margin: $space-m;
   min-height: 64px;
   text-indent: -9999rem;
+}
+
+.nowrap {
+  white-space: nowrap;
 }
 
 .on-dark {

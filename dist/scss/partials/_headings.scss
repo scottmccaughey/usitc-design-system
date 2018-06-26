@@ -76,7 +76,7 @@ h6,
 
 .header-caps {
   color: $color-blue;
-  font-size: $space-m;
+  font-size: ($space-m + $space-xs);
   font-weight: $font-weight-black;
   text-transform: uppercase;
 
@@ -115,6 +115,7 @@ h6,
 }
 
 .subhead {
+  font-size: $font-size-s;
   line-height: $line-height-base;
   margin-top: (-$space-s);
 }

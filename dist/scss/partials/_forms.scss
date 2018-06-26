@@ -429,22 +429,26 @@ simple-select .select-child-field {
 
   &.state-error,
   &.state-error > i {
-    @include state-error;
+    background-color: $color-red;
+    border-color: $color-red;
   }
 
   &.state-info,
   &.state-info > i {
-    @include state-info;
+    background-color: $color-blue;
+    border-color: $color-blue;
   }
 
   &.state-success,
   &.state-success > i {
-    @include state-success;
+    background-color: $color-green;
+    border-color: $color-green;
   }
 
   &.state-warning,
   &.state-warning > i {
-    @include state-warning;
+    background-color: $color-orange;
+    border-color: $color-orange;
   }
 
   &.state-error,
@@ -455,6 +459,7 @@ simple-select .select-child-field {
       border-bottom-width: 0;
       border-left-width: 0;
       border-top-width: 0;
+      color: $color-white;
     }
   }
 
@@ -531,6 +536,7 @@ simple-select .select-child-field {
   }
 
   button {
+    border-width: 0;
     white-space: nowrap;
   }
 }

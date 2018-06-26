@@ -1,0 +1,46 @@
+//  .d888 888
+//  d88P"  888
+//  888    888
+//  888888 888  .d88b.  888  888
+//  888    888 d8P  Y8b `Y8bd8P'
+//  888    888 88888888   X88K
+//  888    888 Y8b.     .d8""8b.
+//  888    888  "Y8888  888  888
+
+.flex {
+  @include breakpoint(m) {
+    align-items: stretch;
+    display: flex;
+
+    > * {
+      align-items: center;
+      display: flex;
+    }
+  }
+}
+
+.flex-nowrap {
+  @include breakpoint(m) {
+    white-space: nowrap;
+  }
+}
+
+.flex-separated {
+  @include breakpoint(m) {
+    > * {
+      border-bottom-width: 0;
+      border-right: 1px solid $color-gray-lighter;
+      padding-left: $space-m;
+      padding-right: $space-m;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        border-right-width: 0;
+        padding-right: 0;
+      }
+    }
+  }
+}

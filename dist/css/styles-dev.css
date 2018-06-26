@@ -695,6 +695,7 @@ textarea {
 button,
 .button {
   background-color: #ffffff;
+  background-image: none;
   border: 1px solid #818386;
   border-radius: 0;
   color: #3a3a3b;
@@ -703,6 +704,7 @@ button,
   line-height: 1;
   padding: 0.5em;
   position: relative;
+  text-align: center;
   text-decoration: none;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
@@ -760,6 +762,9 @@ button,
     position: absolute;
     right: 0;
     top: 0; }
+  button.button-full-width,
+  .button.button-full-width {
+    width: 100%; }
   button.button-ghost,
   .button.button-ghost {
     background-color: transparent;
@@ -969,6 +974,38 @@ button,
   .error-messages-list li:only-child {
     list-style: none;
     text-align: center; }
+
+@media (min-width: 800px) {
+  .flex {
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .flex > * {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+
+@media (min-width: 800px) {
+  .flex-nowrap {
+    white-space: nowrap; } }
+
+@media (min-width: 800px) {
+  .flex-separated > * {
+    border-bottom-width: 0;
+    border-right: 1px solid #e6e7e8;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+    .flex-separated > *:first-child {
+      padding-left: 0; }
+    .flex-separated > *:last-child {
+      border-right-width: 0;
+      padding-right: 0; } }
 
 input,
 select {
@@ -1296,28 +1333,25 @@ simple-select .select-child-field {
   width: 100%; }
   .input-icon.state-error,
   .input-icon.state-error > i {
-    background-color: #f7dbdb;
-    border: 1px solid #981d20;
-    color: #981d20; }
+    background-color: #be2a26;
+    border-color: #be2a26; }
   .input-icon.state-info,
   .input-icon.state-info > i {
-    background-color: #e4f1f3;
-    border: 1px solid #004353;
-    color: #004353; }
+    background-color: #0d7e97;
+    border-color: #0d7e97; }
   .input-icon.state-success,
   .input-icon.state-success > i {
-    background-color: #edf5eb;
-    border: 1px solid #266942;
-    color: #266942; }
+    background-color: #308453;
+    border-color: #308453; }
   .input-icon.state-warning,
   .input-icon.state-warning > i {
-    background-color: #f3e3c8;
-    border: 1px solid #835c1b;
-    color: #835c1b; }
+    background-color: #fdb71c;
+    border-color: #fdb71c; }
   .input-icon.state-error > i, .input-icon.state-info > i, .input-icon.state-success > i, .input-icon.state-warning > i {
     border-bottom-width: 0;
     border-left-width: 0;
-    border-top-width: 0; }
+    border-top-width: 0;
+    color: #ffffff; }
   .input-icon > i {
     background-color: #e6e7e8;
     color: #3a3a3b;
@@ -1365,6 +1399,7 @@ simple-select .select-child-field {
   .input-with-button input {
     border-width: 0; }
   .input-with-button button {
+    border-width: 0;
     white-space: nowrap; }
 
 .label-parent {
@@ -1937,7 +1972,7 @@ ul {
 
 .disclaimer p {
   color: #414042;
-  font-size: 0.48225rem; }
+  font-size: 0.5787rem; }
 
 .font-weight-normal {
   font-weight: 300; }
@@ -1949,6 +1984,9 @@ ul {
   margin: 1rem;
   min-height: 64px;
   text-indent: -9999rem; }
+
+.nowrap {
+  white-space: nowrap; }
 
 .on-dark {
   background-color: #004353;
@@ -2139,6 +2177,11 @@ ul {
 
 .grid-self-justify-start {
   justify-self: start; }
+
+.grid-separated > * {
+  border-right: 1px solid #e6e7e8; }
+  .grid-separated > *:last-child {
+    border-right-width: 0; }
 
 @media (min-width: 400px) {
   .grid {
@@ -2417,7 +2460,7 @@ h6,
 
 .header-caps {
   color: #0d7e97;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 900;
   text-transform: uppercase; }
   @media (min-width: 1200px) {
@@ -2448,6 +2491,7 @@ h6,
       letter-spacing: .4rem; } }
 
 .subhead {
+  font-size: 0.83333rem;
   line-height: 1.5;
   margin-top: -0.5rem; }
 
@@ -2696,6 +2740,76 @@ h6,
           background-color: #0d7e97;
           color: #ffffff; }
 
+.site-home-big-select {
+  margin: 2rem 0; }
+  .site-home-big-select button,
+  .site-home-big-select select {
+    border-width: 0;
+    height: 5rem;
+    width: 100%; }
+  .site-home-big-select button {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #5c9999;
+    color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.44rem;
+    font-weight: 900;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-transform: uppercase; }
+    .site-home-big-select button:active, .site-home-big-select button:focus, .site-home-big-select button:hover {
+      background-color: #447272; }
+    .site-home-big-select button > i {
+      margin-left: 0.5rem; }
+    .site-home-big-select button > i,
+    .site-home-big-select button > i > *,
+    .site-home-big-select button > i > * > svg {
+      height: 3rem;
+      width: 3rem; }
+  .site-home-big-select select {
+    background-color: #414042;
+    color: #ffffff;
+    font-size: 2rem;
+    padding: 0.5rem 5rem 0.5rem 2rem; }
+    @media (min-width: 800px) {
+      .site-home-big-select select {
+        margin-right: 0.25rem; } }
+  .site-home-big-select .select::after {
+    border-left-width: 1rem;
+    border-right-width: 1rem;
+    border-top: 1rem solid #ffffff;
+    margin-top: -0.5rem;
+    right: 2rem; }
+
+.site-home-list {
+  margin-bottom: 0; }
+
+.trade-data-reports > a {
+  background: #f9f9f9;
+  color: #3a3a3b;
+  padding: 1rem;
+  text-align: center; }
+  .trade-data-reports > a:active, .trade-data-reports > a:focus, .trade-data-reports > a:hover {
+    background: #0d7e97;
+    color: #ffffff; }
+
+.trade-data-reports i {
+  display: block;
+  margin: 0 auto 1rem; }
+
+.trade-data-reports i,
+.trade-data-reports i > *,
+.trade-data-reports i > * > svg {
+  height: auto;
+  max-height: 8rem;
+  max-width: 8rem;
+  width: 100%; }
+
 @media (min-width: 800px) {
   .disclaimer {
     border-right: 1px solid #818386;
@@ -2862,6 +2976,9 @@ h6,
 
 @media (min-width: 800px) {
   .login-middle {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     display: grid;
     grid-template-areas: "disclaimer links";
     grid-template-columns: auto -webkit-max-content;
@@ -2908,6 +3025,9 @@ h6,
     .commodities-name {
       text-align: left;
       padding-bottom: 0.5rem; } }
+
+.commodities-select .input-with-button button {
+  padding: 1rem; }
 
 .commodities-select-list {
   margin-left: -1rem;

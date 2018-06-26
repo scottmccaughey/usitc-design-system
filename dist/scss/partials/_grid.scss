@@ -59,4 +59,14 @@
   justify-self: start;
 }
 
+.grid-separated {
+  > * {
+    border-right: 1px solid $color-gray-lighter;
+
+    &:last-child {
+      border-right-width: 0;
+    }
+  }
+}
+
 @include build-grid();

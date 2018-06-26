@@ -19,6 +19,7 @@
 button,
 .button {
   background-color: $color-theme-base-background;
+  background-image: none;
   border: 1px solid $color-theme-base-border;
   border-radius: $border-radius-base;
   color: $color-theme-base-text;
@@ -27,6 +28,7 @@ button,
   line-height: $line-height-button;
   padding: 0.5em;
   position: relative;
+  text-align: center;
   text-decoration: none;
   transition: $transition-base;
 
@@ -92,6 +94,10 @@ button,
     position: absolute;
     right: 0;
     top: 0;
+  }
+
+  &.button-full-width {
+    width: 100%;
   }
 
   &.button-ghost {

@@ -1,0 +1,102 @@
+//          d8b 888                   888
+//          Y8P 888                   888
+//              888                   888
+// .d8888b  888 888888 .d88b.         88888b.   .d88b.  88888b.d88b.   .d88b.
+// 88K      888 888   d8P  Y8b        888 "88b d88""88b 888 "888 "88b d8P  Y8b
+// "Y8888b. 888 888   88888888 888888 888  888 888  888 888  888  888 88888888
+//      X88 888 Y88b. Y8b.            888  888 Y88..88P 888  888  888 Y8b.
+//  88888P' 888  "Y888 "Y8888         888  888  "Y88P"  888  888  888  "Y8888
+
+.site-home-big-select {
+  margin: $space-l 0;
+
+  button,
+  select {
+    border-width: 0;
+    height: 5rem;
+    width: 100%;
+  }
+
+  button {
+    align-items: center;
+    background-color: #5c9999;
+    color: $color-white;
+    display: flex;
+    font-size: $font-size-xl;
+    font-weight: $font-weight-black;
+    justify-content: center;
+    text-transform: uppercase;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: #447272;
+    }
+
+    > i {
+      margin-left: $space-s;
+    }
+
+    > i,
+    > i > *,
+    > i > * > svg {
+      height: $line-height-form;
+      width: $line-height-form;
+    }
+  }
+
+  select {
+    background-color: $color-gray-dark;
+    color: $color-white;
+    font-size: 2rem;
+    padding: $space-s ($space-xl + $space-m) $space-s $space-l;
+
+    @include breakpoint(m) {
+      margin-right: $space-xs;
+    }
+  }
+
+  .select {
+    &::after {
+      border-left-width: $space-m;
+      border-right-width: $space-m;
+      border-top: $space-m solid $color-white;
+      margin-top: (-$space-s);
+      right: $space-l;
+    }
+  }
+}
+
+.site-home-list {
+  margin-bottom: 0;
+}
+
+.trade-data-reports {
+  > a {
+    background: $color-gray-lightest;
+    color: $color-black;
+    padding: $space-m;
+    text-align: center;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background: $color-blue;
+      color: $color-white;
+    }
+  }
+
+  i {
+    display: block;
+    margin: 0 auto $space-m;
+  }
+
+  i,
+  i > *,
+  i > * > svg {
+    height: auto;
+    max-height: $space-xxl;
+    max-width: $space-xxl;
+    width: 100%;
+  }
+}
