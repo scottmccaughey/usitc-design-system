@@ -15,6 +15,7 @@ var gulp          = require('gulp-help')(require('gulp'), { hideDepsMessage: tru
     yRequire      = require('require-yml'),
     config        = yRequire('config.yml'),
     mixer         = require('./mixer'),
+    svgSprite     = require('gulp-svg-sprite'),
     convert       = [];
 
 config.formats.forEach(function(format) {
@@ -30,6 +31,7 @@ gulp.task(
 gulp.task(
   'scss',
   'Compile SCSS into CSS and auto-inject into browsers.',
+  ['icons'],
   function() {
     return gulp
       .src(config.path.scss.src)
@@ -50,6 +52,18 @@ gulp.task(
       }))
       .pipe(gulp.dest(config.path.scss.dest))
       .pipe(browserSync.stream());
+  }
+);
+
+gulp.task(
+  'icons',
+  'Convert SVG Icons into an SVG sprite.',
+  function() {
+    return gulp
+    .src(config.path.icons.src)
+    .pipe(plumber())
+    .pipe(svgSprite(config.settings.icons))
+    .pipe(gulp.dest(config.path.icons.dest));
   }
 );
 
@@ -118,6 +132,7 @@ gulp.task(
     });
     gulp.watch(config.path.tokens, ['convert']);
     gulp.watch(config.path.scss.src, ['scss']);
+    gulp.watch(config.path.icons.src, ['icons']);
     gulp.watch(config.path.html).on('change', browserSync.reload);
   }
 );

@@ -1,16 +1,30 @@
-path:
-  tokens:   tokens/**/*.yml
-  assets:   assets
-  dist:     dist
-  fonts:    ../fonts
-  html:     index.html
-  json:
-    tokens: dist/json
-  scss:
-    tokens: dist/scss/tokens
-    src:    dist/scss/**/*.scss
-    dest:   dist/css
-
 formats:
-          - json
-          - scss
+                      - json
+                      - scss
+
+path:
+  tokens:               tokens/**/*.yml
+  dist:                 dist
+  fonts:                ../fonts
+  html:                 index.html
+  json:
+    tokens:             dist/json
+  scss:
+    tokens:             dist/scss/tokens
+    src:                dist/scss/**/*.scss
+    dest:               dist/css
+  icons:
+    src:                src/icons/**/*.svg
+    dest:               dist/icons
+
+settings:
+  icons:
+    mode:
+      symbol:
+        sprite:         icons
+      view:
+        render:
+          scss:
+            dest:       ../../scss/partials/_icons-sprite.scss
+        sprite:         icons
+        prefix:         .icon-%s

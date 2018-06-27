@@ -1,0 +1,44 @@
+%svg-common {
+	background: url("icons-abd6cb95.svg") no-repeat;
+}
+
+.icon-africa {
+	@extend %svg-common;
+	background-position: 0 0;
+}
+
+.icon-africa-dims {
+	width: 1000px;
+	height: 1000px;
+}
+
+.icon-chart-upward {
+	@extend %svg-common;
+	background-position: 100% 0;
+}
+
+.icon-chart-upward-dims {
+	width: 1000px;
+	height: 1000px;
+}
+
+.icon-globe-with-marker {
+	@extend %svg-common;
+	background-position: 0 100%;
+}
+
+.icon-globe-with-marker-dims {
+	width: 1000px;
+	height: 1000px;
+}
+
+.icon-shaking-hands {
+	@extend %svg-common;
+	background-position: 100% 100%;
+}
+
+.icon-shaking-hands-dims {
+	width: 1000px;
+	height: 1000px;
+}
+
