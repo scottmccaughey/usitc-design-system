@@ -9,7 +9,7 @@ path:
     src:                src/fonts
     dest:               dist/fonts
     loc:
-      prod:             usitc-design-system/dist/scss/fonts
+      prod:             ~usitc-design-system/dist/scss/fonts
       dev:              ../fonts
   html:                 index.html
   json:
