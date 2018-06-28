@@ -652,42 +652,42 @@ textarea {
 */
 @font-face {
   font-family: "Montserrat";
-  src: url("assets/fonts/montserrat-light.woff2") format("woff2"), url("assets/fonts/montserrat-light.woff") format("woff");
+  src: url("usitc-design-system/dist/scss/fonts/montserrat-light.woff2") format("woff2"), url("usitc-design-system/dist/scss/fonts/montserrat-light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-stretch: normal; }
 
 @font-face {
   font-family: "Montserrat";
-  src: url("assets/fonts/montserrat-lightitalic.woff2") format("woff2"), url("assets/fonts/montserrat-lightitalic.woff") format("woff");
+  src: url("usitc-design-system/dist/scss/fonts/montserrat-lightitalic.woff2") format("woff2"), url("usitc-design-system/dist/scss/fonts/montserrat-lightitalic.woff") format("woff");
   font-weight: 300;
   font-style: italic;
   font-stretch: normal; }
 
 @font-face {
   font-family: "Montserrat";
-  src: url("assets/fonts/montserrat-bold.woff2") format("woff2"), url("assets/fonts/montserrat-bold.woff") format("woff");
+  src: url("usitc-design-system/dist/scss/fonts/montserrat-bold.woff2") format("woff2"), url("usitc-design-system/dist/scss/fonts/montserrat-bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-stretch: normal; }
 
 @font-face {
   font-family: "Montserrat";
-  src: url("assets/fonts/montserrat-bolditalic.woff2") format("woff2"), url("assets/fonts/montserrat-bolditalic.woff") format("woff");
+  src: url("usitc-design-system/dist/scss/fonts/montserrat-bolditalic.woff2") format("woff2"), url("usitc-design-system/dist/scss/fonts/montserrat-bolditalic.woff") format("woff");
   font-weight: 700;
   font-style: italic;
   font-stretch: normal; }
 
 @font-face {
   font-family: "Montserrat";
-  src: url("assets/fonts/montserrat-black.woff2") format("woff2"), url("assets/fonts/montserrat-black.woff") format("woff");
+  src: url("usitc-design-system/dist/scss/fonts/montserrat-black.woff2") format("woff2"), url("usitc-design-system/dist/scss/fonts/montserrat-black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-stretch: normal; }
 
 @font-face {
   font-family: "Montserrat";
-  src: url("assets/fonts/montserrat-blackitalic.woff2") format("woff2"), url("assets/fonts/montserrat-blackitalic.woff") format("woff");
+  src: url("usitc-design-system/dist/scss/fonts/montserrat-blackitalic.woff2") format("woff2"), url("usitc-design-system/dist/scss/fonts/montserrat-blackitalic.woff") format("woff");
   font-weight: 900;
   font-style: italic;
   font-stretch: normal; }
