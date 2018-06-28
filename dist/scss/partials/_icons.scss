@@ -8,11 +8,18 @@
 // 888  "Y8888P "Y88P"  888  888  88888P'
 
 .feather {
-  width: 24px;
+  fill: none;
   height: 24px;
-  stroke: currentColor;
-  stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;
+  stroke-width: 2;
+  stroke: currentColor;
+  width: 24px;
+}
+
+.icon {
   fill: none;
+  height: 24px;
+  stroke: currentColor;
+  width: 24px;
 }
