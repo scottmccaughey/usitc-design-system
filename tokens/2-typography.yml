@@ -11,7 +11,7 @@
 #         "Y88P"  888                "Y88P"                  888                "Y88P"
 
 font:
-  path:             FONT-PATH-REPLACE
+  path:             "'assets/fonts'"
 
   family:
     files--map:
