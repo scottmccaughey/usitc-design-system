@@ -5,7 +5,12 @@ formats:
 path:
   tokens:               tokens/**/*.yml
   dist:                 dist
-  fonts:                ../fonts
+  fonts:
+    src:                src/fonts
+    dest:               dist/fonts
+    loc:
+      prod:             assets/fonts
+      dev:              ../fonts
   html:                 index.html
   json:
     tokens:             dist/json

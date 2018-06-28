@@ -302,7 +302,7 @@ button,
     left: 0;
     margin-top: (-$space-m);
     position: absolute;
-    top: calc(50% - $space-s);
+    top: calc(50% - #{$space-s});
     width: 100%;
 
     .spinner {
