@@ -38,14 +38,15 @@ gulp.task(
       .pipe(plumber())
       .pipe(sassToCss({
         includePaths: [
-          'node_modules'
+          'node_modules',
+          'dist/fonts'
         ]
       }))
       .pipe(autoprefixer({
         browsers: ['last 2 versions']
       }))
       .pipe(gulp.dest(config.path.scss.dest))
-      .pipe(replace(config.path.fonts.loc.prod, config.path.fonts.loc.dev))
+      .pipe(replace('~usitc-design-system/dist/fonts', '../fonts'))
       .pipe(rename(function(path) {
         path.basename = path.basename + '-dev';
       }))
