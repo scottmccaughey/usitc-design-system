@@ -1007,6 +1007,12 @@ button,
       border-right-width: 0;
       padding-right: 0; } }
 
+.flex-separated .header-caps.flex-nowrap {
+  margin-bottom: 0.5rem; }
+  @media (min-width: 800px) {
+    .flex-separated .header-caps.flex-nowrap {
+      margin-bottom: 0; } }
+
 input,
 select {
   border: 1px solid #818386;
@@ -2511,10 +2517,14 @@ h6,
   width: 24px; }
 
 .icon {
-  fill: none;
+  fill: currentColor;
   height: 24px;
-  stroke: currentColor;
+  stroke: none;
   width: 24px; }
+
+.icon-full {
+  height: auto;
+  width: 100%; }
 
 .pagination {
   display: -webkit-box;

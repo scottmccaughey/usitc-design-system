@@ -43,4 +43,12 @@
       }
     }
   }
+
+  .header-caps.flex-nowrap {
+    margin-bottom: $space-s;
+
+    @include breakpoint(m) {
+      margin-bottom: 0;
+    }
+  }
 }

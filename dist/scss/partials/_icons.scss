@@ -18,8 +18,13 @@
 }
 
 .icon {
-  fill: none;
+  fill: currentColor;
   height: 24px;
-  stroke: currentColor;
+  stroke: none;
   width: 24px;
+}
+
+.icon-full {
+  height: auto;
+  width: 100%;
 }
