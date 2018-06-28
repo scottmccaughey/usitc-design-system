@@ -3095,7 +3095,7 @@ h6,
 .search-column-order-wrapper {
   border: 1px solid #818386; }
 
-.search-options label {
+.search-options .toggle-switch label {
   margin-bottom: 0; }
 
 .search-sort-order .toggle-switch {
