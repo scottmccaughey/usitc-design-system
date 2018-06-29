@@ -87,17 +87,29 @@ h6,
 
 .header-overall {
   color: $color-gray-dark;
-  font-size: 6.5vw;
+  font-size: 6.3vw;
+  letter-spacing: -.3vw;
   margin-bottom: 0;
+
+  @include breakpoint(s) {
+    font-size: 6.3vw;
+  }
+
+  @include breakpoint(m) {
+    font-size: 6.3vw;
+  }
 
   @include breakpoint(l) {
     font-size: $font-size-xxxxxl;
-    letter-spacing: -.15rem;
   }
 
   em {
     font-style: normal;
     font-weight: $font-weight-bold;
+
+    b {
+      color: $color-blue;
+    }
 
     i {
       color: $color-red;

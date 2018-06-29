@@ -1755,8 +1755,9 @@ body {
 a {
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #0d7e97), to(#0d7e97));
   background-image: linear-gradient(to top, #0d7e97 0, #0d7e97 100%);
-  background-position: 0 1.15em;
+  background-position: 0% 100%;
   background-repeat: repeat-x;
+  background-size: 1px 2px;
   color: inherit;
   cursor: pointer;
   text-decoration: none;
@@ -1765,13 +1766,15 @@ a {
   .on-dark a {
     background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ffffff), to(#ffffff));
     background-image: linear-gradient(to top, #ffffff 0, #ffffff 100%);
-    background-position: 0 1.15em;
-    background-repeat: repeat-x; }
+    background-position: 0% 100%;
+    background-repeat: repeat-x;
+    background-size: 1px 2px; }
   .on-light a {
     background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #0d7e97), to(#0d7e97));
     background-image: linear-gradient(to top, #0d7e97 0, #0d7e97 100%);
-    background-position: 0 1.15em;
-    background-repeat: repeat-x; }
+    background-position: 0% 100%;
+    background-repeat: repeat-x;
+    background-size: 1px 2px; }
   a:active, a:focus, a:hover {
     background-color: #0d7e97;
     color: #ffffff; }
@@ -2473,15 +2476,23 @@ h6,
 
 .header-overall {
   color: #414042;
-  font-size: 6.5vw;
+  font-size: 6.3vw;
+  letter-spacing: -.3vw;
   margin-bottom: 0; }
+  @media (min-width: 600px) {
+    .header-overall {
+      font-size: 6.3vw; } }
+  @media (min-width: 800px) {
+    .header-overall {
+      font-size: 6.3vw; } }
   @media (min-width: 1200px) {
     .header-overall {
-      font-size: 4.29982rem;
-      letter-spacing: -.15rem; } }
+      font-size: 4.29982rem; } }
   .header-overall em {
     font-style: normal;
     font-weight: 700; }
+    .header-overall em b {
+      color: #0d7e97; }
     .header-overall em i {
       color: #be2a26;
       font-style: normal; }
@@ -2833,19 +2844,6 @@ h6,
     margin-top: 0;
     padding: 1rem 2rem;
     text-align: right; } }
-
-.header-overall {
-  font-size: 1.44rem;
-  margin-bottom: 0.5rem; }
-  @media (min-width: 600px) {
-    .header-overall {
-      font-size: 1.728rem; } }
-  @media (min-width: 800px) {
-    .header-overall {
-      font-size: 2.48832rem; } }
-  @media (min-width: 1200px) {
-    .header-overall {
-      font-size: 4.29982rem; } }
 
 .login-bottom h1 {
   font-size: 0.83333rem;

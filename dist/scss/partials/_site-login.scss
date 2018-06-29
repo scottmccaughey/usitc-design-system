@@ -19,23 +19,6 @@
   }
 }
 
-.header-overall {
-  font-size: $font-size-xl;
-  margin-bottom: $space-s;
-
-  @include breakpoint(s) {
-    font-size: $font-size-xxl;
-  }
-
-  @include breakpoint(m) {
-    font-size: $font-size-xxxxl;
-  }
-
-  @include breakpoint(l) {
-    font-size: $font-size-xxxxxl;
-  }
-}
-
 .login-bottom {
   h1 {
     font-size: $font-size-s;
