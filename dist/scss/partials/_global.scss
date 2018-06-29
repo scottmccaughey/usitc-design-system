@@ -133,6 +133,7 @@ table {
   }
 }
 
+ol,
 ul {
   margin-bottom: $space-m;
   padding-left: 1.75rem;
@@ -157,6 +158,10 @@ ul {
   }
 }
 
+ol li {
+  list-style: decimal;
+}
+
 .alt {
   background-color: $color-theme-base-background-alt;
 
@@ -179,6 +184,10 @@ ul {
 
 .alt-green {
   background-color: $color-green-light;
+}
+
+.alt-red {
+  background-color: $color-red-lighter;
 }
 
 .bold {

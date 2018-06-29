@@ -1815,20 +1815,29 @@ table {
   table th {
     font-weight: 700; }
 
+ol,
 ul {
   margin-bottom: 1rem;
   padding-left: 1.75rem; }
+  ol:only-child,
+  ol:last-child li:last-child,
   ul:only-child,
   ul:last-child li:last-child {
     margin-bottom: 0; }
+  ol li,
   ul li {
     margin: 0 0 0.5rem;
     list-style: square; }
+  ol.clean,
   ul.clean {
     padding: 0; }
+    ol.clean li,
     ul.clean li {
       list-style: none;
       margin: 0; }
+
+ol li {
+  list-style: decimal; }
 
 .alt {
   background-color: #e6e7e8; }
@@ -1846,6 +1855,9 @@ ul {
 
 .alt-green {
   background-color: #e8f3e5; }
+
+.alt-red {
+  background-color: #f7dbdb; }
 
 .bold {
   font-weight: 700; }
