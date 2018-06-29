@@ -17,14 +17,75 @@
   width: 24px;
 }
 
-.icon {
-  fill: currentColor;
-  height: 24px;
-  stroke: none;
-  width: 24px;
-}
+icon {
+  display: inline-block;
+  height: ms-icon-size(0);
+  position: relative;
+  width: ms-icon-size(0);
 
-.icon-full {
-  height: auto;
-  width: 100%;
+  > svg {
+    align-items: stretch;
+    display: flex;
+    height: 100%;
+    fill: currentColor;
+    justify-content: stretch;
+    stroke: none;
+    width: 100%;
+  }
+
+  &.icon-full {
+    display: block;
+    height: 0;
+    padding-bottom: 100%;
+    width: 100%;
+
+    > svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  &.icon-s {
+    bottom: ms-icon-pos(-1);
+    height: ms-icon-size(-1);
+    width: ms-icon-size(-1);
+  }
+
+  &.icon-m {
+    height: ms-icon-size(0);
+    width: ms-icon-size(0);
+  }
+
+  &.icon-l {
+    bottom: ms-icon-pos(1);
+    height: ms-icon-size(1);
+    width: ms-icon-size(1);
+  }
+
+  &.icon-xl {
+    bottom: ms-icon-pos(2);
+    height: ms-icon-size(2);
+    width: ms-icon-size(2);
+  }
+
+  &.icon-xxl {
+    bottom: ms-icon-pos(3);
+    height: ms-icon-size(3);
+    width: ms-icon-size(3);
+  }
+
+  &.icon-xxxl {
+    bottom: ms-icon-pos(4);
+    height: ms-icon-size(4);
+    width: ms-icon-size(4);
+  }
+
+  &.icon-xxxxl {
+    bottom: ms-icon-pos(5);
+    height: ms-icon-size(5);
+    width: ms-icon-size(5);
+  }
 }

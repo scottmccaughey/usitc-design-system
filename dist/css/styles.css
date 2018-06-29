@@ -2527,15 +2527,63 @@ h6,
   stroke: currentColor;
   width: 24px; }
 
-.icon {
-  fill: currentColor;
-  height: 24px;
-  stroke: none;
-  width: 24px; }
-
-.icon-full {
-  height: auto;
-  width: 100%; }
+icon {
+  display: inline-block;
+  height: 0.75em;
+  position: relative;
+  width: 0.75em; }
+  icon > svg {
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    fill: currentColor;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+    stroke: none;
+    width: 100%; }
+  icon.icon-full {
+    display: block;
+    height: 0;
+    padding-bottom: 100%;
+    width: 100%; }
+    icon.icon-full > svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; }
+  icon.icon-s {
+    bottom: 0.0625em;
+    height: 0.625em;
+    width: 0.625em; }
+  icon.icon-m {
+    height: 0.75em;
+    width: 0.75em; }
+  icon.icon-l {
+    bottom: -0.075em;
+    height: 0.9em;
+    width: 0.9em; }
+  icon.icon-xl {
+    bottom: -0.165em;
+    height: 1.08em;
+    width: 1.08em; }
+  icon.icon-xxl {
+    bottom: -0.273em;
+    height: 1.296em;
+    width: 1.296em; }
+  icon.icon-xxxl {
+    bottom: -0.4026em;
+    height: 1.5552em;
+    width: 1.5552em; }
+  icon.icon-xxxxl {
+    bottom: -0.55812em;
+    height: 1.86624em;
+    width: 1.86624em; }
 
 .pagination {
   display: -webkit-box;
