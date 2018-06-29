@@ -7,16 +7,6 @@
 // 888 Y88b.   Y88..88P 888  888      X88
 // 888  "Y8888P "Y88P"  888  888  88888P'
 
-.feather {
-  fill: none;
-  height: 24px;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 2;
-  stroke: currentColor;
-  width: 24px;
-}
-
 icon {
   display: inline-block;
   height: ms-icon-size(0);
@@ -33,19 +23,22 @@ icon {
     width: 100%;
   }
 
-  &.icon-full {
+  &.icon-fill,
+  &.icon-75,
+  &.icon-50 {
     display: block;
-    height: 0;
-    padding-bottom: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
+  }
 
-    > svg {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-    }
+  &.icon-75 {
+    max-width: 75%;
+  }
+
+  &.icon-50 {
+    max-width: 50%;
   }
 
   &.icon-s {
@@ -88,4 +81,18 @@ icon {
     height: ms-icon-size(5);
     width: ms-icon-size(5);
   }
+}
+
+
+
+
+
+.feather {
+  fill: none;
+  height: 24px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+  stroke: currentColor;
+  width: 24px;
 }

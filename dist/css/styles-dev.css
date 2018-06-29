@@ -2518,15 +2518,6 @@ h6,
   margin-top: -0.5rem;
   text-transform: uppercase; }
 
-.feather {
-  fill: none;
-  height: 24px;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 2;
-  stroke: currentColor;
-  width: 24px; }
-
 icon {
   display: inline-block;
   height: 0.75em;
@@ -2546,17 +2537,16 @@ icon {
             justify-content: stretch;
     stroke: none;
     width: 100%; }
-  icon.icon-full {
+  icon.icon-fill, icon.icon-75, icon.icon-50 {
     display: block;
-    height: 0;
-    padding-bottom: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%; }
-    icon.icon-full > svg {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0; }
+  icon.icon-75 {
+    max-width: 75%; }
+  icon.icon-50 {
+    max-width: 50%; }
   icon.icon-s {
     bottom: 0.0625em;
     height: 0.625em;
@@ -2584,6 +2574,15 @@ icon {
     bottom: -0.55812em;
     height: 1.86624em;
     width: 1.86624em; }
+
+.feather {
+  fill: none;
+  height: 24px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+  stroke: currentColor;
+  width: 24px; }
 
 .pagination {
   display: -webkit-box;
@@ -2873,18 +2872,6 @@ icon {
   .trade-data-reports > a:active, .trade-data-reports > a:focus, .trade-data-reports > a:hover {
     background: #0d7e97;
     color: #ffffff; }
-
-.trade-data-reports i {
-  display: block;
-  margin: 0 auto 1rem; }
-
-.trade-data-reports i,
-.trade-data-reports i > *,
-.trade-data-reports i > * > svg {
-  height: auto;
-  max-height: 8rem;
-  max-width: 8rem;
-  width: 100%; }
 
 @media (min-width: 800px) {
   .disclaimer {
