@@ -359,6 +359,20 @@ ol li {
   font-weight: $font-weight-normal;
 }
 
+.hide-s-down {
+  display: none;
+
+  @include breakpoint(m) {
+    display: block;
+  }
+}
+
+.hide-m-up {
+  @include breakpoint(m) {
+    display: none;
+  }
+}
+
 .loading {
   background-image: url('/assets/images/svg/loader.svg');
   background-repeat: no-repeat;

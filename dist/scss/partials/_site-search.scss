@@ -113,6 +113,16 @@
   }
 }
 
+.search-settings-group {
+  padding-top: $space-m;
+
+  + .search-settings-group {
+    @include breakpoint(l) {
+      padding-top: 0;
+    }
+  }
+}
+
 .search-sort-order {
   .toggle-switch {
     border-radius: 0 0 $space-s $space-s;

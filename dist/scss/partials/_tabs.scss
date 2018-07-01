@@ -7,21 +7,70 @@
 // Y88b.  888  888 888 d88P      X88
 //  "Y888 "Y888888 88888P"   88888P'
 
+.check-tab {
+  background-color: rgba($color-white, 0.75);
+  border-bottom: 1px solid $color-gray-light;
+  border-top-left-radius: $space-xs;
+  border-top-right-radius: $space-xs;
+  padding: 0 $space-m;
 
-.nav-tabs {
-  li {
+  &.active,
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: $color-white;
+  }
 
-    > * {
-      align-items: center;
-      display: flex;
+  &.active {
+    border: 1px solid $color-gray-light;
+    border-bottom-color: $color-white;
+  }
 
-      i {
-        margin-right: $space-s;
-      }
+  .control input {
+    width: 0;
+  }
+}
+
+.check-tabs {
+  @include breakpoint(m) {
+    grid-gap: $space-s;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.check-tabs-contents {
+  background-color: $color-white;
+  border: 1px solid $color-gray-light;
+  border-top-width: 0;
+  padding: $space-m;
+
+  @include breakpoint(m) {
+    border-top-width: 1px;
+    position: relative;
+    top: -1px;
+    z-index: 1;
+  }
+
+  .panel.state-info {
+    font-weight: $font-weight-normal;
+
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 }
 
+.check-tabs-select {
+  background-color: $color-white;
+  border: 1px solid $color-gray-light;
+  border-bottom-width: 0;
+  padding: $space-m $space-m 0;
+
+  select {
+    font-weight: $font-weight-bold;
+  }
+}
 
 .nav-tabs {
   align-items: stretch;
@@ -33,6 +82,8 @@
 
   li {
     align-items: center;
+    border-top-left-radius: $space-xs;
+    border-top-right-radius: $space-xs;
     background-color: $color-gray-lighter;
     cursor: pointer;
     display: flex;
