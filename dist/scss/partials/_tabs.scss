@@ -9,10 +9,11 @@
 
 .check-tab {
   background-color: rgba($color-white, 0.75);
-  border-bottom: 1px solid $color-gray-light;
+  border: 1px solid rgba($color-white, 0.75);
+  border-bottom-color: $color-gray-light;
   border-top-left-radius: $space-xs;
   border-top-right-radius: $space-xs;
-  padding: 0 $space-m;
+  padding: $space-s $space-m;
 
   &.active,
   &:active,

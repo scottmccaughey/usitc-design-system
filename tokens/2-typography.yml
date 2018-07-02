@@ -54,6 +54,10 @@ font:
     root:           20px
     base:           1rem
     scale-ratio:    1.2
+    xxxxxxxs:       'ms(-8)'
+    xxxxxxs:        'ms(-7)'
+    xxxxxs:         'ms(-6)'
+    xxxxs:          'ms(-5)'
     xxxs:           'ms(-4)'
     xxs:            'ms(-3)'
     xs:             'ms(-2)'
@@ -64,7 +68,9 @@ font:
     xxl:            'ms(3)'
     xxxl:           'ms(4)'
     xxxxl:          'ms(5)'
-    xxxxxl:         'ms(8)'
+    xxxxxl:         'ms(6)'
+    xxxxxxl:        'ms(7)'
+    xxxxxxxl:       'ms(8)'
     h1:             $font-size-xxl
     h2:             $font-size-xl
     h3:             $font-size-l

@@ -49,11 +49,15 @@ body {
 }
 
 a {
-  @include link-underline($color-theme-base-link);
-  color: inherit;
+  color: $color-blue;
   cursor: pointer;
-  text-decoration: none;
+  text-decoration: underline;
   transition: $transition-base;
+
+  @supports (text-decoration-color: $color-blue) {
+    color: inherit;
+    text-decoration-color: $color-blue;
+  }
 
   .on-dark & {
     @include link-underline($color-theme-dark-link);
@@ -179,11 +183,15 @@ ol li {
 }
 
 .alt-blue {
-  background-color: $color-blue-light;
+  background-color: $color-blue-lighter;
 }
 
 .alt-green {
-  background-color: $color-green-light;
+  background-color: $color-green-lighter;
+}
+
+.alt-orange {
+  background-color: $color-orange-lighter;
 }
 
 .alt-red {
@@ -473,13 +481,6 @@ ol li {
   min-height: 100vh;
 }
 
-.step {
-  font-size: $font-size-xl;
-  font-weight: $font-weight-bold;
-  margin-right: $space-m;
-  text-transform: uppercase;
-}
-
 .svg-wrapper {
   position: relative;
 }
@@ -518,6 +519,10 @@ ol li {
   line-height: 1;
 }
 
+.text-crop {
+  @include text-crop;
+}
+
 .text-center {
   display: block;
   text-align: center;
@@ -535,6 +540,14 @@ ol li {
 
 .text-s {
   font-size: $font-size-s;
+}
+
+.unbold {
+  font-weight: $font-weight-normal !important;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .video-wrapper {

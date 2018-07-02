@@ -9,10 +9,12 @@
 
 .flex {
   @include breakpoint(m) {
+    align-content: center;
     align-items: stretch;
     display: flex;
 
     > * {
+      align-content: center;
       align-items: center;
       display: flex;
     }

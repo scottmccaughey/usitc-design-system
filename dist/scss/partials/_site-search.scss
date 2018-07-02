@@ -169,6 +169,11 @@
 
     @include breakpoint(m) {
       font-size: 1.2em;
+
+      button,
+      .button {
+        font-size: 0.8em;
+      }
     }
 
     &.text-left {

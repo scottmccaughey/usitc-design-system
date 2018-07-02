@@ -34,6 +34,10 @@
       padding-right: 0;
     }
 
+    &.padded {
+      padding: $space-m !important;
+    }
+
     &.text-center,
     &.text-left,
     &.text-right {

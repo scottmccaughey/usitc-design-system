@@ -100,7 +100,8 @@ h6,
   }
 
   @include breakpoint(l) {
-    font-size: $font-size-xxxxxl;
+    font-size: 76px;
+    letter-spacing: -3.6px;
   }
 
   em {
@@ -115,6 +116,19 @@ h6,
       color: $color-red;
       font-style: normal;
     }
+  }
+}
+
+.header-step {
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+
+  em {
+    color: $color-green-dark;
+    font-size: $font-size-xxxxxl;
+    font-style: normal;
+    font-weight: $font-weight-black;
+    margin-right: $space-l;
   }
 }
 
@@ -133,8 +147,6 @@ h6,
 
 .subhead {
   font-size: $font-size-s;
-  line-height: $line-height-base;
-  margin-top: (-$space-s);
 }
 
 .subhead-table {
