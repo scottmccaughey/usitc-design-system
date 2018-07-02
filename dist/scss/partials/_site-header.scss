@@ -61,6 +61,7 @@
         line-height: $line-height-header;
         padding: $space-s;
         text-align: center;
+        text-decoration: none;
         width: 100%;
 
         @include breakpoint(m) {
