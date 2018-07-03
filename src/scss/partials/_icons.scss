@@ -66,53 +66,49 @@ icon {
 
   &.icon-block {
     display: block;
-    height: 0;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  &.icon-block-centered {
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 100%;
-    width: 100%;
-
-    > svg {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      top: 0;
-    }
   }
 
   &.icon-block-s {
-    padding-bottom: 0.75rem;
+    height: 0.75rem;
     width: 0.75rem;
   }
 
   &.icon-block-m {
-    padding-bottom: 1rem;
+    height: 1rem;
     width: 1rem;
   }
 
   &.icon-block-l {
-    padding-bottom: 2rem;
+    height: 2rem;
     width: 2rem;
   }
 
   &.icon-block-xl {
-    padding-bottom: 3rem;
+    height: 3rem;
     width: 3rem;
   }
 
   &.icon-block-xxl {
-    padding-bottom: 4rem;
+    height: 4rem;
     width: 4rem;
   }
 
   &.icon-block-xxxl {
-    padding-bottom: 5rem;
+    height: 5rem;
     width: 5rem;
   }
 
   &.icon-block-xxxxl {
-    padding-bottom: 6rem;
+    height: 6rem;
     width: 6rem;
   }
 }
