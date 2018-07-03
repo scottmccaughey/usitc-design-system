@@ -3280,9 +3280,9 @@ a rect {
       .site-header > nav > ul {
         grid-template-columns: 1fr repeat(4, auto); } }
     .site-header > nav > ul li {
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch;
       border-bottom: 1px solid #b3b1b4;
       border-right: 1px solid #b3b1b4;
       display: -webkit-box;
@@ -3314,6 +3314,12 @@ a rect {
                 align-items: center;
         background-image: none;
         color: #414042;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         line-height: 1.25;
         padding: 0.5rem;
         text-align: center;
