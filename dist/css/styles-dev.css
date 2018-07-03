@@ -576,7 +576,7 @@ textarea {
        X88 Y88b.    888  888 888 Y8b.
    88888P'  "Y8888P "Y888888 888  "Y8888
 
-   Modular Scale Typography function
+  Modular Scale Typography function
 
   ms($factor)
 */
@@ -1542,8 +1542,8 @@ simple-select + simple-select .select-child-field {
     width: 3rem; }
     .input-icon > i > * {
       left: 50%;
-      margin-left: -12px;
-      margin-top: -12px;
+      margin-left: -0.5em;
+      margin-top: -0.5em;
       position: absolute;
       top: 50%; }
   .input-icon.input-icon-right.state-error > i, .input-icon.input-icon-right.state-info > i, .input-icon.input-icon-right.state-success > i, .input-icon.input-icon-right.state-warning > i {
@@ -1554,7 +1554,7 @@ simple-select + simple-select .select-child-field {
     right: 0; }
     .input-icon.input-icon-right > i > * {
       right: 50%;
-      margin-right: 12px; }
+      margin-right: 0.5em; }
   .input-icon.input-icon-right input {
     margin-left: 0;
     padding: 0.5rem 4rem 0.5rem 1rem; }
@@ -2546,9 +2546,9 @@ h6,
 
 icon {
   display: inline-block;
-  height: 0.75em;
+  height: 1em;
   position: relative;
-  width: 0.75em; }
+  width: 1em; }
   icon > svg {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
@@ -2563,63 +2563,59 @@ icon {
             justify-content: stretch;
     stroke: none;
     width: 100%; }
+  icon.icon-xxxs {
+    height: 0.14815em;
+    width: 0.14815em; }
+  icon.icon-xxs {
+    height: 0.22222em;
+    width: 0.22222em; }
+  icon.icon-xs {
+    height: 0.33333em;
+    width: 0.33333em; }
   icon.icon-s {
-    bottom: 0.0625em;
-    height: 0.625em;
-    width: 0.625em; }
+    height: 0.5em;
+    width: 0.5em; }
   icon.icon-m {
     height: 0.75em;
     width: 0.75em; }
   icon.icon-l {
-    bottom: -0.075em;
-    height: 0.9em;
-    width: 0.9em; }
+    height: 1.125em;
+    width: 1.125em; }
   icon.icon-xl {
-    bottom: -0.165em;
-    height: 1.08em;
-    width: 1.08em; }
+    height: 1.6875em;
+    width: 1.6875em; }
   icon.icon-xxl {
-    bottom: -0.273em;
-    height: 1.296em;
-    width: 1.296em; }
+    height: 2.53125em;
+    width: 2.53125em; }
   icon.icon-xxxl {
-    bottom: -0.4026em;
-    height: 1.5552em;
-    width: 1.5552em; }
+    height: 3.79688em;
+    width: 3.79688em; }
   icon.icon-xxxxl {
-    bottom: -0.55812em;
-    height: 1.86624em;
-    width: 1.86624em; }
+    height: 5.69531em;
+    width: 5.69531em; }
+  icon.icon-xxxxxl {
+    height: 8.54297em;
+    width: 8.54297em; }
+  icon.icon-xxxxxxl {
+    height: 12.81445em;
+    width: 12.81445em; }
+  icon.icon-xxxxxxxl {
+    height: 19.22168em;
+    width: 19.22168em; }
   icon.icon-block {
     display: block;
     height: 100%;
     max-height: 100%;
     max-width: 100%;
     width: 100%; }
-  icon.icon-block-centered {
+  icon.icon-centered {
+    display: block;
+    height: 100%;
     margin-left: auto;
-    margin-right: auto; }
-  icon.icon-block-s {
-    height: 0.75rem;
-    width: 0.75rem; }
-  icon.icon-block-m {
-    height: 1rem;
-    width: 1rem; }
-  icon.icon-block-l {
-    height: 2rem;
-    width: 2rem; }
-  icon.icon-block-xl {
-    height: 3rem;
-    width: 3rem; }
-  icon.icon-block-xxl {
-    height: 4rem;
-    width: 4rem; }
-  icon.icon-block-xxxl {
-    height: 5rem;
-    width: 5rem; }
-  icon.icon-block-xxxxl {
-    height: 6rem;
-    width: 6rem; }
+    margin-right: auto;
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%; }
 
 .feather {
   fill: none;

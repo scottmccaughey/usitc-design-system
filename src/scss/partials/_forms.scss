@@ -480,8 +480,8 @@ simple-select {
 
     > * {
       left: 50%;
-      margin-left: (-$icon-size / 2);
-      margin-top: (-$icon-size / 2);
+      margin-left: (-$icon-size-base / 2);
+      margin-top: (-$icon-size-base / 2);
       position: absolute;
       top: 50%;
     }
@@ -504,7 +504,7 @@ simple-select {
 
       > * {
         right: 50%;
-        margin-right: -(-$icon-size / 2);
+        margin-right: -(-$icon-size-base / 2);
       }
     }
 

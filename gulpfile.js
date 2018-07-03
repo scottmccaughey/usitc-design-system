@@ -1,3 +1,5 @@
+require('events').EventEmitter.prototype._maxListeners = 100;
+
 var gulp          = require('gulp-help')(require('gulp'), { hideDepsMessage: true }),
     plumber       = require('gulp-plumber'),
     sequence      = require('gulp-sequence'),

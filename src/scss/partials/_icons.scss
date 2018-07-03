@@ -9,9 +9,9 @@
 
 icon {
   display: inline-block;
-  height: ms-icon-size(0);
+  height: $icon-size-base;
   position: relative;
-  width: ms-icon-size(0);
+  width: $icon-size-base;
 
   > svg {
     align-items: stretch;
@@ -23,45 +23,69 @@ icon {
     width: 100%;
   }
 
+  &.icon-xxxs {
+    height: $icon-size-xxxs;
+    width: $icon-size-xxxs;
+  }
+
+  &.icon-xxs {
+    height: $icon-size-xxs;
+    width: $icon-size-xxs;
+  }
+
+  &.icon-xs {
+    height: $icon-size-xs;
+    width: $icon-size-xs;
+  }
+
   &.icon-s {
-    bottom: ms-icon-pos(-1);
-    height: ms-icon-size(-1);
-    width: ms-icon-size(-1);
+    height: $icon-size-s;
+    width: $icon-size-s;
   }
 
   &.icon-m {
-    height: ms-icon-size(0);
-    width: ms-icon-size(0);
+    height: $icon-size-m;
+    width: $icon-size-m;
   }
 
   &.icon-l {
-    bottom: ms-icon-pos(1);
-    height: ms-icon-size(1);
-    width: ms-icon-size(1);
+    height: $icon-size-l;
+    width: $icon-size-l;
   }
 
   &.icon-xl {
-    bottom: ms-icon-pos(2);
-    height: ms-icon-size(2);
-    width: ms-icon-size(2);
+    height: $icon-size-xl;
+    width: $icon-size-xl;
   }
 
   &.icon-xxl {
-    bottom: ms-icon-pos(3);
-    height: ms-icon-size(3);
-    width: ms-icon-size(3);
+    height: $icon-size-xxl;
+    width: $icon-size-xxl;
   }
 
   &.icon-xxxl {
-    bottom: ms-icon-pos(4);
-    height: ms-icon-size(4);
-    width: ms-icon-size(4);
+    height: $icon-size-xxxl;
+    width: $icon-size-xxxl;
   }
 
   &.icon-xxxxl {
-    bottom: ms-icon-pos(5);
-    height: ms-icon-size(5);
-    width: ms-icon-size(5);
+    height: $icon-size-xxxxl;
+    width: $icon-size-xxxxl;
+  }
+
+  &.icon-xxxxxl {
+    height: $icon-size-xxxxxl;
+    width: $icon-size-xxxxxl;
+  }
+
+  &.icon-xxxxxxl {
+    height: $icon-size-xxxxxxl;
+    width: $icon-size-xxxxxxl;
+  }
+
+  &.icon-xxxxxxxl {
+    height: $icon-size-xxxxxxxl;
+    width: $icon-size-xxxxxxxl;
   }
 
   &.icon-block {
@@ -72,44 +96,14 @@ icon {
     width: 100%;
   }
 
-  &.icon-block-centered {
+  &.icon-centered {
+    display: block;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  &.icon-block-s {
-    height: 0.75rem;
-    width: 0.75rem;
-  }
-
-  &.icon-block-m {
-    height: 1rem;
-    width: 1rem;
-  }
-
-  &.icon-block-l {
-    height: 2rem;
-    width: 2rem;
-  }
-
-  &.icon-block-xl {
-    height: 3rem;
-    width: 3rem;
-  }
-
-  &.icon-block-xxl {
-    height: 4rem;
-    width: 4rem;
-  }
-
-  &.icon-block-xxxl {
-    height: 5rem;
-    width: 5rem;
-  }
-
-  &.icon-block-xxxxl {
-    height: 6rem;
-    width: 6rem;
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
   }
 }
 

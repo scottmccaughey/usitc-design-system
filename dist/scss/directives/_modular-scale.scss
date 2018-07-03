@@ -17,19 +17,15 @@
        X88 Y88b.    888  888 888 Y8b.
    88888P'  "Y8888P "Y888888 888  "Y8888
 
-   Modular Scale Typography function
+  Modular Scale Typography function
 
   ms($factor)
 */
 
 @function ms($factor: 0) {
-  @return pow($font-size-scale-ratio, $factor) * 1rem;
+  @return pow($font-size-scale-ratio, $factor) * $font-size-base;
 }
 
-@function ms-icon-size($factor: 0) {
-  @return pow($font-size-scale-ratio, $factor) * 0.75em;
-}
-
-@function ms-icon-pos($factor: 0) {
-  @return ((ms-icon-size(0) - ms-icon-size($factor)) * 0.5);
+@function msi($factor: 0) {
+  @return pow($icon-size-scale-ratio, $factor) * $icon-size-ratio;
 }
