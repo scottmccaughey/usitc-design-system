@@ -1490,6 +1490,23 @@ simple-select + simple-select .select-child-field {
   margin-bottom: 0.5rem;
   text-transform: uppercase; }
 
+.form-read-more icon {
+  margin-right: 0.5rem; }
+  @media (min-width: 1200px) {
+    .form-read-more icon {
+      height: 2.53125em;
+      width: 2.53125em; } }
+  .form-read-more icon use {
+    fill: #0d7e97; }
+  .form-read-more icon path {
+    all: inherit; }
+
+.form-read-more:active icon use, .form-read-more:focus icon use, .form-read-more:hover icon use {
+  fill: #ffffff; }
+
+.form-read-more:active icon path, .form-read-more:focus icon path, .form-read-more:hover icon path {
+  all: inherit; }
+
 .form-settings {
   background-color: #004353;
   padding: 0.5rem; }
@@ -2800,6 +2817,121 @@ icon {
     background-color: #c9e3e8;
     bottom: 0.25rem;
     height: 0.5rem; }
+
+.margin {
+  padding: 1rem; }
+  .margin + .margin {
+    padding-top: 0; }
+
+.margin-left-right {
+  margin-left: 1rem;
+  margin-right: 1rem; }
+
+.margin-top-bottom {
+  margin-bottom: 1rem;
+  margin-top: 1rem; }
+
+.margin-top-l {
+  margin-top: 2rem; }
+
+.margin-top {
+  margin-top: 1rem; }
+
+.margin-right {
+  margin-right: 1rem; }
+
+.margin-bottom {
+  margin-bottom: 1rem; }
+
+.margin-left {
+  margin-left: 1rem; }
+
+.margin-none {
+  margin: 0 !important; }
+
+.margin-bottom-none {
+  margin-bottom: 0 !important; }
+
+.margin-left-none {
+  margin-left: 0 !important; }
+
+.margin-right-none {
+  margin-right: 0 !important; }
+
+.margin-top-none {
+  margin-top: 0 !important; }
+
+.margin-half {
+  margin: 0.5rem; }
+
+.margin-bottom-half {
+  margin-bottom: 0.5rem; }
+
+.margin-left-half {
+  margin-left: 0.5rem; }
+
+.margin-right-half {
+  margin-right: 0.5rem; }
+
+.margin-top-half {
+  margin-top: 0.5rem; }
+
+.margin-double {
+  margin: 2rem; }
+
+.margin-bottom-double {
+  margin-bottom: 2rem; }
+
+.margin-left-double {
+  margin-left: 2rem; }
+
+.margin-right-double {
+  margin-right: 2rem; }
+
+.margin-top-double {
+  margin-top: 2rem; }
+
+.padding-none {
+  padding: 0 !important; }
+
+.padding-bottom-none {
+  padding-bottom: 0 !important; }
+
+.padding-left-none {
+  padding-left: 0 !important; }
+
+.padding-right-none {
+  padding-right: 0 !important; }
+
+.padding-top-none {
+  padding-top: 0 !important; }
+
+.padded {
+  padding: 1rem; }
+  .padded + .padded {
+    padding-top: 0; }
+    .padded + .padded.padded-top {
+      padding-top: 1rem; }
+
+.padded-left-right {
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+.padded-top-bottom {
+  padding-bottom: 1rem;
+  padding-top: 1rem; }
+
+.padded-top {
+  padding-top: 1rem; }
+
+.padded-right {
+  padding-right: 1rem; }
+
+.padded-bottom {
+  padding-bottom: 1rem; }
+
+.padded-left {
+  padding-left: 1rem; }
 
 @-webkit-keyframes spCircRot {
   from {

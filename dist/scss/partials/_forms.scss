@@ -405,6 +405,39 @@ simple-select {
   }
 }
 
+.form-read-more {
+  icon {
+    margin-right: $space-s;
+
+    @include breakpoint(l) {
+      height: $icon-size-xxl;
+      width: $icon-size-xxl;
+    }
+
+    use {
+      fill: $color-blue;
+    }
+
+    path {
+      all: inherit;
+    }
+  }
+
+  &:active,
+  &:focus,
+  &:hover {
+    icon {
+      use {
+        fill: $color-white;
+      }
+
+      path {
+        all: inherit;
+      }
+    }
+  }
+}
+
 .form-settings {
   background-color: $color-blue-dark;
   padding: $space-s;
