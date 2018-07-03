@@ -1,0 +1,121 @@
+// 888             888      888
+// 888             888      888
+// 888             888      888
+// 888888  8888b.  88888b.  888  .d88b.  .d8888b
+// 888        "88b 888 "88b 888 d8P  Y8b 88K
+// 888    .d888888 888  888 888 88888888 "Y8888b.
+// Y88b.  888  888 888 d88P 888 Y8b.          X88
+//  "Y888 "Y888888 88888P"  888  "Y8888   88888P'
+
+.table {
+  width: 100%;
+
+  tbody th {
+    vertical-align: middle;
+  }
+
+  thead {
+    vertical-align: bottom;
+  }
+
+  th {
+    text-align: left;
+  }
+
+  th,
+  td {
+    padding: $space-xs;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    &.padded {
+      padding: $space-m !important;
+    }
+
+    &.text-center,
+    &.text-left,
+    &.text-right {
+      display: table-cell;
+    }
+  }
+}
+
+.table-bordered {
+  th,
+  td {
+    border: $border-base;
+  }
+}
+
+.table-striped {
+  tbody tr:nth-child(odd) {
+    th,
+    td {
+      background-color: $color-gray-lighter;
+    }
+  }
+}
+
+.table-responsive {
+  thead {
+    display: none;
+  }
+
+  th,
+  td {
+    display: block;
+    padding: $space-xs $space-s !important;
+    text-align: left;
+    word-break: break-word;
+  }
+
+  th {
+    border-bottom-width: 0;
+    margin-top: $space-s;
+  }
+
+  @include breakpoint(s) {
+    thead {
+      display: table-header-group;
+    }
+
+    th,
+    td {
+      display: table-cell;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+    th {
+      border-bottom-width: 1px;
+    }
+  }
+
+  &.table-searches {
+    th.table-spinner:last-child {
+      padding: 0 !important;
+    }
+  }
+}
+
+.table-results-all {
+  + .table-results-all {
+    margin-top: $space-l;
+  }
+
+  table {
+    border-bottom: $border-base;
+  }
+}

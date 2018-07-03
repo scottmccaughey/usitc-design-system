@@ -1,0 +1,75 @@
+//          888             888                            d8b      888
+//          888             888                            Y8P      888
+//          888             888                                     888
+// .d8888b  888888 888  888 888  .d88b.   .d88b.  888  888 888  .d88888  .d88b.
+// 88K      888    888  888 888 d8P  Y8b d88P"88b 888  888 888 d88" 888 d8P  Y8b
+// "Y8888b. 888    888  888 888 88888888 888  888 888  888 888 888  888 88888888
+//      X88 Y88b.  Y88b 888 888 Y8b.     Y88b 888 Y88b 888 888 Y88b 888 Y8b.
+//  88888P'  "Y888  "Y88888 888  "Y8888   "Y88888  "Y88888 888  "Y88888  "Y8888
+//                      888                   888
+//                 Y8b d88P              Y8b d88P
+//                  "Y88P"                "Y88P"
+
+@import 'directives/directives';
+@import 'tokens/tokens';
+
+code {
+  font-size: $font-size-s !important;
+}
+
+pre[class*="language-"] {
+  background-color: $color-state-info-background !important;
+  border: $border-base;
+  margin: 0 !important;
+  padding: $space-s $space-m !important;
+}
+
+:not(pre) > code[class*="language-"] {
+  background-color: $color-gray-lighter;
+  border-radius: 0;
+  padding: $space-xs;
+}
+
+.code-label,
+.code-label:first-child {
+  color: $color-theme-dark-text;
+  font-size: $font-size-s;
+  font-weight: $font-weight-bold;
+  margin: $space-m 0 0;
+  padding: $space-s $space-m;
+}
+
+.sg-example {
+  border: $border-base;
+  padding: $space-m;
+
+  > * {
+    color: $color-white;
+    padding: $space-m;
+    text-align: center;
+  }
+
+  > *:nth-child(1),
+  > *:nth-child(5),
+  > *:nth-child(9) {
+    background-color: $color-blue;
+  }
+
+  > *:nth-child(2),
+  > *:nth-child(6),
+  > *:nth-child(10) {
+    background-color: $color-red;
+  }
+
+  > *:nth-child(3),
+  > *:nth-child(7),
+  > *:nth-child(11) {
+    background-color: $color-green;
+  }
+
+  > *:nth-child(4),
+  > *:nth-child(8),
+  > *:nth-child(12) {
+    background-color: $color-orange-dark;
+  }
+}

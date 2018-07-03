@@ -1,0 +1,81 @@
+//          d8b 888                   888                             888
+//          Y8P 888                   888                             888
+//              888                   888                             888
+// .d8888b  888 888888 .d88b.         88888b.   .d88b.   8888b.   .d88888  .d88b.  888d888
+// 88K      888 888   d8P  Y8b        888 "88b d8P  Y8b     "88b d88" 888 d8P  Y8b 888P"
+// "Y8888b. 888 888   88888888 888888 888  888 88888888 .d888888 888  888 88888888 888
+//      X88 888 Y88b. Y8b.            888  888 Y8b.     888  888 Y88b 888 Y8b.     888
+//  88888P' 888  "Y888 "Y8888         888  888  "Y8888  "Y888888  "Y88888  "Y8888  888
+
+.site-header {
+  background-color: $color-gray-lighter;
+  color: $color-gray-dark;
+  margin-bottom: $space-m;
+
+  > nav > ul {
+    align-items: stretch;
+    display: grid;
+    grid-template-columns: repeat($content-header-links, auto);
+    padding: 0;
+
+    @include breakpoint(m) {
+      grid-template-columns: 1fr repeat($content-header-links, auto);
+    }
+
+    li {
+      align-items: center;
+      border-bottom: 1px solid $color-gray-light;
+      border-right: 1px solid $color-gray-light;
+      display: flex;
+      font-size: $font-size-xs;
+      font-weight: $font-weight-bold;
+      list-style: none;
+      margin: 0;
+      max-width: 100%;
+      text-transform: uppercase;
+
+      @include breakpoint(m) {
+        border-bottom-width: 0;
+      }
+
+      &:last-child {
+        border-right-width: 0;
+      }
+
+      &.site-name {
+        border-right-width: 0;
+        font-size: $font-size-xs;
+        font-weight: $font-weight-bold;
+        grid-column: 1 / span $content-header-links;
+        text-transform: uppercase;
+
+        @include breakpoint(m) {
+          grid-column: 1 / span 1;
+        }
+      }
+
+      a {
+        align-items: center;
+        background-image: none;
+        color: $color-gray-dark;
+        line-height: $line-height-header;
+        padding: $space-s;
+        text-align: center;
+        text-decoration: none;
+        width: 100%;
+
+        @include breakpoint(m) {
+          padding: $space-s $space-m;
+          width: auto;
+        }
+
+        &:active,
+        &:focus,
+        &:hover {
+          background-color: $color-blue;
+          color: $color-white;
+        }
+      }
+    }
+  }
+}

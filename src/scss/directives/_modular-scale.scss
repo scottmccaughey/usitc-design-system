@@ -1,0 +1,35 @@
+/*
+                              888          888
+                              888          888
+                              888          888
+  88888b.d88b.   .d88b.   .d88888 888  888 888  8888b.  888d888
+  888 "888 "88b d88""88b d88" 888 888  888 888     "88b 888P"
+  888  888  888 888  888 888  888 888  888 888 .d888888 888   888888
+  888  888  888 Y88..88P Y88b 888 Y88b 888 888 888  888 888
+  888  888  888  "Y88P"   "Y88888  "Y88888 888 "Y888888 888
+
+                             888
+                             888
+                             888
+  .d8888b   .d8888b  8888b.  888  .d88b.
+  88K      d88P"        "88b 888 d8P  Y8b
+  "Y8888b. 888      .d888888 888 88888888
+       X88 Y88b.    888  888 888 Y8b.
+   88888P'  "Y8888P "Y888888 888  "Y8888
+
+   Modular Scale Typography function
+
+  ms($factor)
+*/
+
+@function ms($factor: 0) {
+  @return pow($font-size-scale-ratio, $factor) * 1rem;
+}
+
+@function ms-icon-size($factor: 0) {
+  @return pow($font-size-scale-ratio, $factor) * 0.75em;
+}
+
+@function ms-icon-pos($factor: 0) {
+  @return ((ms-icon-size(0) - ms-icon-size($factor)) * 0.5);
+}

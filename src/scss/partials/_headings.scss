@@ -1,0 +1,156 @@
+// 888                             888 d8b
+// 888                             888 Y8P
+// 888                             888
+// 88888b.   .d88b.   8888b.   .d88888 888 88888b.   .d88b.  .d8888b
+// 888 "88b d8P  Y8b     "88b d88" 888 888 888 "88b d88P"88b 88K
+// 888  888 88888888 .d888888 888  888 888 888  888 888  888 "Y8888b.
+// 888  888 Y8b.     888  888 Y88b 888 888 888  888 Y88b 888      X88
+// 888  888  "Y8888  "Y888888  "Y88888 888 888  888  "Y88888  88888P'
+//                                                       888
+//                                                  Y8b d88P
+//                                                   "Y88P"
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $color-theme-base-text;
+  font-weight: $font-weight-normal;
+  line-height: $line-height-header;
+  margin: $space-l 0 $space-m;
+
+  &:first-child,
+  + h1,
+  + h2,
+  + h3,
+  + h4,
+  + h5,
+  + h6 {
+    margin-top: 0;
+
+    &.margin-top {
+      margin-top: $space-m;
+    }
+  }
+
+  .on-dark & {
+    color: $color-theme-dark-text;
+  }
+
+  .on-light & {
+    color: $color-theme-base-text;
+  }
+}
+
+h1,
+.h1 {
+  font-size: $font-size-h1;
+}
+
+h2,
+.h2 {
+  font-size: $font-size-h2;
+}
+
+h3,
+.h3 {
+  font-size: $font-size-h3;
+}
+
+h4,
+.h4 {
+  font-size: $font-size-h4;
+}
+
+h5,
+.h5 {
+  font-size: $font-size-h5;
+}
+
+h6,
+.h6 {
+  font-size: $font-size-h6;
+}
+
+.header-caps {
+  color: $color-blue;
+  font-size: ($space-m + $space-xs);
+  font-weight: $font-weight-black;
+  text-transform: uppercase;
+
+  @include breakpoint(l) {
+    font-size: $space-l;
+  }
+}
+
+.header-overall {
+  color: $color-gray-dark;
+  font-size: 6.3vw;
+  letter-spacing: -.3vw;
+  margin-bottom: 0;
+
+  @include breakpoint(s) {
+    font-size: 6.3vw;
+  }
+
+  @include breakpoint(m) {
+    font-size: 6.3vw;
+  }
+
+  @include breakpoint(l) {
+    font-size: 76px;
+    letter-spacing: -3.6px;
+  }
+
+  em {
+    font-style: normal;
+    font-weight: $font-weight-bold;
+
+    b {
+      color: $color-blue;
+    }
+
+    i {
+      color: $color-red;
+      font-style: normal;
+    }
+  }
+}
+
+.header-step {
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+
+  em {
+    color: $color-green-dark;
+    font-size: $font-size-xxxxxl;
+    font-style: normal;
+    font-weight: $font-weight-black;
+    margin-right: $space-l;
+  }
+}
+
+.header-tagline {
+  color: $color-gray-dark;
+  font-size: 3vw;
+  font-weight: $font-weight-normal;
+  letter-spacing: .25rem;
+  text-transform: uppercase;
+
+  @include breakpoint(s) {
+    font-size: $font-size-xs;
+    letter-spacing: .4rem;
+  }
+}
+
+.subhead {
+  font-size: $font-size-s;
+}
+
+.subhead-table {
+  font-size: $font-size-xs;
+  margin-top: (-$space-s);
+  text-transform: uppercase;
+}

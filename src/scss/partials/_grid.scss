@@ -1,0 +1,72 @@
+//                  d8b      888
+//                  Y8P      888
+//                           888
+//  .d88b.  888d888 888  .d88888
+// d88P"88b 888P"   888 d88" 888
+// 888  888 888     888 888  888
+// Y88b 888 888     888 Y88b 888
+//  "Y88888 888     888  "Y88888
+//      888
+// Y8b d88P
+//  "Y88P"
+
+.grid {
+  display: grid;
+  grid-template-rows: auto;
+
+  > * {
+    grid-area: span 1 / span $grid-columns;
+  }
+
+  > .padded + .padded {
+    padding: $space-m;
+  }
+}
+
+.grid-gap {
+  grid-gap: $grid-gap-row $grid-gap-col;
+}
+
+.grid-gap-col {
+  grid-column-gap: $grid-gap-col;
+}
+
+.grid-gap-row {
+  grid-row-gap: $grid-gap-row;
+}
+
+.grid-self-align-center {
+  align-self: center;
+}
+
+.grid-self-align-end {
+  align-self: end;
+}
+
+.grid-self-align-start {
+  align-self: start;
+}
+
+.grid-self-justify-center {
+  justify-self: center;
+}
+
+.grid-self-justify-end {
+  justify-self: end;
+}
+
+.grid-self-justify-start {
+  justify-self: start;
+}
+
+.grid-separated {
+  > * {
+    border-right: 1px solid $color-gray-lighter;
+
+    &:last-child {
+      border-right-width: 0;
+    }
+  }
+}
+
+@include build-grid();

@@ -1,0 +1,155 @@
+// 888             888
+// 888             888
+// 888             888
+// 888888  8888b.  88888b.  .d8888b
+// 888        "88b 888 "88b 88K
+// 888    .d888888 888  888 "Y8888b.
+// Y88b.  888  888 888 d88P      X88
+//  "Y888 "Y888888 88888P"   88888P'
+
+.check-tab {
+  background-color: rgba($color-white, 0.75);
+  border: 1px solid rgba($color-white, 0.75);
+  border-bottom-color: $color-gray-light;
+  border-top-left-radius: $space-xs;
+  border-top-right-radius: $space-xs;
+  padding: $space-s $space-m;
+
+  &.active,
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: $color-white;
+  }
+
+  &.active {
+    border: 1px solid $color-gray-light;
+    border-bottom-color: $color-white;
+  }
+
+  .control input {
+    width: 0;
+  }
+}
+
+.check-tabs {
+  @include breakpoint(m) {
+    grid-gap: $space-s;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.check-tabs-contents {
+  background-color: $color-white;
+  border: 1px solid $color-gray-light;
+  border-top-width: 0;
+  padding: $space-m;
+
+  @include breakpoint(m) {
+    border-top-width: 1px;
+    position: relative;
+    top: -1px;
+    z-index: 1;
+  }
+
+  .panel.state-info {
+    font-weight: $font-weight-normal;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.check-tabs-select {
+  background-color: $color-white;
+  border: 1px solid $color-gray-light;
+  border-bottom-width: 0;
+  padding: $space-m $space-m 0;
+
+  select {
+    font-weight: $font-weight-bold;
+  }
+}
+
+.nav-tabs {
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0;
+  padding: 0;
+  position: relative;
+  z-index: 2;
+
+  li {
+    align-items: center;
+    border: 1px solid transparent;
+    border-bottom-color: $color-gray-light;
+    border-top-left-radius: $space-xs;
+    border-top-right-radius: $space-xs;
+    background-color: $color-gray-lighter;
+    cursor: pointer;
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;
+    margin-right: $space-s;
+    min-width: $font-size-base * 16;
+    padding: $space-m;
+    text-align: center;
+
+    &:first-child {
+      background-color: $color-green-lighter;
+      color: inherit;
+
+      &:active,
+      &:focus,
+      &:hover {
+        background-color: $color-green-lighter;
+        color: inherit;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: $color-blue-lighter;
+      color: inherit;
+    }
+
+    &.active {
+      background-color: $color-blue-lighter;
+      border-color: $color-gray-light;
+      border-bottom-color: $color-blue-lighter;
+      color: inherit;
+
+      &:first-child {
+        background-color: $color-green-lighter;
+        border-color: $color-gray-light;
+        border-bottom-color: $color-green-lighter;
+      }
+    }
+
+    > * {
+      align-items: center;
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+
+      i {
+        margin-right: $space-s;
+      }
+    }
+  }
+}
+
+.nav-tabs-pane {
+  border-top: 1px solid $color-gray-light;
+  position: relative;
+  top: -1px;
+  z-index: 1;
+}

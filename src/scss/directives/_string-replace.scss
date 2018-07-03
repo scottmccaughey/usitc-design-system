@@ -1,0 +1,56 @@
+/*
+           888            d8b
+           888            Y8P
+           888
+  .d8888b  888888 888d888 888 88888b.   .d88b.
+  88K      888    888P"   888 888 "88b d88P"88b
+  "Y8888b. 888    888     888 888  888 888  888 888888
+       X88 Y88b.  888     888 888  888 Y88b 888
+   88888P'  "Y888 888     888 888  888  "Y88888
+                                            888
+                                       Y8b d88P
+                                        "Y88P"
+                           888
+                           888
+                           888
+  888d888 .d88b.  88888b.  888  8888b.   .d8888b .d88b.
+  888P"  d8P  Y8b 888 "88b 888     "88b d88P"   d8P  Y8b
+  888    88888888 888  888 888 .d888888 888     88888888
+  888    Y8b.     888 d88P 888 888  888 Y88b.   Y8b.
+  888     "Y8888  88888P"  888 "Y888888  "Y8888P "Y8888
+                  888
+                  888
+                  888
+
+  String Replacement function
+
+  str-replace($string, $search, $replace)
+
+  The str-replace() function takes three parameters, the first two of which are required. You
+  must pass the text to be modified ($string) and the text you want to replace ($search). The
+  third (optional) parameter is the text you want to insert in place of the $search text
+  ($replace). If the $replace parameter is not passed, the $search text will simply be
+  removed. For example:
+
+  .selector {
+    $string: 'The answer to life, the universe and everything is blah.';
+    content: str-replace($string, 'blah', '42');
+  }
+
+  ...will compile to the following CSS...
+
+  .selector {
+    content: 'The answer to life, the universe and everything is 42.';
+  }
+
+  This function is used in the Font Face Declaration mixin defined and documented in
+  _directives.scss (@section 6).
+*/
+
+@function str-replace($string, $search, $replace: '') {
+  $index: str-index($string, $search);
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+  @return $string;
+}

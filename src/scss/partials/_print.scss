@@ -1,0 +1,150 @@
+//                  d8b          888
+//                  Y8P          888
+//                               888
+// 88888b.  888d888 888 88888b.  888888
+// 888 "88b 888P"   888 888 "88b 888
+// 888  888 888     888 888  888 888
+// 888 d88P 888     888 888  888 Y88b.
+// 88888P"  888     888 888  888  "Y888
+// 888
+// 888
+// 888
+
+@media print {
+  @page {
+    margin: $print-page-margin;
+    size: landscape;
+  }
+
+  body {
+    background-color: $print-color-background;
+    color: $print-color-base;
+    font-size: $print-font-size;
+  }
+
+  a {
+    color: $print-color-base !important;
+    font-weight: $font-weight-bold;
+    text-decoration: underline;
+
+    &::after {
+      content: ' (' attr(href) ') ';
+    }
+  }
+
+  input,
+  select,
+  td {
+    page-break-inside: avoid;
+  }
+
+  table {
+    max-width: 100vw !important;
+
+    * {
+      border: $border-base !important;
+      color: $print-color-base !important;
+      white-space: normal !important;
+    }
+  }
+
+  .form-read-more,
+  .no-print,
+  .pagination,
+  .search-actions button,
+  .table-button-cell {
+    display: none !important;
+  }
+
+  .table-responsive {
+    thead {
+      display: table-header-group;
+    }
+
+    th,
+    td {
+      display: table-cell;
+      position: relative;
+    }
+  }
+
+  .site-header {
+    a:link {
+      text-decoration: none;
+
+      &::after {
+        content: '';
+      }
+    }
+
+    button {
+      display: none;
+    }
+
+    li {
+      border-width: 0 !important;
+    }
+  }
+
+  .site-saved-searches {
+    table button,
+    #new-request-button,
+    .searches-settings,
+    .table-searches.table-responsive thead th.table-spinner:last-child {
+      display: none !important;
+    }
+
+    .table-searches.table-responsive {
+      thead {
+        th {
+          vertical-align: center !important;
+
+          &:first-child {
+            padding-top: $space-xs !important;
+          }
+        }
+      }
+
+      tbody {
+        td {
+          &:first-child {
+            padding-top: $space-xs !important;
+          }
+        }
+
+        tr.sample-row {
+          td {
+            * {
+              border-width: 0 !important;
+            }
+
+            div > div,
+            em {
+              display: inline !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .site-search {
+    .nav-tabs,
+    .nav-tabs-pane h2 {
+      display: none;
+    }
+
+    .nav-tabs-pane {
+      th {
+        h3,
+        span {
+          border-width: 0 !important;
+        }
+      }
+    }
+
+    .table-results {
+      font-size: $print-font-size-results !important;
+    }
+  }
+}

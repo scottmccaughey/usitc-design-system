@@ -1,0 +1,168 @@
+//                                     d8b
+//                                     Y8P
+//
+// .d8888b  88888b.   8888b.   .d8888b 888 88888b.   .d88b.
+// 88K      888 "88b     "88b d88P"    888 888 "88b d88P"88b
+// "Y8888b. 888  888 .d888888 888      888 888  888 888  888
+//      X88 888 d88P 888  888 Y88b.    888 888  888 Y88b 888
+//  88888P' 88888P"  "Y888888  "Y8888P 888 888  888  "Y88888
+//          888                                          888
+//          888                                     Y8b d88P
+//          888                                      "Y88P"
+
+
+.margin {
+  padding: $space-m;
+
+  + .margin {
+    padding-top: 0;
+  }
+}
+
+.margin-left-right {
+  margin-left: $space-m;
+  margin-right: $space-m;
+}
+
+.margin-top-bottom {
+  margin-bottom: $space-m;
+  margin-top: $space-m;
+}
+
+.margin-top-l {
+  margin-top: $space-l;
+}
+
+.margin-top {
+  margin-top: $space-m;
+}
+
+.margin-right {
+  margin-right: $space-m;
+}
+
+.margin-bottom {
+  margin-bottom: $space-m;
+}
+
+.margin-left {
+  margin-left: $space-m;
+}
+
+.margin-none {
+  margin: 0 !important;
+}
+
+.margin-bottom-none {
+  margin-bottom: 0 !important;
+}
+
+.margin-left-none {
+  margin-left: 0 !important;
+}
+
+.margin-right-none {
+  margin-right: 0 !important;
+}
+
+.margin-top-none {
+  margin-top: 0 !important;
+}
+
+.margin-half {
+  margin: $space-s;
+}
+
+.margin-bottom-half {
+  margin-bottom: $space-s;
+}
+
+.margin-left-half {
+  margin-left: $space-s;
+}
+
+.margin-right-half {
+  margin-right: $space-s;
+}
+
+.margin-top-half {
+  margin-top: $space-s;
+}
+
+.margin-double {
+  margin: $space-l;
+}
+
+.margin-bottom-double {
+  margin-bottom: $space-l;
+}
+
+.margin-left-double {
+  margin-left: $space-l;
+}
+
+.margin-right-double {
+  margin-right: $space-l;
+}
+
+.margin-top-double {
+  margin-top: $space-l;
+}
+
+.padding-none {
+  padding: 0 !important;
+}
+
+.padding-bottom-none {
+  padding-bottom: 0 !important;
+}
+
+.padding-left-none {
+  padding-left: 0 !important;
+}
+
+.padding-right-none {
+  padding-right: 0 !important;
+}
+
+.padding-top-none {
+  padding-top: 0 !important;
+}
+
+.padded {
+  padding: $space-m;
+
+  + .padded {
+    padding-top: 0;
+
+    &.padded-top {
+      padding-top: $space-m;
+    }
+  }
+}
+
+.padded-left-right {
+  padding-left: $space-m;
+  padding-right: $space-m;
+}
+
+.padded-top-bottom {
+  padding-bottom: $space-m;
+  padding-top: $space-m;
+}
+
+.padded-top {
+  padding-top: $space-m;
+}
+
+.padded-right {
+  padding-right: $space-m;
+}
+
+.padded-bottom {
+  padding-bottom: $space-m;
+}
+
+.padded-left {
+  padding-left: $space-m;
+}

@@ -1,0 +1,115 @@
+//                            d8b                   888    d8b
+//                            Y8P                   888    Y8P
+//                                                  888
+// 88888b.   8888b.   .d88b.  888 88888b.   8888b.  888888 888  .d88b.  88888b.
+// 888 "88b     "88b d88P"88b 888 888 "88b     "88b 888    888 d88""88b 888 "88b
+// 888  888 .d888888 888  888 888 888  888 .d888888 888    888 888  888 888  888
+// 888 d88P 888  888 Y88b 888 888 888  888 888  888 Y88b.  888 Y88..88P 888  888
+// 88888P"  "Y888888  "Y88888 888 888  888 "Y888888  "Y888 888  "Y88P"  888  888
+// 888                    888
+// 888               Y8b d88P
+// 888                "Y88P"
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: $space-s (-$space-s) $space-m;
+
+  > * {
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid $color-blue;
+    color: $color-white;
+    display: flex;
+    flex: 1 1 0;
+    line-height: 24px;
+    justify-content: center;
+    margin: $space-s;
+    padding: $space-s;
+
+    .on-dark & {
+      background-image: none;
+    }
+
+    &.pag-first,
+    &.pag-previous,
+    &.pag-next,
+    &.pag-last {
+      flex-basis: calc(25% - 20px);
+      order: -1;
+
+      @include breakpoint(m) {
+        flex-basis: 0;
+      }
+    }
+
+    &.pag-first,
+    &.pag-previous {
+      transform: rotate(180deg);
+    }
+
+    &.pag-next,
+    &.pag-last {
+      @include breakpoint(m) {
+        order: 1;
+      }
+    }
+
+    &.active {
+      background-color: $color-blue;
+      color: $color-white;
+      cursor: default;
+
+      &:active,
+      &:focus,
+      &:hover {
+        background-color: $color-blue;
+        color: $color-white;
+      }
+    }
+
+    &.disabled {
+      color: $color-blue;
+      cursor: default;
+
+      &:active,
+      &:focus,
+      &:hover {
+        background-color: transparent;
+        color: $color-blue;
+      }
+    }
+
+    &.select {
+      flex-basis: 100%;
+      order: 2;
+      padding: 0;
+
+      @include breakpoint(l) {
+        flex-basis: $space-xl;
+      }
+
+      &::after {
+        right: $space-s;
+      }
+
+      select {
+        background-color: transparent;
+        border-width: 0;
+        color: $color-white;
+        font-size: $font-size-xs;
+        height: 44px;
+        padding: $space-s ($space-m + $space-s) $space-s $space-s;
+
+        &:focus {
+          color: $color-white;
+        }
+      }
+
+      &:after {
+        border-top-color: $color-white;
+      }
+    }
+  }
+}

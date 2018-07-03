@@ -1,0 +1,23 @@
+/*
+  888 d8b          888                                   888                  888 d8b
+  888 Y8P          888                                   888                  888 Y8P
+  888              888                                   888                  888
+  888 888 88888b.  888  888       888  888 88888b.   .d88888  .d88b.  888d888 888 888 88888b.   .d88b.
+  888 888 888 "88b 888 .88P       888  888 888 "88b d88" 888 d8P  Y8b 888P"   888 888 888 "88b d8P  Y8b
+  888 888 888  888 888888K 888888 888  888 888  888 888  888 88888888 888     888 888 888  888 88888888
+  888 888 888  888 888 "88b       Y88b 888 888  888 Y88b 888 Y8b.     888     888 888 888  888 Y8b.
+  888 888 888  888 888  888        "Y88888 888  888  "Y88888  "Y8888  888     888 888 888  888  "Y8888
+
+  Link Underline mixin
+
+  link-underline($color)
+*/
+
+@mixin link-underline($color) {
+  background-image: linear-gradient(to top,
+    $color 0,
+    $color 100%);
+  background-position: 0% 100%;
+  background-repeat: repeat-x;
+  background-size: 1px 2px;
+}

@@ -2163,15 +2163,41 @@ ol li {
 
 .text-crop {
   display: inline-block;
-  line-height: 1.25; }
+  line-height: 1.5; }
   .text-crop::before, .text-crop::after {
     content: '';
     display: block;
     height: 0;
     width: 0; }
   .text-crop::before {
-    margin-bottom: calc(-0.27778em + 0px); }
+    margin-bottom: calc(-0.40278em + 0px); }
   .text-crop::after {
+    margin-top: calc(-0.40278em + 0px); }
+
+.text-crop-button {
+  display: inline-block;
+  line-height: 1; }
+  .text-crop-button::before, .text-crop-button::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0; }
+  .text-crop-button::before {
+    margin-bottom: calc(-0.15278em + 0px); }
+  .text-crop-button::after {
+    margin-top: calc(-0.15278em + 0px); }
+
+.text-crop-header {
+  display: inline-block;
+  line-height: 1.25; }
+  .text-crop-header::before, .text-crop-header::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0; }
+  .text-crop-header::before {
+    margin-bottom: calc(-0.27778em + 0px); }
+  .text-crop-header::after {
     margin-top: calc(-0.27778em + 0px); }
 
 .text-center {
@@ -2961,10 +2987,11 @@ icon {
   .site-home-big-select select {
     background-color: #414042;
     color: #ffffff;
-    font-size: 2rem;
+    font-size: 1rem;
     padding: 0.5rem 5rem 0.5rem 2rem; }
     @media (min-width: 800px) {
       .site-home-big-select select {
+        font-size: 2rem;
         margin-right: 0.25rem; } }
   .site-home-big-select .select::after {
     border-left-width: 1rem;
