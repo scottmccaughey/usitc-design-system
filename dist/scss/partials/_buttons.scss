@@ -317,3 +317,20 @@ button,
     }
   }
 }
+
+.buttons-right {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+
+  > * {
+    flex-basis: 100%;
+  }
+
+  > button,
+  > .tag {
+    flex: 0 1 auto;
+    margin-left: $space-s;
+    white-space: nowrap;
+  }
+}
