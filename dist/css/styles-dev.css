@@ -918,7 +918,7 @@ button,
     .button.button-ghost:active,
     .button.button-ghost:focus,
     .button.button-ghost:hover {
-      background-color: #ffffff;
+      background-color: #0d7e97;
       color: #ffffff; }
   button.button-icon,
   .button.button-icon {
@@ -1528,21 +1528,12 @@ simple-select + simple-select .select-child-field {
     position: absolute;
     top: 0;
     width: 3rem; }
-    .input-icon > i > * {
-      left: 50%;
-      margin-left: -0.375em;
-      margin-top: -0.375em;
-      position: absolute;
-      top: 50%; }
   .input-icon.input-icon-right.state-error > i, .input-icon.input-icon-right.state-info > i, .input-icon.input-icon-right.state-success > i, .input-icon.input-icon-right.state-warning > i {
     border-left-width: 1px;
     border-right-width: 0; }
   .input-icon.input-icon-right > i {
     left: auto;
     right: 0; }
-    .input-icon.input-icon-right > i > * {
-      right: 50%;
-      margin-right: 0.375em; }
   .input-icon.input-icon-right input {
     margin-left: 0;
     padding: 0.5rem 4rem 0.5rem 1rem; }

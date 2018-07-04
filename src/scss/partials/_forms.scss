@@ -510,14 +510,6 @@ simple-select {
     position: absolute;
     top: 0;
     width: $line-height-form;
-
-    > * {
-      left: 50%;
-      margin-left: (-$icon-size-base / 2);
-      margin-top: (-$icon-size-base / 2);
-      position: absolute;
-      top: 50%;
-    }
   }
 
   &.input-icon-right {
@@ -534,11 +526,6 @@ simple-select {
     > i {
       left: auto;
       right: 0;
-
-      > * {
-        right: 50%;
-        margin-right: -(-$icon-size-base / 2);
-      }
     }
 
     input {
