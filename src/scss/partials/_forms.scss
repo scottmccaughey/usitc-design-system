@@ -673,6 +673,18 @@ simple-select {
     }
   }
 
+  &.select-icon-left {
+    background-color: $color-white;
+
+    select {
+      background-color: transparent;
+      border: $border-base;
+      padding-left: $space-xl;
+      position: relative;
+      z-index: 2;
+    }
+  }
+
   &.select-multiple {
     &::after {
       display: none;
@@ -732,12 +744,6 @@ simple-select {
 
     &::-ms-expand {
       display: none;
-    }
-
-    &.select-icon-left {
-      background-color: $color-white;
-      border: $border-base;
-      padding-left: $space-xl;
     }
 
     option:checked {

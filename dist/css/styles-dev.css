@@ -843,7 +843,7 @@ button,
   display: inline-flex;
   font-weight: 300;
   line-height: 1;
-  padding: 1rem;
+  padding: 0.5rem;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -922,36 +922,7 @@ button,
       color: #ffffff; }
   button.button-icon,
   .button.button-icon {
-    padding: 1.125em;
     position: relative; }
-    button.button-icon > i,
-    .button.button-icon > i {
-      left: 50%;
-      margin-left: -12px;
-      margin-top: -12px;
-      position: absolute;
-      top: 50%; }
-  button.button-icon-left,
-  .button.button-icon-left {
-    padding: 0.5em 0.5em 0.5em 2.25em; }
-    button.button-icon-left.button-l,
-    .button.button-icon-left.button-l {
-      padding-left: 1.75em; }
-    button.button-icon-left > i,
-    .button.button-icon-left > i {
-      left: 0.25em;
-      margin-left: 0; }
-  button.button-icon-right,
-  .button.button-icon-right {
-    padding: 0.5em 2.25em 0.5em 0.5em; }
-    button.button-icon-right.button-l,
-    .button.button-icon-right.button-l {
-      padding-right: 1.75em; }
-    button.button-icon-right > i,
-    .button.button-icon-right > i {
-      left: auto;
-      margin-left: 0;
-      right: 0.25em; }
   button.button-invisible,
   .button.button-invisible {
     background-color: transparent;
@@ -1559,8 +1530,8 @@ simple-select + simple-select .select-child-field {
     width: 3rem; }
     .input-icon > i > * {
       left: 50%;
-      margin-left: -0.5em;
-      margin-top: -0.5em;
+      margin-left: -0.375em;
+      margin-top: -0.375em;
       position: absolute;
       top: 50%; }
   .input-icon.input-icon-right.state-error > i, .input-icon.input-icon-right.state-info > i, .input-icon.input-icon-right.state-success > i, .input-icon.input-icon-right.state-warning > i {
@@ -1571,7 +1542,7 @@ simple-select + simple-select .select-child-field {
     right: 0; }
     .input-icon.input-icon-right > i > * {
       right: 50%;
-      margin-right: 0.5em; }
+      margin-right: 0.375em; }
   .input-icon.input-icon-right input {
     margin-left: 0;
     padding: 0.5rem 4rem 0.5rem 1rem; }
@@ -1662,6 +1633,14 @@ simple-select + simple-select .select-child-field {
   width: 100%; }
   .select.search-settings select {
     background-color: rgba(255, 255, 255, 0.75); }
+  .select.select-icon-left {
+    background-color: #ffffff; }
+    .select.select-icon-left select {
+      background-color: transparent;
+      border: 1px solid #818386;
+      padding-left: 4rem;
+      position: relative;
+      z-index: 2; }
   .select.select-multiple::after {
     display: none; }
   .select.select-multiple option[disabled] {
@@ -1716,10 +1695,6 @@ simple-select + simple-select .select-child-field {
       text-shadow: 0 0 0 #3a3a3b; }
     .select select::-ms-expand {
       display: none; }
-    .select select.select-icon-left {
-      background-color: #ffffff;
-      border: 1px solid #818386;
-      padding-left: 4rem; }
     .select select option:checked {
       background: #c9e3e8 -webkit-gradient(linear, left bottom, left top, from(#c9e3e8), to(#c9e3e8));
       background: #c9e3e8 linear-gradient(0deg, #c9e3e8 0%, #c9e3e8 100%); }
@@ -2540,7 +2515,8 @@ h6,
     font-size: 2.98598rem;
     font-style: normal;
     font-weight: 900;
-    margin-right: 2rem; }
+    margin-right: 2rem;
+    white-space: nowrap; }
 
 .header-tagline {
   color: #414042;
@@ -2563,9 +2539,9 @@ h6,
 
 icon {
   display: inline-block;
-  height: 1em;
+  height: 0.75em;
   position: relative;
-  width: 1em; }
+  width: 0.75em; }
   icon > svg {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;

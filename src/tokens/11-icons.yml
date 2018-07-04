@@ -9,8 +9,7 @@
 
 icon:
   size:
-    ratio:          0.75em
-    base:           1em
+    base:           0.75em
     scale-ratio:    1.5
     xxxxxxxs:       'msi(-8)'
     xxxxxxs:        'msi(-7)'

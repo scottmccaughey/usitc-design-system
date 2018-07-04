@@ -27,5 +27,5 @@
 }
 
 @function msi($factor: 0) {
-  @return pow($icon-size-scale-ratio, $factor) * $icon-size-ratio;
+  @return pow($icon-size-scale-ratio, $factor) * $icon-size-base;
 }

@@ -27,7 +27,7 @@ button,
   display: inline-flex;
   font-weight: $font-weight-normal;
   line-height: $line-height-button;
-  padding: $space-m;
+  padding: $space-s;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -119,43 +119,7 @@ button,
   }
 
   &.button-icon {
-    padding: 1.125em;
     position: relative;
-
-    > i {
-      left: 50%;
-      margin-left: -12px;
-      margin-top: -12px;
-      position: absolute;
-      top: 50%;
-    }
-  }
-
-  &.button-icon-left {
-    padding: 0.5em 0.5em 0.5em 2.25em;
-
-    &.button-l {
-      padding-left: 1.75em;
-    }
-
-    > i {
-      left: 0.25em;
-      margin-left: 0;
-    }
-  }
-
-  &.button-icon-right {
-    padding: 0.5em 2.25em 0.5em 0.5em;
-
-    &.button-l {
-      padding-right: 1.75em;
-    }
-
-    > i {
-      left: auto;
-      margin-left: 0;
-      right: 0.25em;
-    }
   }
 
   &.button-invisible {
