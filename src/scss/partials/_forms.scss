@@ -503,12 +503,13 @@ simple-select {
   }
 
   > i {
+    align-items: center;
     background-color: $color-gray-lighter;
     color: $color-black;
+    display: flex;
     height: $line-height-form;
-    left: 0;
+    justify-content: center;
     position: absolute;
-    top: 0;
     width: $line-height-form;
   }
 
@@ -521,11 +522,6 @@ simple-select {
         border-left-width: 1px;
         border-right-width: 0;
       }
-    }
-
-    > i {
-      left: auto;
-      right: 0;
     }
 
     input {
