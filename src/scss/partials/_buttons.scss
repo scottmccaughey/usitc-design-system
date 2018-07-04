@@ -245,7 +245,11 @@ button,
   }
 
   &.button-spinner {
-    min-height: $space-l;
+    min-height: 62px;
+
+    .spinner {
+      margin: 0;
+    }
   }
 
   &.button-success {
@@ -264,20 +268,6 @@ button,
     border-color: transparent;
     background-color: transparent;
     color: inherit;
-  }
-
-  .spinner-wrapper {
-    height: $space-l;
-    left: 0;
-    margin-top: (-$space-m);
-    position: absolute;
-    top: calc(50% - #{$space-s});
-    width: 100%;
-
-    .spinner {
-      margin-bottom: 0;
-      margin-top: 0;
-    }
   }
 }
 

@@ -1055,7 +1055,10 @@ button,
     width: 2rem; }
   button.button-spinner,
   .button.button-spinner {
-    min-height: 2rem; }
+    min-height: 62px; }
+    button.button-spinner .spinner,
+    .button.button-spinner .spinner {
+      margin: 0; }
   button.button-success,
   .button.button-success {
     background-color: #308453;
@@ -1071,18 +1074,6 @@ button,
     border-color: transparent;
     background-color: transparent;
     color: inherit; }
-  button .spinner-wrapper,
-  .button .spinner-wrapper {
-    height: 2rem;
-    left: 0;
-    margin-top: -1rem;
-    position: absolute;
-    top: calc(50% - 0.5rem);
-    width: 100%; }
-    button .spinner-wrapper .spinner,
-    .button .spinner-wrapper .spinner {
-      margin-bottom: 0;
-      margin-top: 0; }
 
 .buttons-right {
   -webkit-box-align: center;
