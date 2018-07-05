@@ -2029,8 +2029,10 @@ pre {
     width: 100%; } }
 
 .disclaimer {
-  font-size: 0.69444rem;
-  text-align: right; }
+  font-size: 0.69444rem; }
+  @media (min-width: 800px) {
+    .disclaimer {
+      text-align: right; } }
 
 .loading {
   background-image: url("/assets/images/svg/loader.svg");

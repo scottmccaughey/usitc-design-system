@@ -213,7 +213,10 @@ pre {
 
 .disclaimer {
   font-size: $font-size-xs;
-  text-align: right;
+
+  @include breakpoint(m) {
+    text-align: right;
+  }
 }
 
 .loading {
