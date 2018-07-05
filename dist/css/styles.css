@@ -3253,7 +3253,7 @@ a rect {
     display: grid;
     grid-template-columns: repeat(4, auto);
     padding: 0; }
-    @media (min-width: 800px) {
+    @media (min-width: 1200px) {
       .site-header > nav > ul {
         grid-template-columns: 1fr repeat(4, auto); } }
     .site-header > nav > ul li {
@@ -3271,7 +3271,7 @@ a rect {
       margin: 0;
       max-width: 100%;
       text-transform: uppercase; }
-      @media (min-width: 800px) {
+      @media (min-width: 1200px) {
         .site-header > nav > ul li {
           border-bottom-width: 0; } }
       .site-header > nav > ul li:last-child {
@@ -3282,7 +3282,7 @@ a rect {
         font-weight: 700;
         grid-column: 1/span 4;
         text-transform: uppercase; }
-        @media (min-width: 800px) {
+        @media (min-width: 1200px) {
           .site-header > nav > ul li.site-name {
             grid-column: 1 / span 1; } }
       .site-header > nav > ul li a {

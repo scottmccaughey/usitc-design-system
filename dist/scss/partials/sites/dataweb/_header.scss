@@ -18,7 +18,7 @@
     grid-template-columns: repeat($content-header-links, auto);
     padding: 0;
 
-    @include breakpoint(m) {
+    @include breakpoint(l) {
       grid-template-columns: 1fr repeat($content-header-links, auto);
     }
 
@@ -34,7 +34,7 @@
       max-width: 100%;
       text-transform: uppercase;
 
-      @include breakpoint(m) {
+      @include breakpoint(l) {
         border-bottom-width: 0;
       }
 
@@ -49,7 +49,7 @@
         grid-column: 1 / span $content-header-links;
         text-transform: uppercase;
 
-        @include breakpoint(m) {
+        @include breakpoint(l) {
           grid-column: 1 / span 1;
         }
       }
