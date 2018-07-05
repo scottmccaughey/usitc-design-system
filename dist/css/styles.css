@@ -2691,7 +2691,7 @@ icon {
       .pagination > *.select::after {
         right: 0.5rem; }
       .pagination > *.select select {
-        background-color: transparent;
+        background-color: #004353;
         border-width: 0;
         color: #ffffff;
         font-size: 0.69444rem;
@@ -2699,6 +2699,8 @@ icon {
         padding: 0.5rem 1.5rem 0.5rem 0.5rem; }
         .pagination > *.select select:focus {
           color: #ffffff; }
+        .pagination > *.select select option {
+          background-color: #004353; }
       .pagination > *.select:after {
         border-top-color: #ffffff; }
 

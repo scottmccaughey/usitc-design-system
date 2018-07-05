@@ -90,7 +90,7 @@
       }
 
       select {
-        background-color: transparent;
+        background-color: $color-blue-dark;
         border-width: 0;
         color: $color-white;
         font-size: $font-size-xs;
@@ -99,6 +99,10 @@
 
         &:focus {
           color: $color-white;
+        }
+
+        option {
+          background-color: $color-blue-dark;
         }
       }
 

@@ -83,6 +83,48 @@
   _directives.scss (@section 6).
 */
 /*
+   .d888                  888          .d888
+  d88P"                   888         d88P"
+  888                     888         888
+  888888 .d88b.  88888b.  888888      888888 8888b.   .d8888b .d88b.
+  888   d88""88b 888 "88b 888         888       "88b d88P"   d8P  Y8b
+  888   888  888 888  888 888  888888 888   .d888888 888     88888888
+  888   Y88..88P 888  888 Y88b.       888   888  888 Y88b.   Y8b.
+  888    "Y88P"  888  888  "Y888      888   "Y888888  "Y8888P "Y8888
+
+  Font Face Declaration mixin
+
+  fontdef($family, $type, $weight, $style, $stretch)
+
+  Uses the $font-families list as defined in _settings.scss (@section 5a).
+
+  The fontdef() mixin takes five parameters, the first two of which are required. You must pass
+  the font family name ($family) and font variant name ($variant) to generate a @font-face
+  definition.
+
+  You can also pass an optional $weight [normal | 100 | 200 | ... | 800 | 900], $style
+  [normal | italic], and $stretch [normal | ultra-condensed | extra-condensed | condensed |
+  semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded]. The optional
+  variables will all default to 'normal' if they are not passed. The $stretch variable is
+  currently not used in our design system, but is available for potential future use.
+
+  For example:
+
+  @include font-def(Fira Sans Condensed, semibolditalic, 600, italic, normal);
+
+  ...will compile to the following CSS...
+
+  @font-face {
+    font-family: 'Fira Sans Condensed';
+    src: url('../fonts/firasanscondensed-semibolditalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-stretch: normal;
+  }
+
+  This function is used to generate @font-face declarations in _fonts.scss.
+*/
+/*
            888             888                                    888
            888             888                                    888
            888             888                                    888
