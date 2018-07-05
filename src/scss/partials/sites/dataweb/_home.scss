@@ -7,6 +7,13 @@
 // 888  888 Y88..88P 888  888  888 Y8b.
 // 888  888  "Y88P"  888  888  888  "Y8888
 
+.home-intro {
+  em {
+    color: $color-red;
+    font-style: normal;
+  }
+}
+
 .site-home-big-select {
   margin: $space-l 0;
 

@@ -3306,6 +3306,10 @@ a rect {
           background-color: #0d7e97;
           color: #ffffff; }
 
+.home-intro em {
+  color: #be2a26;
+  font-style: normal; }
+
 .site-home-big-select {
   margin: 2rem 0; }
   .site-home-big-select button,
