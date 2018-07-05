@@ -3302,7 +3302,7 @@ a rect {
         text-align: center;
         text-decoration: none;
         width: 100%; }
-        @media (min-width: 800px) {
+        @media (min-width: 1200px) {
           .site-header > nav > ul li a {
             padding: 0.5rem 1rem;
             width: auto; } }

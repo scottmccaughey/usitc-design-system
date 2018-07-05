@@ -66,7 +66,7 @@
         text-decoration: none;
         width: 100%;
 
-        @include breakpoint(m) {
+        @include breakpoint(l) {
           padding: $space-s $space-m;
           width: auto;
         }
