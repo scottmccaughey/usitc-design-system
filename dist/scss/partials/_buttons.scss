@@ -26,6 +26,7 @@ button,
   color: $color-theme-base-text;
   display: inline-flex;
   font-weight: $font-weight-normal;
+  justify-content: center;
   line-height: $line-height-button;
   padding: $space-s;
   position: relative;
@@ -245,7 +246,9 @@ button,
   }
 
   &.button-spinner {
-    min-height: 62px;
+    &.button-xl {
+      min-height: 62px;
+    }
 
     .spinner {
       margin: 0;
