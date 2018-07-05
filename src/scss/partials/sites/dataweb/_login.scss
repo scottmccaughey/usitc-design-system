@@ -10,15 +10,6 @@
 //              Y8b d88P
 //               "Y88P"
 
-.disclaimer {
-  @include breakpoint(m) {
-    border-right: $border-base;
-    margin-top: 0;
-    padding: $space-m $space-l;
-    text-align: right;
-  }
-}
-
 .login-bottom {
   h1 {
     font-size: $font-size-s;
@@ -221,16 +212,6 @@
       display: block;
       padding: 0;
     }
-  }
-}
-
-.login-middle {
-  @include breakpoint(m) {
-    align-items: center;
-    display: grid;
-    grid-template-areas: "disclaimer links";
-    grid-template-columns: auto max-content;
-    grid-template-rows: min-content;
   }
 }
 

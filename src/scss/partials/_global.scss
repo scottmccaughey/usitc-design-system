@@ -211,6 +211,11 @@ pre {
   @include constrained;
 }
 
+.disclaimer {
+  font-size: $font-size-xs;
+  text-align: right;
+}
+
 .loading {
   background-image: url('/assets/images/svg/loader.svg');
   background-repeat: no-repeat;
