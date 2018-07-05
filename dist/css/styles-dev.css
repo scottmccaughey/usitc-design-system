@@ -3450,7 +3450,6 @@ a rect {
     @media (min-width: 800px) {
       .login-form > div.panel {
         padding: 1rem; } }
-  .login-form button,
   .login-form input {
     display: block;
     width: 100%; }
@@ -3458,7 +3457,8 @@ a rect {
     font-size: 1rem;
     height: 3rem;
     margin: 1rem 0;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    width: 100%; }
   .login-form .login-icon {
     display: block; }
     @media (min-width: 800px) {
