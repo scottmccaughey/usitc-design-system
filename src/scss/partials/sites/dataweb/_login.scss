@@ -215,6 +215,7 @@
     line-height: 1;
     list-style: none;
     padding: 0 $space-s;
+    white-space: nowrap;
 
     @include breakpoint(m) {
       display: block;
