@@ -269,33 +269,6 @@ pre {
   }
 }
 
-.site-content {
-  display: flex;
-  flex-direction: column;
-
-  > *:nth-child(2) {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-
-    > * {
-      flex: 1;
-    }
-  }
-}
-
-.site-layout {
-  align-items: stretch;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 100vh;
-}
-
-.svg-wrapper {
-  position: relative;
-}
-
 .tag {
   background-color: $color-gray;
   color: $color-white;
