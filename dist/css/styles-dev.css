@@ -1990,6 +1990,14 @@ ul {
 ol li {
   list-style: decimal; }
 
+pre {
+  background-color: #ffffff;
+  border: 1px solid #818386;
+  color: #3a3a3b;
+  font-family: Hack, Consolas, Menlo, Monaco, "Ubuntu Mono", "Courier New", Courier, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  max-width: 90vw;
+  padding: 0.5rem; }
+
 .alt {
   background-color: #e6e7e8; }
   .alt + .alt > .padded {
@@ -2058,6 +2066,8 @@ ol li {
   margin-top: 1rem; }
 
 .site-content {
+  -ms-flex-item-align: start;
+      align-self: start;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3634,6 +3644,9 @@ a rect {
   .search-sort-order .toggle-switch label:last-of-type {
     border-top-right-radius: 0; }
 
+.show-query {
+  white-space: pre-wrap; }
+
 .site-search {
   max-width: calc(100vw - 15px); }
   .site-search h2:only-child {
@@ -3658,6 +3671,8 @@ a rect {
       .table-results thead th button,
       .table-results thead th .button {
         font-size: 0.8em; } }
+  .table-results thead th pre {
+    font-size: 0.83333rem; }
   .table-results thead th.text-left {
     text-align: left; }
 

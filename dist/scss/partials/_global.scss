@@ -166,6 +166,15 @@ ol li {
   list-style: decimal;
 }
 
+pre {
+  background-color: $color-white;
+  border: $border-base;
+  color: $color-black;
+  font-family: $font-family-mono;
+  max-width: 90vw;
+  padding: $space-s;
+}
+
 .alt {
   background-color: $color-theme-base-background-alt;
 
@@ -253,6 +262,7 @@ ol li {
 }
 
 .site-content {
+  align-self: start;
   display: flex;
   flex-direction: column;
 
