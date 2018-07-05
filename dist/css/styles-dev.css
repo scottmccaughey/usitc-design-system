@@ -2090,33 +2090,6 @@ pre {
   .tag:last-child {
     margin-right: 0; }
 
-.tags {
-  display: inline-block;
-  position: relative;
-  top: -1px;
-  margin-bottom: -4px;
-  padding: 0.125rem 0.25rem;
-  border: 1px solid #818386;
-  border-radius: 0;
-  font-size: 0.83333rem;
-  font-weight: 300;
-  line-height: 1; }
-
-.video-wrapper {
-  margin: 0 auto;
-  max-width: 30rem; }
-  .video-wrapper > div {
-    height: 0;
-    padding-bottom: 56.25%;
-    padding-top: 25px;
-    position: relative; }
-    .video-wrapper > div > object {
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      width: 100%; }
-
 .visually-hidden {
   height: 1px;
   left: -9999rem;

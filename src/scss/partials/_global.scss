@@ -290,39 +290,6 @@ pre {
   }
 }
 
-.tags {
-  display: inline-block;
-  position: relative;
-  top: -1px;
-  margin-bottom: -4px;
-  padding: $space-xxs $space-xs;
-  border: $border-base;
-  border-radius: $border-radius-base;
-  font-size: $font-size-s;
-  font-weight: $font-weight-normal;
-  line-height: 1;
-}
-
-.video-wrapper {
-  margin: 0 auto;
-  max-width: 30rem;
-
-  > div {
-    height: 0;
-    padding-bottom: 56.25%;
-    padding-top: 25px;
-    position: relative;
-
-    > object {
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      width: 100%;
-    }
-  }
-}
-
 .visually-hidden {
   height: 1px;
   left: -9999rem;
