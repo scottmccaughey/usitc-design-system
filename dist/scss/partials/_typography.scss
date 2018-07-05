@@ -14,13 +14,6 @@
   font-weight: $font-weight-bold;
 }
 
-.disclaimer {
-  p {
-    color: $color-gray-dark;
-    font-size: $font-size-xxs;
-  }
-}
-
 .text-crop {
   @include text-crop($line-height-base);
 }
