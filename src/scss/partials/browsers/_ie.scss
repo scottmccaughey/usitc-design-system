@@ -17,4 +17,18 @@
     flex-basis: 80%;
   }
 
+  // Fix multiselect coloring issue (white text on light blue background)
+  .select {
+    select {
+      &:focus {
+        option:checked {
+          background-image: none;
+        }
+      }
+
+      option:checked {
+        background-image: none;
+      }
+    }
+  }
 }

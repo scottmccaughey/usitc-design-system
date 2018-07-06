@@ -3779,3 +3779,13 @@ a rect {
 
 .table-searches.table-responsive .query-name {
   font-size: 1rem; }
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+  .disclaimer,
+  .home-intro {
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%; }
+  .select select:focus option:checked {
+    background-image: none; }
+  .select select option:checked {
+    background-image: none; } }
