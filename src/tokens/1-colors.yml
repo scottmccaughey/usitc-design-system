@@ -38,6 +38,9 @@ color:
   orange-light:               '#fae0af'
   orange-lighter:             '#f3e3c8'
 
+  teal:                       '#5c9999'
+  teal-darker:                '#447272'
+
   theme:
     base:
       background:             '$color-white'

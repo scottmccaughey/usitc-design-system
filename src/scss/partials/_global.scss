@@ -219,15 +219,6 @@ pre {
   }
 }
 
-.loading {
-  background-image: url('/assets/images/svg/loader.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: $space-m;
-  min-height: 64px;
-  text-indent: -9999rem;
-}
-
 .nowrap {
   white-space: nowrap;
 }

@@ -17,6 +17,10 @@
 .site-home-big-select {
   margin: $space-l 0;
 
+  @include breakpoint(m) {
+    grid-column-gap: $space-xs;
+  }
+
   button,
   select {
     border-width: 0;
@@ -26,7 +30,7 @@
 
   button {
     align-items: center;
-    background-color: #5c9999;
+    background-color: $color-teal;
     color: $color-white;
     display: flex;
     font-size: $font-size-xl;
@@ -38,7 +42,7 @@
     &:active,
     &:focus,
     &:hover {
-      background-color: #447272;
+      background-color: $color-teal-darker;
     }
 
     > i {
@@ -56,12 +60,11 @@
   select {
     background-color: $color-gray-dark;
     color: $color-white;
-    font-size: 1rem;
+    font-size: $space-m;
     padding: $space-s ($space-xl + $space-m) $space-s $space-l;
 
     @include breakpoint(m) {
-      font-size: 2rem;
-      margin-right: $space-xs;
+      font-size: $space-l;
     }
   }
 
@@ -88,6 +91,7 @@
   > a {
     background: $color-gray-lightest;
     color: $color-black;
+    display: block;
     padding: $space-m;
     text-align: center;
 
