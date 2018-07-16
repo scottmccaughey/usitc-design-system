@@ -626,31 +626,6 @@ textarea {
   link-underline($color)
 */
 /*
-  888                                     888
-  888                                     888
-  888                                     888
-  888  8888b.  888  888  .d88b.  888  888 888888
-  888     "88b 888  888 d88""88b 888  888 888
-  888 .d888888 888  888 888  888 888  888 888  888888
-  888 888  888 Y88b 888 Y88..88P Y88b 888 Y88b.
-  888 "Y888888  "Y88888  "Y88P"   "Y88888  "Y888
-                    888
-               Y8b d88P
-                "Y88P"
-  888                                      888                  d8b
-  888                                      888                  Y8P
-  888                                      888
-  88888b.   .d88b.  888  888 88888b.   .d88888  8888b.  888d888 888  .d88b.  .d8888b
-  888 "88b d88""88b 888  888 888 "88b d88" 888     "88b 888P"   888 d8P  Y8b 88K
-  888  888 888  888 888  888 888  888 888  888 .d888888 888     888 88888888 "Y8888b.
-  888 d88P Y88..88P Y88b 888 888  888 Y88b 888 888  888 888     888 Y8b.          X88
-  88888P"   "Y88P"   "Y88888 888  888  "Y88888 "Y888888 888     888  "Y8888   88888P'
-
-  Make Layout Boundaries mixin
-
-  make-layout-boundaries($color, $background)
-*/
-/*
 888                     888
 888                     888
 888                     888
@@ -3553,16 +3528,6 @@ a rect {
 @media (min-width: 1200px) {
   .search-actions > .grid {
     grid-gap: 1rem 1rem; } }
-
-.search-actions-desc {
-  font-size: 0.69444rem; }
-
-.search-actions-name {
-  font-size: 1.2rem;
-  font-weight: 700; }
-  .search-actions-name:placeholder-shown {
-    font-size: 0.69444rem;
-    font-weight: 300; }
 
 .search-column-order {
   -webkit-box-align: center;
