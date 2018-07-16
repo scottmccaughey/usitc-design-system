@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "alefragnani.bookmarks",
+    "bierner.color-info",
+    "EditorConfig.EditorConfig",
+    "christian-kohler.npm-intellisense",
+    "christian-kohler.path-intellisense",
+    "coenraads.bracket-pair-colorizer",
+    "esbenp.prettier-vscode",
+    "mrmlnc.vscode-scss",
+    "wayou.vscode-todo-highlight",
+    "Zignd.html-css-class-completion"
+  ]
+}
