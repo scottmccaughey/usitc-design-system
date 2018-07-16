@@ -189,6 +189,7 @@
 .login-links {
   @include breakpoint(m) {
     grid-area: links;
+    margin-top: 0;
     padding: $space-m $space-l;
   }
 

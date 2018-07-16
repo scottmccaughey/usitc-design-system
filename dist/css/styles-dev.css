@@ -3468,6 +3468,7 @@ a rect {
 @media (min-width: 800px) {
   .login-links {
     grid-area: links;
+    margin-top: 0;
     padding: 1rem 2rem; } }
 
 .login-links ul {
