@@ -1,4 +1,20 @@
 {
+  "beautify.config": {
+    "brace_style": "collapse,preserve-inline",
+    "indent_size": 2,
+    "keep_array_indentation": true
+  },
+  "beautify.ignore": "**/*.scss",
+  "beautify.language": {
+    "js": {
+      "type": [
+        "json",
+        "jsonc"
+      ]
+    },
+    "css": [],
+    "html": []
+  },
   "editor.autoIndent": true,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
@@ -13,9 +29,13 @@
   },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
-  "prettier.eslintIntegration": true,
+  "prettier.cssEnable": [
+    "css",
+    "scss"
+  ],
   "prettier.printWidth": 100,
   "prettier.singleQuote": true,
+  "prettier.stylelintIntegration": true,
   "workbench.colorCustomizations": {
     "titleBar.activeBackground": "#be2a26",
     "titleBar.activeForeground": "#ffffff",

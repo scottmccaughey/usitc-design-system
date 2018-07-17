@@ -8,6 +8,8 @@
     "coenraads.bracket-pair-colorizer",
     "esbenp.prettier-vscode",
     "mrmlnc.vscode-scss",
+    "remimarsal.prettier-now",
+    "shinnn.stylelint",
     "wayou.vscode-todo-highlight",
     "Zignd.html-css-class-completion"
   ]
