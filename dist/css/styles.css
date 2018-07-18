@@ -1151,7 +1151,7 @@ button,
 input,
 select {
   border: 1px solid #818386;
-  height: 3rem;
+  height: 2.5rem;
   padding: 0.5rem; }
   .on-dark input, .on-dark
   select {
@@ -1214,7 +1214,7 @@ simple-select + simple-select .select-child-field {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  line-height: 3rem;
+  line-height: 2.5rem;
   height: auto;
   padding: 0;
   position: relative;
@@ -1290,7 +1290,7 @@ simple-select + simple-select .select-child-field {
             align-items: center;
     display: grid;
     padding: 0.5rem; }
-    .controls-boxed-grid > *:nth-child(6n+4), .controls-boxed-grid > *:nth-child(6n+5), .controls-boxed-grid > *:nth-child(6n+6) {
+    .controls-boxed-grid > *:nth-child(6n + 4), .controls-boxed-grid > *:nth-child(6n + 5), .controls-boxed-grid > *:nth-child(6n + 6) {
       background-color: #e6e7e8; }
 
 .controls-boxed-header {
@@ -1322,7 +1322,7 @@ simple-select + simple-select .select-child-field {
 .file {
   cursor: pointer;
   display: inline-block;
-  height: 3rem;
+  height: 2.5rem;
   position: relative;
   width: 100%; }
   .file input {
@@ -1339,9 +1339,9 @@ simple-select + simple-select .select-child-field {
   border: 1px solid #818386;
   border-radius: 0;
   color: #3a3a3b;
-  height: 3rem;
+  height: 2.5rem;
   left: 0;
-  line-height: 3rem;
+  line-height: 2.5rem;
   padding: 0 1rem;
   position: absolute;
   right: 0;
@@ -1360,8 +1360,8 @@ simple-select + simple-select .select-child-field {
     color: #3a3a3b;
     content: "Browse";
     display: block;
-    height: 3rem;
-    line-height: 3rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
     padding: 0 1rem;
     position: absolute;
     right: -1px;
@@ -1428,14 +1428,18 @@ simple-select + simple-select .select-child-field {
   .form-group input + app-field-error-display > .state-error {
     border-top-width: 0; }
 
-.form-group label.control {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.form-group label.label-parent {
-  line-height: 1.25;
-  margin-bottom: 1rem; }
+.form-group label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase; }
+  .form-group label.control {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .form-group label.label-parent {
+    line-height: 1.25;
+    margin-bottom: 1rem; }
 
 .form-group .control-label {
   font-weight: 300;
@@ -1448,14 +1452,12 @@ simple-select + simple-select .select-child-field {
   .form-groups > * + * > .form-group {
     padding-top: 0; }
 
-.form-group label {
-  display: block;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-  text-transform: uppercase; }
-
 .form-read-more icon {
-  margin-right: 0.5rem; }
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  height: 1.125em;
+  margin-right: 0.5rem;
+  width: 1.125em; }
   @media (min-width: 1200px) {
     .form-read-more icon {
       height: 2.53125em;
@@ -1476,6 +1478,8 @@ simple-select + simple-select .select-child-field {
   padding: 0.5rem; }
   .form-settings label {
     margin-bottom: -0.5rem; }
+  .form-settings .select {
+    margin-top: -1rem; }
 
 .on-dark .form-settings-header, .on-dark
 .form-settings-header:first-child {
@@ -1522,12 +1526,12 @@ simple-select + simple-select .select-child-field {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 3rem;
+    height: 2.5rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     position: absolute;
-    width: 3rem; }
+    width: 2.5rem; }
   .input-icon.input-icon-right.state-error > i, .input-icon.input-icon-right.state-info > i, .input-icon.input-icon-right.state-success > i, .input-icon.input-icon-right.state-warning > i {
     border-left-width: 1px;
     border-right-width: 0; }
@@ -1626,7 +1630,7 @@ simple-select + simple-select .select-child-field {
     .select.select-icon-left select {
       background-color: transparent;
       border: 1px solid #818386;
-      padding-left: 4rem;
+      padding-left: 3rem;
       position: relative;
       z-index: 2; }
   .select.select-multiple::after {
@@ -1642,8 +1646,7 @@ simple-select + simple-select .select-child-field {
         -ms-flex-align: center;
             align-items: center;
     background-color: #e6e7e8;
-    border: 1px solid #818386;
-    border-right-width: 0;
+    border-width: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1651,12 +1654,12 @@ simple-select + simple-select .select-child-field {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    height: 3rem;
+    height: 2.5rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     position: absolute;
-    width: 3rem;
+    width: 2.5rem;
     z-index: 1; }
   .select select {
     -webkit-appearance: none;
@@ -1708,7 +1711,7 @@ simple-select + simple-select .select-child-field {
   .select-alt label {
     background-color: #414042;
     color: #ffffff;
-    line-height: 3rem;
+    line-height: 2.5rem;
     padding: 0 1rem;
     text-transform: uppercase; }
 
@@ -2441,15 +2444,23 @@ h6,
       color: #be2a26;
       font-style: normal; }
 
-.header-step {
+.header-step,
+.header-step:first-child {
+  font-size: 1.44rem;
   font-weight: 700;
-  text-transform: uppercase; }
-  .header-step em {
+  text-transform: uppercase;
+  margin: -0.25rem 1rem 0.5rem; }
+  @media (min-width: 1200px) {
+    .header-step,
+    .header-step:first-child {
+      margin: -0.25rem 2rem 0.5rem; } }
+  .header-step em,
+  .header-step:first-child em {
     color: #266942;
-    font-size: 2.98598rem;
+    font-size: 2.48832rem;
     font-style: normal;
     font-weight: 900;
-    margin-right: 2rem;
+    margin-right: 1rem;
     white-space: nowrap; }
 
 .header-tagline {
@@ -3013,6 +3024,9 @@ icon {
       position: relative;
       top: -1px;
       z-index: 1; } }
+  @media (min-width: 1200px) {
+    .check-tabs-contents {
+      padding: 1rem 2rem; } }
   .check-tabs-contents .panel.state-info {
     font-weight: 300; }
     .check-tabs-contents .panel.state-info:last-child {
@@ -3302,8 +3316,8 @@ a rect {
     .site-home-big-select button > i,
     .site-home-big-select button > i > *,
     .site-home-big-select button > i > * > svg {
-      height: 3rem;
-      width: 3rem; }
+      height: 2.5rem;
+      width: 2.5rem; }
   .site-home-big-select select {
     background-color: #414042;
     color: #ffffff;
@@ -3408,7 +3422,7 @@ a rect {
     width: 100%; }
   .login-form button {
     font-size: 1rem;
-    height: 3rem;
+    height: 2.5rem;
     margin: 1rem 0;
     text-transform: uppercase;
     width: 100%; }

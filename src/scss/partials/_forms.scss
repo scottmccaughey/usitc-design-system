@@ -9,921 +9,924 @@
 
 input,
 select {
-  border: $border-base;
-  height: $line-height-form;
-  padding: $space-s;
+	border: $border-base;
+	height: $line-height-form;
+	padding: $space-s;
 
-  .on-dark & {
-    color: $color-black;
-  }
+	.on-dark & {
+		color: $color-black;
+	}
 }
 
 label {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 select {
-  &[multiple] {
-    height: $space-xxl;
-    padding: 0;
-    width: 100%;
+	&[multiple] {
+		height: $space-xxl;
+		padding: 0;
+		width: 100%;
 
-    &.boxed {
-      height: 400px;
-    }
+		&.boxed {
+			height: 400px;
+		}
 
-    option {
-      padding: $space-xs $space-m;
-    }
-  }
+		option {
+			padding: $space-xs $space-m;
+		}
+	}
 
-  .select & {
-    background-color: $color-white;
-    border: $border-base;
+	.select & {
+		background-color: $color-white;
+		border: $border-base;
 
-    &[multiple] {
-      padding: 0;
-    }
-  }
+		&[multiple] {
+			padding: 0;
+		}
+	}
 }
 
 simple-select {
-  .select-child-field {
-    margin-top: 0;
-  }
+	.select-child-field {
+		margin-top: 0;
+	}
 
-  + simple-select .select-child-field {
-    margin-top: $space-m;
+	+ simple-select .select-child-field {
+		margin-top: $space-m;
 
-    @include breakpoint(l) {
-      margin-top: 0;
-    }
-  }
+		@include breakpoint(l) {
+			margin-top: 0;
+		}
+	}
 }
 
 .checkbox {
-  input ~ .control-indicator::before {
-    background-position: $form-control-checkbox-position;
-  }
+	input ~ .control-indicator::before {
+		background-position: $form-control-checkbox-position;
+	}
 
-  input:checked ~ .control-indicator::before {
-    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+PHBhdGggZmlsbD0iI2ZkYjcxYyIgZD0iTTE2LjU4IDEuMzlhLjY4LjY4IDAgMCAwLS40NC4yMUw2LjggMTEuMzJsLTIuODktM2EuNzYuNzYgMCAwIDAtMSAwTC4xOSAxMS4xMWEuNzUuNzUgMCAwIDAgMCAxbDMuNDEgMy41NCAyLjY0IDIuNzZhLjc2Ljc2IDAgMCAwIDEgMGwyLjI1LTIuMzEuNDctLjQ5IDkuODUtMTAuMjdhLjc1Ljc1IDAgMCAwIDAtMUwxNy4xNiAxLjZhLjc0Ljc0IDAgMCAwLS41OC0uMjF6Ii8+PC9zdmc+');
-  }
+	input:checked ~ .control-indicator::before {
+		background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+PHBhdGggZmlsbD0iI2ZkYjcxYyIgZD0iTTE2LjU4IDEuMzlhLjY4LjY4IDAgMCAwLS40NC4yMUw2LjggMTEuMzJsLTIuODktM2EuNzYuNzYgMCAwIDAtMSAwTC4xOSAxMS4xMWEuNzUuNzUgMCAwIDAgMCAxbDMuNDEgMy41NCAyLjY0IDIuNzZhLjc2Ljc2IDAgMCAwIDEgMGwyLjI1LTIuMzEuNDctLjQ5IDkuODUtMTAuMjdhLjc1Ljc1IDAgMCAwIDAtMUwxNy4xNiAxLjZhLjc0Ljc0IDAgMCAwLS41OC0uMjF6Ii8+PC9zdmc+');
+	}
 
-  input:not(:checked) ~ .control-indicator::before {
-    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+PHBhdGggZmlsbD0iI2U2ZTdlOCIgZD0iTTE2LjU4IDEuMzlhLjY4LjY4IDAgMCAwLS40NC4yMUw2LjggMTEuMzJsLTIuODktM2EuNzYuNzYgMCAwIDAtMSAwTC4xOSAxMS4xMWEuNzUuNzUgMCAwIDAgMCAxbDMuNDEgMy41NCAyLjY0IDIuNzZhLjc2Ljc2IDAgMCAwIDEgMGwyLjI1LTIuMzEuNDctLjQ5IDkuODUtMTAuMjdhLjc1Ljc1IDAgMCAwIDAtMUwxNy4xNiAxLjZhLjc0Ljc0IDAgMCAwLS41OC0uMjF6Ii8+PC9zdmc+');
-  }
+	input:not(:checked) ~ .control-indicator::before {
+		background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+PHBhdGggZmlsbD0iI2U2ZTdlOCIgZD0iTTE2LjU4IDEuMzlhLjY4LjY4IDAgMCAwLS40NC4yMUw2LjggMTEuMzJsLTIuODktM2EuNzYuNzYgMCAwIDAtMSAwTC4xOSAxMS4xMWEuNzUuNzUgMCAwIDAgMCAxbDMuNDEgMy41NCAyLjY0IDIuNzZhLjc2Ljc2IDAgMCAwIDEgMGwyLjI1LTIuMzEuNDctLjQ5IDkuODUtMTAuMjdhLjc1Ljc1IDAgMCAwIDAtMUwxNy4xNiAxLjZhLjc0Ljc0IDAgMCAwLS41OC0uMjF6Ii8+PC9zdmc+');
+	}
 
-  &.bustout {
-    input ~ .control-indicator::before {
-      background-position: $form-control-checkbox-bustout-position;
-      background-size: $form-control-checkbox-bustout-size-inner;
-      height: $form-control-checkbox-bustout-size;
-      left: $form-control-checkbox-bustout-left;
-      margin-top: $form-control-checkbox-bustout-margin-top;
-      top: $form-control-checkbox-bustout-top;
-      width: $form-control-checkbox-bustout-size;
-    }
-  }
+	&.bustout {
+		input ~ .control-indicator::before {
+			background-position: $form-control-checkbox-bustout-position;
+			background-size: $form-control-checkbox-bustout-size-inner;
+			height: $form-control-checkbox-bustout-size;
+			left: $form-control-checkbox-bustout-left;
+			margin-top: $form-control-checkbox-bustout-margin-top;
+			top: $form-control-checkbox-bustout-top;
+			width: $form-control-checkbox-bustout-size;
+		}
+	}
 }
 
 .control {
-  align-items: center;
-  cursor: pointer;
-  display: flex;
-  flex-direction: row;
-  line-height: $line-height-form;
-  height: auto;
-  padding: 0;
-  position: relative;
-  width: 100%;
+	align-items: center;
+	cursor: pointer;
+	display: flex;
+	flex-direction: row;
+	line-height: $line-height-form;
+	height: auto;
+	padding: 0;
+	position: relative;
+	width: 100%;
 
-  input {
-    opacity: 0;
-    width: auto;
-    z-index: -1;
+	input {
+		opacity: 0;
+		width: auto;
+		z-index: -1;
 
-    &:focus ~ .control-indicator {
-      box-shadow: $border-focus;
-    }
-  }
+		&:focus ~ .control-indicator {
+			box-shadow: $border-focus;
+		}
+	}
 }
 
 .control-indicator {
-  background-color: $color-white;
-  border: 2px solid $color-black;
-  border-radius: $border-radius-circle;
-  display: block;
-  flex-shrink: 0;
-  height: $form-control-default-size;
-  left: 0;
-  position: relative;
-  top: 0;
-  user-select: none;
-  width: $form-control-default-size;
+	background-color: $color-white;
+	border: 2px solid $color-black;
+	border-radius: $border-radius-circle;
+	display: block;
+	flex-shrink: 0;
+	height: $form-control-default-size;
+	left: 0;
+	position: relative;
+	top: 0;
+	user-select: none;
+	width: $form-control-default-size;
 
-  .on-dark & {
-    border-color: $color-white;
-  }
+	.on-dark & {
+		border-color: $color-white;
+	}
 
-  &::before {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: $form-control-default-size-inner;
-    border-radius: $border-radius-base;
-    content: '';
-    height: $form-control-default-size;
-    left: $form-control-default-left;
-    position: absolute;
-    top: $form-control-default-top;
-    width: $form-control-default-size;
-  }
+	&::before {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: $form-control-default-size-inner;
+		border-radius: $border-radius-base;
+		content: '';
+		height: $form-control-default-size;
+		left: $form-control-default-left;
+		position: absolute;
+		top: $form-control-default-top;
+		width: $form-control-default-size;
+	}
 }
 
 .control-label {
-  line-height: $line-height-header;
-  padding-left: $space-s;
+	line-height: $line-height-header;
+	padding-left: $space-s;
 }
 
 .controls-boxed {
-  border: $border-base;
-  max-height: 400px;
-  overflow-y: scroll;
+	border: $border-base;
+	max-height: 400px;
+	overflow-y: scroll;
 
-  label {
-    font-weight: $font-weight-normal;
-    line-height: 1;
-    margin: 0 !important;
-    text-transform: none;
+	label {
+		font-weight: $font-weight-normal;
+		line-height: 1;
+		margin: 0 !important;
+		text-transform: none;
 
-    &:nth-child(even) {
-      background-color: $color-gray-lighter;
-    }
-  }
+		&:nth-child(even) {
+			background-color: $color-gray-lighter;
+		}
+	}
 }
 
 .controls-boxed-grid {
-  align-items: stretch;
-  display: grid;
+	align-items: stretch;
+	display: grid;
 
-  &.controls-boxed-grid-3 {
-    grid-template-columns: auto;
+	&.controls-boxed-grid-3 {
+		grid-template-columns: auto;
 
-    @include breakpoint(m) {
-      grid-template-columns: min-content auto min-content;
-    }
-  }
+		@include breakpoint(m) {
+			grid-template-columns: min-content auto min-content;
+		}
+	}
 
-  > * {
-    align-items: center;
-    display: grid;
-    padding: $space-s;
+	> * {
+		align-items: center;
+		display: grid;
+		padding: $space-s;
 
-    &:nth-child(6n+4),
-    &:nth-child(6n+5),
-    &:nth-child(6n+6) {
-      background-color: $color-gray-lighter;
-    }
-  }
+		&:nth-child(6n + 4),
+		&:nth-child(6n + 5),
+		&:nth-child(6n + 6) {
+			background-color: $color-gray-lighter;
+		}
+	}
 }
 
 .controls-boxed-header {
-  color: $color-blue;
-  cursor: pointer;
-  font-size: $font-size-l;
-  font-weight: $font-weight-bold;
-  margin: 0;
-  padding: $space-s;
+	color: $color-blue;
+	cursor: pointer;
+	font-size: $font-size-l;
+	font-weight: $font-weight-bold;
+	margin: 0;
+	padding: $space-s;
 
-  &:nth-child(even) {
-    background-color: $color-gray-lighter;
-  }
+	&:nth-child(even) {
+		background-color: $color-gray-lighter;
+	}
 
-  &:active,
-  &:focus,
-  &:hover,
-  &.current {
-    background-color: $color-blue;
-    color: $color-white;
-  }
+	&:active,
+	&:focus,
+	&:hover,
+	&.current {
+		background-color: $color-blue;
+		color: $color-white;
+	}
 
-  &.current {
-    position: sticky;
-    top: 0;
-    z-index: 2;
-  }
+	&.current {
+		position: sticky;
+		top: 0;
+		z-index: 2;
+	}
 }
 
 .controls-inline {
-  margin: $space-m 0;
+	margin: $space-m 0;
 
-  .control {
-    display: inline-block;
-    height: $space-m;
+	.control {
+		display: inline-block;
+		height: $space-m;
 
-    + .control {
-      margin-left: $space-m;
-    }
-  }
+		+ .control {
+			margin-left: $space-m;
+		}
+	}
 }
 
 .file {
-  cursor: pointer;
-  display: inline-block;
-  height: $line-height-form;
-  position: relative;
-  width: 100%;
+	cursor: pointer;
+	display: inline-block;
+	height: $line-height-form;
+	position: relative;
+	width: 100%;
 
-  input {
-    filter: alpha(opacity=0);
-    margin: 0;
-    min-width: $space-xxl;
-    opacity: 0;
-  }
+	input {
+		filter: alpha(opacity=0);
+		margin: 0;
+		min-width: $space-xxl;
+		opacity: 0;
+	}
 
-  input:focus ~ .file-custom {
-    box-shadow: $border-focus;
-  }
+	input:focus ~ .file-custom {
+		box-shadow: $border-focus;
+	}
 }
 
 .file-custom {
-  background-color: $color-white;
-  border: $border-base;
-  border-radius: $border-radius-base;
-  color: $color-black;
-  height: $line-height-form;
-  left: 0;
-  line-height: $line-height-form;
-  padding: 0 $space-m;
-  position: absolute;
-  right: 0;
-  top: 0;
-  user-select: none;
-  z-index: 5;
+	background-color: $color-white;
+	border: $border-base;
+	border-radius: $border-radius-base;
+	color: $color-black;
+	height: $line-height-form;
+	left: 0;
+	line-height: $line-height-form;
+	padding: 0 $space-m;
+	position: absolute;
+	right: 0;
+	top: 0;
+	user-select: none;
+	z-index: 5;
 
-  &::after {
-    content: "Choose file...";
-  }
+	&::after {
+		content: "Choose file...";
+	}
 
-  &:before {
-    background-color: $color-gray-lighter;
-    border: $border-base;
-    border-radius: $border-radius-base;
-    color: $color-black;
-    content: "Browse";
-    display: block;
-    height: $line-height-form;
-    line-height: $line-height-form;
-    padding: 0 $space-m;
-    position: absolute;
-    right: -1px;
-    top: -1px;
-    z-index: 6;
-  }
+	&:before {
+		background-color: $color-gray-lighter;
+		border: $border-base;
+		border-radius: $border-radius-base;
+		color: $color-black;
+		content: "Browse";
+		display: block;
+		height: $line-height-form;
+		line-height: $line-height-form;
+		padding: 0 $space-m;
+		position: absolute;
+		right: -1px;
+		top: -1px;
+		z-index: 6;
+	}
 }
 
 .floating-label-group {
-  margin: $space-s 0;
-  padding-top: $space-m;
-  position: relative;
+	margin: $space-s 0;
+	padding-top: $space-m;
+	position: relative;
 
-  .login-form & {
-    @include breakpoint(m) {
-      margin: 0;
-    }
-  }
+	.login-form & {
+		@include breakpoint(m) {
+			margin: 0;
+		}
+	}
 
-  input {
-    border-color: $color-gray;
-    position: relative;
-    width: 100%;
-    z-index: 2;
+	input {
+		border-color: $color-gray;
+		position: relative;
+		width: 100%;
+		z-index: 2;
 
-    &:not(:placeholder-shown) + label {
-      opacity: 1;
-      top: 0;
-    }
+		&:not(:placeholder-shown) + label {
+			opacity: 1;
+			top: 0;
+		}
 
-    .search-actions & {
-      background-color: transparent;
-      height: $space-l;
-    }
-  }
+		.search-actions & {
+			background-color: transparent;
+			height: $space-l;
+		}
+	}
 
-  label {
-    font-size: $font-size-xs;
-    left: 0;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    transition: $transition-base;
-    z-index: 1;
+	label {
+		font-size: $font-size-xs;
+		left: 0;
+		opacity: 0;
+		position: absolute;
+		top: 50%;
+		transition: $transition-base;
+		z-index: 1;
 
-    + app-field-error-display > .state-error {
-      border-top-width: 0;
-    }
-  }
+		+ app-field-error-display > .state-error {
+			border-top-width: 0;
+		}
+	}
 }
 
 .form-control-inline {
-  display: block;
+	display: block;
 
-  @include breakpoint(s) {
-    align-items: center;
-    display: flex;
-  }
+	@include breakpoint(s) {
+		align-items: center;
+		display: flex;
+	}
 
-  input {
-    min-width: $space-s;
-  }
+	input {
+		min-width: $space-s;
+	}
 
-  label {
-    margin: 0 $space-s 0 0;
-    white-space: nowrap;
-  }
+	label {
+		margin: 0 $space-s 0 0;
+		white-space: nowrap;
+	}
 
-  .toggle-switch label {
-    margin-right: 0;
-  }
+	.toggle-switch label {
+		margin-right: 0;
+	}
 }
 
 .form-group {
-  &.alt-off + .form-group.alt-off {
-    margin-top: $space-m;
-    padding-top: $space-m;
-  }
+	&.alt-off + .form-group.alt-off {
+		margin-top: $space-m;
+		padding-top: $space-m;
+	}
 
-  .control input {
-    width: auto;
-  }
+	.control input {
+		width: auto;
+	}
 
-  input {
-    width: 100%;
+	input {
+		width: 100%;
 
-    + app-field-error-display > .state-error {
-      border-top-width: 0;
-    }
-  }
+		+ app-field-error-display > .state-error {
+			border-top-width: 0;
+		}
+	}
 
-  label {
-    &.control {
-      display: flex;
-    }
+	label {
+		display: block;
+		font-weight: $font-weight-bold;
+		margin-bottom: $space-xs;
+		text-transform: uppercase;
 
-    &.label-parent {
-      line-height: $line-height-header;
-      margin-bottom: $space-m;
-    }
-  }
+		&.control {
+			display: flex;
+		}
 
-  .control-label {
-    font-weight: $font-weight-normal;
-    text-transform: none;
-  }
+		&.label-parent {
+			line-height: $line-height-header;
+			margin-bottom: $space-m;
+		}
+	}
+
+	.control-label {
+		font-weight: $font-weight-normal;
+		text-transform: none;
+	}
 }
 
 .form-groups {
-  margin-bottom: $space-m;
+	margin-bottom: $space-m;
 
-  > * {
-    > .form-group {
-      padding: $space-m;
-    }
+	> * {
+		> .form-group {
+			padding: $space-m;
+		}
 
-    + * > .form-group {
-      padding-top: 0;
-    }
-  }
-}
-
-.form-group {
-  label {
-    display: block;
-    font-weight: $font-weight-bold;
-    margin-bottom: $space-s;
-    text-transform: uppercase;
-  }
+		+ * > .form-group {
+			padding-top: 0;
+		}
+	}
 }
 
 .form-read-more {
-  icon {
-    margin-right: $space-s;
+	icon {
+		flex-shrink: 0;
+		height: $icon-size-l;
+		margin-right: $space-s;
+		width: $icon-size-l;
 
-    @include breakpoint(l) {
-      height: $icon-size-xxl;
-      width: $icon-size-xxl;
-    }
+		@include breakpoint(l) {
+			height: $icon-size-xxl;
+			width: $icon-size-xxl;
+		}
 
-    use {
-      fill: $color-blue;
-    }
+		use {
+			fill: $color-blue;
+		}
 
-    path {
-      all: inherit;
-    }
-  }
+		path {
+			all: inherit;
+		}
+	}
 
-  &:active,
-  &:focus,
-  &:hover {
-    icon {
-      use {
-        fill: $color-white;
-      }
+	&:active,
+	&:focus,
+	&:hover {
+		icon {
+			use {
+				fill: $color-white;
+			}
 
-      path {
-        all: inherit;
-      }
-    }
-  }
+			path {
+				all: inherit;
+			}
+		}
+	}
 }
 
 .form-settings {
-  background-color: $color-blue-dark;
-  padding: $space-s;
+	background-color: $color-blue-dark;
+	padding: $space-s;
 
-  label {
-    margin-bottom: (-$space-s);
-  }
+	label {
+		margin-bottom: (-$space-s);
+	}
+
+	.select {
+		margin-top: (-$space-m);
+	}
 }
 
 .form-settings-header,
 .form-settings-header:first-child {
-  .on-dark & {
-    background-color: $color-white;
-    color: $color-gray-dark;
-    display: inline-block;
-    font-size: $font-size-s;
-    font-weight: $font-weight-bold;
-    margin: (-$space-xs) $space-xs $space-s (-$space-xs);
-    padding: $space-xs $space-s;
-    text-transform: uppercase;
-  }
+	.on-dark & {
+		background-color: $color-white;
+		color: $color-gray-dark;
+		display: inline-block;
+		font-size: $font-size-s;
+		font-weight: $font-weight-bold;
+		margin: (-$space-xs) $space-xs $space-s (-$space-xs);
+		padding: $space-xs $space-s;
+		text-transform: uppercase;
+	}
 }
 
 .input-icon {
-  border: $border-base;
-  position: relative;
-  width: 100%;
+	border: $border-base;
+	position: relative;
+	width: 100%;
 
-  &.state-error,
-  &.state-error > i {
-    background-color: $color-red;
-    border-color: $color-red;
-  }
+	&.state-error,
+	&.state-error > i {
+		background-color: $color-red;
+		border-color: $color-red;
+	}
 
-  &.state-info,
-  &.state-info > i {
-    background-color: $color-blue;
-    border-color: $color-blue;
-  }
+	&.state-info,
+	&.state-info > i {
+		background-color: $color-blue;
+		border-color: $color-blue;
+	}
 
-  &.state-success,
-  &.state-success > i {
-    background-color: $color-green;
-    border-color: $color-green;
-  }
+	&.state-success,
+	&.state-success > i {
+		background-color: $color-green;
+		border-color: $color-green;
+	}
 
-  &.state-warning,
-  &.state-warning > i {
-    background-color: $color-orange;
-    border-color: $color-orange;
-  }
+	&.state-warning,
+	&.state-warning > i {
+		background-color: $color-orange;
+		border-color: $color-orange;
+	}
 
-  &.state-error,
-  &.state-info,
-  &.state-success,
-  &.state-warning {
-    > i {
-      border-bottom-width: 0;
-      border-left-width: 0;
-      border-top-width: 0;
-      color: $color-white;
-    }
-  }
+	&.state-error,
+	&.state-info,
+	&.state-success,
+	&.state-warning {
+		> i {
+			border-bottom-width: 0;
+			border-left-width: 0;
+			border-top-width: 0;
+			color: $color-white;
+		}
+	}
 
-  > i {
-    align-items: center;
-    background-color: $color-gray-lighter;
-    color: $color-black;
-    display: flex;
-    height: $line-height-form;
-    justify-content: center;
-    position: absolute;
-    width: $line-height-form;
-  }
+	> i {
+		align-items: center;
+		background-color: $color-gray-lighter;
+		color: $color-black;
+		display: flex;
+		height: $line-height-form;
+		justify-content: center;
+		position: absolute;
+		width: $line-height-form;
+	}
 
-  &.input-icon-right {
-    &.state-error,
-    &.state-info,
-    &.state-success,
-    &.state-warning {
-      > i {
-        border-left-width: 1px;
-        border-right-width: 0;
-      }
-    }
+	&.input-icon-right {
+		&.state-error,
+		&.state-info,
+		&.state-success,
+		&.state-warning {
+			> i {
+				border-left-width: 1px;
+				border-right-width: 0;
+			}
+		}
 
-    input {
-      margin-left: 0;
-      padding: $space-s $space-xl $space-s $space-m;
-    }
-  }
+		input {
+			margin-left: 0;
+			padding: $space-s $space-xl $space-s $space-m;
+		}
+	}
 
-  input {
-    border-width: 0;
-    color: $color-black;
-    padding: $space-s $space-m $space-s $space-xl;
-    width: 100%;
-  }
+	input {
+		border-width: 0;
+		color: $color-black;
+		padding: $space-s $space-m $space-s $space-xl;
+		width: 100%;
+	}
 
-  + app-field-error-display {
-    > .state-error,
-    > .state-info,
-    > .state-success,
-    > .state-warning {
-      border-top-width: 0 !important;
-    }
-  }
+	+ app-field-error-display {
+		> .state-error,
+		> .state-info,
+		> .state-success,
+		> .state-warning {
+			border-top-width: 0 !important;
+		}
+	}
 }
 
 .input-with-button {
-  border: $border-base;
-  display: flex;
+	border: $border-base;
+	display: flex;
 
-  input {
-    border-width: 0;
-  }
+	input {
+		border-width: 0;
+	}
 
-  button {
-    border-width: 0;
-    white-space: nowrap;
-  }
+	button {
+		border-width: 0;
+		white-space: nowrap;
+	}
 }
 
 .label-parent {
-  color: $color-blue;
-  font-size: $font-size-s;
-  font-weight: $font-weight-bold;
-  margin-top: 0;
+	color: $color-blue;
+	font-size: $font-size-s;
+	font-weight: $font-weight-bold;
+	margin-top: 0;
 
-  &:not(:first-child) {
-    margin-top: $space-m;
-  }
+	&:not(:first-child) {
+		margin-top: $space-m;
+	}
 
-  @at-root .form-group label#{&} {
-    text-transform: none;
-  }
+	@at-root .form-group label#{&} {
+		text-transform: none;
+	}
 }
 
 .label-plain {
-  font-size: $font-size-s;
+	font-size: $font-size-s;
 
-  @at-root .form-group label#{&} {
-    font-weight: $font-weight-normal;
-    text-transform: none;
-  }
+	@at-root .form-group label#{&} {
+		font-weight: $font-weight-normal;
+		text-transform: none;
+	}
 }
 
 .progress {
-  display: inline-block;
-  height: $space-m;
-  width: 100%;
+	display: inline-block;
+	height: $space-m;
+	width: 100%;
 
-  &[value] {
-    appearance: none;
-    border: 0;
-    color: $color-blue;
+	&[value] {
+		appearance: none;
+		border: 0;
+		color: $color-blue;
 
-    &::-webkit-progress-bar {
-      background-color: $color-gray-lighter;
-      border-radius: $border-radius-base;
-    }
+		&::-webkit-progress-bar {
+			background-color: $color-gray-lighter;
+			border-radius: $border-radius-base;
+		}
 
-    &::-webkit-progress-value {
-      background-color: $color-blue;
-      border-bottom-left-radius: $border-radius-base;
-      border-top-left-radius: $border-radius-base;
-    }
-  }
+		&::-webkit-progress-value {
+			background-color: $color-blue;
+			border-bottom-left-radius: $border-radius-base;
+			border-top-left-radius: $border-radius-base;
+		}
+	}
 
-  &[value="100"]::-webkit-progress-value {
-    border-bottom-right-radius: $border-radius-base;
-    border-top-right-radius: $border-radius-base;
-  }
+	&[value="100"]::-webkit-progress-value {
+		border-bottom-right-radius: $border-radius-base;
+		border-top-right-radius: $border-radius-base;
+	}
 }
 
 .radio {
-  input ~ .control-indicator::before {
-    background-position: $form-control-checkbox-position;
-  }
+	input ~ .control-indicator::before {
+		background-position: $form-control-checkbox-position;
+	}
 
-  input:checked ~ .control-indicator::before {
-    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+PHBhdGggZmlsbD0iI2ZkYjcxYyIgZD0iTTE2LjU4IDEuMzlhLjY4LjY4IDAgMCAwLS40NC4yMUw2LjggMTEuMzJsLTIuODktM2EuNzYuNzYgMCAwIDAtMSAwTC4xOSAxMS4xMWEuNzUuNzUgMCAwIDAgMCAxbDMuNDEgMy41NCAyLjY0IDIuNzZhLjc2Ljc2IDAgMCAwIDEgMGwyLjI1LTIuMzEuNDctLjQ5IDkuODUtMTAuMjdhLjc1Ljc1IDAgMCAwIDAtMUwxNy4xNiAxLjZhLjc0Ljc0IDAgMCAwLS41OC0uMjF6Ii8+PC9zdmc+');
-  }
+	input:checked ~ .control-indicator::before {
+		background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+PHBhdGggZmlsbD0iI2ZkYjcxYyIgZD0iTTE2LjU4IDEuMzlhLjY4LjY4IDAgMCAwLS40NC4yMUw2LjggMTEuMzJsLTIuODktM2EuNzYuNzYgMCAwIDAtMSAwTC4xOSAxMS4xMWEuNzUuNzUgMCAwIDAgMCAxbDMuNDEgMy41NCAyLjY0IDIuNzZhLjc2Ljc2IDAgMCAwIDEgMGwyLjI1LTIuMzEuNDctLjQ5IDkuODUtMTAuMjdhLjc1Ljc1IDAgMCAwIDAtMUwxNy4xNiAxLjZhLjc0Ljc0IDAgMCAwLS41OC0uMjF6Ii8+PC9zdmc+');
+	}
 
-  input:not(:checked) ~ .control-indicator::before {
-    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+PHBhdGggZmlsbD0iI2U2ZTdlOCIgZD0iTTE2LjU4IDEuMzlhLjY4LjY4IDAgMCAwLS40NC4yMUw2LjggMTEuMzJsLTIuODktM2EuNzYuNzYgMCAwIDAtMSAwTC4xOSAxMS4xMWEuNzUuNzUgMCAwIDAgMCAxbDMuNDEgMy41NCAyLjY0IDIuNzZhLjc2Ljc2IDAgMCAwIDEgMGwyLjI1LTIuMzEuNDctLjQ5IDkuODUtMTAuMjdhLjc1Ljc1IDAgMCAwIDAtMUwxNy4xNiAxLjZhLjc0Ljc0IDAgMCAwLS41OC0uMjF6Ii8+PC9zdmc+');
-  }
+	input:not(:checked) ~ .control-indicator::before {
+		background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+PHBhdGggZmlsbD0iI2U2ZTdlOCIgZD0iTTE2LjU4IDEuMzlhLjY4LjY4IDAgMCAwLS40NC4yMUw2LjggMTEuMzJsLTIuODktM2EuNzYuNzYgMCAwIDAtMSAwTC4xOSAxMS4xMWEuNzUuNzUgMCAwIDAgMCAxbDMuNDEgMy41NCAyLjY0IDIuNzZhLjc2Ljc2IDAgMCAwIDEgMGwyLjI1LTIuMzEuNDctLjQ5IDkuODUtMTAuMjdhLjc1Ljc1IDAgMCAwIDAtMUwxNy4xNiAxLjZhLjc0Ljc0IDAgMCAwLS41OC0uMjF6Ii8+PC9zdmc+');
+	}
 }
 
 .read-more-content {
-  background-color: $color-blue-light;
-  padding: $space-m;
+	background-color: $color-blue-light;
+	padding: $space-m;
 
-  h4 {
-    font-weight: $font-weight-bold;
-  }
+	h4 {
+		font-weight: $font-weight-bold;
+	}
 
-  .on-dark & {
-    color: $color-theme-base-text;
+	.on-dark & {
+		color: $color-theme-base-text;
 
-    h4 {
-      color: $color-theme-base-text;
-    }
-  }
+		h4 {
+			color: $color-theme-base-text;
+		}
+	}
 }
 
 .select {
-  color: $color-black;
-  display: flex;
-  position: relative;
-  width: 100%;
+	color: $color-black;
+	display: flex;
+	position: relative;
+	width: 100%;
 
-  &.search-settings {
-    select {
-      background-color: rgba($color-white, 0.75);
-    }
-  }
+	&.search-settings {
+		select {
+			background-color: rgba($color-white, 0.75);
+		}
+	}
 
-  &.select-icon-left {
-    background-color: $color-white;
+	&.select-icon-left {
+		background-color: $color-white;
 
-    select {
-      background-color: transparent;
-      border: $border-base;
-      padding-left: $space-xl;
-      position: relative;
-      z-index: 2;
-    }
-  }
+		select {
+			background-color: transparent;
+			border: $border-base;
+			padding-left: ($space-l + $space-m);
+			position: relative;
+			z-index: 2;
+		}
+	}
 
-  &.select-multiple {
-    &::after {
-      display: none;
-    }
+	&.select-multiple {
+		&::after {
+			display: none;
+		}
 
-    option[disabled] {
-      background-color: $color-blue-dark;
-      color: $color-white;
-      cursor: default;
-      font-weight: $font-weight-bold;
-      padding: $space-s $space-m;
-    }
-  }
+		option[disabled] {
+			background-color: $color-blue-dark;
+			color: $color-white;
+			cursor: default;
+			font-weight: $font-weight-bold;
+			padding: $space-s $space-m;
+		}
+	}
 
-  i {
-    align-items: center;
-    background-color: $color-gray-lighter;
-    border: $border-base;
-    border-right-width: 0;
-    display: flex;
-    flex-direction: row;
-    height: $line-height-form;
-    justify-content: center;
-    position: absolute;
-    width: $line-height-form;
-    z-index: 1;
-  }
+	i {
+		align-items: center;
+		background-color: $color-gray-lighter;
+		border-width: 0;
+		display: flex;
+		flex-direction: row;
+		height: $line-height-form;
+		justify-content: center;
+		position: absolute;
+		width: $line-height-form;
+		z-index: 1;
+	}
 
-  select {
-    appearance: none;
-    background-color: $color-white;
-    border-radius: $border-radius-base;
-    border: $border-base;
-    color: $color-black;
-    cursor: pointer;
-    display: inline-block;
-    line-height: $line-height-base;
-    margin: 0;
-    outline: 0;
-    padding: $space-s ($space-l + $space-s) $space-s $space-m;
-    width: 100%;
+	select {
+		appearance: none;
+		background-color: $color-white;
+		border-radius: $border-radius-base;
+		border: $border-base;
+		color: $color-black;
+		cursor: pointer;
+		display: inline-block;
+		line-height: $line-height-base;
+		margin: 0;
+		outline: 0;
+		padding: $space-s ($space-l + $space-s) $space-s $space-m;
+		width: 100%;
 
-    &[multiple].select-icon-left {
-      padding-left: 3rem;
-    }
+		&[multiple].select-icon-left {
+			padding-left: 3rem;
+		}
 
-    &:focus {
-      option:checked {
-        background: $color-blue linear-gradient(0deg, $color-blue 0%, $color-blue 100%);
-      }
-    }
+		&:focus {
+			option:checked {
+				background: $color-blue linear-gradient(0deg, $color-blue 0%, $color-blue 100%);
+			}
+		}
 
-    &:focus:-moz-focusring {
-      color: transparent;
-      text-shadow: 0 0 0 $color-black;
-    }
+		&:focus:-moz-focusring {
+			color: transparent;
+			text-shadow: 0 0 0 $color-black;
+		}
 
-    &::-ms-expand {
-      display: none;
-    }
+		&::-ms-expand {
+			display: none;
+		}
 
-    option:checked {
-      background: $color-blue-light linear-gradient(0deg, $color-blue-light 0%, $color-blue-light 100%);
-    }
-  }
+		option:checked {
+			background: $color-blue-light
+				linear-gradient(0deg, $color-blue-light 0%, $color-blue-light 100%);
+		}
+	}
 
-  &::after {
-    border-bottom: $space-xs solid transparent;
-    border-left: $space-xs solid transparent;
-    border-right: $space-xs solid transparent;
-    border-top: $space-s solid;
-    content: '';
-    display: inline-block;
-    height: 0;
-    margin-top: (-$space-xs);
-    pointer-events: none;
-    position: absolute;
-    right: $space-m;
-    top: 50%;
-    width: 0;
-  }
+	&::after {
+		border-bottom: $space-xs solid transparent;
+		border-left: $space-xs solid transparent;
+		border-right: $space-xs solid transparent;
+		border-top: $space-s solid;
+		content: '';
+		display: inline-block;
+		height: 0;
+		margin-top: (-$space-xs);
+		pointer-events: none;
+		position: absolute;
+		right: $space-m;
+		top: 50%;
+		width: 0;
+	}
 }
 
 .select-alt {
-  display: flex;
+	display: flex;
 
-  label {
-    background-color: $color-gray-dark;
-    color: $color-white;
-    line-height: $line-height-form;
-    padding: 0 $space-m;
-    text-transform: uppercase;
-  }
+	label {
+		background-color: $color-gray-dark;
+		color: $color-white;
+		line-height: $line-height-form;
+		padding: 0 $space-m;
+		text-transform: uppercase;
+	}
 }
 
 .select-child-arrow.g-l-1 {
-  display: none;
+	display: none;
 
-  @include breakpoint(l) {
-    .grid & {
-      display: flex;
-      grid-row-start: 1;
-      grid-row-end: 99;
-      justify-content: flex-end;
-    }
-  }
+	@include breakpoint(l) {
+		.grid & {
+			display: flex;
+			grid-row-start: 1;
+			grid-row-end: 99;
+			justify-content: flex-end;
+		}
+	}
 
-  b {
-    border-bottom: $border-base;
-    border-left: $border-base;
-    display: block;
-    height: 50%;
-    width: 50%;
+	b {
+		border-bottom: $border-base;
+		border-left: $border-base;
+		display: block;
+		height: 50%;
+		width: 50%;
 
-    .hide-child-design & {
-      display: none;
-    }
-  }
+		.hide-child-design & {
+			display: none;
+		}
+	}
 }
 
 .select-child-header {
-  margin-top: $space-m;
+	margin-top: $space-m;
 
-  .hide-child-design & {
-    margin-top: 0;
-  }
+	.hide-child-design & {
+		margin-top: 0;
+	}
 }
 
 .select-read-more {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  margin-top: $space-s;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	margin-top: $space-s;
 
-  @include breakpoint(l) {
-    margin-top: 0;
-  }
+	@include breakpoint(l) {
+		margin-top: 0;
+	}
 
-  a {
-    align-items: center;
-    background-image: none;
-    display: flex;
+	a {
+		align-items: center;
+		background-image: none;
+		display: flex;
 
-    &:active,
-    &:focus,
-    &:hover {
-      em,
-      i {
-        color: $color-theme-base-hover-text;
-      }
-    }
-  }
+		&:active,
+		&:focus,
+		&:hover {
+			em,
+			i {
+				color: $color-theme-base-hover-text;
+			}
+		}
+	}
 
-  em {
-    color: $color-theme-base-link;
-    font-style: normal;
-    font-weight: $font-weight-bold;
-    text-transform: uppercase;
+	em {
+		color: $color-theme-base-link;
+		font-style: normal;
+		font-weight: $font-weight-bold;
+		text-transform: uppercase;
 
-    @include breakpoint(l) {
-      display: block;
-    }
-  }
+		@include breakpoint(l) {
+			display: block;
+		}
+	}
 
-  hr {
-    display: none;
+	hr {
+		display: none;
 
-    @include breakpoint(l) {
-      border: none;
-      border-top: 1px dashed $color-blue;
-      display: inline-block;
-      flex-shrink: 0;
-      height: 1px;
-      margin: 0;
-      width: $space-xl;
-    }
-  }
+		@include breakpoint(l) {
+			border: none;
+			border-top: 1px dashed $color-blue;
+			display: inline-block;
+			flex-shrink: 0;
+			height: 1px;
+			margin: 0;
+			width: $space-xl;
+		}
+	}
 
-  i {
-    color: $color-blue;
-    height: 100%;
-    margin-right: $space-s;
+	i {
+		color: $color-blue;
+		height: 100%;
+		margin-right: $space-s;
 
-    > * {
-      align-items: center;
-      display: flex;
-      flex-direction: row;
-      height: 100%;
-      width: 100%;
-    }
+		> * {
+			align-items: center;
+			display: flex;
+			flex-direction: row;
+			height: 100%;
+			width: 100%;
+		}
 
-    @include breakpoint(l) {
-      svg {
-        height: $space-l;
-        width: $space-l;
-      }
-    }
-  }
+		@include breakpoint(l) {
+			svg {
+				height: $space-l;
+				width: $space-l;
+			}
+		}
+	}
 }
 
 .toggle-switch {
-  align-items: center;
-  border: $border-base;
-  border-radius: $space-xs;
-  display: flex;
-  width: 100%;
+	align-items: center;
+	border: $border-base;
+	border-radius: $space-xs;
+	display: flex;
+	width: 100%;
 
-  .on-dark & {
-    color: $color-black;
-  }
+	.on-dark & {
+		color: $color-black;
+	}
 
-  input {
-    border: 0;
-    clip: rect(0, 0, 0, 0);
-    height: 1px;
-    max-width: 0;
-    overflow: hidden;
-    position: absolute;
-    width: 1px;
+	input {
+		border: 0;
+		clip: rect(0, 0, 0, 0);
+		height: 1px;
+		max-width: 0;
+		overflow: hidden;
+		position: absolute;
+		width: 1px;
 
-    &:focus ~ label {
-      box-shadow: 0 0 0 $space-xxs $color-blue;
-    }
+		&:focus ~ label {
+			box-shadow: 0 0 0 $space-xxs $color-blue;
+		}
 
-    &:checked + label {
-      background-color: $color-blue;
-      color: $color-white;
-    }
-  }
+		&:checked + label {
+			background-color: $color-blue;
+			color: $color-white;
+		}
+	}
 
-  label {
-    background-color: $color-blue-light;
-    border-right: $border-base;
-    flex-grow: 1;
-    font-weight: $font-weight-normal;
-    margin-bottom: 0;
-    padding: $space-s $space-m;
-    text-align: center;
-    text-transform: none;
+	label {
+		background-color: $color-blue-light;
+		border-right: $border-base;
+		flex-grow: 1;
+		font-weight: $font-weight-normal;
+		margin-bottom: 0;
+		padding: $space-s $space-m;
+		text-align: center;
+		text-transform: none;
 
-    &:first-of-type {
-      border-bottom-left-radius: $space-xs;
-      border-top-left-radius: $space-xs;
-    }
+		&:first-of-type {
+			border-bottom-left-radius: $space-xs;
+			border-top-left-radius: $space-xs;
+		}
 
-    &:last-of-type {
-      border-bottom-right-radius: $space-xs;
-      border-right-width: 0;
-      border-top-right-radius: $space-xs;
-    }
+		&:last-of-type {
+			border-bottom-right-radius: $space-xs;
+			border-right-width: 0;
+			border-top-right-radius: $space-xs;
+		}
 
-    &:active,
-    &:focus,
-    &:hover {
-      background-color: $color-blue;
-      color: $color-white;
-    }
-  }
+		&:active,
+		&:focus,
+		&:hover {
+			background-color: $color-blue;
+			color: $color-white;
+		}
+	}
 }
