@@ -456,12 +456,10 @@ simple-select {
 	}
 
 	label {
-		margin: (-$space-xs) 0 (-$space-s);
+		margin: (-$space-xs) 0 $space-xs;
 	}
 
 	.select {
-		margin-top: (-$space-m);
-
 		select {
 			border-width: 0;
 		}
@@ -834,7 +832,8 @@ simple-select {
 	margin-top: $space-s;
 
 	@include breakpoint(l) {
-		margin-top: 0;
+		margin-top: ($space-m + $space-s);
+		min-height: $line-height-form;
 	}
 
 	a {
