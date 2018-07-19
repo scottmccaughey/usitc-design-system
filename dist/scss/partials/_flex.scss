@@ -8,49 +8,49 @@
 //  888    888  "Y8888  888  888
 
 .flex {
-  @include breakpoint(m) {
-    align-content: center;
-    align-items: stretch;
-    display: flex;
+	@include breakpoint(m) {
+		align-content: center;
+		align-items: stretch;
+		display: flex;
 
-    > * {
-      align-content: center;
-      align-items: center;
-      display: flex;
-    }
-  }
+		> * {
+			align-content: center;
+			align-items: center;
+			display: flex;
+		}
+	}
 }
 
 .flex-nowrap {
-  @include breakpoint(m) {
-    white-space: nowrap;
-  }
+	@include breakpoint(m) {
+		white-space: nowrap;
+	}
 }
 
 .flex-separated {
-  @include breakpoint(m) {
-    > * {
-      border-bottom-width: 0;
-      border-right: 1px solid $color-gray-lighter;
-      padding-left: $space-m;
-      padding-right: $space-m;
+	@include breakpoint(m) {
+		> * {
+			border-bottom-width: 0;
+			border-right: 1px solid $color-gray-lighter;
+			padding-left: $space-m;
+			padding-right: $space-m;
 
-      &:first-child {
-        padding-left: 0;
-      }
+			&:first-child {
+				padding-left: 0;
+			}
 
-      &:last-child {
-        border-right-width: 0;
-        padding-right: 0;
-      }
-    }
-  }
+			&:last-child {
+				border-right-width: 0;
+				padding-right: 0;
+			}
+		}
+	}
 
-  .header-caps.flex-nowrap {
-    margin-bottom: $space-s;
+	.header-caps.flex-nowrap {
+		margin-bottom: $space-s;
 
-    @include breakpoint(m) {
-      margin-bottom: 0;
-    }
-  }
+		@include breakpoint(m) {
+			margin-bottom: 0;
+		}
+	}
 }

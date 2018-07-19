@@ -1,5 +1,5 @@
 %svg-common {
-	background: url("icons-0e01426c.svg") no-repeat;
+	background: url("icons-54f4ea78.svg") no-repeat;
 }
 
 .icon-africa {
@@ -412,9 +412,19 @@
 	height: 1000px;
 }
 
-.icon-shaking-hands {
+.icon-settings {
 	@extend %svg-common;
 	background-position: 100% 83.33333333333333%;
+}
+
+.icon-settings-dims {
+	width: 1000px;
+	height: 1000px;
+}
+
+.icon-shaking-hands {
+	@extend %svg-common;
+	background-position: 0 100%;
 }
 
 .icon-shaking-hands-dims {
@@ -424,7 +434,7 @@
 
 .icon-share {
 	@extend %svg-common;
-	background-position: 0 100%;
+	background-position: 16.666666666666668% 100%;
 }
 
 .icon-share-dims {
@@ -434,7 +444,7 @@
 
 .icon-table {
 	@extend %svg-common;
-	background-position: 16.666666666666668% 100%;
+	background-position: 33.333333333333336% 100%;
 }
 
 .icon-table-dims {
@@ -444,7 +454,7 @@
 
 .icon-trash {
 	@extend %svg-common;
-	background-position: 33.333333333333336% 100%;
+	background-position: 50% 100%;
 }
 
 .icon-trash-dims {
@@ -454,7 +464,7 @@
 
 .icon-user {
 	@extend %svg-common;
-	background-position: 50% 100%;
+	background-position: 66.66666666666667% 100%;
 }
 
 .icon-user-dims {
@@ -464,7 +474,7 @@
 
 .icon-x {
 	@extend %svg-common;
-	background-position: 66.66666666666667% 100%;
+	background-position: 83.33333333333333% 100%;
 }
 
 .icon-x-dims {
@@ -474,7 +484,7 @@
 
 .icon-x-circle {
 	@extend %svg-common;
-	background-position: 83.33333333333333% 100%;
+	background-position: 100% 100%;
 }
 
 .icon-x-circle-dims {
