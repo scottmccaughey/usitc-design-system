@@ -2054,6 +2054,10 @@ pre {
 .alt-red {
   background-color: #f7dbdb; }
 
+.app-version {
+  font-size: 0.69444rem;
+  font-style: italic; }
+
 @media (min-width: 1200px) {
   .constrained {
     margin-left: auto;

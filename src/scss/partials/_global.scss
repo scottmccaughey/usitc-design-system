@@ -11,281 +11,286 @@
 //  "Y88P"
 
 html {
-  font-size: $font-size-root;
-  height: 100vh;
+	font-size: $font-size-root;
+	height: 100vh;
 }
 
 body {
-  background-color: $color-theme-base-background;
-  color: $color-theme-base-text;
-  font-family: $font-family-base;
-  font-size: $font-size-s;
-  font-weight: $font-weight-normal;
-  line-height: $line-height-base;
-  min-height: 100vh;
-  position: relative;
+	background-color: $color-theme-base-background;
+	color: $color-theme-base-text;
+	font-family: $font-family-base;
+	font-size: $font-size-s;
+	font-weight: $font-weight-normal;
+	line-height: $line-height-base;
+	min-height: 100vh;
+	position: relative;
 }
 
 ::selection {
-  background-color: $color-state-highlight-background;
-  color: $color-state-highlight-text;
-  text-shadow: 0;
+	background-color: $color-state-highlight-background;
+	color: $color-state-highlight-text;
+	text-shadow: 0;
 }
 
 ::-moz-selection {
-  background-color: $color-state-highlight-background;
-  color: $color-state-highlight-text;
-  text-shadow: 0;
+	background-color: $color-state-highlight-background;
+	color: $color-state-highlight-text;
+	text-shadow: 0;
 }
 
 :focus {
-  box-shadow: $border-focus;
-  outline: 0;
+	box-shadow: $border-focus;
+	outline: 0;
 }
 
 ::placeholder {
-  color: $color-gray-light;
-  opacity: 1;
+	color: $color-gray-light;
+	opacity: 1;
 }
 
 a {
-  color: $color-blue;
-  cursor: pointer;
-  text-decoration: underline;
-  transition: $transition-base;
+	color: $color-blue;
+	cursor: pointer;
+	text-decoration: underline;
+	transition: $transition-base;
 
-  @supports (text-decoration-color: $color-blue) {
-    color: inherit;
-    text-decoration-color: $color-blue;
-  }
+	@supports (text-decoration-color: $color-blue) {
+		color: inherit;
+		text-decoration-color: $color-blue;
+	}
 
-  .on-dark & {
-    @include link-underline($color-theme-dark-link);
-  }
+	.on-dark & {
+		@include link-underline($color-theme-dark-link);
+	}
 
-  .on-light & {
-    @include link-underline($color-theme-base-link);
-  }
+	.on-light & {
+		@include link-underline($color-theme-base-link);
+	}
 
-  &:active,
-  &:focus,
-  &:hover {
-    background-color: $color-theme-base-hover-background;
-    color: $color-theme-base-hover-text;
+	&:active,
+	&:focus,
+	&:hover {
+		background-color: $color-theme-base-hover-background;
+		color: $color-theme-base-hover-text;
 
-    .on-dark & {
-      background-color: $color-theme-dark-hover-background;
-      color: $color-theme-dark-hover-text;
-    }
+		.on-dark & {
+			background-color: $color-theme-dark-hover-background;
+			color: $color-theme-dark-hover-text;
+		}
 
-    .on-light & {
-      background-color: $color-theme-base-hover-background;
-      color: $color-theme-base-hover-text;
-    }
-  }
+		.on-light & {
+			background-color: $color-theme-base-hover-background;
+			color: $color-theme-base-hover-text;
+		}
+	}
 }
 
 app-layout,
 app-root {
-  min-height: 100vh;
+	min-height: 100vh;
 }
 
 article {
-  section {
-    + section {
-      margin-top: $space-l;
-    }
-  }
+	section {
+		+ section {
+			margin-top: $space-l;
+		}
+	}
 }
 
 dl {
-  dt {
-    font-weight: $font-weight-bold;
-  }
+	dt {
+		font-weight: $font-weight-bold;
+	}
 
-  dd {
-    margin-bottom: $space-s;
+	dd {
+		margin-bottom: $space-s;
 
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
 }
 
 p {
-  margin-bottom: $space-m;
+	margin-bottom: $space-m;
 
-  &:last-child {
-    margin-bottom: 0;
-  }
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
 
 table {
-  margin-bottom: $space-m;
+	margin-bottom: $space-m;
 
-  &:last-child {
-    margin-bottom: 0;
-  }
+	&:last-child {
+		margin-bottom: 0;
+	}
 
-  td,
-  th {
-    padding: $space-s !important;
-  }
+	td,
+	th {
+		padding: $space-s !important;
+	}
 
-  th {
-    font-weight: $font-weight-bold;
-  }
+	th {
+		font-weight: $font-weight-bold;
+	}
 }
 
 ol,
 ul {
-  margin-bottom: $space-m;
-  padding-left: 1.75rem;
+	margin-bottom: $space-m;
+	padding-left: 1.75rem;
 
-  &:only-child,
-  &:last-child li:last-child {
-    margin-bottom: 0;
-  }
+	&:only-child,
+	&:last-child li:last-child {
+		margin-bottom: 0;
+	}
 
-  li {
-    margin: 0 0 $space-s;
-    list-style: square;
-  }
+	li {
+		margin: 0 0 $space-s;
+		list-style: square;
+	}
 
-  &.clean {
-    padding: 0;
+	&.clean {
+		padding: 0;
 
-    li {
-      list-style: none;
-      margin: 0;
-    }
-  }
+		li {
+			list-style: none;
+			margin: 0;
+		}
+	}
 }
 
 ol li {
-  list-style: decimal;
+	list-style: decimal;
 }
 
 pre {
-  background-color: $color-white;
-  border: $border-base;
-  color: $color-black;
-  font-family: $font-family-mono;
-  max-width: 90vw;
-  padding: $space-s;
+	background-color: $color-white;
+	border: $border-base;
+	color: $color-black;
+	font-family: $font-family-mono;
+	max-width: 90vw;
+	padding: $space-s;
 }
 
 .alt {
-  background-color: $color-theme-base-background-alt;
+	background-color: $color-theme-base-background-alt;
 
-  + .alt > .padded {
-    padding-top: 0;
-  }
+	+ .alt > .padded {
+		padding-top: 0;
+	}
 }
 
 .alt2 {
-  background-color: $color-gray-lightest;
+	background-color: $color-gray-lightest;
 }
 
 .alt-off {
-  background-color: $color-theme-base-background;
+	background-color: $color-theme-base-background;
 }
 
 .alt-blue {
-  background-color: $color-blue-lighter;
+	background-color: $color-blue-lighter;
 }
 
 .alt-green {
-  background-color: $color-green-lighter;
+	background-color: $color-green-lighter;
 }
 
 .alt-orange {
-  background-color: $color-orange-lighter;
+	background-color: $color-orange-lighter;
 }
 
 .alt-red {
-  background-color: $color-red-lighter;
+	background-color: $color-red-lighter;
+}
+
+.app-version {
+	font-size: $font-size-xs;
+	font-style: italic;
 }
 
 .constrained {
-  @include constrained;
+	@include constrained;
 }
 
 .disclaimer {
-  font-size: $font-size-xs;
+	font-size: $font-size-xs;
 
-  @include breakpoint(m) {
-    text-align: right;
-  }
+	@include breakpoint(m) {
+		text-align: right;
+	}
 }
 
 .nowrap {
-  white-space: nowrap;
+	white-space: nowrap;
 }
 
 .on-dark {
-  background-color: $color-theme-dark-background;
-  color: $color-theme-dark-text;
+	background-color: $color-theme-dark-background;
+	color: $color-theme-dark-text;
 
-  &.on-dark-alt {
-    background-color: $color-theme-dark-background-alt;
-  }
+	&.on-dark-alt {
+		background-color: $color-theme-dark-background-alt;
+	}
 }
 
 .pull-left {
-  float: left;
+	float: left;
 }
 
 .pull-right {
-  float: right;
+	float: right;
 }
 
 .read-more {
-  max-height: $transition-max;
-  overflow: hidden;
-  transition: max-height $transition-time $transition-easing;
+	max-height: $transition-max;
+	overflow: hidden;
+	transition: max-height $transition-time $transition-easing;
 
-  &.read-more-hidden {
-    max-height: 0;
-  }
+	&.read-more-hidden {
+		max-height: 0;
+	}
 }
 
 .read-more-content {
-  p:last-of-type {
-    margin-bottom: 0;
-  }
+	p:last-of-type {
+		margin-bottom: 0;
+	}
 
-  dt:first-child {
-    margin-top: $space-m;
-  }
+	dt:first-child {
+		margin-top: $space-m;
+	}
 }
 
 .tag {
-  background-color: $color-gray;
-  color: $color-white;
-  display: inline-block;
-  font-size: $font-size-xxs;
-  font-weight: $font-weight-bold;
-  line-height: $font-size-xxs;
-  margin: 0 $space-xs;
-  padding: $space-xxs;
-  position: relative;
-  top: (-$space-xxs);
+	background-color: $color-gray;
+	color: $color-white;
+	display: inline-block;
+	font-size: $font-size-xxs;
+	font-weight: $font-weight-bold;
+	line-height: $font-size-xxs;
+	margin: 0 $space-xs;
+	padding: $space-xxs;
+	position: relative;
+	top: (-$space-xxs);
 
-  &:first-child {
-    margin-left: 0;
-  }
+	&:first-child {
+		margin-left: 0;
+	}
 
-  &:last-child {
-    margin-right: 0;
-  }
+	&:last-child {
+		margin-right: 0;
+	}
 }
 
 .visually-hidden {
-  height: 1px;
-  left: -9999rem;
-  overflow: hidden;
-  position: absolute;
-  top: auto;
-  width: 1px;
+	height: 1px;
+	left: -9999rem;
+	overflow: hidden;
+	position: absolute;
+	top: auto;
+	width: 1px;
 }
