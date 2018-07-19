@@ -7,365 +7,375 @@
 //      X88 Y8b.     888  888 888    Y88b.    888  888
 //  88888P'  "Y8888  "Y888888 888     "Y8888P 888  888
 
- .attached-at-top {
-  margin-top: $space-m;
-  position: relative;
+.attached-at-top {
+	margin-top: $space-m;
+	position: relative;
 
-  &:before {
-    border-left: $border-base;
-    content: '';
-    height: $space-m;
-    left: 50%;
-    position: absolute;
-    top: (-$space-m);
-  }
+	&:before {
+		border-left: $border-base;
+		content: '';
+		height: $space-m;
+		left: 50%;
+		position: absolute;
+		top: (-$space-m);
+	}
 }
 
 .commodities-button {
-  button {
-    padding: $space-xs;
-  }
+	button {
+		padding: $space-xs;
+	}
 }
 
 .commodities-name {
-  font-size: $font-size-xs;
-  padding-bottom: 0;
-  text-align: center;
+	font-size: $font-size-xs;
+	padding-bottom: 0;
+	text-align: center;
 
-  @include breakpoint(m) {
-    text-align: left;
-    padding-bottom: $space-s;
-  }
+	@include breakpoint(m) {
+		text-align: left;
+		padding-bottom: $space-s;
+	}
 }
 
 .commodities-select {
-  .input-with-button {
-    button {
-      padding: $space-m;
-    }
-  }
+	.input-with-button {
+		button {
+			padding: $space-m;
+		}
+	}
 }
 
 .commodities-select-list {
-  margin-left: (-$space-m);
-  margin-right: (-$space-m);
-  padding: ($space-l + $space-s) $space-m $space-m;
+	margin-left: (-$space-m);
+	margin-right: (-$space-m);
+	padding: ($space-l + $space-s) $space-m $space-m;
 
-  @include breakpoint(m) {
-    margin-left: 0;
-    margin-right: 0;
-  }
+	@include breakpoint(m) {
+		margin-left: 0;
+		margin-right: 0;
+	}
 }
 
 .commodities-value {
-  font-size: $font-size-xs;
-  font-weight: $font-weight-bold;
-  padding-bottom: 0;
-  text-align: center;
+	font-size: $font-size-xs;
+	font-weight: $font-weight-bold;
+	padding-bottom: 0;
+	text-align: center;
 
-  @include breakpoint(m) {
-    border-right: 1px solid #b3b1b4;
-    padding-bottom: $space-s;
-  }
+	@include breakpoint(m) {
+		border-right: 1px solid #b3b1b4;
+		padding-bottom: $space-s;
+	}
 }
 
 .search-actions > .grid {
-  @include breakpoint(l) {
-    grid-gap: $grid-gap-row $grid-gap-col;
-  }
+	@include breakpoint(l) {
+		grid-gap: $grid-gap-row $grid-gap-col;
+	}
 }
 
 .search-column-order {
-  align-items: center;
-  display: flex;
-  padding: $space-s;
+	align-items: center;
+	display: flex;
+	padding: $space-s;
 
-  &:nth-child(odd) {
-    background-color: $color-gray-lighter;
-  }
+	&:nth-child(odd) {
+		background-color: $color-gray-lighter;
+	}
 
-  > div {
-    padding-left: $space-s;
-  }
+	> div {
+		padding-left: $space-s;
+	}
 }
 
 .search-column-order-wrapper {
-  border: $border-base;
+	border: $border-base;
 }
 
 .search-options {
-  .toggle-switch label {
-    margin-bottom: 0;
-  }
+	.toggle-switch label {
+		margin-bottom: 0;
+	}
 }
 
 .search-settings-group {
-  padding-top: $space-m;
+	padding-top: $space-m;
 
-  + .search-settings-group {
-    @include breakpoint(l) {
-      padding-top: 0;
-    }
-  }
+	+ .search-settings-group {
+		@include breakpoint(l) {
+			padding-top: 0;
+		}
+	}
 }
 
 .search-sort-order {
-  .toggle-switch {
-    border-radius: 0 0 $space-s $space-s;
-    border-top-width: 0;
+	.toggle-switch {
+		border-radius: 0 0 $space-s $space-s;
+		border-top-width: 0;
 
-    label {
-      &:first-of-type {
-        border-top-left-radius: 0;
-      }
+		label {
+			&:first-of-type {
+				border-top-left-radius: 0;
+			}
 
-      &:last-of-type {
-        border-top-right-radius: 0;
-      }
-    }
-  }
+			&:last-of-type {
+				border-top-right-radius: 0;
+			}
+		}
+	}
 }
 
 .show-query {
-  white-space: pre-wrap;
+	white-space: pre-wrap;
 }
 
 .site-search {
-  max-width: calc(100vw - 15px);
+	max-width: calc(100vw - 15px);
 
-  h2:only-child {
-    margin-bottom: 0;
-  }
+	h2:only-child {
+		margin-bottom: 0;
+	}
+}
+
+.site-query {
+	.nav-tabs {
+		display: none;
+	}
+
+	.nav-tabs-pane {
+		border-top-width: 0;
+	}
 }
 
 .table-results {
-  h3 {
-    @include breakpoint(m) {
-      font-size: 1.2em;
-    }
-  }
+	h3 {
+		@include breakpoint(m) {
+			font-size: 1.2em;
+		}
+	}
 
-  thead tr:first-child,
-  tbody tr:last-child {
-    th,
-    td {
-      border-bottom-width: 0;
-      border-top-width: 0;
-    }
-  }
+	thead tr:first-child,
+	tbody tr:last-child {
+		th,
+		td {
+			border-bottom-width: 0;
+			border-top-width: 0;
+		}
+	}
 
-  thead th {
-    text-align: center;
+	thead th {
+		text-align: center;
 
-    @include breakpoint(m) {
-      font-size: 1.2em;
+		@include breakpoint(m) {
+			font-size: 1.2em;
 
-      button,
-      .button {
-        font-size: 0.8em;
-      }
-    }
+			button,
+			.button {
+				font-size: 0.8em;
+			}
+		}
 
-    pre {
-      font-size: $font-size-s;
-    }
+		pre {
+			font-size: $font-size-s;
+		}
 
-    &.text-left {
-      text-align: left;
-    }
-  }
+		&.text-left {
+			text-align: left;
+		}
+	}
 
-  tbody td {
-    white-space: nowrap;
-  }
+	tbody td {
+		white-space: nowrap;
+	}
 
-  th:first-child,
-  td:first-child {
-    border-left-width: 0;
+	th:first-child,
+	td:first-child {
+		border-left-width: 0;
 
-    @include breakpoint(l) {
-      border-left-width: 1px;
-    }
-  }
+		@include breakpoint(l) {
+			border-left-width: 1px;
+		}
+	}
 
-  th:last-child,
-  td:last-child {
-    border-right-width: 0;
+	th:last-child,
+	td:last-child {
+		border-right-width: 0;
 
-    @include breakpoint(l) {
-      border-right-width: 1px;
-    }
-  }
+		@include breakpoint(l) {
+			border-right-width: 1px;
+		}
+	}
 
-  .subtotal,
-  .total {
-    th,
-    td {
-      background-color: #f2f3f3;
-      font-weight: $font-weight-bold;
-    }
-  }
+	.subtotal,
+	.total {
+		th,
+		td {
+			background-color: #f2f3f3;
+			font-weight: $font-weight-bold;
+		}
+	}
 
-  .total {
-    th,
-    td {
-      background-color: $color-gray-lighter;
-    }
-  }
+	.total {
+		th,
+		td {
+			background-color: $color-gray-lighter;
+		}
+	}
 }
 
 .table-results-font-s {
-  font-size: $font-size-xxs;
+	font-size: $font-size-xxs;
 }
 
 .table-results-font-l {
-  font-size: $font-size-l;
+	font-size: $font-size-l;
 }
 
 .table-results-wrapper {
-  max-width: calc(100vw - 15px);
+	max-width: calc(100vw - 15px);
 }
 
 .table-searches.table-responsive {
-  thead th {
-    text-transform: uppercase;
-    vertical-align: middle;
-    white-space: nowrap;
-  }
+	thead th {
+		text-transform: uppercase;
+		vertical-align: middle;
+		white-space: nowrap;
+	}
 
-  tbody {
-    tr {
-      &:nth-child(odd) td {
-        background-color: $color-blue;
-      }
+	tbody {
+		tr {
+			&:nth-child(odd) td {
+				background-color: $color-blue;
+			}
 
-      &.sample-row td {
-        background-color: $color-orange-light;
-        color: $color-black;
+			&.sample-row td {
+				background-color: $color-orange-light;
+				color: $color-black;
 
-        &:last-child {
-          border-bottom: 1px solid rgba($color-black, 0.25);
-        }
+				&:last-child {
+					border-bottom: 1px solid rgba($color-black, 0.25);
+				}
 
-        @include breakpoint(s) {
-          border-bottom: 1px solid rgba($color-black, 0.25);
-          border-color: rgba($color-black, 0.25);
-        }
+				@include breakpoint(s) {
+					border-bottom: 1px solid rgba($color-black, 0.25);
+					border-color: rgba($color-black, 0.25);
+				}
 
-        span {
-          background-color: $color-orange;
-          color: $color-white;
-          display: inline-block;
-          font-weight: $font-weight-bold;
-          margin-right: $space-s;
-          padding: $space-xs;
+				span {
+					background-color: $color-orange;
+					color: $color-white;
+					display: inline-block;
+					font-weight: $font-weight-bold;
+					margin-right: $space-s;
+					padding: $space-xs;
 
-          @include breakpoint(s) {
-            line-height: ($space-m + $space-xs);
-            margin: (-$space-xs) $space-m (-$space-xs) (-$space-m);
-            padding: $space-s $space-m;
-          }
-        }
-      }
+					@include breakpoint(s) {
+						line-height: ($space-m + $space-xs);
+						margin: (-$space-xs) $space-m (-$space-xs) (-$space-m);
+						padding: $space-s $space-m;
+					}
+				}
+			}
 
-      &.sample-row {
-        &:nth-child(even) {
-          td {
-            background-color: #fcefd6;
-          }
-        }
+			&.sample-row {
+				&:nth-child(even) {
+					td {
+						background-color: #fcefd6;
+					}
+				}
 
-        td {
-          em {
-            background-color: $color-orange;
-            color: $color-white;
-            display: block;
-            font-weight: $font-weight-bold;
-            margin: (-$space-m) (-$space-m) $space-m;
-            padding: $space-xs $space-m;
-            text-align: center;
-            white-space: nowrap;
-          }
+				td {
+					em {
+						background-color: $color-orange;
+						color: $color-white;
+						display: block;
+						font-weight: $font-weight-bold;
+						margin: (-$space-m) (-$space-m) $space-m;
+						padding: $space-xs $space-m;
+						text-align: center;
+						white-space: nowrap;
+					}
 
-          @include breakpoint(s) {
-            &:first-child {
-              padding: 0 !important;
+					@include breakpoint(s) {
+						&:first-child {
+							padding: 0 !important;
 
-              > div {
-                align-items: stretch;
-                display: flex;
+							> div {
+								align-items: stretch;
+								display: flex;
 
-                > div {
-                  align-self: center;
-                  padding: $space-xs $space-m;
-                }
-              }
+								> div {
+									align-self: center;
+									padding: $space-xs $space-m;
+								}
+							}
 
-              em {
-                align-items: center;
-                display: flex;
-                margin: 0;
-                padding: $space-s $space-m;
-              }
-            }
-          }
-        }
-      }
-    }
+							em {
+								align-items: center;
+								display: flex;
+								margin: 0;
+								padding: $space-s $space-m;
+							}
+						}
+					}
+				}
+			}
+		}
 
-    th:only-child,
-    td:only-child {
-      @include breakpoint(s) {
-        padding-bottom: 0 !important;
-        padding-top: 0 !important;
-      }
-    }
+		th:only-child,
+		td:only-child {
+			@include breakpoint(s) {
+				padding-bottom: 0 !important;
+				padding-top: 0 !important;
+			}
+		}
 
-    td {
-      vertical-align: middle;
-    }
-  }
+		td {
+			vertical-align: middle;
+		}
+	}
 
-  th,
-  td {
-    padding: $space-xs $space-m !important;
+	th,
+	td {
+		padding: $space-xs $space-m !important;
 
-    &:first-child {
-      padding-top: $space-m !important;
+		&:first-child {
+			padding-top: $space-m !important;
 
-      @include breakpoint(s) {
-        padding-top: $space-xs !important;
-      }
-    }
+			@include breakpoint(s) {
+				padding-top: $space-xs !important;
+			}
+		}
 
-    &:last-child {
-      padding-bottom: $space-m !important;
+		&:last-child {
+			padding-bottom: $space-m !important;
 
-      @include breakpoint(s) {
-        white-space: nowrap;
-        padding-bottom: $space-xs !important;
-      }
-    }
+			@include breakpoint(s) {
+				white-space: nowrap;
+				padding-bottom: $space-xs !important;
+			}
+		}
 
-    @include breakpoint(s) {
-      border-right: 1px solid rgba($color-white, 0.25);
+		@include breakpoint(s) {
+			border-right: 1px solid rgba($color-white, 0.25);
 
-      &:last-child {
-        border-right-width: 0;
-      }
-    }
-  }
+			&:last-child {
+				border-right-width: 0;
+			}
+		}
+	}
 
-  button {
-    display: block;
-    width: 100%;
-  }
+	button {
+		display: block;
+		width: 100%;
+	}
 
-  .query-desc {
-    font-size: $font-size-xs;
-  }
+	.query-desc {
+		font-size: $font-size-xs;
+	}
 
-  .query-name {
-    font-size: $font-size-m;
-  }
+	.query-name {
+		font-size: $font-size-m;
+	}
 }

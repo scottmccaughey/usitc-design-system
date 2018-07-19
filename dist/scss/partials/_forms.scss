@@ -36,15 +36,6 @@ select {
 			padding: $space-xs $space-m;
 		}
 	}
-
-	.select & {
-		background-color: $color-white;
-		border: $border-base;
-
-		&[multiple] {
-			padding: 0;
-		}
-	}
 }
 
 simple-select {
@@ -402,26 +393,6 @@ simple-select {
 }
 
 .form-read-more {
-	icon {
-		flex-shrink: 0;
-		height: $icon-size-l;
-		margin-right: $space-s;
-		width: $icon-size-l;
-
-		@include breakpoint(l) {
-			height: $icon-size-xxl;
-			width: $icon-size-xxl;
-		}
-
-		use {
-			fill: $color-blue;
-		}
-
-		path {
-			all: inherit;
-		}
-	}
-
 	&:active,
 	&:focus,
 	&:hover {
@@ -435,18 +406,65 @@ simple-select {
 			}
 		}
 	}
+
+	icon {
+		flex-shrink: 0;
+		height: $icon-size-l;
+		margin-right: $space-s;
+		width: $icon-size-l;
+
+		@include breakpoint(l) {
+			height: $icon-size-xl;
+			width: $icon-size-xl;
+		}
+
+		use {
+			fill: $color-blue;
+		}
+
+		path {
+			all: inherit;
+		}
+	}
+
+	span {
+		font-size: $font-size-xs;
+	}
 }
 
 .form-settings {
 	background-color: $color-blue-dark;
-	padding: $space-s;
+	display: grid;
+	grid-template-columns: min-content auto;
+	padding: 0;
+
+	@include breakpoint(l) {
+		margin-left: $space-l;
+	}
+
+	> div {
+		padding: $space-s;
+	}
+
+	> i {
+		align-items: center;
+		background-color: $color-blue;
+		color: $color-white;
+		display: flex;
+		justify-content: center;
+		padding: $space-s;
+	}
 
 	label {
-		margin-bottom: (-$space-s);
+		margin: (-$space-xs) 0 (-$space-s);
 	}
 
 	.select {
 		margin-top: (-$space-m);
+
+		select {
+			border-width: 0;
+		}
 	}
 }
 
@@ -712,8 +730,12 @@ simple-select {
 		padding: $space-s ($space-l + $space-s) $space-s $space-m;
 		width: 100%;
 
-		&[multiple].select-icon-left {
-			padding-left: 3rem;
+		&[multiple] {
+			padding: 0;
+
+			&.select-icon-left {
+				padding-left: 3rem;
+			}
 		}
 
 		&:focus {
@@ -792,7 +814,13 @@ simple-select {
 }
 
 .select-child-header {
+	align-self: start;
 	margin-top: $space-m;
+
+	@include breakpoint(l) {
+		margin-top: ($space-m + $space-s);
+		min-height: $line-height-form;
+	}
 
 	.hide-child-design & {
 		margin-top: 0;

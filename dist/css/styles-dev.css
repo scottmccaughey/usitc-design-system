@@ -1169,12 +1169,6 @@ select[multiple] {
   select[multiple] option {
     padding: 0.25rem 1rem; }
 
-.select select {
-  background-color: #ffffff;
-  border: 1px solid #818386; }
-  .select select[multiple] {
-    padding: 0; }
-
 simple-select .select-child-field {
   margin-top: 0; }
 
@@ -1452,6 +1446,12 @@ simple-select + simple-select .select-child-field {
   .form-groups > * + * > .form-group {
     padding-top: 0; }
 
+.form-read-more:active icon use, .form-read-more:focus icon use, .form-read-more:hover icon use {
+  fill: #ffffff; }
+
+.form-read-more:active icon path, .form-read-more:focus icon path, .form-read-more:hover icon path {
+  all: inherit; }
+
 .form-read-more icon {
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -1460,26 +1460,46 @@ simple-select + simple-select .select-child-field {
   width: 1.125em; }
   @media (min-width: 1200px) {
     .form-read-more icon {
-      height: 2.53125em;
-      width: 2.53125em; } }
+      height: 1.6875em;
+      width: 1.6875em; } }
   .form-read-more icon use {
     fill: #0d7e97; }
   .form-read-more icon path {
     all: inherit; }
 
-.form-read-more:active icon use, .form-read-more:focus icon use, .form-read-more:hover icon use {
-  fill: #ffffff; }
-
-.form-read-more:active icon path, .form-read-more:focus icon path, .form-read-more:hover icon path {
-  all: inherit; }
+.form-read-more span {
+  font-size: 0.69444rem; }
 
 .form-settings {
   background-color: #004353;
-  padding: 0.5rem; }
+  display: grid;
+  grid-template-columns: -webkit-min-content auto;
+  grid-template-columns: min-content auto;
+  padding: 0; }
+  @media (min-width: 1200px) {
+    .form-settings {
+      margin-left: 2rem; } }
+  .form-settings > div {
+    padding: 0.5rem; }
+  .form-settings > i {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #0d7e97;
+    color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0.5rem; }
   .form-settings label {
-    margin-bottom: -0.5rem; }
+    margin: -0.25rem 0 -0.5rem; }
   .form-settings .select {
     margin-top: -1rem; }
+    .form-settings .select select {
+      border-width: 0; }
 
 .on-dark .form-settings-header, .on-dark
 .form-settings-header:first-child {
@@ -1676,8 +1696,10 @@ simple-select + simple-select .select-child-field {
     outline: 0;
     padding: 0.5rem 2.5rem 0.5rem 1rem;
     width: 100%; }
-    .select select[multiple].select-icon-left {
-      padding-left: 3rem; }
+    .select select[multiple] {
+      padding: 0; }
+      .select select[multiple].select-icon-left {
+        padding-left: 3rem; }
     .select select:focus option:checked {
       background: #0d7e97 -webkit-gradient(linear, left bottom, left top, from(#0d7e97), to(#0d7e97));
       background: #0d7e97 linear-gradient(0deg, #0d7e97 0%, #0d7e97 100%); }
@@ -1737,7 +1759,13 @@ simple-select + simple-select .select-child-field {
       display: none; }
 
 .select-child-header {
+  -ms-flex-item-align: start;
+      align-self: start;
   margin-top: 1rem; }
+  @media (min-width: 1200px) {
+    .select-child-header {
+      margin-top: 1.5rem;
+      min-height: 2.5rem; } }
   .hide-child-design .select-child-header {
     margin-top: 0; }
 
@@ -2449,14 +2477,14 @@ h6,
   font-size: 1.44rem;
   font-weight: 700;
   text-transform: uppercase;
-  margin: -0.25rem 1rem 0.5rem; }
+  margin: -0.5rem 1rem 0.5rem; }
   @media (min-width: 1200px) {
     .header-step,
     .header-step:first-child {
-      margin: -0.25rem 2rem 0.5rem; } }
+      margin: -0.5rem 2rem 0.5rem; } }
   .header-step em,
   .header-step:first-child em {
-    color: #266942;
+    color: #0d7e97;
     font-size: 2.48832rem;
     font-style: normal;
     font-weight: 900;
@@ -3600,6 +3628,12 @@ a rect {
   max-width: calc(100vw - 15px); }
   .site-search h2:only-child {
     margin-bottom: 0; }
+
+.site-query .nav-tabs {
+  display: none; }
+
+.site-query .nav-tabs-pane {
+  border-top-width: 0; }
 
 @media (min-width: 800px) {
   .table-results h3 {

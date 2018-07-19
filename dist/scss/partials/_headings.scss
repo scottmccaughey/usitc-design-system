@@ -124,14 +124,14 @@ h6,
 	font-size: $font-size-h2;
 	font-weight: $font-weight-bold;
 	text-transform: uppercase;
-	margin: (-$space-xs) $space-m $space-s;
+	margin: (-$space-s) $space-m $space-s;
 
 	@include breakpoint(l) {
-		margin: (-$space-xs) $space-l $space-s;
+		margin: (-$space-s) $space-l $space-s;
 	}
 
 	em {
-		color: $color-green-dark;
+		color: $color-blue;
 		font-size: $font-size-xxxxl;
 		font-style: normal;
 		font-weight: $font-weight-black;
