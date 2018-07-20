@@ -851,8 +851,8 @@ button,
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out; }
   button:active, button:focus, button:hover,
   .button:active,
   .button:focus,
@@ -1386,8 +1386,8 @@ simple-select + simple-select .select-child-field {
     opacity: 0;
     position: absolute;
     top: 50%;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
     z-index: 1; }
     .floating-label-group label + app-field-error-display > .state-error {
       border-top-width: 0; }
@@ -1940,8 +1940,8 @@ a {
   color: #0d7e97;
   cursor: pointer;
   text-decoration: underline;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out; }
   @supports ((-webkit-text-decoration-color: #0d7e97) or (text-decoration-color: #0d7e97)) {
     a {
       color: inherit;
@@ -2089,8 +2089,8 @@ pre {
 .read-more {
   max-height: 99rem;
   overflow: hidden;
-  -webkit-transition: max-height 0.3s ease-in-out;
-  transition: max-height 0.3s ease-in-out; }
+  -webkit-transition: max-height 0.25s ease-in-out;
+  transition: max-height 0.25s ease-in-out; }
   .read-more.read-more-hidden {
     max-height: 0; }
 

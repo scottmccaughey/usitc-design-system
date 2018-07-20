@@ -1,0 +1,57 @@
+@import '../component';
+
+.off-canvas {
+	background-color: $color-blue-lighter;
+	height: $off-canvas-height;
+	left: (-$off-canvas-width);
+	overflow: auto;
+	padding: $space-m;
+	position: fixed;
+	top: 0;
+	transition: $off-canvas-transition;
+	width: $off-canvas-width;
+	z-index: 2;
+
+	&.off-canvas-open {
+		box-shadow: $off-canvas-shadow;
+		left: 0;
+	}
+
+	> div:first-child {
+		align-items: center;
+		display: flex;
+		height: $space-l;
+		justify-content: flex-end;
+		margin: (-$space-m) (-$space-m) 0;
+		position: fixed;
+		width: $off-canvas-width;
+
+		> .button-close {
+			color: $color-white;
+			height: $space-l;
+			width: $space-l;
+		}
+	}
+
+	> section:nth-child(2) {
+		> h1,
+		> h2,
+		> h3,
+		> h4,
+		> h5,
+		> h6 {
+			&:first-child {
+				background-color: $color-blue;
+				color: $color-white;
+				font-size: $font-size-h3;
+				margin: (-$space-m) (-$space-m) $space-m;
+				padding: $space-xs $space-m;
+			}
+		}
+
+		> ol,
+		> ul {
+			padding-left: $space-m;
+		}
+	}
+}

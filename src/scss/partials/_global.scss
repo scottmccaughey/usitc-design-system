@@ -248,7 +248,7 @@ pre {
 .read-more {
 	max-height: $transition-max;
 	overflow: hidden;
-	transition: max-height $transition-time $transition-easing;
+	transition: max-height $transition-base-time $transition-base-easing;
 
 	&.read-more-hidden {
 		max-height: 0;
