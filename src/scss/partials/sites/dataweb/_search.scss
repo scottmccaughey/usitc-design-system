@@ -139,6 +139,16 @@
 }
 
 .site-query {
+	simple-select {
+		.form-group {
+			margin-top: $space-m;
+		}
+
+		&:first-child .form-group {
+			margin-top: 0;
+		}
+	}
+
 	.nav-tabs {
 		display: none;
 	}

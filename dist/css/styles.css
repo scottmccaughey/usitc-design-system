@@ -3681,6 +3681,12 @@ a rect {
   .site-search h2:only-child {
     margin-bottom: 0; }
 
+.site-query simple-select .form-group {
+  margin-top: 1rem; }
+
+.site-query simple-select:first-child .form-group {
+  margin-top: 0; }
+
 .site-query .nav-tabs {
   display: none; }
 
