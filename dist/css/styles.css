@@ -2582,6 +2582,55 @@ icon {
     max-height: 100%;
     max-width: 100%; }
 
+.off-canvas {
+  background-color: #e4f1f3;
+  height: 100vh;
+  left: -400px;
+  overflow: auto;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  -webkit-transition: left 0.75s ease-in-out;
+  transition: left 0.75s ease-in-out;
+  width: 400px;
+  z-index: 2; }
+  .off-canvas.off-canvas-open {
+    -webkit-box-shadow: 5px 0 10px 0 rgba(0, 0, 0, 0.25);
+            box-shadow: 5px 0 10px 0 rgba(0, 0, 0, 0.25);
+    left: 0; }
+  .off-canvas > div:first-child {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 2rem;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin: -1rem -1rem 0;
+    position: fixed;
+    width: 400px; }
+    .off-canvas > div:first-child > .button-close {
+      color: #ffffff;
+      height: 2rem;
+      width: 2rem; }
+  .off-canvas .off-canvas-body > h1:first-child,
+  .off-canvas .off-canvas-body > h2:first-child,
+  .off-canvas .off-canvas-body > h3:first-child,
+  .off-canvas .off-canvas-body > h4:first-child,
+  .off-canvas .off-canvas-body > h5:first-child,
+  .off-canvas .off-canvas-body > h6:first-child {
+    background-color: #0d7e97;
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin: -1rem -1rem 1rem;
+    padding: 0.25rem 1rem; }
+  .off-canvas .off-canvas-body > ol,
+  .off-canvas .off-canvas-body > ul {
+    padding-left: 1rem; }
+
 .pagination {
   display: -webkit-box;
   display: -ms-flexbox;
