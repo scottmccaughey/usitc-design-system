@@ -23,6 +23,7 @@ body {
 	font-weight: $font-weight-normal;
 	line-height: $line-height-base;
 	min-height: 100vh;
+	overflow: hidden;
 	position: relative;
 }
 
@@ -210,6 +211,10 @@ pre {
 .app-version {
 	font-size: $font-size-xs;
 	font-style: italic;
+}
+
+.beta {
+	color: $color-red;
 }
 
 .constrained {

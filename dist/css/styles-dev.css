@@ -1898,6 +1898,7 @@ body {
   font-weight: 300;
   line-height: 1.5;
   min-height: 100vh;
+  overflow: hidden;
   position: relative; }
 
 ::-moz-selection {
@@ -2057,6 +2058,9 @@ pre {
 .app-version {
   font-size: 0.69444rem;
   font-style: italic; }
+
+.beta {
+  color: #be2a26; }
 
 @media (min-width: 1200px) {
   .constrained {
@@ -2581,6 +2585,43 @@ icon {
     margin-right: auto;
     max-height: 100%;
     max-width: 100%; }
+
+.site-content {
+  overflow: auto; }
+
+.site-layout {
+  display: grid;
+  grid-template-columns: 400px 100vw 400px;
+  height: 100vh;
+  left: -400px;
+  position: relative;
+  -webkit-transition: left 0.75s ease-in-out;
+  transition: left 0.75s ease-in-out;
+  width: calc(100vw + (2 * 400px)); }
+  .site-layout.off-canvas-open-left {
+    left: 0; }
+  .site-layout.off-canvas-open-right {
+    left: -800px; }
+
+.off-canvas {
+  height: 100vh;
+  overflow: auto;
+  position: relative;
+  -webkit-transition: left 0.75s ease-in-out;
+  transition: left 0.75s ease-in-out;
+  width: 400px; }
+  .off-canvas > .button-close {
+    color: #ffffff;
+    position: absolute;
+    right: 0;
+    top: 0; }
+    .off-canvas > .button-close:focus {
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+  .off-canvas > section {
+    padding: 1rem; }
+    .off-canvas > section > :first-child {
+      margin-right: 1rem; }
 
 .pagination {
   display: -webkit-box;
