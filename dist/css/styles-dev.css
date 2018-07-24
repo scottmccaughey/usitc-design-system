@@ -3546,29 +3546,18 @@ a rect {
     height: 3rem;
     width: 3rem; } }
 
-@media (min-width: 800px) {
-  .login-links {
-    grid-area: links;
-    margin-top: 0;
-    padding: 1rem 2rem; } }
-
-.login-links ul {
-  padding-left: 0;
-  text-align: center; }
-  @media (min-width: 800px) {
-    .login-links ul {
-      text-align: left; } }
-
-.login-links li {
-  display: inline-block;
-  line-height: 1;
-  list-style: none;
-  padding: 0 0.5rem;
-  white-space: nowrap; }
-  @media (min-width: 800px) {
-    .login-links li {
-      display: block;
-      padding: 0; } }
+.login-links {
+  margin-bottom: 1rem; }
+  .login-links ul {
+    padding-left: 0;
+    text-align: center; }
+  .login-links li {
+    display: inline-block;
+    font-weight: 700;
+    line-height: 1;
+    list-style: none;
+    padding: 0 0.5rem;
+    white-space: nowrap; }
 
 .site-login {
   display: -webkit-box;
