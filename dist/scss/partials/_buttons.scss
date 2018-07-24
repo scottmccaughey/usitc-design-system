@@ -245,6 +245,11 @@ button,
     width: $space-l;
   }
 
+  &.button-search-submit {
+    height: $space-l;
+    width: 10rem;
+  }
+
   &.button-spinner {
     &.button-xl {
       min-height: 62px;

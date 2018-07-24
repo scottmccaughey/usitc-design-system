@@ -1056,6 +1056,10 @@ button,
     height: 2rem;
     line-height: 2rem;
     width: 2rem; }
+  button.button-search-submit,
+  .button.button-search-submit {
+    height: 2rem;
+    width: 10rem; }
   button.button-spinner.button-xl,
   .button.button-spinner.button-xl {
     min-height: 62px; }
