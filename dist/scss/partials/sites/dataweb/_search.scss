@@ -242,10 +242,6 @@
 	font-size: $font-size-l;
 }
 
-.table-results-wrapper {
-	max-width: calc(100vw - 15px);
-}
-
 .table-searches.table-responsive {
 	thead th {
 		text-transform: uppercase;
@@ -387,5 +383,17 @@
 
 	.query-name {
 		font-size: $font-size-m;
+	}
+}
+
+.table-selector {
+	&::after {
+		border-top-color: $color-white;
+	}
+
+	select {
+		background-color: $color-blue;
+		color: $color-white;
+		font-weight: $font-weight-bold;
 	}
 }
