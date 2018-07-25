@@ -8,98 +8,116 @@
 // 888  888  "Y88P"  888  888  888  "Y8888
 
 .home-intro {
-  em {
-    color: $color-red;
-    font-style: normal;
-  }
+	em {
+		color: $color-red;
+		font-style: normal;
+	}
+}
+
+.home-links {
+	margin-bottom: $space-m;
+
+	ul {
+		padding-left: 0;
+		text-align: center;
+	}
+
+	li {
+		display: inline-block;
+		font-weight: $font-weight-bold;
+		line-height: 1;
+		list-style: none;
+		padding: 0 $space-s;
+		white-space: nowrap;
+	}
 }
 
 .site-home-big-select {
-  margin: $space-l 0;
+	margin: $space-l 0;
 
-  @include breakpoint(m) {
-    grid-column-gap: $space-xs;
-  }
+	@include breakpoint(m) {
+		grid-column-gap: $space-xs;
+	}
 
-  button,
-  select {
-    border-width: 0;
-    height: 5rem;
-    width: 100%;
-  }
+	button,
+	select {
+		border-width: 0;
+		height: 5rem;
+		width: 100%;
+	}
 
-  button {
-    align-items: center;
-    background-color: $color-teal;
-    color: $color-white;
-    display: flex;
-    font-size: $font-size-xl;
-    font-weight: $font-weight-black;
-    justify-content: center;
-    padding: 0;
-    text-transform: uppercase;
+	button {
+		align-items: center;
+		background-color: $color-teal;
+		color: $color-white;
+		display: flex;
+		font-size: $font-size-xl;
+		font-weight: $font-weight-black;
+		justify-content: center;
+		padding: 0;
+		text-transform: uppercase;
 
-    &:active,
-    &:focus,
-    &:hover {
-      background-color: $color-teal-darker;
-    }
+		&:active,
+		&:focus,
+		&:hover {
+			background-color: $color-teal-darker;
+		}
 
-    > i {
-      margin-left: $space-s;
-    }
+		> i {
+			margin-left: $space-s;
+		}
 
-    > i,
-    > i > *,
-    > i > * > svg {
-      height: $line-height-form;
-      width: $line-height-form;
-    }
-  }
+		> i,
+		> i > *,
+		> i > * > svg {
+			height: $line-height-form;
+			width: $line-height-form;
+		}
+	}
 
-  select {
-    background-color: $color-gray-dark;
-    color: $color-white;
-    font-size: $space-m;
-    padding: $space-s ($space-xl + $space-m) $space-s $space-l;
+	select {
+		background-color: $color-gray-dark;
+		color: $color-white;
+		font-size: $space-m;
+		padding: $space-s ($space-xl + $space-m) $space-s $space-l;
 
-    @include breakpoint(m) {
-      font-size: $space-l;
-    }
-  }
+		@include breakpoint(m) {
+			font-size: $space-l;
+		}
+	}
 
-  .select {
-    &::after {
-      border-left-width: $space-m;
-      border-right-width: $space-m;
-      border-top: $space-m solid $color-white;
-      margin-top: (-$space-s);
-      right: $space-l;
-    }
-  }
+	.select {
+		&::after {
+			border-left-width: $space-m;
+			border-right-width: $space-m;
+			border-top: $space-m solid $color-white;
+			margin-top: (-$space-s);
+			right: $space-l;
+		}
+	}
 }
 
 .site-home-list {
-  margin-bottom: 0;
+	margin-bottom: 0;
 
-  li {
-    font-weight: $font-weight-bold;
-  }
+	li {
+		font-weight: $font-weight-bold;
+	}
 }
 
 .trade-data-reports {
-  > a {
-    background: $color-gray-lightest;
-    color: $color-black;
-    display: block;
-    padding: $space-m;
-    text-align: center;
+	> a {
+		background: $color-gray-lightest;
+		color: $color-black;
+		display: block;
+		padding: $space-m;
+		text-align: center;
 
-    &:active,
-    &:focus,
-    &:hover {
-      background: $color-blue;
-      color: $color-white;
-    }
-  }
+		&:active,
+		&:focus,
+		&:hover {
+			background: $color-blue;
+			color: $color-white;
+		}
+	}
 }

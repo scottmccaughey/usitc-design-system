@@ -178,20 +178,31 @@
 }
 
 .login-links {
-	margin-bottom: $space-m;
+	@include breakpoint(m) {
+		grid-area: links;
+		padding: $space-m $space-l;
+	}
 
 	ul {
 		padding-left: 0;
 		text-align: center;
+
+		@include breakpoint(m) {
+			text-align: left;
+		}
 	}
 
 	li {
 		display: inline-block;
-		font-weight: $font-weight-bold;
 		line-height: 1;
 		list-style: none;
 		padding: 0 $space-s;
 		white-space: nowrap;
+
+		@include breakpoint(m) {
+			display: block;
+			padding: 0;
+		}
 	}
 }
 

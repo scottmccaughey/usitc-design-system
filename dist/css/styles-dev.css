@@ -3354,6 +3354,19 @@ a rect {
   color: #be2a26;
   font-style: normal; }
 
+.home-links {
+  margin-bottom: 1rem; }
+  .home-links ul {
+    padding-left: 0;
+    text-align: center; }
+  .home-links li {
+    display: inline-block;
+    font-weight: 700;
+    line-height: 1;
+    list-style: none;
+    padding: 0 0.5rem;
+    white-space: nowrap; }
+
 .site-home-big-select {
   margin: 2rem 0; }
   @media (min-width: 800px) {
@@ -3536,18 +3549,28 @@ a rect {
   -ms-flex-item-align: center;
       align-self: center; }
 
-.login-links {
-  margin-bottom: 1rem; }
-  .login-links ul {
-    padding-left: 0;
-    text-align: center; }
-  .login-links li {
-    display: inline-block;
-    font-weight: 700;
-    line-height: 1;
-    list-style: none;
-    padding: 0 0.5rem;
-    white-space: nowrap; }
+@media (min-width: 800px) {
+  .login-links {
+    grid-area: links;
+    padding: 1rem 2rem; } }
+
+.login-links ul {
+  padding-left: 0;
+  text-align: center; }
+  @media (min-width: 800px) {
+    .login-links ul {
+      text-align: left; } }
+
+.login-links li {
+  display: inline-block;
+  line-height: 1;
+  list-style: none;
+  padding: 0 0.5rem;
+  white-space: nowrap; }
+  @media (min-width: 800px) {
+    .login-links li {
+      display: block;
+      padding: 0; } }
 
 .site-login {
   display: -webkit-box;
