@@ -12,7 +12,6 @@
 
 html {
 	font-size: $font-size-root;
-	height: 100vh;
 }
 
 body {
@@ -22,7 +21,6 @@ body {
 	font-size: $font-size-s;
 	font-weight: $font-weight-normal;
 	line-height: $line-height-base;
-	min-height: 100vh;
 	overflow: hidden;
 	position: relative;
 }
@@ -215,6 +213,29 @@ pre {
 
 .beta {
 	color: $color-red;
+}
+
+.body-scrollable {
+	overflow: auto;
+
+	.constrained {
+		margin-left: 1vw;
+		margin-right: 0;
+		max-width: 97vw;
+	}
+
+	.off-canvas-right {
+		display: none;
+	}
+
+	.site-content {
+		overflow: initial;
+	}
+
+	.site-layout {
+		grid-template-columns: 400px auto;
+		width: calc(100% + 400px);
+	}
 }
 
 .constrained {

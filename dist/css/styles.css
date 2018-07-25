@@ -1888,8 +1888,7 @@ simple-select + simple-select .select-child-field {
       color: #ffffff; }
 
 html {
-  font-size: 20px;
-  height: 100vh; }
+  font-size: 20px; }
 
 body {
   background-color: #ffffff;
@@ -1898,7 +1897,6 @@ body {
   font-size: 0.83333rem;
   font-weight: 300;
   line-height: 1.5;
-  min-height: 100vh;
   overflow: hidden;
   position: relative; }
 
@@ -2062,6 +2060,20 @@ pre {
 
 .beta {
   color: #be2a26; }
+
+.body-scrollable {
+  overflow: auto; }
+  .body-scrollable .constrained {
+    margin-left: 1vw;
+    margin-right: 0;
+    max-width: 97vw; }
+  .body-scrollable .off-canvas-right {
+    display: none; }
+  .body-scrollable .site-content {
+    overflow: initial; }
+  .body-scrollable .site-layout {
+    grid-template-columns: 400px auto;
+    width: calc(100% + 400px); }
 
 @media (min-width: 1200px) {
   .constrained {
@@ -2935,8 +2947,8 @@ icon {
     border-top-color: rgba(255, 255, 255, 0.75); }
 
 .spinner-s {
-  height: 2rem;
-  width: 2rem; }
+  height: 0.75rem;
+  width: 0.75rem; }
 
 .spinner-wrapper {
   color: #0d7e97;
@@ -3639,10 +3651,8 @@ a rect {
 .show-query {
   white-space: pre-wrap; }
 
-.site-search {
-  max-width: calc(100vw - 15px); }
-  .site-search h2:only-child {
-    margin-bottom: 0; }
+.site-search h2:only-child {
+  margin-bottom: 0; }
 
 .site-query simple-select .form-group {
   margin-top: 1rem; }

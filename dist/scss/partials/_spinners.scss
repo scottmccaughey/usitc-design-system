@@ -11,53 +11,53 @@
 //          888
 
 @keyframes spCircRot {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+	}
 }
 
 .spinner {
-  height: $space-xl;
-  margin: $space-m auto;
-  width: $space-xl;
+	height: $space-xl;
+	margin: $space-m auto;
+	width: $space-xl;
 }
 
 .spinner-circle {
-  animation: spCircRot .6s infinite linear;
-  border: 4px rgba($color-theme-base-spinner, 0.25) solid;
-  border-top-color: rgba($color-theme-base-spinner, 0.75);
-  border-radius: $border-radius-circle;
+	animation: spCircRot .6s infinite linear;
+	border: 4px rgba($color-theme-base-spinner, 0.25) solid;
+	border-top-color: rgba($color-theme-base-spinner, 0.75);
+	border-radius: $border-radius-circle;
 
-  .on-dark & {
-    border-color: rgba($color-theme-dark-spinner, 0.25);
-    border-top-color: rgba($color-theme-dark-spinner, 0.75);
-  }
+	.on-dark & {
+		border-color: rgba($color-theme-dark-spinner, 0.25);
+		border-top-color: rgba($color-theme-dark-spinner, 0.75);
+	}
 }
 
 .spinner-s {
-  height: $space-l;
-  width: $space-l;
+	height: ($space-s + $space-xs);
+	width: ($space-s + $space-xs);
 }
 
 .spinner-wrapper {
-  color: $color-theme-base-spinner;
-  font-size: $font-size-xs;
-  font-weight: $font-weight-bold;
-  margin-bottom: 0;
-  text-align: center;
+	color: $color-theme-base-spinner;
+	font-size: $font-size-xs;
+	font-weight: $font-weight-bold;
+	margin-bottom: 0;
+	text-align: center;
 
-  p:last-child {
-    margin-bottom: $space-m;
-  }
+	p:last-child {
+		margin-bottom: $space-m;
+	}
 
-  .on-dark & {
-    color: $color-theme-dark-text;
-  }
+	.on-dark & {
+		color: $color-theme-dark-text;
+	}
 }
 
 .table-spinner {
-  background-color: rgba($color-white, 0.1);
+	background-color: rgba($color-white, 0.1);
 }
