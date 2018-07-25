@@ -38,18 +38,15 @@
 	}
 }
 
-.commodities-select {
-	.input-with-button {
-		button {
-			padding: $space-m;
-		}
-	}
+.commodities-select .input-with-button button {
+  padding: 0 $space-m;
 }
 
 .commodities-select-list {
 	margin-left: (-$space-m);
 	margin-right: (-$space-m);
 	padding: ($space-l + $space-s) $space-m $space-m;
+  position: relative;
 
 	@include breakpoint(m) {
 		margin-left: 0;

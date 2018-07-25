@@ -3613,12 +3613,13 @@ a rect {
       padding-bottom: 0.5rem; } }
 
 .commodities-select .input-with-button button {
-  padding: 1rem; }
+  padding: 0 1rem; }
 
 .commodities-select-list {
   margin-left: -1rem;
   margin-right: -1rem;
-  padding: 2.5rem 1rem 1rem; }
+  padding: 2.5rem 1rem 1rem;
+  position: relative; }
   @media (min-width: 800px) {
     .commodities-select-list {
       margin-left: 0;
