@@ -3635,6 +3635,9 @@ a rect {
       border-right: 1px solid #b3b1b4;
       padding-bottom: 0.5rem; } }
 
+.new-request-button > div {
+  display: inline-block; }
+
 @media (min-width: 1200px) {
   .search-actions > .grid {
     grid-gap: 1rem 1rem; } }

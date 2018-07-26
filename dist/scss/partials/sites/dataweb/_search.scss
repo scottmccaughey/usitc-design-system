@@ -39,14 +39,14 @@
 }
 
 .commodities-select .input-with-button button {
-  padding: 0 $space-m;
+	padding: 0 $space-m;
 }
 
 .commodities-select-list {
 	margin-left: (-$space-m);
 	margin-right: (-$space-m);
 	padding: ($space-l + $space-s) $space-m $space-m;
-  position: relative;
+	position: relative;
 
 	@include breakpoint(m) {
 		margin-left: 0;
@@ -63,6 +63,12 @@
 	@include breakpoint(m) {
 		border-right: 1px solid #b3b1b4;
 		padding-bottom: $space-s;
+	}
+}
+
+.new-request-button {
+	> div {
+		display: inline-block;
 	}
 }
 
