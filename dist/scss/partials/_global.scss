@@ -170,7 +170,6 @@ pre {
 	border: $border-base;
 	color: $color-black;
 	font-family: $font-family-mono;
-	max-width: 90vw;
 	padding: $space-s;
 }
 
@@ -221,7 +220,7 @@ pre {
 	.constrained {
 		margin-left: 1vw;
 		margin-right: 0;
-		max-width: 97vw;
+		max-width: 95vw;
 	}
 
 	.off-canvas-right {
