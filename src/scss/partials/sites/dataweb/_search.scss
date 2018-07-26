@@ -75,16 +75,43 @@
 .search-actions-buttons {
 	text-align: center;
 
-	button,
-	.button {
-		text-transform: none;
-	}
-
 	@include breakpoint(m) {
 		align-self: center;
 		flex: 1 0 auto;
 		margin-left: $space-m;
 		text-align: right;
+	}
+
+	button,
+	.button {
+		text-transform: none;
+	}
+
+	.button-primary {
+		&:active,
+		&:focus,
+		&:hover {
+			background-color: $color-blue-light;
+			color: $color-black;
+		}
+	}
+
+	.button-success {
+		&:active,
+		&:focus,
+		&:hover {
+			background-color: $color-green-light;
+			color: $color-black;
+		}
+	}
+
+	.button-cancel {
+		&:active,
+		&:focus,
+		&:hover {
+			background-color: $color-red-light;
+			color: $color-black;
+		}
 	}
 }
 

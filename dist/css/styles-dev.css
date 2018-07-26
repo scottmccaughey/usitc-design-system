@@ -3639,9 +3639,6 @@ a rect {
 
 .search-actions-buttons {
   text-align: center; }
-  .search-actions-buttons button,
-  .search-actions-buttons .button {
-    text-transform: none; }
   @media (min-width: 800px) {
     .search-actions-buttons {
       -ms-flex-item-align: center;
@@ -3651,6 +3648,18 @@ a rect {
               flex: 1 0 auto;
       margin-left: 1rem;
       text-align: right; } }
+  .search-actions-buttons button,
+  .search-actions-buttons .button {
+    text-transform: none; }
+  .search-actions-buttons .button-primary:active, .search-actions-buttons .button-primary:focus, .search-actions-buttons .button-primary:hover {
+    background-color: #c9e3e8;
+    color: #3a3a3b; }
+  .search-actions-buttons .button-success:active, .search-actions-buttons .button-success:focus, .search-actions-buttons .button-success:hover {
+    background-color: #e8f3e5;
+    color: #3a3a3b; }
+  .search-actions-buttons .button-cancel:active, .search-actions-buttons .button-cancel:focus, .search-actions-buttons .button-cancel:hover {
+    background-color: #f0b9b8;
+    color: #3a3a3b; }
 
 .search-actions-name {
   margin-bottom: 1rem; }
