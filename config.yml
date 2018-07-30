@@ -33,6 +33,7 @@ path:
   scss:
     src:                src/scss/**/*.scss
     dist:               dist/scss
+    styleguide:         dist
     watch:
                       - src/scss/**/*.scss
                       - dist/scss/partials/_icons-sprite.scss
