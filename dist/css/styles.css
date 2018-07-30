@@ -1701,7 +1701,8 @@ simple-select + simple-select .select-child-field {
         padding-left: 3rem; }
     .select select:focus option:checked {
       background: #0d7e97 -webkit-gradient(linear, left bottom, left top, from(#0d7e97), to(#0d7e97));
-      background: #0d7e97 linear-gradient(0deg, #0d7e97 0%, #0d7e97 100%); }
+      background: #0d7e97 linear-gradient(0deg, #0d7e97 0%, #0d7e97 100%);
+      color: #ffffff !important; }
     .select select:focus:-moz-focusring {
       color: transparent;
       text-shadow: 0 0 0 #3a3a3b; }
@@ -1709,7 +1710,8 @@ simple-select + simple-select .select-child-field {
       display: none; }
     .select select option:checked {
       background: #c9e3e8 -webkit-gradient(linear, left bottom, left top, from(#c9e3e8), to(#c9e3e8));
-      background: #c9e3e8 linear-gradient(0deg, #c9e3e8 0%, #c9e3e8 100%); }
+      background: #c9e3e8 linear-gradient(0deg, #c9e3e8 0%, #c9e3e8 100%);
+      color: #3a3a3b !important; }
   .select::after {
     border-bottom: 0.25rem solid transparent;
     border-left: 0.25rem solid transparent;
@@ -3906,6 +3908,10 @@ a rect {
 
 .table-searches.table-responsive .query-name {
   font-size: 1rem; }
+
+.table-searches.table-responsive .query-system,
+.table-searches.table-responsive .query-type {
+  white-space: nowrap; }
 
 .table-selector {
   margin-bottom: 1rem; }

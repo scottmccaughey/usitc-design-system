@@ -739,6 +739,7 @@ simple-select {
 		&:focus {
 			option:checked {
 				background: $color-blue linear-gradient(0deg, $color-blue 0%, $color-blue 100%);
+				color: $color-white !important;
 			}
 		}
 
@@ -754,6 +755,7 @@ simple-select {
 		option:checked {
 			background: $color-blue-light
 				linear-gradient(0deg, $color-blue-light 0%, $color-blue-light 100%);
+			color: $color-black !important;
 		}
 	}
 

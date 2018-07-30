@@ -451,6 +451,11 @@
 	.query-name {
 		font-size: $font-size-m;
 	}
+
+	.query-system,
+	.query-type {
+		white-space: nowrap;
+	}
 }
 
 .table-selector {
