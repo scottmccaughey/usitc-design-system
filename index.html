@@ -9,9 +9,144 @@
   </head>
   <body>
     <app-root>
+      <header class="site-header" role="header">
+        <nav class="constrained">
+          <ul>
+            <li class="site-name">
+              <a href="/">datawebbeta.usitc.gov</a>
+            </li>
+            <li>
+              <a href="/">Saved Data Requests</a>
+            </li>
+            <li>
+              <a href="/">New Data Request</a>
+            </li>
+            <li>
+              <a href="/">My Account</a>
+            </li>
+            <li>
+              <a href="/">Logout</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
       <main class="constrained">
         <article class="padded">
           <h1>Style Guide</h1>
+
+          <section>
+            <button class="button-primary button-xl button-spinner on-dark" type="submit">
+              <loader-spinner>
+                <div class="spinner spinner-circle spinner-s"></div>
+              </loader-spinner>
+            </button>
+
+            <button class="button-primary button-xl button-spinner on-dark" type="submit">
+              <span>Submit</span>
+            </button>
+          </section>
+
+          <section>
+            <div>
+              icon-s
+              <icon class="icon-s">
+                <svg>
+                  <use xlink:href="/dist/icons/symbol/icons.svg#chart-upward"></use>
+                </svg>
+              </icon>
+            </div>
+            <div>
+              icon-m
+              <icon class="icon-m">
+                <svg>
+                  <use xlink:href="/dist/icons/symbol/icons.svg#chart-upward"></use>
+                </svg>
+              </icon>
+            </div>
+            <div>
+              icon-l
+              <icon class="icon-l">
+                <svg>
+                  <use xlink:href="/dist/icons/symbol/icons.svg#chart-upward"></use>
+                </svg>
+              </icon>
+            </div>
+            <div>
+              icon-xl
+              <icon class="icon-xl">
+                <svg>
+                  <use xlink:href="/dist/icons/symbol/icons.svg#chart-upward"></use>
+                </svg>
+              </icon>
+            </div>
+            <div>
+              icon-xxl
+              <icon class="icon-xxl">
+                <svg>
+                  <use xlink:href="/dist/icons/symbol/icons.svg#chart-upward"></use>
+                </svg>
+              </icon>
+            </div>
+            <div>
+              icon-xxxl
+              <icon class="icon-xxxl">
+                <svg>
+                  <use xlink:href="/dist/icons/symbol/icons.svg#chart-upward"></use>
+                </svg>
+              </icon>
+            </div>
+            <div>
+              icon-xxxxl
+              <icon class="icon-xxxxl">
+                <svg>
+                  <use xlink:href="/dist/icons/symbol/icons.svg#chart-upward"></use>
+                </svg>
+              </icon>
+            </div>
+            <div>
+              icon-xxxxxl
+              <icon class="icon-xxxxxl">
+                <svg>
+                  <use xlink:href="/dist/icons/symbol/icons.svg#chart-upward"></use>
+                </svg>
+              </icon>
+            </div>
+            <div>
+              icon-xxxxxxl
+              <icon class="icon-xxxxxxl">
+                <svg>
+                  <use xlink:href="/dist/icons/symbol/icons.svg#chart-upward"></use>
+                </svg>
+              </icon>
+            </div>
+            <div>
+              icon-xxxxxxxl
+              <icon class="icon-xxxxxxxl">
+                <svg>
+                  <use xlink:href="/dist/icons/symbol/icons.svg#chart-upward"></use>
+                </svg>
+              </icon>
+            </div>
+          </section>
+
+          <section>
+            <p>Lorem ipsum dolor sit amet, <a href="#">consectetur adipiscing elit</a>. Integer congue malesuada tortor, sed volutpat nisi euismod at. Aliquam id purus quam. Etiam sollicitudin turpis sed metus vulputate pulvinar. Nullam sapien libero, dictum sit amet tristique vitae, ullamcorper dictum nulla. Integer eleifend iaculis metus ut cursus. Nullam blandit iaculis augue. Etiam dignissim bibendum lacus, in semper nisl. Pellentesque nec iaculis tortor, in interdum orci. Cras placerat posuere neque tempus consequat. Donec a tellus vestibulum, sollicitudin nulla vitae, convallis ante. Nullam vel nisl at nulla euismod tincidunt. Mauris eget sollicitudin magna.</p>
+          </section>
+
+          <section>
+            <div class="panel state-error">
+              This is an error panel.
+            </div>
+            <div class="panel state-info">
+              This is an info panel.
+            </div>
+            <div class="panel state-success">
+              This is a success panel.
+            </div>
+            <div class="panel state-warning">
+              This is a warning panel.
+            </div>
+          </section>
 
           <section>
             <label class="control checkbox">
@@ -51,6 +186,14 @@
           </section>
 
           <section>
+            <div _ngcontent-c12="" class="select select-multiple g-l-8" ng-reflect-klass="select select-multiple" ng-reflect-ng-class="g-l-8">
+              <select _ngcontent-c12="" multiple="" ng-reflect-ng-class="" ng-reflect-name="dataToReport" id="dataToReport" class="ng-valid ng-touched ng-dirty" title="Sample Multi-Select Box">
+                <option _ngcontent-c12="" value="0: 'CONS_CUSTOMS_VALUE'" ng-reflect-value="CONS_CUSTOMS_VALUE"">Customs Value</option><option _ngcontent-c12="" value="1: 'CONS_FIR_UNIT_QUANT'" ng-reflect-value="CONS_FIR_UNIT_QUANT"">First Unit of Quantity</option><option _ngcontent-c12="" value="2: 'CONS_SEC_UNIT_QUANT'" ng-reflect-value="CONS_SEC_UNIT_QUANT"">Second Unit of Quantity</option><option _ngcontent-c12="" value="3: 'CONS_COST_INS_FREIGHT+CONS_CALC_DUTY'" ng-reflect-value="CONS_COST_INS_FREIGHT+CONS_CAL"">Landed Duty-Paid Value</option><option _ngcontent-c12="" value="4: 'CONS_CUSTOMS_VALUE_SUB_DUTY'" ng-reflect-value="CONS_CUSTOMS_VALUE_SUB_DUTY"">Dutiable Value</option><option _ngcontent-c12="" value="5: 'CONS_CALC_DUTY'" ng-reflect-value="CONS_CALC_DUTY"">Calculated Duties</option><option _ngcontent-c12="" value="6: 'CONS_CHARGES_INS_FREIGHT'" ng-reflect-value="CONS_CHARGES_INS_FREIGHT"">Import Charges</option><option _ngcontent-c12="" value="7: 'CONS_COST_INS_FREIGHT'" ng-reflect-value="CONS_COST_INS_FREIGHT"">CIF Import Value</option><option _ngcontent-c12="" value="8: '#CONS_CUSTOMS_VALUE$CONS_FIR_UNIT_QUANT'" ng-reflect-value="#CONS_CUSTOMS_VALUE$CONS_FIR_U"">(Customs Value)/(First Unit of Quantity)</option><option _ngcontent-c12="" value="9: '#CONS_COST_INS_FREIGHT+CONS_CALC_DUTY$CONS_FIR" ng-reflect-value="#CONS_COST_INS_FREIGHT+CONS_CA"">(Landed Duty-Paid Value)/(First Unit of Quantity)</option>
+              </select>
+            </div>
+          </section>
+
+          <section>
             <label class="file">
               <input type="file" id="file" aria-label="File browser example">
               <span class="file-custom"></span>
@@ -84,24 +227,24 @@
             <table class="table table-bordered">
               <thead>
                 <tr>
-                  <th></th>
-                  <th class="text-center">
+                  <th scope="col"></th>
+                  <th scope="col" class="text-center">
                     Extra small<br>
                     <small>≥400px</small>
                   </th>
-                  <th class="text-center">
+                  <th scope="col" class="text-center">
                     Small<br>
                     <small>≥600px</small>
                   </th>
-                  <th class="text-center">
+                  <th scope="col" class="text-center">
                     Medium<br>
                     <small>≥800px</small>
                   </th>
-                  <th class="text-center">
+                  <th scope="col" class="text-center">
                     Large<br>
                     <small>≥1200px</small>
                   </th>
-                  <th class="text-center">
+                  <th scope="col" class="text-center">
                     Extra large<br>
                     <small>≥1600px</small>
                   </th>

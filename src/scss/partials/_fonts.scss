@@ -1,0 +1,14 @@
+//  .d888                  888
+//  d88P"                   888
+//  888                     888
+//  888888 .d88b.  88888b.  888888 .d8888b
+//  888   d88""88b 888 "88b 888    88K
+//  888   888  888 888  888 888    "Y8888b.
+//  888   Y88..88P 888  888 Y88b.       X88
+//  888    "Y88P"  888  888  "Y888  88888P'
+
+@each $family, $data in $font-family-files {
+  @each $variant, $variant-data in $data {
+    @include font-def($family, $variant, map-get($variant-data, 'weight'), map-get($variant-data, 'style'), map-get($variant-data, 'stretch'));
+  }
+}

@@ -1,0 +1,222 @@
+// 888                   d8b
+// 888                   Y8P
+// 888
+// 888  .d88b.   .d88b.  888 88888b.
+// 888 d88""88b d88P"88b 888 888 "88b
+// 888 888  888 888  888 888 888  888
+// 888 Y88..88P Y88b 888 888 888  888
+// 888  "Y88P"   "Y88888 888 888  888
+//                   888
+//              Y8b d88P
+//               "Y88P"
+
+.login-bottom {
+	h1 {
+		font-size: $font-size-s;
+		font-weight: $font-weight-bold;
+		letter-spacing: 0.2rem;
+		margin-bottom: $space-m;
+		text-transform: uppercase;
+
+		@include breakpoint(l) {
+			font-size: $font-size-m;
+		}
+	}
+
+	li {
+		font-size: $font-size-xs;
+		list-style: none;
+	}
+
+	p {
+		font-size: $font-size-xs;
+	}
+
+	svg-icon {
+		display: block;
+		margin: 0 auto $space-m;
+		max-width: 150px;
+		width: 80%;
+	}
+
+	ul {
+		margin-bottom: 0;
+		padding-left: 0;
+	}
+}
+
+.login-error input {
+	border-color: $color-state-error-border;
+}
+
+.login-form {
+	background-color: $color-gray-lighter;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: auto;
+	margin: $space-l auto;
+	max-width: 400px;
+	width: 100%;
+
+	@include breakpoint(m) {
+		grid-gap: $grid-gap-row $grid-gap-col;
+		grid-template-columns: 5rem repeat(3, 1fr);
+		max-width: 100%;
+	}
+
+	@include breakpoint(l) {
+		max-width: 1200px;
+	}
+
+	&.login-error,
+	&.login-message,
+	&.login-success,
+	&.login-warning {
+		> div {
+			@include breakpoint(m) {
+				padding: 0 0 $space-m;
+			}
+
+			&:last-child {
+				@include breakpoint(m) {
+					padding: 0 $space-m $space-m 0;
+				}
+			}
+		}
+
+		.login-icon-wrapper {
+			@include breakpoint(m) {
+				grid-row-start: 1;
+				grid-row-end: 3;
+				justify-self: stretch;
+				padding: 0;
+			}
+		}
+	}
+
+	> div {
+		padding: 0 $space-m;
+
+		@include breakpoint(m) {
+			padding: $space-m 0;
+		}
+
+		&:last-child {
+			@include breakpoint(m) {
+				padding: $space-m $space-m $space-m 0;
+			}
+		}
+
+		&.panel {
+			@include breakpoint(m) {
+				padding: $space-m;
+			}
+		}
+	}
+
+	input {
+		display: block;
+		width: 100%;
+	}
+
+	button {
+		font-size: $font-size-m;
+		height: $line-height-form;
+		margin: $space-m 0;
+		text-transform: uppercase;
+		width: 100%;
+	}
+
+	.login-icon {
+		display: block;
+
+		@include breakpoint(m) {
+			height: 3rem;
+			width: 3rem;
+		}
+	}
+
+	.login-icon-wrapper {
+		align-items: center;
+		background-color: $color-gray;
+		color: $color-white;
+		display: grid;
+		justify-items: center;
+		padding: $space-m;
+	}
+
+	.panel {
+		margin: $space-m $space-m 0;
+		padding: $space-m;
+
+		@include breakpoint(m) {
+			grid-column-start: 2;
+			grid-column-end: 5;
+			margin: $space-m $space-m 0 0;
+		}
+
+		@include breakpoint(m) {
+			margin-top: $space-l;
+		}
+	}
+}
+
+.login-form-password {
+	h2 {
+		line-height: $line-height-base;
+		margin: $space-m 0 0;
+		text-align: center;
+
+		@include breakpoint(m) {
+			text-align: right;
+		}
+	}
+
+	label {
+		align-self: center;
+	}
+}
+
+.login-links {
+	@include breakpoint(m) {
+		grid-area: links;
+		padding: $space-m $space-l;
+	}
+
+	ul {
+		padding-left: 0;
+		text-align: center;
+
+		@include breakpoint(m) {
+			text-align: left;
+		}
+	}
+
+	li {
+		display: inline-block;
+		line-height: 1;
+		list-style: none;
+		padding: 0 $space-s;
+		white-space: nowrap;
+
+		@include breakpoint(m) {
+			display: block;
+			padding: 0;
+		}
+	}
+}
+
+.site-login {
+	display: flex;
+	flex-direction: column;
+
+	> main {
+		flex: 1;
+		padding: $space-m;
+	}
+
+	h2 {
+		color: $color-blue;
+		font-weight: $font-weight-bold;
+	}
+}

@@ -1,0 +1,57 @@
+//           .d888  .d888
+//          d88P"  d88P"
+//          888    888
+//  .d88b.  888888 888888       .d8888b  8888b.  88888b.  888  888  8888b.  .d8888b
+// d88""88b 888    888         d88P"        "88b 888 "88b 888  888     "88b 88K
+// 888  888 888    888  888888 888      .d888888 888  888 Y88  88P .d888888 "Y8888b.
+// Y88..88P 888    888         Y88b.    888  888 888  888  Y8bd8P  888  888      X88
+//  "Y88P"  888    888          "Y8888P "Y888888 888  888   Y88P   "Y888888  88888P'
+
+.site-content {
+  overflow: auto;
+}
+
+.site-layout {
+  display: grid;
+  grid-template-columns: $off-canvas-width 100vw $off-canvas-width;
+  height: 100vh;
+  left: (-$off-canvas-width);
+  position: relative;
+  transition: $off-canvas-transition;
+  width: calc(100vw + (2 * #{$off-canvas-width}));
+
+  &.off-canvas-open-left {
+    left: 0;
+  }
+
+  &.off-canvas-open-right {
+    left: (2 * -$off-canvas-width);
+  }
+}
+
+.off-canvas {
+  height: $off-canvas-height;
+  overflow: auto;
+  position: relative;
+  transition: $off-canvas-transition;
+  width: $off-canvas-width;
+
+  > .button-close {
+    color: $color-white;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  > section {
+    padding: $space-m;
+
+    > :first-child {
+      margin-right: $space-m;
+    }
+  }
+}

@@ -1,29 +1,16 @@
 {
-	"recommendations": [
-    "Angular.ng-template",
+  "recommendations": [
+    "alefragnani.bookmarks",
+    "bierner.color-info",
     "EditorConfig.EditorConfig",
-    "HookyQR.beautify",
-    "Tyriar.sort-lines",
-    "Zignd.html-css-class-completion",
-    "be5invis.vscode-custom-css",
     "christian-kohler.npm-intellisense",
-    "cmstead.jsrefactor",
-    "dbaeumer.jshint",
-    "dbaeumer.vscode-eslint",
-    "dzannotti.vscode-babel-coloring",
-    "ecmel.vscode-html-css",
-    "eg2.tslint",
-    "eg2.vscode-npm-script",
+    "christian-kohler.path-intellisense",
+    "coenraads.bracket-pair-colorizer",
     "esbenp.prettier-vscode",
-    "formulahendry.auto-close-tag",
-    "formulahendry.auto-rename-tag",
-    "joelday.docthis",
-    "johnpapa.Angular2",
-    "michelemelluso.code-beautifier",
-    "mohsen1.prettify-json",
     "mrmlnc.vscode-scss",
-    "ms-vscode.node-debug2",
-    "steoates.autoimport",
-    "vthiery.prettify-selected-json"
+    "remimarsal.prettier-now",
+    "shinnn.stylelint",
+    "wayou.vscode-todo-highlight",
+    "Zignd.html-css-class-completion"
   ]
 }

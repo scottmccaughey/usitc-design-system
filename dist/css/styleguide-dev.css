@@ -176,7 +176,7 @@
        X88 Y88b.    888  888 888 Y8b.
    88888P'  "Y8888P "Y888888 888  "Y8888
 
-   Modular Scale Typography function
+  Modular Scale Typography function
 
   ms($factor)
 */
@@ -250,11 +250,28 @@
 
   make-layout-boundaries($color, $background)
 */
+/*
+888                     888
+888                     888
+888                     888
+888888 .d88b.  888  888 888888       .d8888b 888d888 .d88b.  88888b.
+888   d8P  Y8b `Y8bd8P' 888         d88P"    888P"  d88""88b 888 "88b
+888   88888888   X88K   888  888888 888      888    888  888 888  888
+Y88b. Y8b.     .d8""8b. Y88b.       Y88b.    888    Y88..88P 888 d88P
+ "Y888 "Y8888  888  888  "Y888       "Y8888P 888     "Y88P"  88888P"
+                                                             888
+                                                             888
+                                                             888
+
+  Text Cropping mixin
+
+  text-crop($line-height, $top-adjustment, $bottom-adjustment)
+*/
 code {
   font-size: 0.83333rem !important; }
 
 pre[class*="language-"] {
-  background-color: #c9e3e8 !important;
+  background-color: #e4f1f3 !important;
   border: 1px solid #818386;
   margin: 0 !important;
   padding: 0.5rem 1rem !important; }
@@ -294,4 +311,4 @@ pre[class*="language-"] {
   .sg-example > *:nth-child(4),
   .sg-example > *:nth-child(8),
   .sg-example > *:nth-child(12) {
-    background-color: #cb8f2b; }
+    background-color: #835c1b; }

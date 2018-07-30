@@ -1,0 +1,25 @@
+//                                                              d8b
+//                                                              Y8P
+//
+// 888d888 .d88b.  .d8888b  88888b.   .d88b.  88888b.  .d8888b  888 888  888  .d88b.
+// 888P"  d8P  Y8b 88K      888 "88b d88""88b 888 "88b 88K      888 888  888 d8P  Y8b
+// 888    88888888 "Y8888b. 888  888 888  888 888  888 "Y8888b. 888 Y88  88P 88888888
+// 888    Y8b.          X88 888 d88P Y88..88P 888  888      X88 888  Y8bd8P  Y8b.
+// 888     "Y8888   88888P' 88888P"   "Y88P"  888  888  88888P' 888   Y88P    "Y8888
+//                          888
+//                          888
+//                          888
+
+.hide-s-down {
+  display: none;
+
+  @include breakpoint(m) {
+    display: block;
+  }
+}
+
+.hide-m-up {
+  @include breakpoint(m) {
+    display: none;
+  }
+}

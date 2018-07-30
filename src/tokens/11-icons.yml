@@ -1,0 +1,30 @@
+# d8b
+# Y8P
+#
+# 888  .d8888b .d88b.  88888b.  .d8888b
+# 888 d88P"   d88""88b 888 "88b 88K
+# 888 888     888  888 888  888 "Y8888b.
+# 888 Y88b.   Y88..88P 888  888      X88
+# 888  "Y8888P "Y88P"  888  888  88888P'
+
+icon:
+  size:
+    base:           0.75em
+    scale-ratio:    1.5
+    xxxxxxxs:       'msi(-8)'
+    xxxxxxs:        'msi(-7)'
+    xxxxxs:         'msi(-6)'
+    xxxxs:          'msi(-5)'
+    xxxs:           'msi(-4)'
+    xxs:            'msi(-3)'
+    xs:             'msi(-2)'
+    s:              'msi(-1)'
+    m:              'msi(0)'
+    l:              'msi(1)'
+    xl:             'msi(2)'
+    xxl:            'msi(3)'
+    xxxl:           'msi(4)'
+    xxxxl:          'msi(5)'
+    xxxxxl:         'msi(6)'
+    xxxxxxl:        'msi(7)'
+    xxxxxxxl:       'msi(8)'

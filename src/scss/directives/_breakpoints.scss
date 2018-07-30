@@ -1,0 +1,53 @@
+/*
+  888                               888                        d8b          888
+  888                               888                        Y8P          888
+  888                               888                                     888
+  88888b.  888d888 .d88b.   8888b.  888  888 88888b.   .d88b.  888 88888b.  888888 .d8888b
+  888 "88b 888P"  d8P  Y8b     "88b 888 .88P 888 "88b d88""88b 888 888 "88b 888    88K
+  888  888 888    88888888 .d888888 888888K  888  888 888  888 888 888  888 888    "Y8888b.
+  888 d88P 888    Y8b.     888  888 888 "88b 888 d88P Y88..88P 888 888  888 Y88b.       X88
+  88888P"  888     "Y8888  "Y888888 888  888 88888P"   "Y88P"  888 888  888  "Y888  88888P'
+                                            888
+                                            888
+                                            888
+  Breakpoints mixin
+
+  @include breakpoint($point)
+
+  The breakpoint() function takes a single required parameter. You must pass in the breakpoint
+  name or a number ($point). If a breakpoint name is passed, the $breakpoints list as
+  defined in _settings.scss (@section 3) is used for a mininum-width. If a number is passed,
+  that number of pixels is used as a minimum-width.
+
+  Ithis will cause any styles between the {} brackets to be applied only to
+  screen sizes wider than the breakpoint passed:
+
+  @include breakpoint(m) {
+    font-size: 18px;
+  }
+
+  ...will set the font-size to '18px' on any screen larger than the medium breakpoint size.
+
+  @include breakpoint(1024) {
+    font-weight: bold;
+  }
+
+  ...will set the font-weight to 'bold' on any screen larger than 1024 pixels wide.
+*/
+
+@mixin breakpoint($point) {
+  @if type-of($point) == number {
+    @media (min-width: inspect($point) + 'px') {
+      @content;
+    }
+  }
+  @if type-of($point) != number {
+    @each $name, $width in $breakpoints {
+      @if $name == $point {
+        @media (min-width: $width) {
+          @content;
+        }
+      }
+    }
+  }
+}

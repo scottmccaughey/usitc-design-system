@@ -1,16 +1,67 @@
-path:
-  tokens:   tokens/**/*.yml
-  assets:   assets
-  dist:     dist
-  fonts:    ../fonts
-  html:     index.html
-  json:
-    tokens: dist/json
-  scss:
-    tokens: dist/scss/tokens
-    src:    dist/scss/**/*.scss
-    dest:   dist/css
-
 formats:
-          - json
-          - scss
+                      - json
+                      - scss
+
+path:
+
+  html:                 index.html
+
+  root:
+    src:                src
+    dist:               dist
+
+  tokens:
+    src:                src/tokens/**/*.yml
+    dist:
+      json:             dist/json
+      scss:             dist/scss/tokens
+
+  clean:
+                      - dist/**/*
+
+  css:
+    dist:               dist/css
+
+  fonts:
+    src:                src/fonts/**/*.{woff,woff2}
+    dist:               dist/fonts
+
+  icons:
+    src:                src/icons/**/*.svg
+    dist:               dist/icons
+
+  scss:
+    src:                src/scss/**/*.scss
+    dist:               dist/scss
+    watch:
+                      - src/scss/**/*.scss
+                      - dist/scss/partials/_icons-sprite.scss
+                      - dist/scss/tokens/_tokens.scss
+
+settings:
+
+  browserSync:
+    cors:               true
+    server:             .
+
+  icons:
+    mode:
+      symbol:
+        sprite:         icons
+      view:
+        render:
+          scss:
+            dest:       ../../scss/partials/_icons-sprite.scss
+        sprite:         icons
+        prefix:         .icon-%s
+
+  scss:
+    browsers:
+                      - last 2 versions
+    devSuffix:          -dev
+    fontPath:
+      dev:              ../fonts
+      prod:             ~usitc-design-system/dist/fonts
+    includePaths:
+                      - node_modules
+                      - dist/fonts

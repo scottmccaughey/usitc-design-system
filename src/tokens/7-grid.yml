@@ -1,0 +1,26 @@
+#                  d8b      888
+#                  Y8P      888
+#                           888
+#  .d88b.  888d888 888  .d88888
+# d88P"88b 888P"   888 d88" 888
+# 888  888 888     888 888  888
+# Y88b 888 888     888 Y88b 888
+#  "Y88888 888     888  "Y88888
+#      888
+# Y8b d88P
+#  "Y88P"
+
+grid:
+  columns: 12
+  gap:
+    col: $space-m
+    row: $space-m
+  item-sizes:
+  - full: 12
+  - three-quarters: 9
+  - two-thirds: 8
+  - half: 6
+  - third: 4
+  - quarter: 3
+  - sixth: 2
+  - twelfth: 1

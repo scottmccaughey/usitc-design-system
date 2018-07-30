@@ -7,7 +7,7 @@ module.exports = function(outname){
 
   var write = function (file, enc, cb){
     if (file.path != "undefined") {
-      var dir = process.cwd() + '/tokens/';
+      var dir = process.cwd() + '/src/tokens/';
       var fileImport = file.path.replace(dir, '');
       paths = paths + '@import \'' + fileImport + '\';\n';
     }
