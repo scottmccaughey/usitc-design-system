@@ -581,7 +581,6 @@ simple-select {
 }
 
 .label-parent {
-	color: $color-blue;
 	font-size: $font-size-s;
 	font-weight: $font-weight-bold;
 	margin-top: 0;
@@ -592,6 +591,17 @@ simple-select {
 
 	@at-root .form-group label#{&} {
 		text-transform: none;
+	}
+
+	a {
+		color: $color-blue;
+
+		&:active,
+		&:focus,
+		&:hover {
+			background-color: $color-blue;
+			color: $color-white;
+		}
 	}
 }
 

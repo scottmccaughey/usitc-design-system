@@ -1586,7 +1586,6 @@ simple-select + simple-select .select-child-field {
     white-space: nowrap; }
 
 .label-parent {
-  color: #0d7e97;
   font-size: 0.83333rem;
   font-weight: 700;
   margin-top: 0; }
@@ -1594,6 +1593,11 @@ simple-select + simple-select .select-child-field {
     margin-top: 1rem; }
   .form-group label.label-parent {
     text-transform: none; }
+  .label-parent a {
+    color: #0d7e97; }
+    .label-parent a:active, .label-parent a:focus, .label-parent a:hover {
+      background-color: #0d7e97;
+      color: #ffffff; }
 
 .label-plain {
   font-size: 0.83333rem; }
