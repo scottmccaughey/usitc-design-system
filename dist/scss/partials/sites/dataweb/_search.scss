@@ -66,6 +66,13 @@
 	}
 }
 
+.group-edit-wrapper {
+	button,
+	.button {
+		text-transform: none;
+	}
+}
+
 .new-request-button {
 	> div {
 		display: inline-block;

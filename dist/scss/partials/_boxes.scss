@@ -7,6 +7,16 @@
 // 888 d88P Y88..88P .d8""8b. Y8b.          X88
 // 88888P"   "Y88P"  888  888  "Y8888   88888P'
 
+.box-alt {
+	.box-header {
+		background-color: $color-gray-dark;
+	}
+
+	.boxed {
+		border-color: $color-gray-dark;
+	}
+}
+
 .box-header {
 	background-color: $color-blue;
 	color: $color-white;

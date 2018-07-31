@@ -739,6 +739,12 @@ Y88b. Y8b.     .d8""8b. Y88b.       Y88b.    888    Y88..88P 888 d88P
 .border-top-none {
   border-top-width: 0 !important; }
 
+.box-alt .box-header {
+  background-color: #414042; }
+
+.box-alt .boxed {
+  border-color: #414042; }
+
 .box-header {
   background-color: #0d7e97;
   color: #ffffff;
@@ -2119,7 +2125,7 @@ pre {
   margin-top: 1rem; }
 
 .tag {
-  background-color: #818386;
+  background-color: #414042;
   color: #ffffff;
   display: inline-block;
   font-size: 0.5787rem;
@@ -3635,6 +3641,10 @@ a rect {
     .commodities-value {
       border-right: 1px solid #b3b1b4;
       padding-bottom: 0.5rem; } }
+
+.group-edit-wrapper button,
+.group-edit-wrapper .button {
+  text-transform: none; }
 
 .new-request-button > div {
   display: inline-block; }
