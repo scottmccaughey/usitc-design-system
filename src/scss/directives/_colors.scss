@@ -1,0 +1,74 @@
+/*
+                   888
+                   888
+                   888
+   .d8888b .d88b.  888  .d88b.  888d888 .d8888b
+  d88P"   d88""88b 888 d88""88b 888P"   88K
+  888     888  888 888 888  888 888     "Y8888b.
+  Y88b.   Y88..88P 888 Y88..88P 888          X88
+   "Y8888P "Y88P"  888  "Y88P"  888      88888P'
+
+  Color Variations function
+
+  color($key, $luminosity, $alpha)
+
+  Uses the $colors list as defined in _settings.scss (@section 1a).
+
+  The color() function takes three parameters, only the first of which is required. You must
+  pass in the color name ($key) - this will render the base color:
+
+    color(blue) - will render the BASE blue, equivalent to #3871c7 or rgba(56, 113, 199, 1)
+
+  You may pass in an optional brightness variable ($luminosity), which can be any percentage,
+  though it is recommended to use only multiples of ten: 10, 20, 30 ... 80, 90. The higher
+  the number, the brighter the color:
+
+    color(blue, 20) - will render a very DARK blue, equivalent to #162d50 or
+                      rgba(56, 113, 199, 1)
+    color(blue, 50) - will render the BASE blue, equivalent to #3871c7 or
+                      rgba(56, 113, 199, 1)
+    color(blue, 80) - will render a very LIGHT blue, equivalent to #afc6e9 or
+                      rgba(56, 113, 199, 1)
+
+  color(black) and color(white) are special cases in that their brightness is set by
+  definition and cannot be adjusted:
+
+    color(black) - is the same as color(grey, 0), equivalent to #000000 or
+                    rgba(0, 0, 0, 1)
+    color(white) - is the same as color(grey, 100), equivalent to #ffffff or
+                    rgba(255, 255, 255, 1)
+
+  You may pass in an optional opacity variable ($alpha), which can be any percentage, though
+  it is recommended to use only multiples of ten: 10, 20, 30 ... 80, 90. If you want to use
+  $alpha, you MUST also pass a $luminosity — it is recommended to always pass 50 so that you
+  are creating only transparent versions of the BASE color. The higher the number, the more
+  opaque the color:
+
+    color(blue, 50, 20) -  will render a NEARLY TRANSPARENT base blue, equivalent to
+                            rgba(56, 113, 199, 0.2)
+    color(blue, 50, 50) -  will render a HALF TRANSPARENT base blue, equivalent to
+                            rgba(56, 113, 199, 0.5)
+    color(blue, 50, 100) - will render a COMPLETELY OPAQUE base blue, equivalent to
+                            rgba(56, 113, 199, 1)
+
+  Unlike brightness, opacity CAN be set on color(black) and color(white):
+
+    color(black, 0, 20) -   will render a NEARLY TRANSPARENT black equivalent to
+                            rgba(0, 0, 0, 0.2)
+    color(white, 100, 50) - will render a HALF TRANSPARENT white, equivalent to
+                            rgba(255, 255, 255, 0.5)
+
+*/
+
+@function color($key: lime, $luminosity: 50, $alpha: 100) {
+	$map: map-get($colors, $key);
+	$hue: map-get($map, hue);
+	$sat: map-get($map, sat);
+	$lum: $luminosity;
+	@if map-has-key($map, lum) {
+		$lum: map-get($map, lum);
+	}
+	$alp: $alpha / 100;
+	$hsla: hsla($hue, $sat, $lum, $alp);
+	@return $hsla;
+}

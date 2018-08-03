@@ -1,0 +1,16 @@
+# 888            888
+# 888            888
+# 888            888
+# 888888 .d88b.  888  888  .d88b.  88888b.  .d8888b
+# 888   d88""88b 888 .88P d8P  Y8b 888 "88b 88K
+# 888   888  888 888888K  88888888 888  888 "Y8888b.
+# Y88b. Y88..88P 888 "88b Y8b.     888  888      X88
+#  "Y888 "Y88P"  888  888  "Y8888  888  888  88888P'
+
+# Tokens
+#
+# These are system-wide settings that have been converted from <abbr title="YAML is a human friendly data serialization standard for all programming languages.">YAML</abbr> files to Sass (SCSS) for use in USITC projects. They are also available as JSON for ease of use in JavaScript.
+#
+# Weight: 1
+#
+# Styleguide: Tokens

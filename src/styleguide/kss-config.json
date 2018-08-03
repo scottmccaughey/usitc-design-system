@@ -1,0 +1,12 @@
+{
+  "title": "USITC Design System",
+  "source": "../",
+  "mask": "*.scss|*.yml",
+  "destination": "../../dist/",
+  "builder": ".",
+  "homepage": "../../../../src/styleguide/homepage.md",
+  "css": [
+    "assets/css/styles-dev.css",
+    "assets/css/styleguide-dev.css"
+  ]
+}

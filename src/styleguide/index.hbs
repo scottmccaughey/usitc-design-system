@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{options.title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="generator" content="kss-node">
+    <link rel="stylesheet" href="assets/css/styleguide.css">
+    {{{styles}}}
+  </head>
+
+  <body class="kss-body">
+    <div class="grid">
+      <header class="site-header g-xs-12" role="header">
+        <nav>
+          <ul>
+            <li class="site-name">
+              <a href="/">USITC Design System</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <aside class="kss-menu g-l-3 g-xl-2">
+        <ul>
+          <li>
+            <a href="/">
+              <span>0</span>
+              <span>Introduction</span>
+            </a>
+          </li>
+          {{#each menu}}
+            <li>
+              <a class="{{#if isActive}}kss-state-active{{/if}}" href="/section-{{referenceURI}}.html">
+                <span>{{referenceNumber}}</span>
+                <span>{{header}}</span>
+              </a>
+              {{#if isActive}}
+                {{#if children}}
+                  <ul>
+                    {{#each children}}
+                      {{#if isGrandChild}}
+                        <li>
+                          <a href="/item-{{referenceURI}}.html">
+                            <span>{{referenceNumber}}</span>
+                            <span>{{header}}</span>
+                          </a>
+                        </li>
+                      {{else}}
+                        <li>
+                          <a href="/item-{{referenceURI}}.html">
+                            <span>{{referenceNumber}}</span>
+                            <span>{{header}}</span>
+                          </a>
+                        </li>
+                      {{/if}}
+                    {{/each}}
+                  </ul>
+                {{/if}}
+              {{/if}}
+            </li>
+          {{/each}}
+        </ul>
+      </aside>
+
+      <main class="g-l-9 g-xl-10">
+        <div class="padded">
+          {{#if homepage}}
+            <article class="kss-home">
+              {{{homepage}}}
+            </article>
+          {{else}}
+
+            <!--
+              display each section, in order.
+              the "root" element comes first in this loop, and can be detected using
+              the "#if @first" block as seen below.
+            -->
+            {{#each sections}}
+              {{#if @first}}
+                <header id="kssref-{{referenceURI}}" class="kss-section-{{referenceURI}}">
+              {{else}}
+                <section id="kssref-{{referenceURI}}" class="kss-section-{{referenceURI}}">
+              {{/if}}
+
+              <article>
+                {{#if source.filename}}
+                  {{#if @first}}
+                  {{else}}
+                    <p>Source:
+                      <span>{{source.filename}}</span>, line
+                      <span>{{source.line}}</span>
+                    </p>
+                  {{/if}}
+                {{/if}}
+
+                <a href="#kssref-{{referenceURI}}">
+                  <h{{depth}}>
+                    <span>{{referenceNumber}}</span>
+                    <span>{{header}}</span>
+                  </h{{depth}}>
+                </a>
+
+                {{#if description}}
+                  <div>{{{description}}}</div>
+                {{/if}}
+                {{#if parameters}}
+                  <ul class="kss-parameters">
+                    {{#each parameters}}
+                      <li class="kss-parameters__item">
+                        <p class="kss-parameters__description">
+                          {{{description}}}
+                          {{#if defaultValue}}
+                            Defaults to: <code>{{defaultValue}}</code>
+                          {{/if}}
+                        </p>
+                        <code class="kss-parameters__name">{{name}}</code>
+                      </li>
+                    {{/each}}
+                  </ul>
+                {{/if}}
+              </article>
+
+              {{#if example}}
+                <article>
+                  <h1>Example{{#if modifiers}}s{{/if}}</h1>
+
+                  {{#if modifiers}}
+                    <h2>Default styling</h2>
+                  {{/if}}
+
+                  <div>{{{markup}}}</div>
+
+                  {{#each modifiers}}
+                    <article>
+                      <h2>{{name}}</h2>
+                      <p>{{{description}}}</p>
+                      <div>{{{markup}}}</div>
+                    </article>
+                  {{/each}}
+                </article>
+
+                <article>
+                  <pre><code class="language-markup">{{markup}}</code></pre>
+                </article>
+              {{/if}}
+
+              {{#if @first}}
+                </header>
+              {{else}}
+                </section>
+              {{/if}}
+            {{/each}}
+          {{/if}}
+        </div>
+      </main>
+    </div>
+
+    <script src="kss-assets/vendor/jquery.js"></script>
+    <script src="kss-assets/vendor/prism.js"></script>
+    <script src="kss-assets/js/kss.js"></script>
+    {{{scripts}}}
+  </body>
+</html>

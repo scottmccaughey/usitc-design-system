@@ -7,6 +7,71 @@
 # Y88b.   Y88..88P 888 Y88..88P 888          X88
 #  "Y8888P "Y88P"  888  "Y88P"  888      88888P'
 
+# Colors
+#
+# All the colors.
+#
+# $color-white  - #ffffff; White
+# $color-black  - #3a3a3b; Black
+# $color-gray   - #818386; Gray
+# $color-blue   - #0d7e97; Blue
+# $color-red    - #be2a26; Red
+# $color-green  - #308453; Green
+# $color-orange - #fdb71c; Orange
+# $color-teal   - #5c9999; Teal
+#
+# Styleguide Tokens.Colors
+
+colors--map:
+
+  black:
+    hue:                       0
+    sat:                       0
+    lum:                       0
+  white:
+    hue:                       0
+    sat:                       0
+    lum:                       100
+  grey:
+    hue:                       210
+    sat:                       10
+  red:
+    hue:                       2
+    sat:                       67
+  orange:
+    hue:                       23
+    sat:                       100
+  yellow:
+    hue:                       53
+    sat:                       98
+  green:
+    hue:                       145
+    sat:                       47
+  cyan:
+    hue:                       191
+    sat:                       84
+  blue:
+    hue:                       216
+    sat:                       56
+  purple:
+    hue:                       281
+    sat:                       100
+
+# Primary Colors
+#
+# The primary colors used.
+#
+# $color-white  - #ffffff; White
+# $color-black  - #3a3a3b; Black
+# $color-gray   - #818386; Gray
+# $color-blue   - #0d7e97; Blue
+# $color-red    - #be2a26; Red
+# $color-green  - #308453; Green
+# $color-orange - #fdb71c; Orange
+# $color-teal   - #5c9999; Teal
+#
+# Styleguide Tokens.Colors.Primary
+
 color:
 
   white:                      '#ffffff'

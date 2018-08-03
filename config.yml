@@ -8,42 +8,41 @@ path:
 
   root:
     src:                src
-    dist:               dist
+    dist:               dist/assets
 
   tokens:
     src:                src/tokens/**/*.yml
     dist:
-      json:             dist/json
-      scss:             dist/scss/tokens
+      json:             dist/assets/json
+      scss:             dist/assets/scss/tokens
 
   clean:
-                      - dist/**/*
+                      - dist/assets/**/*
 
   css:
-    dist:               dist/css
+    dist:               dist/assets/css
 
   fonts:
     src:                src/fonts/**/*.{woff,woff2}
-    dist:               dist/fonts
+    dist:               dist/assets/fonts
 
   icons:
     src:                src/icons/**/*.svg
-    dist:               dist/icons
+    dist:               dist/assets/icons
 
   scss:
     src:                src/scss/**/*.scss
-    dist:               dist/scss
-    styleguide:         dist
+    dist:               dist/assets/scss
     watch:
                       - src/scss/**/*.scss
-                      - dist/scss/partials/_icons-sprite.scss
-                      - dist/scss/tokens/_tokens.scss
+                      - dist/assets/scss/partials/_icons-sprite.scss
+                      - dist/assets/scss/tokens/_tokens.scss
 
 settings:
 
   browserSync:
     cors:               true
-    server:             .
+    server:             dist/
 
   icons:
     mode:
@@ -62,7 +61,7 @@ settings:
     devSuffix:          -dev
     fontPath:
       dev:              ../fonts
-      prod:             ~usitc-design-system/dist/fonts
+      prod:             ~usitc-design-system/dist/assets/fonts
     includePaths:
                       - node_modules
-                      - dist/fonts
+                      - dist/assets/fonts
